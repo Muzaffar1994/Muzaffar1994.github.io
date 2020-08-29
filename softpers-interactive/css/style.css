@@ -1,0 +1,3248 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body
+{
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    color: #07074D;
+}
+
+.pb-100{
+    padding-bottom: 100px;
+}
+
+.pt-100{
+    padding-top: 100px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #07074D;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 70px;
+    color: #07074D;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 120%;
+    color: #07074D;
+}
+
+p{
+    font-size: 15px;
+    line-height: 148%;
+    color: #07074D;
+}
+
+.shape-1{
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 259px;
+}
+
+.shape-2{
+    position: absolute;
+    left: 0px;
+    bottom: 80px;
+    width: 104px;
+}
+
+.shape-3{
+    position: absolute;
+    right: 0px;
+    bottom: 80px;
+    width: 108px;
+}
+
+.shape-4{
+    position: absolute;
+    width: 84px;
+    right: 100px;
+}
+
+.shape-5{
+    position: absolute;
+    width: 46px;
+    right: 0px;
+    top: 210px;
+}
+
+.shape-6{
+    position: absolute;
+    width: 58px;
+    left: 40px;
+    top: 130px;
+}
+
+.shape-7{
+    position: absolute;
+    width: 141px;
+    right: 175px;
+    top: -60px;
+}
+
+.shape-8{
+    position: absolute;
+    width: 168px;
+    right: 0px;
+    bottom: -35px;
+}
+
+.shape-9{
+    position: absolute;
+    width: 141px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+/*--------------------------
+-------------hero-----------
+--------------------------*/
+
+.hero{
+    background-color: #07074D;
+    padding: 180px 0px;
+    position: relative;
+}
+
+.hero h1{
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+    width: 707px;
+    letter-spacing: -2px;
+    margin-left: 220px;
+    line-height: 115%;
+}
+
+.hero h1 img{
+    width: 291px;
+    vertical-align: middle;
+}
+
+/*--------------------------
+------------hero-2----------
+--------------------------*/
+
+.hero-2 .hero-img{
+    width: 100%;
+}
+
+.hero-2 .text-block{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    width: 100%;
+}
+
+.hero-2 h1{
+    font-size: 50px;
+    margin-left: 0px;
+}
+
+.hero-2 p{
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: -0.5px;
+    line-height: 133.5%;
+}
+
+/*--------------------------
+------------hero-3----------
+--------------------------*/
+
+.hero-3{
+    background-color: #F1F4F6;
+}
+
+.hero-3 h1, .hero-3 p{
+    color: #07074D;
+}
+
+/*--------------------------
+------------hero-4----------
+--------------------------*/
+
+.hero-4{
+    padding: 180px 0px 100px;
+}
+
+.hero-4 p{
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: -0.6px;
+    opacity: 100%;
+}
+
+.hero-4 .content{
+    position: relative;
+}
+
+.hero-4 form input, .hero-4 form select, .hero-4 form textarea{
+    padding: 13.5px 15px;
+    border: 1px solid #cdcddb;
+    border-radius: 4px;
+    color: #6a6a94;
+}
+
+.hero-4 form select{
+    -webkit-appearance: none;
+    background-image: url(../images/list.png);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: 96% 49%;
+    cursor: pointer;
+}
+
+.hero-4 form input::placeholder, .hero-4 form textarea::placeholder{
+    color: #6a6a94;
+    font-size: 16px;
+}
+
+.hero-4 form input:focus, .hero-4 form select:focus, .hero-4 form textarea:focus{
+    outline: 0px;
+}
+
+.hero-4 .checkbox{
+    margin-left: 25px;
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.hero-4 .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.hero-4 .checkmark {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #cdcddb;
+    border-radius: 4px;
+}
+
+.hero-4 .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.hero-4 .checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.hero-4 .checkbox .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid #07074D;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.hero-4 a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #046AF3;
+    color: white;
+    padding: 10.5px 31.75px;
+    display: inline-block;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.hero-4 a .send{
+    width: 21px;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+/*--------------------------
+----------------------------
+-----------header-----------
+----------------------------
+--------------------------*/
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 21px 60px;
+    background-color: #07074D;
+}
+
+header.inverse{
+    background-color: white;
+}
+
+header .logo{
+    width: 150px;
+}
+
+header .logo-blue{
+    display: none;
+    width: 150px;
+}
+
+header .menu, header .cross{
+    display: none;
+}
+
+header .mob-nav{
+    float: right;
+}
+
+header ul{
+    margin-top: 16px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;
+    padding: 2px 3px;
+}
+
+header.inverse ul li a{
+    color: #07074D;
+}
+
+header ul li a.active{
+    font-weight: 500;
+    border-bottom: 1px solid #046AF3;
+}
+
+header ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+header.inverse ul li a:hover{
+    color: #07074D;
+}
+
+header ul li a.lets-talk{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: #046AF3;
+    border-radius: 6px;
+    margin-right: 0px;
+    padding: 10.25px 29.5px;
+    color: white;
+}
+
+header ul li a.lets-talk:hover{
+    color: white;
+}
+
+header ul li a.lets-talk img{
+    width: 15px;
+    margin-left: 5px;
+    vertical-align: bottom;
+}
+
+/*--------------------------
+----------------------------
+----------homepage----------
+----------------------------
+--------------------------*/
+
+.slider
+{
+    background: #f1f4f6;
+    background: linear-gradient(to right,  #f1f4f6 0%,#f1f4f6 75%,#ffffff 75%);
+}
+
+.slider .content{
+    position: relative;
+}
+
+.slider .content h2{
+    margin-bottom: 45px !important;
+}
+
+.flexslider{
+    margin: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.flex-caption {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flexslider .slides>li{
+    position: relative !important;
+    padding: 7px 0px 0px;
+}
+
+.flexslider .slides img {
+    width: 0% !important;
+    display: block !important;
+    margin-left: auto !important;
+}
+
+.custom-controls-container{
+    display: none;
+}
+
+.flexslider .slides .flex-caption .comma{
+    width: 38px !important;
+    margin: 0px 0px 30px !important;
+}
+
+.flexslider .slides .flex-caption p{
+    font-size: 22px !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
+    line-height: 144.5% !important;
+    margin-bottom: 45px !important;
+}
+
+.flexslider .slides .flex-caption .user{
+    margin-bottom: 0px !important;
+}
+
+.flexslider .slides .flex-caption .user img{
+    width: 55px !important;
+    margin: 0px !important;
+    display: inline-block !important;
+}
+
+.flexslider .slides .flex-caption .user h4{
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
+.flexslider .slides .flex-caption .user p{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    margin-bottom: 0px !important;
+}
+
+.custom-navigation{
+   position: absolute;
+    bottom: -60px;
+    left: 0px;
+}
+
+.custom-navigation img{
+    width: 27px;
+}
+
+.custom-navigation .flex-next{
+    margin-left: 20px;
+}
+
+/*--------------------------
+--------our-services--------
+--------------------------*/
+
+.homepage .our-services{
+    margin-bottom: 76px;
+}
+
+.homepage .our-services .cards{
+    height: 285px;
+    border: 1px solid #d9d9f4;
+    border-radius: 6px;
+}
+
+.homepage .our-services .cards .web{
+    width: 45px;
+}
+
+.homepage .our-services .cards .mobile{
+    width: 45px;
+}
+
+.homepage .our-services .cards .web{
+    width: 45px;
+}
+
+.homepage .our-services .cards .crm{
+    width: 51px;
+}
+
+.homepage .our-services .cards .ui{
+    width: 45px;
+}
+
+.homepage .our-services .cards .seo{
+    width: 49px;
+}
+
+.homepage .our-services .cards .ecommerce{
+    width: 45px;
+}
+
+.homepage .our-services .cards .qe{
+    width: 36px;
+}
+
+.homepage .our-services .cards .maintenance{
+    width: 44px;
+}
+
+.homepage .our-services .cards h3{
+    color: #07074D;
+}
+
+.homepage .our-services .cards p{
+    color: #07074D;
+    opacity: 70%;
+}
+
+/*--------------------------
+--------our-process---------
+--------------------------*/
+
+.our-process .content{
+    background-color: #07074D;
+    border-radius: 6px;
+}
+
+.our-process .content img{
+    width: 70px;
+}
+
+.our-process .content .connector{
+    width: 243px;
+    margin: 0px 10px 30px;
+}
+
+.our-process .content h2, .our-process .content h3{
+    color: white;
+}
+
+.our-process .content p{
+    color: white;
+    opacity: 0.8;
+}
+
+/*--------------------------
+----------------------------
+----------services----------
+----------------------------
+--------------------------*/
+
+/*--------------------------
+---------technology---------
+--------------------------*/
+
+.services .technology:nth-of-type(odd){
+    background-color: #F1F4F6;
+}
+
+.services .technology:nth-of-type(even){
+    background-color: white;
+}
+
+.services .technology p{
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.services .technology h3{
+    font-weight: 500;
+}
+
+.services .technology img{
+    margin: 30px 65px 0px 0px;
+    vertical-align: middle;
+}
+
+.services .technology img:last-of-type{
+    margin-right: 0px;
+}
+
+.bootstrap{
+    width: 35px;
+}
+
+.angular{
+    width: 138px;
+}
+
+.react{
+    width: 123px;
+}
+
+.css{
+    width: 79px;
+}
+
+.jquery{
+    width: 147px;
+}
+
+.sass{
+    width: 55px;
+}
+
+.ruby{
+    width: 102px;
+}
+
+.swift{
+    width: 97px;
+}
+
+.objective{
+    width: 215px;
+}
+
+.android{
+    width: 178px;
+}
+
+.native{
+    width: 209px;
+}
+
+.ionic{
+    width: 119px;
+}
+
+/*--------------------------
+----------solutions---------
+--------------------------*/
+
+.solutions .cards{
+    border: 1px solid #b5b5ca;
+    border-radius: 4px;
+    padding: 20px 0px 20px 10px;
+}
+
+.solutions img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.efficient{
+    width: 56px;
+}
+
+.reliable{
+    width: 52px;
+}
+
+.secure{
+    width: 56px;
+}
+
+.solutions .cards .text-block{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+}
+
+.solutions .cards .text-block p{
+    opacity: 80%;
+}
+
+.solutions .cards h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/*--------------------------
+---------salesforce---------
+--------------------------*/
+
+.salesforce{
+    background: linear-gradient(to right,  #07074d 0%,#07074d 70%,#ffffff 70%);
+}
+
+.salesforce .logo{
+    width: 78px;
+}
+
+.salesforce h2{
+    color: white;
+}
+
+.salesforce p{
+    font-size: 20px;
+    color: white;
+    line-height: 167%;
+    opacity: 80%;
+}
+
+.salesforce h3{
+    color: white;
+    font-weight: 700;
+    line-height: 167%;
+}
+
+.salesforce span{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: #06063D;
+    padding: 12px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 20px 13px 0px 0px;
+}
+
+/*--------------------------
+----------------------------
+----------our-work----------
+----------------------------
+--------------------------*/
+
+.our-work .hero{
+    padding: 150px 0px 110px;
+}
+
+/*--------------------------
+-------------work-----------
+--------------------------*/
+
+.our-work .work .tab {
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.our-work .work .tab button {
+    background-color: inherit;
+    border: none;
+    border-radius: 31px;
+    outline: none;
+    cursor: pointer;
+    padding: 9.5px 40.25px;
+    margin-right: 20px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 400;
+    color: #07074D;
+    letter-spacing: 0.3px;
+    opacity: 50%;
+}
+
+.our-work .work .tab button:nth-last-of-type(1){
+    margin: 0px;
+}
+
+.our-work .work .tab button.active {
+    background-color: #1A1AC2;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 100%;
+}
+
+.our-work .work .tabcontent {
+    display: none;
+}
+
+.our-work .work .tabcontent .box{
+    position: relative;
+}
+
+.our-work .work .tabcontent .box .overlay{
+    border-radius: 16px;
+}
+
+.our-work .work .tabcontent .box:hover .overlay{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    transition: 0.5s;
+}
+
+.our-work .work .tabcontent .box .overlay a{
+    display: none;
+    border-radius: 6px;
+}
+
+.our-work .work .tabcontent .box:hover .overlay a{
+    display: block;
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+}
+
+.our-work .work .tabcontent .box .overlay h2{
+    display: none;
+}
+
+.our-work .work .tabcontent .box:hover .overlay h2{
+    display: block;
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,100%);
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.our-work .work .tabcontent img{
+    border-radius: 16px;
+}
+
+.our-work .work .tabcontent a{
+    text-decoration: none;
+}
+
+.our-work .work .tabcontent a.load-more{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: #07074D;
+    border: 2px dashed #07074D;
+    border-radius: 6px;
+    padding: 8.25px 52px;
+    text-decoration: none;    
+    opacity: 40%;    
+    margin-top: 40px;
+}
+
+/*--------------------------
+----------------------------
+---------work-detail--------
+----------------------------
+--------------------------*/
+
+.work-detail .shape-5{
+    top: 170px;
+}
+
+.work-detail .challenge{
+    position: relative;
+}
+
+.work-detail h2{
+    font-weight: 400;
+}
+
+.work-detail h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.work-detail p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 179.5%;
+    opacity: 80%;
+}
+
+.work-detail .key-findings{
+    background-color: #F1F4F6;
+    position: relative;
+}
+
+.work-detail .testimonial{
+    margin-top: -2.5px;
+    background-color: #07074D;
+}
+
+.work-detail .testimonial h2{
+    color: white;
+}
+
+.work-detail .testimonial .comma{
+    width: 38px;
+}
+
+.work-detail .testimonial p{
+    font-size: 35px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 157.5%;
+    color: white;
+    opacity: 100%;
+}
+
+.work-detail .testimonial .user{
+    margin-bottom: 80px;
+}
+
+.work-detail .testimonial .user img{
+    width: 88px;
+}
+
+.work-detail .testimonial .user h4{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.work-detail .testimonial .user p{
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.work-detail .testimonial h3{
+    color: white;
+    margin-bottom: 60px;
+}
+
+.work-detail .testimonial h5{
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+
+.work-detail .want-to-talk .content h3 a{
+    color: #046AF3;
+    background-color: white;
+}
+
+/*--------------------------
+----------------------------
+----------about-us----------
+----------------------------
+--------------------------*/
+
+.about-us .hero{
+    padding: 150px 0px 110px;
+}
+
+.about-us .who-we-are p{
+    font-size: 20px;
+    line-height: 167%;
+    opacity: 80%;
+}
+
+.about-us .who-we-are .info h3{
+    font-size: 50px;
+    font-weight: 700;
+    color: #046AF3;
+}
+
+.about-us .who-we-are .info p{
+    font-size: 18px;
+    line-height: 125%;
+    opacity: 100%
+}
+
+.about-us .our-vision{
+    background-color: #07074d;
+}
+
+.about-us .our-vision .content{
+    background-color: #06063d;
+    border-radius: 6px;
+    padding: 65px 50px;
+    height: 600px;
+    position: relative;
+}
+
+.about-us .our-vision .content .text-block{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about-us .our-vision .content h4{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.about-us .our-vision .content h4 span{
+    vertical-align: super;
+}
+
+.about-us .our-vision .content h4 .vision-img{
+    width: 63px;
+    margin-right: 10px;
+}
+
+.about-us .our-vision .content h4 .mission-img{
+    width: 56px;
+    margin-right: 15px;
+}
+
+.about-us .our-vision .content p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 167%;
+    color: white;
+    opacity: 80%;
+}
+
+/*--------------------------
+----------------------------
+------------blog------------
+----------------------------
+--------------------------*/
+
+.blog .blog-info h2{
+    font-size: 34px;
+    opacity: 90%;
+}
+
+.blog .blog-info p{
+    font-size: 16px;
+    opacity: 80%;
+}
+
+.blog .blog-info p.para{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+/*--------------------------
+----------------------------
+--------blog-detail---------
+----------------------------
+--------------------------*/
+
+.blog-detail .detail{
+    padding: 150px 0px 100px;
+}
+
+.blog-detail .detail h1{
+    color: #07074D;
+    line-height: 129.5%;
+}
+
+.blog-detail .detail p{
+    font-size: 16px;
+    color: #07074D;
+    opacity: 80%;
+}
+
+.blog-detail .detail p.para{
+    font-size: 22px;
+    line-height: 37px;
+    font-weight: 300;
+}
+
+.blog-detail .detail p .medium{
+    font-weight: 500;
+    color: #07074D;
+}
+
+.blog-detail .detail h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: #07074D;
+    line-height: 125.5%;
+    opacity: 80%;
+}
+
+.similar-article a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 45px;
+}
+
+.similar-article span{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.similar-article .blue{
+    background-color: #046AF3;
+}
+
+.similar-article .green{
+    background-color: #10D7A7;
+}
+
+.similar-article h4{
+    font-size: 21px;
+    font-weight: 500;
+    color: #07074D;
+    line-height: 125.5%;
+    opacity: 80%;
+}
+
+.similar-article p{
+    font-size: 14px;
+    color: #07074D;
+    margin: 0px;
+    opacity: 80%;
+}
+
+.similar-article p .medium{
+    font-weight: 500;
+    color: #07074D;
+    padding: 0px;
+}
+
+/*--------------------------
+----------------------------
+-----------career-----------
+----------------------------
+--------------------------*/
+
+/*--------------------------
+-----------listing----------
+--------------------------*/
+
+.career .listing{
+    margin-bottom: 76px;
+}
+
+.career .listing .cards{
+    padding: 20px;
+    border: 1px solid #b5b5ca;
+    border-radius: 4px;
+}
+
+.career .listing .cards h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.career .listing .cards p{
+    opacity: 80%;
+}
+
+.career .listing .cards a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #046AF3;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
+/*--------------------------
+----------benefits----------
+--------------------------*/
+
+.career .benefits{
+    background-color: #F1F4F6;
+}
+
+.benefit-1{
+    width: 114px;
+}
+
+.benefit-2{
+    width: 127px;
+}
+
+.benefit-3{
+    width: 100px;
+}
+
+.benefit-4{
+    width: 104px;
+}
+
+.career .benefits p{
+    font-size: 20px;
+}
+
+/*--------------------------
+----------------------------
+----------lets-talk---------
+----------------------------
+--------------------------*/
+
+.lets-talk .teams h3{
+    font-weight: 500;
+}
+
+.lets-talk .teams h3.details{
+    font-weight: 400;
+    line-height: 167%;
+    opacity: 80%;
+}
+
+.lets-talk .teams p{
+    opacity: 70%;
+}
+
+/*--------------------------
+----------------------------
+--------want-to-talk--------
+----------------------------
+--------------------------*/
+
+.want-to-talk .content{
+    background-color: #07074D;
+    border-radius: 6px;
+}
+
+.want-to-talk .content h2{
+    font-size: 38px;
+    font-weight: 500;
+    color: white;
+    line-height: 125%;
+}
+
+.want-to-talk .content h3{
+    font-size: 24px;
+    color: white;
+}
+
+.want-to-talk .content h3 a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #046AF3;
+    border-radius: 6px;
+    margin-left: 10px;
+    padding: 10.25px 26px;
+    vertical-align: bottom;
+}
+
+.want-to-talk .content h3 a img{
+    width: 26px;
+    vertical-align: text-bottom;
+}
+
+/*--------------------------
+----------------------------
+-----------footer-----------
+----------------------------
+--------------------------*/
+
+footer{
+    padding-bottom: 100px;
+}
+
+footer .footer-logo{
+    width: 150px;
+    height: 46px;
+}
+
+footer p{
+    color: #07074D;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.5px;
+}
+
+footer p.copyright{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.5px;
+    opacity: 80%;
+}
+
+footer a{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer a img{
+    width: 30px;
+    height: 30px;
+}
+
+footer h4{
+    font-size: 22px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: #07074D; 
+    opacity: 90%;
+}
+
+footer ul{
+    display: inline-block;
+    margin-right: 90px;
+}
+
+footer ul li a{
+    font-size: 16px;
+    color: #07074D;
+    margin: 0px 0px 7px 0px;
+    line-height: 30px;    
+    opacity: 90%;
+}
+
+footer ul li a:hover{
+    color: #07074D;
+    text-decoration: none;
+}
+
+footer .column-3{
+    margin-left: 25px;
+}
+
+footer .column-3 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer .column-3 p img{
+    width: 17px;
+    margin-right: 10px;
+    vertical-align: super;
+}
+
+footer .column-3 p .email{
+    width: 19px;
+}
+
+footer .column-3 p .phone{
+    width: 21px;
+}
+
+footer .column-3 p span{
+    display: inline-block;
+    opacity: 90%;
+}
+
+.grey-border{
+    height: 1px;
+    width: 100%;
+    background-color: #07074D;
+    opacity: 10%;
+}
+
+/*--------------------------
+----------------------------
+---------sub-footer---------
+----------------------------
+--------------------------*/
+
+.sub-footer{
+    padding: 30px 0px;
+}
+
+.sub-footer ul li{
+    display: inline-block;
+    border-right: 1px solid #07074D;
+    padding: 2px 20px 2px 15px;
+}
+
+.sub-footer ul li:nth-last-of-type(1){
+    border-right: none;
+}
+
+.sub-footer ul li a{
+    color: #07074D;
+    text-decoration: none;
+    opacity: 80%;
+}
+
+@media only screen and (max-width: 1365px) {
+    .pb-100{
+        padding-bottom: 96px;
+    }
+
+    .pt-100{
+        padding-top: 96px;
+    }
+
+    .mb-100{
+        margin-bottom: 96px;
+    }
+
+    .mt-100{
+        margin-top: 96px;
+    }
+    
+    h1{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 38.4px;
+    }
+
+    h3{
+        font-size: 19.2px;
+    }
+
+    p{
+        font-size: 14.4px;
+    }
+    
+    .shape-1 {
+        width: 248.64px;
+    }
+    
+    .shape-2 {
+        width: 99.84px;
+    }
+    
+    .shape-3 {
+        width: 103.68px;
+    }
+
+    .shape-4{
+        width: 80.64px;
+    }
+
+    .shape-5{
+        width: 44.16px;
+    }
+
+    .shape-6{
+        width: 55.68px;
+    }
+
+    .shape-7{
+        width: 135.36px;
+    }
+
+    .shape-8{
+        width: 161.28px;
+    }
+
+    .shape-9{
+        width: 135.36px;
+    }
+
+    .homepage .our-services .cards .web{
+        width: 43.2px;
+    }
+
+    .homepage .our-services .cards .mobile{
+        width: 43.2px;
+    }
+
+    .homepage .our-services .cards .web{
+        width: 43.2px;
+    }
+
+    .homepage .our-services .cards .crm{
+        width: 48.96px;
+    }
+
+    .homepage .our-services .cards .ui{
+        width: 43.2px;
+    }
+
+    .homepage .our-services .cards .seo{
+        width: 47.04px;
+    }
+
+    .homepage .our-services .cards .ecommerce{
+        width: 43.2px;
+    }
+
+    .homepage .our-services .cards .qe{
+        width: 34.56px;
+    }
+
+    .homepage .our-services .cards .maintenance{
+        width: 42.24px;
+    }
+    
+    header .logo {
+        width: 144px;
+    }
+    
+    header .logo-blue {
+        width: 144px;
+    }
+    
+    header ul li a{
+        font-size: 15.36px;
+    }
+    
+    header ul li a.lets-talk {
+        font-size: 14.4px;
+    }
+    
+    .hero h1 {
+        font-size: 96px;
+    }
+    
+    .hero h1 img{
+        width: 279.36px;
+    }
+    
+    .hero-2 h1 {
+        font-size: 48px;
+    }
+    
+    .hero-2 p{
+        font-size: 24.96px;
+    }
+    
+    .hero-4 p {
+        font-size: 24.96px;
+    }
+    
+    .hero-4 a {
+        font-size: 14.4px;
+    }
+    
+    .flexslider .slides .flex-caption p {
+        font-size: 21.12px !important;
+    }
+    
+    .flexslider .slides .flex-caption .user h4 {
+        font-size: 16.32px !important;
+    }
+    
+    .flexslider .slides .flex-caption .user p {
+        font-size: 13.44px !important;
+    }
+    
+    .services .technology p {
+        font-size: 19.2px;
+    }
+    
+    .bootstrap{
+        width: 33.6px;
+    }
+
+    .angular{
+        width: 132.48px;
+    }
+
+    .react{
+        width: 118.08px;
+    }
+
+    .css{
+        width: 75.84px;
+    }
+
+    .jquery{
+        width: 141.12px;
+    }
+
+    .sass{
+        width: 52.8px;
+    }
+
+    .ruby{
+        width: 97.92px;
+    }
+
+    .swift{
+        width: 93.12px;
+    }
+
+    .objective{
+        width: 206.4px;
+    }
+
+    .android{
+        width: 170.88px;
+    }
+
+    .native{
+        width: 200.64px;
+    }
+
+    .ionic{
+        width: 114.24px;
+    }
+
+    .efficient{
+        width: 53.76px;
+    }
+
+    .reliable{
+        width: 49.92px;
+    }
+
+    .secure{
+        width: 53.76px;
+    }
+    
+    .salesforce .logo {
+        width: 74.88px;
+    }
+    
+    .salesforce p{
+        font-size: 19.2px;
+    }
+    
+    .salesforce span{
+        font-size: 14.4px;
+    }
+    
+    .our-work .work .tab button.active {
+        font-size: 15.36px;
+    }
+    
+    .our-work .work .tab button {
+        font-size: 19.2px;
+    }
+
+    .our-work .work .tabcontent .box:hover .overlay h2{
+        font-size: 21.12px;
+    }
+    
+    .work-detail p {
+        font-size: 19.2px;
+    }
+    
+    .work-detail h3 {
+        font-size: 33.6px;
+    }
+    
+    .work-detail .testimonial p {
+        font-size: 33.6px;
+    }
+    
+    .work-detail .testimonial .user h4 {
+        font-size: 24px;
+    }
+    
+    .work-detail .testimonial .user p {
+        font-size: 21.12px;
+    }
+    
+    .work-detail .testimonial h5 {
+        font-size: 21.12px;
+    }
+    
+    .about-us .who-we-are p {
+        font-size: 19.2px;
+    }
+    
+    .about-us .who-we-are .info h3 {
+        font-size: 48px;
+    }
+    
+    .about-us .who-we-are .info p {
+        font-size: 17.28px;
+    }
+    
+    .about-us .our-vision .content h4 {
+        font-size: 38.4px;
+    }
+    
+    .about-us .our-vision .content p {
+        font-size: 19.2px;
+    }
+    
+    .about-us .our-vision .content h4 .vision-img {
+        width: 60.48px;
+    }
+    
+    .about-us .our-vision .content h4 .mission-img {
+        width: 53.76px;
+    }
+    
+    .similar-article span{
+        font-size: 13.44px;
+    }
+    
+    .similar-article h4{
+        font-size: 20.16px;
+    }
+    
+    .similar-article p {
+        font-size: 13.44px;
+    }
+    
+    .blog-detail .detail p{
+        font-size: 15.36px;
+    }
+    
+    .blog-detail .detail h3 {
+        font-size: 23.04px;
+    }
+    
+    .blog-detail .detail p.para {
+        font-size: 21.12px;
+    }
+    
+    .career .listing .cards h3 {
+        font-size: 23.04px;
+    }
+    
+    .career .listing .cards a {
+        font-size: 14.4px;
+    }
+    
+    .career .benefits p {
+        font-size: 19.2px;
+    }
+    
+    .benefit-1{
+        width: 109.44px;
+    }
+
+    .benefit-2{
+        width: 121.92px;
+    }
+
+    .benefit-3{
+        width: 96px;
+    }
+
+    .benefit-4{
+        width: 99.84px;
+    }
+    
+    .hero-4 form input, .hero-4 form select, .hero-4 form textarea{
+        font-size: 15.36px;
+    }
+
+    .hero-4 form input::placeholder, .hero-4 form textarea::placeholder{
+        font-size: 15.36px;
+    }
+    
+    .hero-4 .checkbox {
+        font-size: 15.36px;
+    }
+    
+    .hero-4 a {
+        font-size: 14.4px;
+    }
+    
+    .want-to-talk .content h2 {
+        font-size: 36.48px;
+    }
+    
+    .want-to-talk .content h3 {
+        font-size: 23.04px;
+    }
+    
+    .want-to-talk .content h3 a {
+        font-size: 14.4px;
+    }
+    
+    footer .footer-logo {
+        width: 144px;
+    }
+    
+    footer p.copyright{
+        font-size: 15.36px;
+    }
+    
+    footer h4 {
+        font-size: 21.12px;
+    }
+    
+    footer ul li a{
+        font-size: 15.36px;
+    }
+    
+    footer .column-3 p{
+        font-size: 14.4px;
+    }
+    
+    .sub-footer ul li a {
+        font-size: 15.36px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 37px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .pb-100{
+        padding-bottom: 90px;
+    }
+
+    .pt-100{
+        padding-top: 90px;
+    }
+
+    .mb-100{
+        margin-bottom: 90px;
+    }
+    
+    .mt-100{
+        margin-top: 90px;
+    }
+    
+    .hero {
+        padding: 160px 0px 90px;
+    }
+    
+    .homepage .hero h1 {
+        font-size: 75px;
+        margin-left: 120px;
+    }
+    
+    .hero h1 img {
+        width: 235px;
+    }
+    
+    .hero-2 h1 {
+        font-size: 45px;
+    }
+    
+    .hero-2 p {
+        font-size: 22px;
+    }
+    
+    .hero-4 {
+        padding: 160px 0px 90px;
+    }
+    
+    .hero-4 p {
+        font-size: 24px;
+    }
+    
+    .shape-1 {
+        width: 160px;
+    }
+    
+    .shape-2 {
+        bottom: 35px;
+        width: 90px;
+    }
+    
+    .shape-3 {
+        width: 70px;
+        bottom: 90px;
+    }
+
+    .shape-4 {
+        width: 70px;
+        right: 50px;
+    }
+    
+    .shape-5 {
+        width: 40px;
+    }
+    
+    .shape-7 {
+        width: 120px;
+    }
+    
+    .shape-8 {
+        width: 130px;
+    }
+    
+    header .logo{
+        width: 125px;
+    }
+
+    header .logo-blue{
+        width: 125px;
+    }
+
+    header ul{
+        margin-top: 11px;
+    }
+
+    header ul li a{
+        margin-right: 40px;
+        font-size: 14px;
+    }
+
+    header ul li a.lets-talk{
+        font-size: 13px;
+    }
+
+    .homepage .our-services{
+        margin-bottom: 66px;
+    }
+    
+    .flex-caption {
+        left: 0;
+    }
+
+    .slider .content h2{
+        font-size: 35px !important;
+        margin-bottom: 30px !important
+    }
+
+    .flexslider .slides .flex-caption .comma{
+        width: 30px !important;
+        margin: 0px 0px 25px !important;
+    }
+
+    .flexslider .slides .flex-caption p{
+        font-size: 20px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .flexslider .slides .flex-caption .user{
+        margin-bottom: 0px !important;
+    }
+
+    .flexslider .slides .flex-caption .user img{
+        width: 55px !important;
+    }
+
+    .flexslider .slides .flex-caption .user h4{
+        font-size: 17px !important;
+    }
+
+    .flexslider .slides .flex-caption .user p{
+        font-size: 14px !important;
+    }
+
+    .custom-navigation{
+        bottom: -40px;
+    }
+
+    .custom-navigation img{
+        width: 22px;
+    }
+
+    .custom-navigation .flex-next{
+        margin-left: 15px;
+    }
+    
+    .solutions .cards .text-block {
+        width: 70%;
+    }
+    
+    .salesforce p {
+        font-size: 18px;
+        line-height: 160%;
+    }
+    
+    .salesforce h3 {
+        line-height: 160%;
+    }
+    
+    .salesforce span {
+        font-size: 13px;
+        padding: 12px 10px;
+        margin: 20px 10px 0px 0px;
+    }
+    
+    .our-work .work .tabcontent .box:hover .overlay h2{
+        font-size: 20px;
+    }
+    
+    .our-work .work .tabcontent a.load-more {
+        font-size: 14px;
+        padding: 8.25px 47px;
+    }
+    
+    .work-detail h3 {
+        font-size: 30px;
+    }
+    
+    .work-detail p {
+        font-size: 18px;
+        line-height: 160%;
+    }
+    
+    .work-detail .testimonial p {
+        font-size: 30px;
+    }
+    
+    .about-us .hero {
+        padding: 150px 0px 90px;
+    }
+    
+    .about-us .who-we-are p {
+        line-height: 160%;
+    }
+    
+    .about-us .who-we-are .info h3 {
+        font-size: 45px;
+    }
+    
+    .about-us .our-vision .content h4 .vision-img {
+        width: 55px;
+    }
+    
+    .about-us .our-vision .content h4 .mission-img {
+        width: 50px;
+    }
+    
+    .about-us .our-vision .content h4 {
+        font-size: 35px;
+    }
+    
+    .about-us .our-vision .content p {
+        font-size: 18px;
+        line-height: 160%;
+    }
+
+    .blog .blog-info h2 {
+        font-size: 30px;
+    }
+    
+    .blog .blog-info p.para {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .blog-detail .detail {
+        padding: 150px 0px 90px;
+    }
+    
+    .blog-detail .detail p.para {
+        font-size: 19px;
+        line-height: 34px;
+    }
+    
+    .blog-detail .detail h3 {
+        font-size: 21px;
+    }
+    
+    .similar-article a{
+        margin-bottom: 30px;
+    }
+    
+    .similar-article h4 {
+        font-size: 18px;
+    }
+    
+    .career .listing {
+        margin-bottom: 66px;
+    }
+    
+    .career .listing .cards h3 {
+        font-size: 22px;
+    }
+    
+    .career .listing .cards span {
+        margin: 0px 12px !important;
+    }
+    
+    .career .listing .cards a {
+        font-size: 14px;
+    }
+    
+    .benefit-1 {
+        width: 50%;
+    }
+    
+    .benefit-2 {
+        width: 50%;
+    }
+    
+    .benefit-3 {
+        width: 50%;
+    }
+    
+    .benefit-4 {
+        width: 50%;
+    }
+    
+    .career .benefits p {
+        font-size: 18px;
+    }
+
+    .our-process .content .connector {
+        width: 190px;
+    }
+    
+    .want-to-talk .content h2 {
+        font-size: 32px;
+    }
+    
+    .want-to-talk .content h3 {
+        font-size: 20px;
+    }
+    
+    .want-to-talk .content h3 a {
+        font-size: 13px;
+    }
+    
+    .want-to-talk .content h3 a img {
+        width: 22px;
+    }
+
+    .lets-talk .teams h3.details br{
+        display: none;
+    }
+    
+    footer .footer-logo {
+        width: 140px;
+        height: 43px;
+    }
+    
+    footer p {
+        font-size: 15px;
+    }
+
+    footer .column-3 {
+        margin-left: 0px;
+    }
+    
+    footer .column-3 p{
+        font-size: 15px;
+    }
+    
+    footer .column-3 p img{
+        width: 15px;
+    }
+
+    footer .column-3 p .email{
+        width: 17px;
+    }
+
+    footer .column-3 p .phone{
+        width: 19px;
+    }
+    
+    footer h4 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    footer ul {
+        margin-right: 70px;
+    }
+    
+    footer ul li a {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .pb-100{
+        padding-bottom: 75px;
+    }
+
+    .pt-100{
+        padding-top: 75px;
+    }
+
+    .mb-100{
+        margin-bottom: 75px;
+    }
+
+    .mt-100{
+        margin-top: 75px;
+    }
+    
+    .hero {
+        padding: 140px 0px 75px;
+    }
+    
+    .homepage .hero h1 {
+        font-size: 60px;
+        margin-left: 60px;
+    }
+    
+    .hero h1 img {
+        width: 190px;
+    }
+
+    .hero-2 h1 {
+        font-size: 40px;
+    }
+
+    .hero-2 p {
+        font-size: 20px;
+    }
+
+    .hero-4 {
+        padding: 140px 0px 75px;
+    }
+
+    .hero-4 p {
+        font-size: 22px;
+    }
+    
+    .hero-4 form{
+        margin-top: 50px;
+    }
+    
+    .shape-1 {
+        width: 120px;
+    }
+    
+    .shape-2 {
+        bottom: 20px;
+        width: 60px;
+    }
+    
+    .shape-3 {
+        width: 50px;
+    }
+
+    .shape-5 {
+        width: 35px;
+    }
+    
+    .shape-6 {
+        display: none;
+    }
+
+    .shape-7 {
+        width: 100px;
+        right: 140px;
+        top: -40px;
+    }
+    
+    .shape-8 {
+        width: 100px;
+    }
+    
+    .shape-9 {
+        display: none;
+    }
+    
+    header{
+        padding: 21px 30px;
+    }
+
+    header .logo{
+        width: 110px;
+    }
+    
+    header .logo-blue{
+        width: 110px;
+    }
+
+    header ul{
+        margin-top: 8px;
+    }
+
+    header ul li a{
+        margin-right: 30px;
+        font-size: 13px;
+    }
+
+    header ul li a.lets-talk{
+        font-size: 12px;
+        padding: 10.25px 19.5px;
+    }
+
+    .homepage .our-services{
+        margin-bottom: 51px;
+    }
+
+    .slider .content h2{
+        margin-bottom: 15px !important;
+        font-size: 25px !important;
+    }
+
+    .flexslider .slides .flex-caption .comma{
+        width: 25px !important;
+        margin: 0px 0px 15px !important;
+    }
+
+    .flexslider .slides .flex-caption p{
+        font-size: 16px !important;
+        margin-bottom: 25px !important;
+        line-height: 125% !important;
+    }
+
+    .flexslider .slides .flex-caption .user{
+        margin-bottom: 0px !important;
+    }
+
+    .flexslider .slides .flex-caption .user img{
+        width: 50px !important;
+    }
+
+    .flexslider .slides .flex-caption .user h4{
+        font-size: 15px !important;
+    }
+
+    .flexslider .slides .flex-caption .user p{
+        font-size: 12px !important;
+    }
+
+    .custom-navigation img{
+        width: 18px;
+    }
+
+    .custom-navigation .flex-next{
+        margin-left: 10px;
+    }
+    
+    .solutions h2{
+        margin-bottom: 50px;
+    }
+    
+    .solutions .cards{
+        margin-top: 20px;
+    }
+
+    .solutions .cards .text-block {
+        width: 75%;
+    }
+    
+    .our-process p{
+        font-size: 11px;
+    }
+    
+    .our-work .hero {
+        padding: 140px 0px 110px;
+    }
+    
+    .our-work .work .tab {
+        margin-bottom: 70px;
+    }
+
+    .our-work .work .tabcontent .box:hover .overlay h2{
+        font-size: 18px;
+    }
+
+    .our-work .work .tabcontent a.load-more {
+        padding: 8.25px 42px;
+    }
+    
+    .work-detail h2 {
+        margin-bottom: 50px;
+    }
+    
+    .work-detail p {
+        font-size: 16px;
+    }
+    
+    .work-detail h3 {
+        font-size: 25px;
+    }
+    
+    .work-detail .testimonial p {
+        font-size: 22px;
+    }
+    
+    .work-detail .testimonial .user {
+        margin-bottom: 60px;
+    }
+    
+    .work-detail .testimonial .user h4 {
+        font-size: 20px;
+    }
+    
+    .work-detail .testimonial .user p {
+        font-size: 18px;
+    }
+    
+    .work-detail .testimonial .user img {
+        width: 75px;
+    }
+    
+    .work-detail .testimonial h5 {
+        font-size: 20px;
+    }
+    
+    .about-us .hero {
+        padding: 140px 0px 75px;
+    }
+    
+    .about-us .who-we-are p {
+        font-size: 18px;
+    }
+    
+    .about-us .who-we-are .info h3 {
+        font-size: 40px;
+    }
+    
+    .about-us .who-we-are .info p {
+        font-size: 16px;
+    }
+    
+    .about-us .our-vision .content {
+        height: auto;
+    }
+    
+    .about-us .our-vision .content .text-block {
+        left: 0%;
+        transform: none;
+    }
+    
+    .about-us .our-vision .first{
+        margin-bottom: 50px;
+    }
+
+    .blog .blog-info img {
+        margin-bottom: 25px;
+    }
+    
+    .blog-detail .detail {
+        padding: 140px 0px 75px;
+    }
+    
+    .blog-detail .detail p.para {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .similar-article a{
+        margin-bottom: 20px;
+    }
+
+    .career .listing {
+        margin-bottom: 51px;
+    }
+
+    .career .listing .cards h3 {
+        font-size: 20px;
+    }
+
+    .career .listing .cards span {
+        margin: 0px 10px !important;
+    }
+
+    .career .listing .cards a {
+        font-size: 13px;
+        right: 15px;
+    }
+
+    .benefit-1 {
+        width: 50%;
+    }
+
+    .benefit-2 {
+        width: 50%;
+    }
+
+    .benefit-3 {
+        width: 50%;
+    }
+
+    .benefit-4 {
+        width: 50%;
+    }
+
+    .career .benefits p {
+        font-size: 16px;
+    }
+    
+    .our-process .content img {
+        width: 60px;
+    }
+    
+    .our-process .content .connector {
+        width: 130px;
+    }
+    
+    .our-process .content h2{
+        margin-bottom: 50px;
+    }
+    
+    .our-process .content h3{
+        font-size: 16px;
+    }
+    
+    .lets-talk .teams h3.details {
+        font-size: 16px;
+    }
+    
+    .want-to-talk .content h2 {
+        font-size: 28px;
+    }
+    
+    .want-to-talk .content h3 {
+        font-size: 18px;
+    }
+
+    footer .footer-logo {
+        width: 120px;
+        height: 37px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+    
+    footer .column-3 p {
+        font-size: 13px;
+    }
+
+    footer .column-3 p img{
+        width: 15px;
+    }
+
+    footer .column-3 p .email{
+        width: 17px;
+    }
+
+    footer .column-3 p .phone{
+        width: 19px;
+    }
+
+    footer h4 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    footer ul {
+        margin-right: 40px;
+    }
+
+    footer ul li a {
+        font-size: 13px;
+    }
+    
+    .sub-footer {
+        padding: 25px 0px;
+    }
+    
+    .sub-footer ul li a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .pb-100{
+        padding-bottom: 50px;
+    }
+
+    .pt-100{
+        padding-top: 50px;
+    }
+
+    .mb-100{
+        margin-bottom: 50px;
+    }
+
+    .mt-100{
+        margin-top: 50px;
+    }
+    
+    .shape-2, .shape-4, .shape-7, .shape-8{
+        display: none;
+    }
+    
+    .shape-1 {
+        width: 90px;
+    }
+    
+    .shape-3 {
+        width: 40px;
+        bottom: 60px;
+    }
+    
+    header .menu{
+        position: absolute;
+        display: block;
+        font-size: 25px;
+        color: white;
+        top: 27px;
+        right: 30px;
+    }
+    
+    header.inverse .menu, header.inverse .cross{
+        color: #07074D;
+    }
+    
+    header .cross{
+        position: absolute;
+        display: block;
+        font-size: 25px;
+        color: white;
+        top: 25px;
+        right: 30px;
+    }
+    
+    header ul{
+        display: block;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        left: -100%;
+        top: 0px;
+        text-align: center;
+        padding-top: 100px;
+        transition: 0.5s;
+    }
+    
+    header .menu-list-inverse{
+        background-color: #07074D;
+    }
+    
+    header ul li{
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    header ul li a {
+        margin-right: 0px;
+        font-size: 16px;
+    }
+    
+    header ul li a.lets-talk{
+        display: inline-block;
+        font-size: 14px;
+        padding: 10.25px 19.5px;
+    }
+
+    .hero {
+        padding: 120px 0px 50px;
+    }
+    
+    .homepage .hero h1 {
+        font-size: 45px;
+        margin-left: 30px;
+    }
+    
+    .hero h1 img {
+        width: 140px;
+    }
+    
+    .hero-2 .text-block {
+        position: initial;
+        transform: none;
+        margin-bottom: 50px;
+    }
+    
+    .hero-2 h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+    
+    .hero-2 p{
+        font-size: 18px;
+    }
+    
+    .hero-2 p br{
+        display: none;
+    }
+    
+    .homepage .our-services{
+        margin-bottom: 26px;
+    }
+    
+    .slider{
+        background: #f1f4f6;
+    }
+
+    .flex-caption {
+        position: static;
+        width: 75%;
+        margin: 0px auto 60px;
+    }
+    
+    .slider .content h2{
+        width: 75%;
+        margin: auto;
+    }
+
+    .slider-img{
+        width: 75% !important;
+        margin: auto;
+        display: block;
+    }
+
+    .flexslider .slides .flex-caption p{
+        font-size: 16px !important;
+        margin-bottom: 25px !important;
+        line-height: 125% !important;
+    }
+    
+    .flexslider .slides .flex-caption p br{
+        display: none;
+    }
+
+    .flexslider .slides .flex-caption .user{
+        margin-bottom: 0px !important;
+    }
+
+    .custom-navigation{
+        bottom: 22px;
+        left: 65px;
+    }
+
+    .our-process p{
+        font-size: 9px;
+        width: 87%;
+        margin: auto;
+    }
+
+    .services .technology img{
+        margin: 25px 25px 0px 0px;
+        vertical-align: middle;
+    }
+
+    .services .technology img:last-of-type{
+        margin-right: 0px;
+    }
+
+    .bootstrap{
+        width: 25px;
+    }
+
+    .angular{
+        width: 88px;
+    }
+
+    .react{
+        width: 83px;
+    }
+
+    .css{
+        width: 59px;
+    }
+
+    .jquery{
+        width: 97px;
+    }
+
+    .sass{
+        width: 35px;
+    }
+
+    .ruby{
+        width: 72px;
+    }
+
+    .swift{
+        width: 67px;
+    }
+
+    .objective{
+        width: 120px;
+    }
+
+    .android{
+        width: 111px;
+    }
+
+    .native{
+        width: 129px;
+    }
+
+    .ionic{
+        width: 79px;
+    }
+    
+    .services .technology p {
+        font-size: 16px;
+    }
+    
+    .services .technology p br{
+        display: none;
+    }
+    
+    .salesforce{
+        background: #07074d;
+    }
+    
+    .about-us .hero {
+        padding: 120px 0px 50px;
+    }
+    
+    .about-us .who-we-are p {
+        font-size: 16px;
+    }
+    
+    .about-us .who-we-are .info h3 {
+        font-size: 30px;
+    }
+    
+    .about-us .who-we-are .info p {
+        font-size: 14px;
+    }
+    
+    .about-us .our-vision .content {
+        padding: 25px;
+    }
+    
+    .about-us .our-vision .content h4 .vision-img {
+        width: 40px;
+    }
+    
+    .about-us .our-vision .content h4 .mission-img {
+        width: 45px;
+    }
+    
+    .about-us .our-vision .content h4 {
+        font-size: 25px;
+    }
+    
+    .about-us .our-vision .content p {
+        font-size: 16px;
+    }
+    
+    .our-work .work .tabcontent .box:hover .overlay h2{
+        font-size: 16px;
+        line-height: normal;
+    }
+    
+    .hero-4 {
+        padding: 120px 0px 50px;
+    }
+    
+    .hero-4 p {
+        font-size: 18px;
+    }
+    
+    .hero-4 form input, .hero-4 form select, .hero-4 form textarea{
+        font-size: 14px;
+        padding: 11.5px 15px;
+    }
+    
+    .hero-4 form input::placeholder, .hero-4 form select::placeholder, .hero-4 form textarea::placeholder{
+        font-size: 14px;
+    }
+    
+    .hero-4 .checkbox {
+        margin-bottom: 35px !important;
+        font-size: 14px;
+    }
+    
+    .hero-4 a {
+        font-size: 14px;
+        padding: 10.5px 27px;
+    }
+    
+    .our-work .hero {
+        padding: 120px 0px 50px;
+    }
+
+    .our-work .work .tab {
+        margin-bottom: 50px;
+    }
+
+    .our-work .work .tab button {
+        font-size: 14px;
+        padding: 9.5px 30.25px;
+        margin-right: 5px;
+    }
+
+    .our-work .work .tabcontent .box:hover .overlay h2{
+        font-size: 16px !important;
+        line-height: normal;
+        margin-top: 20px;
+    }
+    
+    .work-detail .key-findings h3.mt-50{
+        margin-top: 50px;
+    }
+    
+    .work-detail .key-findings p br{
+        display: none
+    }
+    
+    .work-detail .testimonial p {
+        font-size: 18px;
+    }
+    
+    .blog-detail .detail {
+        padding: 120px 0px 50px;
+    }
+    
+    .blog-detail .detail p.para{
+        margin-bottom: 30px !important;
+    }
+    
+    .blog-detail .detail p.margin-bottom-none,.blog-detail p.margin-bottom-none, .blog p.margin-bottom-none{
+        margin-bottom: 0px !important;
+    }
+    
+    .similar-article a {
+        margin-bottom: 0px;
+    }
+    
+    .similar-article p .medium{
+        margin-bottom: 0px;
+    }
+
+    .career .listing {
+        margin-bottom: 26px;
+    }
+    
+    .career .listing .cards span {
+        margin: 0px 5px !important;
+    }
+
+    .career .benefits h2{
+        margin-bottom: 20px !important;
+    }
+    
+    .career .benefits img{
+        margin: 25px 0px !important;
+    }
+    
+    .our-process .content img {
+        width: 55px;
+    }
+    
+    .our-process .content .connector {
+        width: 100px;
+    }
+    
+    .our-process .content h3 {
+        font-size: 14px;
+    }
+    
+    .want-to-talk .content h2 {
+        font-size: 22px !important;
+    }
+    
+    .lets-talk .teams h3.details {
+        margin-bottom: 48px;
+    }
+    
+    footer .column-1{
+        margin-bottom: 48px;
+    }
+    
+    footer .column-1 .copyright{
+        margin-bottom: 30px !important;
+    }
+    
+    footer h4{
+        margin-bottom: 24px !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+    
+    .shape-1 {
+        width: 75px;
+    }
+    
+    .shape-3 {
+        width: 30px;
+        bottom: 40px;
+    }
+    
+    .homepage .hero h1 {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    
+    .hero h1 img {
+        width: 95px;
+    }
+    
+    .hero-2 h1 {
+        font-size: 30px;
+    }
+    
+    header {
+        padding: 21px 15px;
+    }
+    
+    header .menu {
+        right: 15px;
+    }
+    
+    header .menu-blue {
+        right: 15px;
+    }
+    
+    header .cross {
+        right: 15px;
+    }
+
+    header .cross-blue {
+        right: 15px;
+    }
+    
+    .shape-5 {
+        width: 25px;
+    }
+    
+    .homepage .our-services .cards{
+        height: auto;
+    }
+    
+    .homepage .col-9{
+        margin: auto;
+    }
+    
+    .slider-img {
+        width: 100% !important;
+        margin: auto;
+        display: block;
+    }
+    
+    .flex-caption {
+        position: static;
+        width: 100%;
+    }
+
+    .flexslider .slides img {
+        width: 100% !important;
+        margin: auto;
+    }
+    
+    .slider .content h2 {
+        width: 100%;
+    }
+    
+    .custom-navigation {
+        left: 0px;
+    }
+    
+    .salesforce p {
+        font-size: 16px;
+    }
+
+    .salesforce p br{
+        display: none;
+    }
+    
+    .our-work .work .tabcontent .box:hover .overlay h2{
+        font-size: 16px !important;
+        line-height: normal;
+    }
+    
+    .work-detail .testimonial .comma {
+        width: 30px;
+        margin-top: 0px;
+    }
+    
+    .work-detail .testimonial p {
+        font-size: 16px;
+    }
+    
+    .work-detail .testimonial .user img {
+        width: 60px;
+        margin-top: 0px;
+    }
+    
+    .work-detail .testimonial .user h4 {
+        font-size: 16px;
+    }
+    
+    .work-detail .testimonial .user p {
+        font-size: 14px;
+    }
+    
+    .work-detail .testimonial img{
+        margin-top: 48px;
+    }
+    
+    .work-detail .testimonial h3 {
+        margin-bottom: 0px;
+    }
+
+    .blog-detail .detail p {
+        display: block !important;
+    }
+
+    .blog-detail .detail p.display-none {
+        display: none !important;
+    }
+    
+    .career .listing .cards {
+        padding: 15px;
+    }
+    
+    .benefit-1, .benefit-2, .benefit-3, .benefit-4 {
+        width: 30%;
+    }
+
+    .our-process .content .padding-bottom-none{
+        padding-bottom: 0px !important;
+    }
+    
+    .our-process .content h2 {
+        margin-bottom: 25px;
+    }
+    
+    .our-process .content img {
+        display: block;
+        margin: 25px auto;
+    }
+    
+    .our-process .content .connector{
+        display: none;
+    }
+    
+    .our-process .content h3{
+        display: block !important;
+        font-size: 16px;
+    }
+    
+    .our-process .content p {
+        display: block !important;
+        font-size: 12px;
+        width: 75%;
+        margin: auto;
+    }
+    
+    .our-process .content .display-none{
+        display: none;
+    }
+    
+    .lets-talk .teams h3.details {
+        margin-bottom: 0px;
+    }
+    
+    .lets-talk .teams h3 {
+        margin-top: 25px !important;
+    }
+    
+    .lets-talk .teams p {
+        margin-bottom: 10px !important;
+    }
+    
+    .want-to-talk .content {
+        padding: 50px 25px;
+    }
+    
+    .want-to-talk .content h2 br{
+        display: none;
+    }
+    
+    .want-to-talk .content h3 span{
+        display: block;
+        margin-bottom: -20px;
+    }
+    
+    .services .want-to-talk .content h3 span, .homepage .want-to-talk .content h3 span {
+        margin-bottom: 30px;
+    }
+
+    .want-to-talk .content h3 a{
+        margin-left: 0px;
+    }
+    
+    footer .column-1 {
+        margin-bottom: 30px;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    footer ul li a {
+        font-size: 14px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px !important;
+    }
+
+    footer .column-3 {
+        margin-top: 15px;
+    }
+    
+    footer .column-3 p {
+        font-size: 14px;
+    }
+}

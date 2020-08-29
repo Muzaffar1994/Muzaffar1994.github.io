@@ -1,0 +1,3155 @@
+/* Reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+@font-face
+{
+    font-family: sofiapro;
+    src: url(../fonts/Sofia-Pro-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face
+{
+    font-family: sofiapro-light;
+    src: url(../fonts/sofiapro-light.otf);
+    font-weight: 400;
+}
+
+@font-face
+{
+    font-family: sofiapro;
+    src: url(../fonts/sofiapro-light.otf);
+    font-weight: 400;
+}
+
+body
+{
+    font-family: sofiapro;
+    font-weight: 300;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+/*------------header-----------*/
+
+header
+{
+    background-color: #F6F6F6;
+    font-family: sofiapro-light;
+}
+
+header .row    
+{
+    padding: 10px 0px;
+}
+
+header .logo
+{
+    padding-left: 30px;
+}
+
+header .logo img
+{
+    width: 200px;
+}
+
+header .menu
+{
+    margin: auto;
+    text-align: right;
+    padding-right: 30px;
+}
+
+header ul
+{
+    display: inline-block;
+}
+
+header li
+{
+    list-style: none;
+    font-family: sofiapro-light;
+    display: inline-block;
+}
+
+header a
+{
+
+    font-family: sofiapro-light;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-right: 20px; 
+    cursor: pointer;
+    color: #151540;
+}
+
+header a:hover
+{
+    color: #8DCFF2;
+    text-decoration: none;
+}
+
+header .button
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #8DCFF2;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    padding: 12px 20px;
+}
+
+header .button:hover
+{
+    text-decoration: none;
+    background-color: #151540;
+    color: white;
+}
+
+/*---------------------------
+----------side-nav-----------
+---------------------------*/
+
+.mob-logo
+{
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    display: none;
+}
+
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a 
+{
+    text-decoration: none;
+    font-size: 25px;
+    color: #3A3966;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+
+.sidenav .click i
+{
+    font-size: 16px;
+}
+
+.sidenav .closebtn 
+{
+    position: absolute;
+    background-color: #00d0ff;
+    padding: 5px 20px 10px;
+    top: 0px;
+    right: 0px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+.sidenav .menu
+{
+    text-align: left;
+    margin-top: -25px;
+}
+
+.sidenav .menu ul
+{
+    display: inline-block;
+}
+
+.sidenav .menu ul a
+{
+    padding-left: 45px;
+    padding-bottom: 30px;
+    font-size: 34px;
+}
+
+.sidenav .menu .button
+{
+    padding-left: 45px;
+    padding-top: 20px;
+    font-size: 34px;
+    color: darkgrey;
+    text-decoration: none;
+}
+
+#menu
+{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 33px;
+    right: 25px;
+    font-size: 30px;
+    cursor:pointer;
+}
+
+/*---------section-one---------*/
+
+.section-one .progressbar-sec
+{
+    background-color: #ECF8FE;
+    z-index: 0;
+    margin: auto; 
+    margin-top: 60px;
+}
+
+.section-one .progressbar 
+{
+    font-family: sofiapro-light;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.section-one .progressbar li 
+{
+    list-style: none;
+    display: inline-block;
+    width: 19%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    line-height: 55px;
+}
+
+.section-one .progressbar li a
+{
+    color: #151540;
+    text-decoration: none;
+}
+
+.section-one .progressbar li:after 
+{
+    content: "";
+    width: 24px;
+    height: 19px;
+    border: 2px solid #151540;
+    border-radius: 40%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background-color: #fff;
+    z-index : 2;
+}
+
+.section-one .progressbar li:before 
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #151540;
+    top: 63px;
+    left: -50%;
+    z-index : -1;
+}
+
+.section-one .progressbar li:first-child:before 
+{
+    content: none;
+}
+
+.section-one .progressbar li.active 
+{
+    color: #151540;
+}
+
+.section-one .progressbar li.active:after 
+{
+    border-color: #151540;
+    background-color: #151540;
+} 
+
+/*---------section-continue--------*/
+
+.section-continue
+{
+    text-align: center;
+    margin: 70px 0px;
+}
+
+.section-continue a
+{
+    padding: 15px 85px;
+    font-size: 30px;
+    border-radius: 0px;
+    color: white;
+    background-color: #131541;
+    text-decoration: none;
+}
+
+.section-continue a:hover
+{
+    background-color: #9ACDEC;
+}
+
+/*--------------pop-up-------------*/
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popuptext {
+    display: none;
+    width: 160px;
+    background-color: #151540;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-size: 16px;
+}
+
+.popup .popuphover
+{
+    display: none;
+    width: 160px;
+    background-color: #151540;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-size: 16px;
+}
+
+.hvr-box:hover + .popuphover
+{
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup .popuphover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*-------------------------------
+---------------me----------------
+-------------------------------*/
+
+/*---------section-two---------*/
+
+#me .section-two .left img
+{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+#me .section-two .right h1
+{
+    text-align: center;
+    font-size: 22px;
+    margin: 30px 0px 40px 0px;
+}
+
+#me .section-two .right .custom-input 
+{
+    margin-left: 0px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-size: 26px;
+    text-align: center;
+    color: #9ACDEC;
+    font-weight: 700;
+    width: 60%;
+}
+
+#me .section-two .right form
+{
+    margin-top: 40px;
+}
+
+#me .section-two .right .form-group
+{
+    margin-bottom: 0.75rem;
+}
+
+#me .section-two .right .form-group label
+{
+    font-size: 26px;
+}
+
+/*--------section-three--------*/
+
+#me .section-three .box
+{
+    background-color: #ECECEC;
+}
+
+#me .section-three img
+{
+    width: 50%;
+    margin: 10px auto 30px auto;
+    display: block;
+}
+
+#me .section-three h1
+{
+    color: #9ACDEC;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+#me .section-three p
+{
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    color: #131541;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/*-------------------------------
+-------------my-dog--------------
+-------------------------------*/
+
+#my-dog .form-group
+{
+    margin-bottom: 0px;
+}
+
+/*--------section-same---------*/
+
+#my-dog .section-same
+{
+    margin-bottom: 50px;
+}
+
+#my-dog .section-same .box
+{
+    margin: auto;
+}
+
+#my-dog .section-same .outer-layer {
+    width: 100%;
+    margin: 20px auto 0;
+    background-color: #ECF8FE;
+    padding: 15px;
+}
+
+#my-dog .section-same .inner-layer {
+    border: 4px solid white;
+    padding: 20px 100px;
+    position: relative;
+    color: black;
+    text-align: center;
+}
+
+#my-dog .section-same .inner-layer:before {
+    content: " ";
+    display: block;
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/Paw-left.png) no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+#my-dog .section-same .inner-layer:after {
+    content: " ";
+    display: block;
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../images/Paw-right.png) no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+
+#my-dog .section-same .inner-content
+{
+    margin: auto;
+    text-align: center;
+}
+
+#my-dog .section-same .inner-content h1
+{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+#my-dog .section-same .inner-content p
+{
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+/*-------section-slider--------*/
+
+.control-slider 
+{
+    max-width: 900px;
+    margin: 50px auto 0;
+}
+
+.design-row,.controls-row 
+{
+    position: relative;
+    min-height: 16px;
+}
+
+.upper-row span 
+{
+    margin-top: -50px;
+    background-color: transparent;
+    width: 80px;
+    height: 20px;
+}
+
+
+.design-row .progress-bar {
+    width: 99%;
+    height: 10px;
+    margin-bottom: 10px;
+    background-color: #8CCEF2;
+    border-radius: 15px;
+}
+
+.design-row .knob {
+    width: 36px;
+    height: 23px;
+    border-radius: 25%;
+    border: 2px solid #151540;
+    background: #ffffff;
+    cursor: pointer;
+    margin-left: -20px;
+    position: absolute;
+    left: 50%;
+    top: -7px;
+    transition: 1s ease left;
+}
+
+.controls-row span 
+{
+    position: absolute;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.controls-row .sleepy
+{
+    left: 0;
+}
+
+.controls-row .normal
+{
+    left: 45.5%;
+}
+
+.controls-row .active
+{
+    right: 0;
+}
+
+.section-slider h1
+{
+    text-align: center;
+    font-size: 24px;
+}
+
+.section-slider
+{
+    margin-bottom: 50px;
+}
+
+/*---------section-two---------*/
+
+#my-dog .section-two
+{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#my-dog .section-two h1
+{
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+#my-dog .section-two .custom-select 
+{
+    margin: 0px 4px;
+    padding: 0px 12px 0px 12px;
+    font-size: 22px;
+    color:#9ACDED;
+    font-weight:700;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+    background: url(../images/caret-down.png) no-repeat right;
+    -webkit-appearance: none;
+    background-size: 12px;
+    width: 30%;
+    text-align: center;
+}
+
+#my-dog .section-two .custom-select:focus 
+{
+    outline:0px;
+}
+
+#my-dog .section-two label
+{
+    font-size: 22px;
+    color: black;
+    font-weight:700;
+}
+
+/*---------section-three--------*/
+
+#my-dog .section-three
+{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#my-dog .section-three h1
+{
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+#my-dog .section-three .box1
+{
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 40px;
+    padding: 20px 60px;
+}
+
+#my-dog .section-three .inner-box
+{
+    margin: auto;
+}
+
+#my-dog .section-three .box1 a
+{
+    text-decoration: none;
+    color: #9ACDED;
+    font-size: 28px;
+    text-align: center;
+    padding: 6px 20px;
+}
+
+#my-dog .section-three .box1 a:hover
+{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    background-color: #151540;
+    padding: 6px 20px;
+    border-radius: 10px;
+    line-height: normal;
+}
+
+#my-dog .section-three .box1 .active
+{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    background-color: #151540;
+    padding: 6px 20px;
+    border-radius: 10px;
+    line-height: normal;
+}
+
+#my-dog .section-three .box1 p
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 28px;
+    text-align: center;
+}
+
+#my-dog .section-three .box2
+{
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#my-dog .section-three .box3
+{
+    margin: auto;
+}
+
+#my-dog .section-three .custom-select 
+{
+    margin: 0px 4px;
+    padding: 0px 12px 0px 12px;
+    font-size: 22px;
+    color:#9ACDED;
+    font-weight:700;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+    background: url(../images/caret-down.png) no-repeat right;
+    -webkit-appearance: none;
+    background-size: 12px;
+    width: 30%;
+    text-align: center;
+}
+
+#my-dog .section-three .custom-select:focus 
+{
+    outline:0px;
+}
+
+/*---------section-four---------*/
+
+#my-dog .section-four
+{
+    margin-bottom: 50px;
+}
+
+#my-dog .section-four .box
+{
+    margin: auto;
+    text-align: center;
+}
+
+#my-dog .section-four .custom-select 
+{
+    margin: 0px 4px;
+    padding: 0px 12px 0px 12px;
+    font-size: 22px;
+    color:#9ACDED;
+    font-weight:700;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+    background: url(../images/caret-down.png) no-repeat right;
+    -webkit-appearance: none;
+    background-size: 12px;
+    width: 30%;
+    text-align: center;
+}
+
+#my-dog .section-four .custom-select:focus 
+{
+    outline:0px;
+}
+
+#my-dog .section-four label
+{
+    font-size: 22px;
+    color: black;
+    font-weight:700;
+}
+
+/*--------section-five---------*/
+
+#my-dog .section-five
+{
+    margin-bottom: 50px;
+}
+
+#my-dog .section-five .box
+{
+    margin: auto;
+    text-align: center;
+}
+
+#my-dog .section-five .custom-input 
+{
+    margin-left: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 22px;
+    color: #9ACDED;
+    font-weight: 700;
+    width:30%;
+    text-align:center;
+}
+
+#my-dog .section-five label
+{
+    font-size: 22px;
+    color: black;
+    font-weight:700;
+}
+
+/*---------section-six---------*/
+
+#my-dog .section-six
+{
+    margin-bottom: 50px;
+}
+
+#my-dog .section-six .box
+{
+    margin: auto;
+    text-align: center;
+}
+
+#my-dog .section-six .box h1
+{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+#my-dog .section-six .inner-box
+{
+    margin: auto; 
+    border: 2.3px solid #ddd9d9;
+    cursor: pointer;
+    color: #CECDCD; 
+    background-color: #FDFEFF;
+    padding: 0px;
+}
+
+#my-dog .section-six .inner-box:hover
+{
+    border: 2.3px solid #9ACDED;
+    color: #9ACDED !important;
+}
+
+#my-dog .section-six .active
+{
+    border: 2.3px solid #9ACDED;
+    color: #9ACDED !important;
+}
+
+#my-dog .section-six .inner-box h2
+{
+    font-size: 27px;
+    margin: 15px 0px;
+}
+
+#my-dog .section-six .inner-box p
+{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    padding: 0px 20px;
+}
+
+#my-dog .section-six .inner-box img
+{
+    margin-bottom: 30px;
+}
+
+/*--------section-seven--------*/
+
+#my-dog .section-seven
+{
+    margin-bottom: 50px;
+}
+
+#my-dog .section-seven .box
+{
+    margin: auto;
+}
+
+#my-dog .section-seven .form-group
+{
+    margin-bottom: 10px;
+}
+
+#my-dog .section-seven .custom-select 
+{
+    margin: 0px 4px;
+    padding: 0px 12px 0px 12px;
+    font-size: 22px;
+    color:#9ACDED;
+    font-weight:700;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+    background: url(../images/caret-down.png) no-repeat right;
+    -webkit-appearance: none;
+    background-size: 12px;
+    width: 30%;
+    text-align: center;
+}
+
+#my-dog .section-seven .custom-select:focus 
+{
+    outline: 0px;
+}
+
+#my-dog .section-seven label
+{
+    font-size: 22px;
+    color: black;
+    font-weight:700;
+}
+
+/*-------section-eight-------*/
+
+#my-dog .section-eight
+{
+    margin-bottom: 50px;
+}
+
+#my-dog .section-eight .box
+{
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    color: #0C0C0C;
+}
+
+#my-dog .section-eight h1
+{
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+#my-dog .section-eight i
+{
+    margin-bottom: 10px;
+}
+#my-dog .section-eight .contain 
+{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#my-dog .section-eight .contain input 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#my-dog .section-eight .checkmark 
+{
+    position: absolute;
+    top: 0;
+    left: 130px;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+#my-dog .section-eight .contain:hover input ~ .checkmark 
+{
+    background-color: #8DCFF2;
+}
+
+#my-dog .section-eight .contain input:checked ~ .checkmark 
+{
+    background-color: #8DCFF2;
+}
+
+#my-dog .section-eight .checkmark:after 
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#my-dog .section-eight .contain input:checked ~ .checkmark:after 
+{
+    display: block;
+}
+
+#my-dog .section-eight .contain .checkmark:after 
+{
+    left: 10px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*-------------------------------
+------------recipes--------------
+-------------------------------*/
+
+/*---------section-two---------*/
+
+#recipes .section-two
+{
+    text-align: center;
+    margin: 30px 0px 50px;
+}
+
+#recipes .section-two h1
+{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+#recipes .section-two h2
+{
+    font-size: 24px;
+}
+
+/*--------section-three--------*/
+
+#recipes .section-three
+{
+    margin-bottom: 50px;
+}
+
+#recipes .section-three .upper-box
+{
+    border: 2px solid #151540;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+#recipes .section-three .upper-box h1
+{
+    color: #66BAE8; 
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 2px solid #151540;
+    display: block;
+    padding: 3px 0px 7px;
+}
+
+#recipes .section-three .upper-box h2
+{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 13px 0px 22px;
+}
+
+#recipes .section-three .upper-box ul
+{
+    padding: 0px 10px;
+    font-size: 19px;
+}
+
+#recipes .section-three .upper-box ul li
+{
+    padding-bottom: 10px;
+}
+
+#recipes .section-three .upper-box ul i
+{
+    font-size: 19px;
+    padding-right: 5px;
+}
+
+#recipes .section-three .upper-box a
+{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    background-color: #151540;
+    display: block;
+    padding: 13px 0px;
+    margin: 30px 0px;
+}
+
+#recipes .section-three .upper-box a:hover
+{
+    background-color: #9ACDEC;
+}
+
+#recipes .section-three .lower-box
+{
+    border: 2.25px solid #151540;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+#recipes .section-three .lower-box h1
+{
+    color: #66BAE8; 
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 2.25px solid #151540;
+    display: block;
+    padding: 13px 0px 8px;
+}
+
+#recipes .section-three .lower-box h2
+{
+    text-align: center;
+    font-size: 16px;
+    margin: 13px 0px 20px;
+}
+
+#recipes .section-three .lower-box .button
+{
+    text-align: center;
+}
+
+#recipes .section-three .lower-box .lower-inner-box
+{
+    margin: auto;
+}
+
+#recipes .section-three .lower-box .button a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    background-color: #151540;
+    padding: 13px 22px;
+    margin-bottom: 10px;
+}
+
+#recipes .section-three .lower-box .button a:hover
+{
+    background-color: #66BAE8;
+}
+
+#recipes .section-three .lower-box p
+{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+#recipes .section-three .side-box
+{
+    border: 2.5px solid #151540;
+    margin: auto;
+    background-color: #ECF8FE;
+}
+
+#recipes .section-three .side-box .top
+{
+    text-align: center;
+    margin: 30px 0px 40px;
+}
+
+#recipes .section-three .side-box .top img
+{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#recipes .section-three .side-box .top h1
+{
+    font-size: 23px;
+}
+
+#recipes .section-three .side-box .middle
+{
+    text-align: center;
+    background-color: white;
+}
+
+#recipes .section-three .side-box .middle p
+{
+    font-size: 23px;
+    padding: 12px 0px;
+}
+
+#recipes .section-three .side-box .middle .end
+{
+    padding-bottom: 20px;
+}
+
+#recipes .section-three .side-box .bottom
+{
+    text-align: center;
+    margin: 30px 0px 40px;
+}
+
+#recipes .section-three .side-box .bottom h2
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#recipes .section-three .side-box .bottom a
+{
+    font-size: 19px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+#recipes .section-three .side-box .bottom .button
+{
+    font-size: 20px;
+    color: white;
+    background-color: #151540;
+    padding: 15px 40px;
+}
+
+#recipes .section-three .side-box .bottom .button:hover
+{
+    background-color: #66BAE8;
+}
+
+.strikethrough-diagonal {
+    position: relative;
+    color: black;
+}
+.strikethrough-diagonal:before {
+    position: absolute;
+    color: #9ACDED;
+    content: "";
+    left: 0;
+    top: 45%;
+    right: 0;
+    border-top: 2.5px solid;
+    border-color: inherit;
+    -webkit-transform: skewY(-19deg);
+    -moz-transform: skewY(-19deg);
+    transform: skewY(-19deg);
+}
+
+/*--------section-four---------*/
+
+#recipes .section-four
+{
+    margin: 20px 0px;
+}
+
+#recipes .section-four h1
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#recipes .section-four .box
+{
+    border: 1px solid #CCCCCB;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#recipes .section-four .box h1
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#recipes .section-four .box .mar-top
+{
+    margin-top: 20px;
+}
+
+#recipes .section-four .box p
+{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#recipes .section-four .box ul li
+{
+    line-height: 20px;
+}
+
+#recipes .section-four .schedule
+{
+    margin: auto;
+    text-align: center;
+}
+
+#recipes .section-four .schedule img
+{
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#recipes .section-four .schedule h1
+{
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+#recipes .section-four .schedule h2
+{
+    margin-bottom: 5px;
+    font-size: 26px;
+    color: grey;
+}
+
+/*-------------tab------------*/
+
+#recipes .section-four .tab
+{
+    overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+#recipes .section-four .tab button 
+{
+    background-color: white;
+    border: 2.25px solid #CCCCCB;
+    width: 24%;
+    margin-right: 2px;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+#recipes .section-four .tab button:hover 
+{
+    color: #8DCFF2;
+    border: 2.25px solid #8DCFF2;
+}
+
+/* Create an active/current tablink class */
+#recipes .section-four .tab button.active 
+{
+    color: #8DCFF2;
+    border: 2.25px solid #9ACDEC;
+}
+
+/* Style the tab content */
+#recipes .section-four .tabcontent 
+{
+    display: none;
+    padding: 6px 12px;
+}
+
+/*------------accordian----------*/
+
+#recipes .section-four .accordion 
+{
+    color: #000000;
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+#recipes .section-four .active, .accordion:hover 
+{
+    background-color: #ffffff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+#recipes .section-four .panel 
+{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#recipes .section-four .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: grey;
+    float: left;
+    margin-right: 5px;
+}
+
+/*-------------------------------
+------------summary--------------
+-------------------------------*/
+
+/*---------section-two---------*/
+
+#summary .section-two
+{
+    margin: 70px 0px;
+}
+
+#summary .section-two .left .image-box
+{
+    position: relative;
+    margin: auto;
+}
+
+#summary .section-two .left .image-box img
+{
+    width: 100%;
+}
+
+#summary .section-two .left .image-box p
+{
+    position: absolute;
+    top: 62%;
+    left: 44.5%;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+
+#summary .section-two .left .lower-box
+{
+    border: 1px solid black;
+    margin: auto;
+    background-color: #ECF8FE;
+    padding: 10px 0px;
+}
+
+#summary .section-two .left .lower-box .left-box
+{
+    margin: auto;
+    text-align: center;
+}
+
+#summary .section-two .left .lower-box .left-box img
+{
+    margin-bottom: 5px;
+    width: 35%;
+}
+
+#summary .section-two .left .lower-box .left-box p
+{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#summary .section-two .left .lower-box .right-box
+{
+    margin: 0px auto;
+    text-align: left;
+}
+
+#summary .section-two .left .lower-box .right-box h1
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px 40px;
+} 
+
+#summary .section-two .left .lower-box .right-box ul
+{
+    font-size: 18px;
+} 
+
+#summary .section-two .left .lower-box .right-box ul li
+{
+    line-height: 20px;
+} 
+
+#summary .section-two .right
+{
+    border: 3px solid black;
+    background-color: #ECF8FE;
+    margin: auto;
+}
+
+#summary .section-two .right .sec-1 img
+{
+    width: 11%;
+    display: block;
+    margin: 10px auto 15px;
+}
+
+#summary .section-two .right .sec-1 h1
+{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#summary .section-two .right .sec-2
+{
+    margin: auto;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#summary .section-two .right .sec-2 .box
+{
+    margin: auto;
+}
+
+#summary .section-two .right .sec-2 .box .part-1 h1
+{
+    margin: 20px 0px 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#summary .section-two .right .sec-2 .box .part-1 h2
+{
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+#summary .section-two .right .sec-2 .box .part-1 h3
+{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+#summary .section-two .right .sec-2 .box .part-1 p
+{
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+#summary .section-two .right .sec-2 .box .part-2
+{
+    text-align: center;
+}
+
+#summary .section-two .right .sec-2 .box .part-2 h1
+{
+    margin: 20px 0px 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#summary .section-two .right .sec-2 .box .part-2 p
+{
+    margin: 20px 0px 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#summary .section-two .right .sec-2 .box .part-2 .bot-tom
+{
+    margin-top: 60px;
+}
+
+#summary .section-two .right .sec-2 .box .part-3
+{
+    margin: 10px auto;
+    border: 1px solid black;  
+}
+
+#summary .section-two .right .sec-2 .box .part-4 h1
+{
+    margin-top: 20px;
+    font-size: 17px; 
+    font-weight: bold;
+}
+
+#summary .section-two .right .sec-2 .box .part-4 h2
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0px 15px 5px;
+}
+
+#summary .section-two .right .sec-2 .box .part-4 small
+{
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+#summary .section-two .right .sec-2 .box .part-5
+{
+    margin: auto;
+}
+
+#summary .section-two .right .sec-2 .box .part-5 h1
+{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#summary .section-two .right .sec-2 .box .part-6 .form-group label
+{
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 15px 0px 8px 5px;
+}
+
+#summary .section-two .right .sec-2 .box .part-6 .form-group input
+{
+    width: 90%;
+    height: 23.5px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#summary .section-two .right .sec-2 .box .part-7 h1
+{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#summary .section-two .right .sec-2 .box .part-7 .form-group label
+{
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#summary .section-two .right .sec-2 .box .part-7 .form-group input
+{
+    width: 95%;
+    height: 23.5px;
+    font-size: 13px;
+}
+
+#summary .section-two .right .sec-2 .box .part-8
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#summary .section-two .right .sec-2 .box .part-8 h2
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#summary .section-two .right .sec-2 .box .part-8 a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    background-color: #151540;
+    padding: 8px 22px;
+    margin: 30px 0px;
+}
+
+/*--------section-three--------*/
+
+#summary .section-three
+{
+    margin-bottom: 50px;
+}
+
+#summary .section-three .outer-box
+{
+    margin: auto;
+}
+
+#summary .section-three img
+{
+    width: 50%;
+    margin: 10px auto 30px auto;
+    display: block;
+}
+
+#summary .section-three h1
+{
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+#summary .section-three p
+{
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    color: #131541;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#summary .section-three h2
+{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+/*--------section-four---------*/
+
+#summary .section-four .box
+{
+    background-color: #ECECEC;
+}
+
+#summary .section-four img
+{
+    width: 50%;
+    margin: 10px auto 30px auto;
+    display: block;
+}
+
+#summary .section-four h1
+{
+    color: #9ACDEC;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+#summary .section-four p
+{
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    color: #131541;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/*-------------------------------
+-------------loader--------------
+-------------------------------*/
+
+#loader p
+{
+    text-align: center;
+    font-size: 24px;
+    line-height: 27px;
+    margin: 40px 0px;
+}
+
+#loader #loading 
+{
+    -webkit-animation: rotation 2s infinite linear;
+    display: block;
+    margin: 50px auto;
+    width: 8%;
+}
+
+#loader #not-loading
+{
+    display: block;
+    margin: auto;
+    width: 12%;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@media screen and (max-width:1400px)
+{
+    /*---------section-continue--------*/
+
+    .section-continue a
+    {
+        padding: 15px 75px;
+        font-size: 20px;
+        border-radius: 0px;
+        color: white;
+        background-color: #131541;
+        text-decoration: none;
+    }
+
+    /*--------------pop-up-------------*/
+
+    .popup .popuptext 
+    {
+        font-size: 14px;
+    }
+    
+    /*---------section-one---------*/
+
+    .section-one .progressbar 
+    {
+        font-size: 19px;
+    }
+
+    .section-one .progressbar li:after 
+    {
+        width: 22px;
+        height: 17px;
+    }
+
+    /*-------------------------------
+    ---------------me----------------
+    -------------------------------*/
+
+    /*---------section-two---------*/
+
+
+    #me .section-two .left img
+    {
+        width: 80%;
+    }
+
+    #me .section-two .right h1
+    {
+        font-size: 20px;
+        margin: 20px 0px 50px 0px;
+    }
+
+    #me .section-two .right .custom-input 
+    {
+        font-size: 23px;
+    }
+
+    #me .section-two .right .form-group label
+    {
+        font-size: 23px;
+    }
+
+    /*--------section-three--------*/
+
+
+    #me .section-three img
+    {
+        width: 45%;
+    }
+
+    #me .section-three h1
+    {
+        font-size: 21px;
+    }
+
+    #me .section-three p
+    {
+        font-size: 15px;
+    }
+    
+    /*-------------------------------
+    -------------my-dog--------------
+    -------------------------------*/
+    
+    /*--------section-same---------*/
+
+    #my-dog .section-same .inner-layer:before {
+        content: " ";
+        display: block;
+        width: 90px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../images/Paw-left.png) no-repeat;
+        background-size: 45px;
+        background-position: center;
+    }
+
+    #my-dog .section-same .inner-content h1
+    {
+        font-size: 22px;
+    }
+
+    #my-dog .section-same .inner-content p
+    {
+        font-size: 21px;
+    }
+
+    /*---------section-two---------*/
+
+
+    #my-dog .section-two h1
+    {
+        font-size: 20px;
+    }
+
+    #my-dog .section-two .custom-select 
+    {
+        font-size: 21px;
+    }
+
+    #my-dog .section-two .custom-select:focus 
+    {
+        outline:0px;
+    }
+
+    #my-dog .section-two label
+    {
+        font-size: 21px;
+    }
+
+    /*---------section-three--------*/
+
+    #my-dog .section-three h1
+    {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    #my-dog .section-three .box1 a
+    {
+        font-size: 24px;
+        padding: 6px 20px 8px;
+    }
+
+    #my-dog .section-three .box1 a:hover
+    {
+        font-size: 24px;
+        padding: 6px 20px 8px;
+    }
+
+    #my-dog .section-three .box1 .active
+    {
+        font-size: 24px;
+        padding: 6px 20px 8px;
+    }
+
+    #my-dog .section-three .box1 p
+    {
+        font-size: 24px;
+    }
+
+    #my-dog .section-three .custom-select 
+    {
+        font-size: 21px;
+    }
+
+    /*---------section-four---------*/
+
+    #my-dog .section-four .custom-select 
+    {
+        font-size: 21px;
+    }
+
+    #my-dog .section-four label
+    {
+        font-size: 21px;
+    }
+
+    /*--------section-five---------*/
+
+    #my-dog .section-five .custom-input 
+    {
+        font-size: 21px;
+    }
+
+    #my-dog .section-five label
+    {
+        font-size: 21px;
+    }
+
+    /*--------section-seven--------*/
+
+    #my-dog .section-seven .custom-select 
+    {
+        font-size: 21px;
+    }
+
+    #my-dog .section-seven label
+    {
+        font-size: 21px;
+    }
+
+    /*-------section-eight-------*/
+
+    #my-dog .section-eight .box
+    {
+        font-size: 21px;
+    }
+
+    #my-dog .section-eight .contain 
+    {
+        font-size: 21px;
+    }
+    
+    /*--------section-three--------*/
+
+    #summary .section-three h1
+    {
+        font-size: 21px;
+    }
+
+    #summary .section-three h2
+    {
+        font-size: 15px;
+    }
+
+    /*--------section-four---------*/
+
+    #summary .section-four h1
+    {
+        font-size: 21px;
+    }
+    
+    #summary .section-four img
+    {
+        width: 45%;
+    }
+
+    #summary .section-four p
+    {
+        font-size: 15px;
+    }
+    
+    #summary .section-two .right .sec-2 .box .part-3
+    {
+        margin: 2px auto; 
+    }
+    
+    #summary .section-two .right .sec-2 .box .part-6 .form-group input
+    {
+        height: 27px;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-7 .form-group input
+    {
+        height: 27px;
+    }
+    
+    header li
+    {
+        font-size: 14px;
+    }
+
+    header a
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1199px)
+{
+
+    header li
+    {
+        font-size: 13px;
+    }
+
+    header a
+    {
+        font-size: 13px;
+    }
+
+    .section-one .progressbar 
+    {
+        font-size: 20px;
+    }
+
+    .section-one .progressbar li:after 
+    {
+        width: 22px;
+        height: 17px;
+    }
+
+    #me .section-two .left img
+    {
+        width: 80%;
+    }
+
+    #me .section-two .right h1
+    {
+        text-align: left;
+        font-size: 18px;
+        margin: 20px 0px 40px 0px;
+    }
+
+    #me .section-two .right .custom-input 
+    {
+        font-size: 22px;
+    }
+
+    #me .section-two .right .form-group label
+    {
+        font-size: 22px;
+    }
+
+    #my-dog .section-same .inner-content h1
+    {
+        font-size: 22px;
+    }
+
+    #my-dog .section-same .inner-content p
+    {
+        font-size: 22px;
+    }
+    
+    #my-dog .section-eight .checkmark 
+    {
+        left: 50px;
+    }
+    
+    #recipes .section-three .side-box .top img
+    {
+        width: 10%;
+    }
+    
+    #summary .section-two .left .lower-box
+    {
+        margin-bottom: 50px !important;
+    }
+
+}
+
+@media screen and (max-width:991px)
+{
+    header
+    {
+        display: none;
+    }
+    
+    .mob-logo
+    {
+        display: initial;
+    }
+    
+    #menu
+    {
+        display: initial;
+    }
+    
+    .controls-row span 
+    {
+        font-size: 21px;
+    }
+
+    .controls-row .normal
+    {
+        left: 44.5%;
+    }
+
+    .section-one .progressbar 
+    {
+        font-size: 18px;
+    }
+
+    .section-one .progressbar li:after 
+    {
+        width: 21px;
+        height: 16px;
+    }
+
+    .section-one .progressbar li:before 
+    {
+        top: 62px;
+    }
+    
+    .section-one .progressbar-sec
+    {
+        margin-top: 100px;
+    }
+    
+    #me .section-two .left
+    {
+        margin-top: 0px;
+    }
+
+    #me .section-two .left img
+    {
+        width: 60%;
+    }
+    
+    #me .section-two .right
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #me .section-two .right h1
+    {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px 0px 40px 0px;
+    }
+
+    #me .section-two .right .custom-input 
+    {
+        font-size: 22px;
+    }
+
+    #me .section-two .right .form-group label
+    {
+        font-size: 22px;
+    }
+    
+    #me .section-three .box
+    {
+        margin: auto;
+    }
+    
+    #my-dog .section-same .inner-content h1
+    {
+        font-size: 20px;
+    }
+
+    #my-dog .section-same .inner-content p
+    {
+        font-size: 20px;
+    }
+    
+    #my-dog .section-three
+    {
+        margin-bottom: 45px;
+    }
+
+    #my-dog .section-three h1
+    {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    #my-dog .section-three .box1
+    {
+        margin-bottom: 35px;
+        padding: 15px 50px;
+    }
+
+    #my-dog .section-three .box1 a
+    {
+        font-size: 24px;
+    }
+    
+    #my-dog .section-three .box1 a:hover
+    {
+        font-size: 24px;
+    }
+
+    #my-dog .section-three .box1 .active
+    {
+        font-size: 24px;
+    }
+
+    #my-dog .section-three .box1 p
+    {
+        font-size: 24px;
+    }
+
+    #my-dog .section-three .box2
+    {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    #my-dog .section-eight .checkmark 
+    {
+        left: 10px;
+    }
+
+    #recipes .section-two h1
+    {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    #recipes .section-two h2
+    {
+        font-size: 18px;
+    }
+
+    #recipes .section-three .side-box .top img
+    {
+        width: 15%;
+    }
+    
+    #recipes .section-four .schedule img
+    {
+        margin-bottom: 25px;
+        width: 50%;
+    }
+    
+    #recipes .section-four .schedule .mar-bottom
+    {
+        margin-bottom: 25px;
+    }
+    
+    #summary .section-three .box
+    {
+        margin: auto;
+    }
+    
+    #summary .section-four .box
+    {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:767px)
+{
+    .controls-row span 
+    {
+        font-size: 20px;
+    }
+
+    .controls-row .normal
+    {
+        left: 43%;
+    }
+
+    .section-one .progressbar 
+    {
+        font-size: 16px;
+    }
+
+    .section-one .progressbar li:after 
+    {
+        width: 19px;
+        height: 14px;
+    }
+
+    .section-one .progressbar li:before 
+    {
+        top: 60px;
+    }
+
+    .section-continue a
+    {
+        padding: 15px 65px;
+        font-size: 25px;
+    }
+
+    .section-slider .box h1
+    {
+        font-size: 20px;
+    }
+
+    .section-slider .range input::-webkit-slider-thumb 
+    {
+        width: 30px;
+        height: 20px;
+        margin: -5px 0  0;
+    }
+
+    .section-slider .range input::-webkit-slider-runnable-track 
+    {
+        height: 10px;
+    }
+
+    .section-slider .range-labels li 
+    {
+        font-size: 20px;
+    }
+
+    #my-dog .section-same .outer-layer 
+    {
+        margin: 20px auto 0;
+    }
+
+    #my-dog .section-same .inner-layer 
+    {
+        padding: 20px 30px;
+    }
+
+    #my-dog .section-same .inner-layer:before {
+        display: none;
+    }
+    #my-dog .section-same .inner-layer:after {
+        display: none;
+    }
+
+    #my-dog .section-same .inner-content h1
+    {
+        font-size: 18px;
+    }
+
+    #my-dog .section-same .inner-content p
+    {
+        font-size: 18px;
+    }
+    
+    #my-dog .section-six .inner-box
+    {
+        margin: 20px auto;
+    }
+
+    #my-dog .section-three h1
+    {
+        font-size: 23px;
+        margin-bottom: 40px;
+    }
+
+    #my-dog .section-three .box1
+    {
+        margin-bottom: 35px;
+        padding: 15px 40px;
+    }
+
+    #my-dog .section-three .box1 a
+    {
+        font-size: 23px;
+    }
+    
+    #my-dog .section-three .box1 a:hover
+    {
+        font-size: 23px;
+    }
+
+    #my-dog .section-three .box1 .active
+    {
+        font-size: 23px;
+    }
+
+    #my-dog .section-three .box1 p
+    {
+        font-size: 23px;
+    }
+    
+    #my-dog .section-four
+    {
+        margin-bottom: 45px;
+    }
+
+    #my-dog .section-four .custom-select 
+    {
+        width: 40%;
+    }
+    
+    #my-dog .section-five
+    {
+        margin-bottom: 45px;
+    }
+    
+    #my-dog .section-seven
+    {
+        margin-bottom: 45px;
+    }
+    
+    #my-dog .section-eight
+    {
+        margin-bottom: 45px;
+    }
+    
+    #my-dog .section-eight .checkmark 
+    {
+        left: 0px;
+    }
+    
+    #recipes .section-two h1
+    {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    #recipes .section-two h2
+    {
+        font-size: 15px;
+    }
+    
+    #recipes .section-three
+    {
+        margin-bottom: 45px;
+    }
+
+    #recipes .section-three .upper-box h1
+    {
+        font-size: 24px;
+    }
+
+    #recipes .section-three .upper-box h2
+    {
+        font-size: 24px;
+    }
+
+    #recipes .section-three .upper-box a
+    {
+        font-size: 20px;
+    }
+
+    #recipes .section-three .lower-box h1
+    {
+        font-size: 23px;
+    }
+
+    #recipes .section-three .lower-box h2
+    {
+        font-size: 23px;
+    }
+
+    #recipes .section-three .lower-box .button a
+    {
+        font-size: 22px;
+    }
+
+    #recipes .section-three .lower-box p
+    {
+        font-size: 22px;
+    }
+
+    #recipes .section-three .side-box .top img
+    {
+        width: 20%;
+    }
+
+    #recipes .section-three .side-box .top h1
+    {
+        font-size: 22px;
+    }
+
+    #recipes .section-three .side-box .middle p
+    {
+        font-size: 22px;
+        padding: 12px 0px;
+    }
+
+    #recipes .section-three .side-box .bottom h2
+    {
+        font-size: 18px;
+    }
+
+    #recipes .section-three .side-box .bottom a
+    {
+        font-size: 19px;
+    }
+
+    #recipes .section-three .side-box .bottom .button
+    {
+        font-size: 20px;
+    }
+    
+    #recipes .section-four .box
+    {
+        padding: 20px;
+        margin-left: 0px;
+    }
+    
+    #recipes .section-four .panel 
+    {
+        padding: 0px;
+    }
+    
+    #recipes .section-four .tab button 
+    {
+        display: block;
+        width: 100%;
+        margin-bottom: 2px;
+    }
+    
+    #recipes .section-four .tabcontent 
+    {
+        padding: 6px 0px;
+    }
+    
+    #recipes .section-four .accordion 
+    {
+        padding: 18px 0px;
+    }
+}
+
+@media screen and (max-width:575px)
+{
+    .controls-row span 
+    {
+        font-size: 19px;
+    }
+
+    .controls-row .normal
+    {
+        left: 43.5%;
+    }
+
+    .section-one .progressbar 
+    {
+        font-size: 12px;
+    }
+
+    .section-one .progressbar li:after 
+    {
+        width: 17px;
+        height: 12px;
+    }
+
+    .section-one .progressbar li:before 
+    {
+        top: 60px;
+    }
+
+    #me .section-two .right h1
+    {
+        font-size: 15px;
+    }
+
+    #me .section-two .right .custom-input 
+    {
+        font-size: 18px;
+        width: 50%;
+    }
+
+    #me .section-two .right .form-group label
+    {
+        font-size: 16px;
+    }
+
+    .section-continue a
+    {
+        padding: 15px 55px;
+        font-size: 22px;
+    }
+    
+    .section-slider .box h1
+    {
+        font-size: 18px;
+    }
+
+    .section-slider .range input::-webkit-slider-thumb 
+    {
+        width: 30px;
+        height: 20px;
+        margin: -5px 0  0;
+    }
+
+    .section-slider .range input::-webkit-slider-runnable-track 
+    {
+        height: 10px;
+    }
+
+    .section-slider .range-labels li 
+    {
+        font-size: 18px;
+    }
+    
+    #my-dog .section-two
+    {
+        margin: 40px 0px 20px;
+    }
+
+    #my-dog .section-two h1
+    {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    #my-dog .section-two label
+    {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    #my-dog .section-two .custom-select 
+    {
+        margin: 0px 4px 10px;
+        width: 75%;
+    }
+    
+    #my-dog .section-two span
+    {
+        display: none !important;
+    }
+
+    #my-dog .section-three h1
+    {
+        font-size: 22px;
+    }
+
+    #my-dog .section-three .box1 a
+    {
+        font-size: 22px;
+    }
+    
+    #my-dog .section-three .box1 a:hover
+    {
+        font-size: 22px;
+    }
+
+    #my-dog .section-three .box1 .active
+    {
+        font-size: 22px;
+    }
+
+    #my-dog .section-three .box1 p
+    {
+        font-size: 22px;
+    }
+    
+    #my-dog .section-three .box2
+    {
+        margin-bottom: 0px;
+    }
+    
+    #my-dog .section-three .custom-select 
+    {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+    
+    #my-dog .section-four .custom-select 
+    {
+        width: 75%;
+    }
+    
+    #my-dog .section-four label 
+    {
+        display: block;
+        margin: 20px 0px 10px;
+    }
+
+    #my-dog .section-five .custom-input 
+    {
+        margin-top: 20px;
+        width: 75%;
+    }
+    
+    #my-dog .section-seven
+    {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    #my-dog .section-seven .form-group
+    {
+        margin-bottom: 0px;
+    }
+
+    #my-dog .section-seven .custom-select 
+    {
+        width: 75%;
+    }
+
+    #my-dog .section-seven label
+    {
+        display: block;
+        text-align: left;
+        margin: 25px auto 13px;
+        width: 70%;
+    }
+    
+    #my-dog .section-eight .box
+    {
+        font-size: 20px;
+    }
+
+    #my-dog .section-eight i
+    {
+        margin-bottom: 30px;
+    }
+
+    #my-dog .section-eight .contain
+    {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    
+    #recipes .section-three .side-box .top img
+    {
+        width: 30%;
+    }
+    
+    #recipes .section-four .box ul li
+    {
+        font-size: 14px;
+    }
+    
+    #summary .section-two
+    {
+        margin-bottom: 40px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #summary .section-two .left .image-box
+    {
+        position: relative;
+        margin: auto;
+    }
+
+    #summary .section-two .left .image-box img
+    {
+        width: 80%;
+    }
+
+    #summary .section-two .left .image-box p
+    {
+        position: absolute;
+        top: 62%;
+        left: 45.5%;
+        font-size: 11.5px;
+        font-weight: bold;
+    }
+
+    #summary .section-two .left .lower-box .right-box h1
+    {
+        margin-bottom: 20px;
+    } 
+    
+    #summary .section-two .right .sec-1 img
+    {
+        width: 20%;
+    }
+
+    #summary .section-two .right .sec-2 .box
+    {
+        margin: auto;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-1
+    {
+        text-align: center;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-4
+    {
+        text-align: center;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-4 h2
+    {
+        margin-left: 0px;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-4 small
+    {
+        margin-left: 0px;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-5
+    {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-6 .form-group label
+    {
+        margin-left: 0px;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-6 .form-group input
+    {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #summary .section-two .right .sec-2 .box .part-7 .form-group input
+    {
+        width: 100%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    .controls-row .normal
+    {
+        left: 43%;
+    }
+    
+    #summary .section-two .left .image-box p
+    {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:450px)
+{
+    .controls-row .normal
+    {
+        left: 42%;
+    }
+    
+    #summary .section-two .left .image-box p
+    {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    #summary .section-two .left .image-box p
+    {
+        font-size: 8px;
+    }
+    
+    .controls-row .normal
+    {
+        left: 41%;
+    }
+}
+
+@media screen and (max-width:350px)
+{
+    .controls-row .normal
+    {
+        left: 39%;
+    }
+    
+    #recipes .section-four .box ul li
+    {
+        font-size: 12px;
+    }
+    
+    #summary .section-two .left .image-box p
+    {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width:380px)
+{
+    .section-slider .box h1
+    {
+        font-size: 18px;
+    }
+
+    .section-slider .range input::-webkit-slider-thumb 
+    {
+        width: 30px;
+        height: 20px;
+        margin: -5px 0  0;
+    }
+
+    .section-slider .range input::-webkit-slider-runnable-track 
+    {
+        height: 10px;
+    }
+
+    .section-slider .range-labels li 
+    {
+        font-size: 16px;
+    }
+    
+    #my-dog .section-three .box1
+    {
+        padding: 15px 20px 15px 15px;
+    }
+    
+    #my-dog .section-three .box1 .inner-box
+    {
+        padding: 0px;
+    }
+    
+    #my-dog .section-three .box1 a
+    {
+        font-size: 20px;
+    }
+    
+    #my-dog .section-three .box1 a:hover
+    {
+        font-size: 20px;
+        padding: 4px 15px;
+    }
+
+    #my-dog .section-three .box1 .active
+    {
+        font-size: 20px;
+        padding: 4px 15px;
+    }
+    
+    #recipes .section-three .upper-box h2
+    {
+        font-size: 22px;
+    }
+
+    #recipes .section-three .upper-box a
+    {
+        font-size: 20px;
+    }
+
+    #recipes .section-three .lower-box h1
+    {
+        font-size: 21px;
+    }
+
+    #recipes .section-three .lower-box h2
+    {
+        font-size: 21px;
+    }
+
+    #recipes .section-three .lower-box .button a
+    {
+        font-size: 21px;
+    }
+
+    #recipes .section-three .lower-box p
+    {
+        font-size: 21px;
+    }
+
+    #recipes .section-three .side-box .top h1
+    {
+        font-size: 20px;
+    }
+
+    #recipes .section-three .side-box .middle p
+    {
+        font-size: 18px;
+    }
+
+    #recipes .section-three .side-box .bottom h2
+    {
+        font-size: 16px;
+    }
+
+    #recipes .section-three .side-box .bottom a
+    {
+        font-size: 18px;
+    }
+
+    #recipes .section-three .side-box .bottom .button
+    {
+        font-size: 18px;
+    }
+
+    #summary .section-two .left .lower-box .right-box ul
+    {
+        font-size: 16px;
+    } 
+}
+
+@media screen and (max-width:355px)
+{
+
+    .section-one .progressbar 
+    {
+        font-size: 10px;
+    }
+
+    .section-one .progressbar li:after 
+    {
+        width: 15px;
+        height: 10px;
+    }
+
+    .section-one .progressbar li:before 
+    {
+        top: 59px;
+    }
+
+    #summary .section-two .left .lower-box .right-box ul
+    {
+        font-size: 15px;
+    } 
+}

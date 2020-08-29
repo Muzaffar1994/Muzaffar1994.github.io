@@ -1,0 +1,5573 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+    display: block;
+}
+
+body 
+{
+    line-height: 1;
+}
+
+ol, ul 
+{
+    list-style: none;
+}
+
+blockquote, q 
+{
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+    content: '';
+    content: none;
+}
+
+table 
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+:root
+{
+    --mine-shaft: #363636;
+    --spring-green: #2AFD95;
+    --radical-red: #FD2A5F;
+}
+
+@font-face
+{
+    font-family: notosans-regular;
+    src: url(../fonts/NotoSans-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: notosans-bold;
+    src: url(../fonts/NotoSans-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: sourcesans-regular;
+    src: url(../fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face
+{
+    font-family: sourcesans-bold;
+    src: url(../fonts/SourceSansPro-Bold.otf);
+}
+
+html
+{
+    width: 100%;
+}
+
+body
+{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+body > div
+{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*--------------------------------------
+--------------header-start--------------
+--------------------------------------*/
+
+header
+{
+    background-color: #363636;
+    padding: 12px 15px;
+    font-family: notosans-regular;
+}
+
+header .logo-1
+{
+    width: 95px;
+    display: inline-block;
+}
+
+header .logo-3
+{
+    width: 130px;
+    display: inline-block;
+}
+
+header .scrollable-bar
+{
+    display: inline-block;
+}
+
+header ul
+{
+    display: inline-block;
+}
+
+header ul li
+{
+    display: inline-block;
+}
+
+header ul li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0px 12.5px;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+header ul li a:hover, header ul li a:focus
+{
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a.active
+{
+    color: #2bf793;
+}
+
+/*--------------------------------------
+---------------header-end---------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+---------browse-startups-start----------
+--------------------------------------*/
+
+.browse-startups
+{
+    font-family: notosans-regular;
+}
+
+.browse-startups .round-border 
+{
+    border: 1px solid #eee;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 10px;
+    width: 1080px;
+    margin: 50px auto;
+}
+
+.browse-startups .round-border .nav-toggle
+{
+    background-color: #2bfd95;
+    color: #354f42;
+    border: 1px solid #2bfd95;
+    padding: 7px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.browse-startups .upper-content
+{
+    width: 1080px;
+    margin: auto;
+}
+
+.browse-startups .upper-content h1
+{
+    margin: 60px 0px 30px;
+    font-family: notosans-bold;
+    font-size: 32px;
+}
+
+.browse-startups .content
+{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    padding-top: 40px;
+    min-height: auto;
+}
+
+.browse-startups .content .content-toggle
+{
+    background-color: #e5f9e0;
+    padding: 10px;
+}
+
+.browse-startups .content .content-toggle h1
+{
+    margin: 0px;
+    font-size: 24px;
+    font-family: notosans-bold;
+    border-bottom: 1px solid #cee0c9;
+    padding-bottom: 20px;
+}
+
+.browse-startups .content .content-toggle section
+{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cee0c9;
+}
+
+.browse-startups .content .content-toggle section h2
+{
+    font-style: italic;
+    font-size: 18px;
+    font-family: sourcesans-bold;
+    margin-bottom: 30px;
+}
+
+.browse-startups .content .content-toggle section .left
+{
+    display: inline-block;
+    width: 450px;
+    vertical-align: top;
+}
+
+.browse-startups .content .content-toggle section .left label
+{
+    display: block;
+}
+
+.browse-startups .content .content-toggle section .left input
+{
+    display: block;
+    width: 170px;
+    border: 1px solid #dfdfdf;
+    padding: 4px 5px;
+}
+
+.browse-startups .content .content-toggle section .right
+{
+    display: inline-block;
+    width: 450px;
+    vertical-align: top;
+}
+
+.browse-startups .content .content-toggle section .right label
+{
+    display: block;
+}
+
+.browse-startups .content .content-toggle section .container 
+{
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.browse-startups .content .content-toggle section .container input 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.browse-startups .content .content-toggle section .checkmark 
+{
+    position: absolute;
+    top: 2px;
+    left: 40px;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+}
+
+.browse-startups .content .content-toggle section .circle
+{
+    position: absolute;
+    top: -1px;
+    left: 20px;
+}
+
+.browse-startups .content .content-toggle section .container input:checked ~ .checkmark 
+{
+    background-color: #ccc;
+}
+
+.browse-startups .content .content-toggle section .checkmark:after 
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.browse-startups .content .content-toggle section .container input:checked ~ .checkmark:after 
+{
+    display: block;
+}
+
+.browse-startups .content .content-toggle section .container .checkmark:after 
+{
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.browse-startups .content .content-toggle section .container .checkmark:after 
+{
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.browse-startups .content .content-toggle section .one
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 340px;
+}
+
+.browse-startups .content .content-toggle section .one label
+{
+    display: block;
+}
+
+.browse-startups .content .content-toggle section .one .mar-top
+{
+    margin-top: 10px;
+}
+
+.browse-startups .content .content-toggle section .one input
+{
+    display: block;
+    width: 170px;
+    height: 23px;
+    border-radius: 5px;
+    border: 1px solid #a6a6a6;
+    padding: 0px 5px;
+    font-family: notosans-bold;
+    font-size: 20px;
+}
+
+.browse-startups .content .content-toggle section.mar-top
+{
+    margin-top: 20px;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.browse-startups .content .content-toggle section.mar-top a
+{
+    margin-left: 10px;
+}
+
+.browse-startups .box
+{
+    border: 1px solid #dfdfdf;
+    width: 1080px;
+    margin: auto auto 50px;
+    padding: 20px;
+}
+
+.browse-startups .box .left
+{
+    width: 145px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.browse-startups .box .left img
+{
+    width: 100%;
+}
+
+.browse-startups .box .right
+{
+    width: 860px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.browse-startups .box .right a
+{
+    color: #007bfe;
+    font-size: 28px;
+    text-decoration: none;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.browse-startups .box .right a br
+{
+    display: none;
+}
+
+.browse-startups .box .right a span
+{
+    font-size: 18px; 
+}
+
+.browse-startups .box .right .inner .one
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 330px;
+}
+
+.browse-startups .box .right .inner .one p
+{
+    font-weight: bold;
+}
+
+.browse-startups .box .right .inner .one p span
+{
+    color: #1b8851;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.browse-startups .box .right .inner .two
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 330px;
+    margin-left: 20px;
+}
+
+.browse-startups .box .right .inner .two p
+{
+    font-weight: bold;
+}
+
+.browse-startups .box .right .inner .two p span
+{
+    color: #1b8851;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.browse-startups .box .right .inner p
+{
+    font-weight: bold;
+}
+
+.browse-startups .box .right .inner p br
+{
+    display: none;
+}
+
+.browse-startups .box .right .inner p span
+{
+    color: #1b8851;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/*--------------------------------------
+---------browse-startups-start----------
+--------------------------------------*/
+
+
+/*--------------------------------------
+-------------#sidebar-start-------------
+--------------------------------------*/
+
+#sidebar
+{
+    width: 215px;
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+    padding: 30px 0px;
+    z-index: 3;
+}
+
+#sidebar .close
+{
+    display: none;
+}
+
+#sidebar .user
+{
+    width: 32px;
+    margin-left: 30px;
+}
+
+#sidebar h1
+{
+    font-family: notosans-regular;
+    font-size: 15px;
+    color: #2E384D;
+    margin: 15px 0px 0px 30px;
+}
+
+#sidebar h2
+{
+    font-family: notosans-regular;
+    font-size: 15px;
+    color: #BFC5D2;
+    margin: 0px 0px 25px 30px;
+}
+
+#sidebar ul li a
+{
+    padding: 15px 0px 15px 30px;
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: var(--mine-shaft);
+    text-decoration: none;
+    display: block;
+    border-left: 4px solid transparent;
+
+}
+
+#sidebar ul li a.active
+{
+    background-color: rgba(42,253,149,0.1);
+    border-left: 4px solid #2AFD95;
+}
+
+#sidebar ul li a img
+{
+    width: 25px;
+}
+
+#sidebar ul li a span
+{
+    padding: 0px 15px;
+}
+
+#sidebar .mob-logout
+{
+    display: none;
+}
+
+#sidebar .logout
+{
+    position: absolute;
+    bottom: 25px;
+    left: 45px;
+    font-size: 15px;
+    color: var(--mine-shaft);
+    text-decoration: none;
+}
+
+#sidebar .logout img
+{
+    width: 8px;
+}
+
+#sidebar .logout span
+{
+    padding-left: 15px;
+}
+
+/*--------------------------------------
+--------------#sidebar-end--------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+-------------overlay-start--------------
+--------------------------------------*/
+
+#overlay
+{
+    opacity: 0;
+    visibility: hidden;
+    width: 100%; 
+    min-height: 100vh;
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    z-index: 2;
+    cursor: pointer;
+    background-color: black;
+    transition: 1s ease opacity;
+}
+
+#overlay.active
+{ 
+    opacity: 0.3;
+    visibility: visible;
+}
+
+/*--------------------------------------
+--------------overlay-end---------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+-------------rightbar-start-------------
+--------------------------------------*/
+
+#rightbar
+{
+    right: -525px;
+    display: block;
+    width: 525px; 
+    min-height: 100vh; 
+    background-color: #ffffff; 
+    position: fixed; 
+    top: 0; 
+    z-index: 4;
+    transition: 1s ease right;
+    overflow-x: hidden;
+}
+
+#rightbar.active
+{
+    right: 0;
+}
+
+#rightbar .bar-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0px 100px;
+}
+
+#rightbar .summary
+{
+    font-family: notosans-bold;
+    font-size: 44px;
+    color: var(--mine-shaft);
+}
+
+#rightbar .team-member .left
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+#rightbar .team-member .left h1
+{
+    font-family: notosans-bold;
+    font-size: 22px;
+    color: var(--mine-shaft);
+}
+
+#rightbar .team-member .right
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: right;
+    position: relative;
+}
+
+#rightbar .team-member .right .form-control-file
+{
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    top: 20px;
+    left: 62px;
+    opacity: 0;
+}
+
+#rightbar .team-member .right .form-control-pic
+{
+    width: 117px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 42px;
+    opacity: 0;
+}
+
+#rightbar .team-member .right .upload-pic
+{
+    padding: 17px 25px;
+    background-color: #f5f5f5;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px
+}
+
+#rightbar .team-member .right .upload-pic p
+{
+    font-size: 11px;
+    margin: 10px 0px 0px;
+    font-family: sourcesans-regular;
+}
+
+#rightbar form
+{
+    margin-top: 20px;
+}
+
+#rightbar .form-group
+{
+    margin-bottom: 15px;
+}
+
+#rightbar label
+{
+    font-family: sourcesans-bold;
+    font-size: 12px;
+    color: #B0BAC9;
+    margin-bottom: 3px;
+}
+
+#rightbar select
+{
+    -webkit-appearance: none;
+    background-image: url(../images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 95% 50%;
+}
+
+#rightbar .skill
+{
+    margin-bottom: 5px;
+}
+
+#rightbar .skill label
+{
+    display: block;
+}
+
+#rightbar .skill span
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    border: 1px solid #9cfece;
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding: 10px 13.5px; 
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#rightbar .skill .active
+{
+    background-color: #9cfece;
+}
+
+#rightbar .form-control
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: #2E384D;
+    background-color: #fafafa;
+    border: none;
+    padding: 11px 18px;
+    height: 44px;
+    box-shadow: none;
+}
+
+#rightbar input::placeholder
+{
+    color: black;
+}
+
+#rightbar .form-control:focus 
+{
+    border-color: #ffffff;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+}
+
+#rightbar button
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    width: 100%;
+    border-radius: 2px;
+    padding: 14px 0px;
+    cursor: pointer;
+}
+
+#rightbar button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+#rightbar .discard
+{
+    font-family: sourcesans-bold;
+    font-size: 16px;
+    border: none;
+    color: var(--mine-shaft);
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 14px;
+    cursor: pointer;
+    opacity: 0.53;
+    margin-top: 15px;
+}
+
+#rightbar .bar-content-recommendation
+{
+    padding: 0px 75px;
+}
+
+#rightbar .member
+{
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 25px;
+}
+
+#rightbar .member .left
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+#rightbar .member .left h1
+{
+    color: var(--mine-shaft);
+    font-family: notosans-regular;
+    font-size: 21px;
+}
+
+#rightbar .member .left .designation
+{
+    color: var(--mine-shaft);
+    font-family: notosans-bold;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+#rightbar .member .left .email
+{
+    color: var(--mine-shaft);
+    font-family: notosans-bold;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+#rightbar .member .right
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: right;
+}
+
+#rightbar .bio
+{
+    padding-top: 10px;
+}
+
+#rightbar .bio h1
+{
+    color: var(--mine-shaft);
+    font-family: notosans-bold;
+    font-size: 14px;
+}
+
+#rightbar .bio p
+{
+    color: var(--mine-shaft);
+    font-family: notosans-regular;
+    font-size: 14px;
+}
+
+#rightbar .industry
+{
+    padding-top: 20px;
+}
+
+#rightbar .industry h1
+{
+    color: var(--mine-shaft);
+    font-family: notosans-bold;
+    font-size: 14px;
+}
+
+#rightbar .industry p
+{
+    color: var(--mine-shaft);
+    font-family: notosans-regular;
+    font-size: 14px;
+}
+
+#rightbar .area
+{
+    padding-top: 15px;
+}
+
+#rightbar .area h1
+{
+    color: var(--mine-shaft);
+    font-family: notosans-bold;
+    font-size: 14px;
+    margin: 15px 0px 20px;
+}
+
+#rightbar .area p
+{
+    display: inline-block;
+    font-family: sourcesans-regular;
+    font-size: 14px;
+    border: 1px solid #9cfece;
+    border-radius: 5px;
+    background-color: #9cfece;
+    padding: 10px 13.5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#rightbar .interests
+{
+    padding-top: 5px;
+}
+
+#rightbar .interests h1
+{
+    color: var(--mine-shaft);
+    font-family: notosans-bold;
+    font-size: 14px;
+}
+
+#rightbar .interests p
+{
+    color: var(--mine-shaft);
+    font-family: notosans-regular;
+    font-size: 14px;
+}
+
+#rightbar .startup
+{
+    padding-top: 10px;
+}
+
+#rightbar .startup h1
+{
+    color: var(--mine-shaft);
+    font-family: notosans-bold;
+    font-size: 14px;
+}
+
+#rightbar .interests ul li
+{
+    color: var(--mine-shaft);
+    font-family: notosans-regular;
+    font-size: 14px;
+}
+
+/*--------------------------------------
+--------------rightbar-end--------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+------------content-bar-start-----------
+--------------------------------------*/
+
+.content
+{
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    margin-left: 215px;
+    position: relative;
+}
+
+.content .bar
+{
+    height: 62px;
+    background-color: white;
+    text-align: right;
+    padding: 0px 35px;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.content .bar .mob-menu
+{
+    position: absolute;
+    left: 35px;
+    top: 22px;
+    cursor: pointer;
+}
+
+.content .bar ul
+{
+    padding-top: 17.5px;
+}
+
+.content .bar ul li
+{
+    display: inline-block;
+}
+
+.content .bar ul li a
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: var(--mine-shaft);
+    padding: 0px 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.content .bar ul li img
+{
+    width: 23px;
+}
+
+.content .bar ul li .active1
+{
+    background-color: #2AFD95;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    right: 10px;
+}
+
+.content .bar ul li .active2
+{
+    background-color: #2AFD95;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    right: 5px;
+}
+
+/*--------------------------------------
+-------------content-bar-end------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+---------------login-start--------------
+--------------------------------------*/
+
+.login .left, .login .right 
+{
+    height: 100vh;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+}
+
+.login .left
+{
+    background-image: url(../images/login.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.signup .left
+{
+    background-image: url(../images/signup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login .left img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.login .right .login-form
+{
+    width: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+.login .right .login-form img
+{
+    margin-bottom: 50px;
+    width: 114px;
+}
+
+.login .right .login-form h1
+{
+    font-family: notosans-regular;
+    font-size: 34px;
+    color: #2E384D;
+    margin-bottom: 25px;
+}
+
+.login .right .login-form h2
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: #8798AD;
+}
+
+.login .right .login-form form
+{
+    margin-top: 30px;
+}
+
+.login .right .login-form .form-group
+{
+    margin-bottom: 22px;
+}
+
+.login .right .login-form label
+{
+    font-family: sourcesans-bold;
+    font-size: 12px;
+    color: #B0BAC9;
+    margin-bottom: 5px;
+}
+
+.login .right .login-form .forgot-password
+{
+    font-family: sourcesans-bold;
+    font-size: 12px;
+    color: #B0BAC9;
+    margin-bottom: 5px;
+    float: right;
+    text-decoration: none;
+}
+
+.login .right .login-form .form-control
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: #2E384D;
+    background-color: #fafafa;
+    border: none;
+    padding: 11px 18px;
+}
+
+.login .right .login-form .form-control:focus 
+{
+    border-color: #ffffff;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+}
+
+.login .right .login-form button
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    width: 100%;
+    border-radius: 2px;
+    padding: 14px 0px;
+    cursor: pointer;
+}
+
+.login .right .login-form button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+.login .right .login-form .checkbox
+{
+    margin-top: 17px;
+}
+
+.login .right .login-form .checkbox label
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: var(--mine-shaft);
+    margin-bottom: 0px;
+}
+
+.login .right .login-form .checkbox input
+{
+    width: 25px;
+    height: 22px;
+    border-color: var(--mine-shaft);
+    background-color: #fafafa;
+    border-width: 3px;
+}
+
+.login .right .login-form .checkbox a:first-child
+{
+    margin-left: 25px;
+}
+
+.login .right .login-form .checkbox p
+{
+    display: inline;
+    vertical-align: super;
+    margin-left: 7px;
+}
+
+.login .right .login-form .checkbox a
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: var(--mine-shaft);
+    text-decoration: underline;
+}
+
+.login .right .login-form .checkbox .terms-of-use
+{
+    margin-left: 32px;
+}
+
+.login .right .login-form p
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--mine-shaft);
+}
+
+.login .right .login-form p span
+{
+    opacity: 0.3;
+}
+
+.login .right .login-form p a
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    color: var(--mine-shaft);
+    margin-left: 2px;
+}
+
+/*--------------------------------------
+----------------login-end---------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+----------confirmation-start------------
+--------------------------------------*/
+
+.confirmation
+{
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+.confirmation .confirmation-box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+.confirmation img
+{
+    width: 355px;
+    margin-bottom: 50px;
+}
+
+.confirmation h1
+{
+    font-family: notosans-regular;
+    font-size: 34px;
+    color: #2E384D;
+    margin-bottom: 20px;
+}
+
+.confirmation button
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    width: 320px;
+    border-radius: 2px;
+    padding: 14px 0px;
+    cursor: pointer;
+}
+
+.confirmation button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+/*--------------------------------------
+-----------confirmation-end-------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+-------contact-information-start--------
+--------------------------------------*/
+
+.contact-info
+{
+    min-height: 100vh;
+}
+
+.contact-info .content .inner-content
+{
+    background-color: #ffffff;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 744px;
+}
+
+.contact-info .content .inner-content h1
+{
+    font-family: notosans-bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #2E384D;
+}
+
+.contact-info .content .inner-content .form-group:nth-of-type(odd)
+{
+    float: left;
+    width: 47%;
+}
+
+.contact-info .content .inner-content .form-group:nth-of-type(even)
+{
+    float: right;
+    width: 47%;
+}
+
+.contact-info .content .inner-content label
+{
+    font-family: sourcesans-bold;
+    font-size: 12px;
+    color: #B0BAC9;
+    margin-bottom: 3px;
+}
+
+.contact-info .content .inner-content .form-control
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: #2E384D;
+    background-color: #fafafa;
+    border: none;
+    padding: 11px 18px;
+    height: 44px;
+}
+
+.contact-info .content .inner-content .form-control:focus 
+{
+    border-color: #ffffff;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+}
+
+.contact-info .content .inner-content select
+{
+    -webkit-appearance: none;
+    background-image: url(../images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 95% 50%;
+}
+
+.contact-info .content .inner-content button
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    width: 47%;
+    border-radius: 2px;
+    padding: 14px 0px;
+    cursor: pointer;
+}
+
+.contact-info .content .inner-content button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+/*--------------------------------------
+--------contact-information-end---------
+--------------------------------------*/
+
+
+/*--------------------------------------
+-----------preferences-start------------
+--------------------------------------*/
+
+.preferences
+{
+    min-height: 100vh;
+}
+
+.preferences .content .inner-content
+{
+    padding-top: 62px;
+    width: 1020px;
+    margin: auto;
+}
+
+.preferences .content .inner-content .my-preferences .left
+{
+    width: 610px;
+    display: inline-block;
+}
+
+.preferences .content .inner-content .my-preferences .left h1
+{
+
+    font-family: notosans-bold;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.preferences .content .inner-content .my-preferences .left p
+{
+    font-family: sourcesans-regular;
+    font-size: 16px;
+}
+
+.preferences .content .inner-content .my-preferences .right
+{
+    width: 406px;
+    display: inline-block;
+    text-align: right;
+    padding: 10px 0px;
+}
+
+.preferences .content .inner-content .my-preferences .right .bg-white
+{
+    background-color: white;
+    width: 340px;
+    margin: 0px 0px 0px auto;
+}
+
+.preferences .content .inner-content .my-preferences .right p
+{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    font-family: sourcesans-bold;
+    font-size: 13px;
+}
+
+.preferences .content .inner-content .my-preferences .right .no
+{
+    text-align: left;
+}
+
+.preferences .content .inner-content .my-preferences .right .maybe
+{
+    padding-right: 15px;
+}
+
+.preferences .content .inner-content .my-preferences .right .yes
+{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.preferences .my-preferences .progressbar
+{
+    margin-left: -14px;
+    padding-top: 20px;
+}
+
+.preferences .my-preferences .progressbar li 
+{
+    list-style: none;
+    display: inline-block;
+    width: 18%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    height: 16px;
+}
+
+.preferences .my-preferences .progressbar li:after 
+{
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 4px solid #f5f5f5;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background-color: #fff;
+    z-index : 2;
+}
+
+.preferences .my-preferences .progressbar li:before 
+{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 4px;
+    background-color: #f5f5f5;
+    top: 5px;
+    left: -44.75%;
+    z-index : 1;
+}
+
+.preferences .my-preferences .progressbar li:first-child:before 
+{
+    content: none;
+}
+
+.preferences .my-preferences .progressbar li.active 
+{
+    color:  var(--spring-green);
+}
+
+.preferences .my-preferences .progressbar li.active:after 
+{
+    border-color:  var(--spring-green);
+}
+
+.preferences .my-preferences .progressbar li.active-line:before 
+{
+    background-color:  var(--spring-green);
+}
+
+.preferences .box1 
+{
+    width: 815px;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.preferences .box1 .inner-box
+{
+    width: 400px;
+    background-color: #ffffff;
+    padding: 25px 20px 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 14px;
+}
+
+.preferences .box1 .inner-box:nth-of-type(odd)
+{
+    margin-right: 7px;
+    margin-bottom: 24px;
+}
+
+.preferences .box1 .inner-box:first-of-type
+{
+    padding-bottom: 55px;
+}
+
+.preferences .box1 .inner-box h1
+{
+    font-family: sourcesans-bold;
+    font-size: 17px;
+    margin: 0px 0px 20px;
+}
+
+.preferences .box1 .inner-box .detail
+{
+    display: flow-root;
+    margin-top: -14px;
+}
+
+.preferences .box1 .inner-box .detail .pill
+{
+    float: right;
+}
+
+.preferences .box1 .inner-box .detail .pill .switch {
+    position: relative;
+    display: inline-block;
+    width: 37px;
+    height: 20px;
+    margin: 14px 8px 0px 0px;
+}
+
+/* Hide default HTML checkbox */
+.preferences .box1 .inner-box .detail .pill .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.preferences .box1 .inner-box .detail .pill .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.preferences .box1 .inner-box .detail .pill .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.preferences .box1 .inner-box .detail .pill input:checked + .slider {
+    background-color: var(--spring-green);
+}
+
+.preferences .box1 .inner-box .detail .pill input:focus + .slider {
+    box-shadow: 0 0 1px var(--spring-green);
+}
+
+.preferences .box1 .inner-box .detail .pill input:checked + .slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.preferences .box1 .inner-box .detail .pill .slider.round {
+    border-radius: 34px;
+}
+
+.preferences .box1 .inner-box .detail .pill .slider.round:before {
+    border-radius: 50%;
+}
+
+.preferences .box1 .inner-box .detail h2
+{
+    font-family: sourcesans-regular;
+    font-size: 14px;
+    float: left;
+}
+
+.preferences .box1 .inner-box .detail .progressbar
+{
+    margin-left: -14px;
+    padding-top: 20px;
+    float: right;
+    width: 240px;
+    margin-right: -15px;
+}
+
+.preferences .box1 .inner-box .detail .progressbar li 
+{
+    list-style: none;
+    display: inline-block;
+    width: 18%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    height: 16px;
+}
+
+.preferences .box1 .inner-box .detail .progressbar li:after 
+{
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 4px solid #f5f5f5;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background-color: #fff;
+    z-index : 2;
+}
+
+.preferences .box1 .inner-box .detail .progressbar li:before 
+{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 4px;
+    background-color: #f5f5f5;
+    top: 5px;
+    left: -43.75%;
+    z-index : 1;
+}
+
+.preferences .box1 .inner-box .detail .progressbar li:first-child:before 
+{
+    content: none;
+}
+
+.preferences .box1 .inner-box .detail .progressbar li.active 
+{
+    color:  var(--spring-green);
+}
+
+.preferences .box1 .inner-box .detail .progressbar li.active:after 
+{
+    border-color:  var(--spring-green);
+}
+
+.preferences .box1 .inner-box .detail .progressbar li.active-line:before 
+{
+    background-color:  var(--spring-green);
+}
+
+
+.preferences .box2
+{
+    width: 195px;
+    display: inline-block;
+    margin: 20px 0px 0px 6px;
+}
+
+.preferences .box2 .roles
+{
+    width: 100%;
+    background-color: #ffffff;
+    vertical-align: top;
+    padding: 25px 20px;
+}
+
+.preferences .box2 .roles h1
+{
+    font-family: sourcesans-bold;
+    font-size: 16px;
+    color: var(--mine-shaft);
+    margin: 0px 0px 10px;
+    display: inline-block;
+}
+
+.preferences .box2 .detail
+{
+    display: flow-root;
+    margin-top: -14px;
+}
+
+.preferences .box2 .detail .pill
+{
+    float: right;
+}
+
+.preferences .box2 .detail .pill .switch {
+    position: relative;
+    display: inline-block;
+    width: 37px;
+    height: 20px;
+    margin: 18px 0px 0px 0px;
+}
+
+/* Hide default HTML checkbox */
+.preferences .box2 .detail .pill .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.preferences .box2 .detail .pill .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.preferences .box2 .detail .pill .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.preferences .box2 .detail .pill input:checked + .slider {
+    background-color: var(--spring-green);
+}
+
+.preferences .box2 .detail .pill input:focus + .slider {
+    box-shadow: 0 0 1px var(--spring-green);
+}
+
+.preferences .box2 .detail .pill input:checked + .slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.preferences .box2 .detail .pill .slider.round {
+    border-radius: 34px;
+}
+
+.preferences .box2 .detail .pill .slider.round:before {
+    border-radius: 50%;
+}
+
+.preferences .box2 .detail h2
+{
+    font-family: sourcesans-regular;
+    font-size: 14px;
+    float: left;
+}
+
+.preferences .box2 .info
+{
+    width: 100%;
+    background-color: #ffffff;
+    vertical-align: top;
+    padding: 25px 20px;
+    margin-top: 20px;
+}
+
+.preferences .box2 .info img
+{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.preferences .box2 .info p
+{
+    font-family: sourcesans-regular;
+    font-size: 14px;
+}
+
+.preferences .box2 .info .panel
+{
+    box-shadow: none;
+}
+
+.preferences .box2 .info h3
+{
+    font-family: sourcesans-bold;
+    font-size: 12px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.preferences .mobile
+{
+    display: none;
+}
+
+/*--------------------------------------
+-----------preferences-start------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+-------------my-team-start--------------
+--------------------------------------*/
+
+.my-team
+{
+    min-height: 100vh;
+}
+
+.my-team .content .inner-content
+{
+    padding-top: 62px;
+    width: 1040px;
+    margin: auto;
+}
+
+.my-team .content .inner-content h1
+{
+    margin: 60px 0px 30px;
+    font-size: 30px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+}
+
+.my-team .content .inner-content .box
+{
+    background-color: #ffffff;
+    width: 333px;
+    padding: 25px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px 16px 0px;
+}
+
+.my-team .content .inner-content .member 
+{
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 30px;
+}
+
+.my-team .content .inner-content .member .team-member 
+{
+    float: left;
+}
+
+.my-team .content .inner-content .member h1 
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 21px;
+    font-family: notosans-regular;
+    margin: 6px 0px 0px 30px;
+    line-height: 28px;
+}
+
+.my-team .content .inner-content .member h1 span
+{
+    font-size: 16px;
+    font-family: notosans-bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.my-team .content .inner-content .member .linkedin
+{
+    float: right;
+    margin: 10px 0px 0px 0px;
+}
+
+.my-team .content .inner-content .team
+{
+    padding: 20px 0px;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.my-team .content .inner-content .team-detail
+{
+    display: flow-root;
+}
+
+.my-team .content .inner-content .team-detail h2
+{
+    float: left;
+    font-size: 14px;
+    font-family: sourcesans-bold;
+    margin: 4px 0px 16px;
+}
+
+.my-team .content .inner-content .team-detail p
+{
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    font-family: notosans-regular;
+    margin: 0px;
+}
+
+.my-team .content .inner-content .buttons
+{
+    padding: 20px 0px 0px;
+}
+
+.my-team .content .inner-content .buttons button
+{
+    background-color: #f5f5f5;
+    font-size: 14px;
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    width: 48.5%;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 0px;
+    border-radius: 1px;
+    text-align: left;
+}
+
+.my-team .content .inner-content .buttons button:nth-of-type(1)
+{
+    margin-right: 4px;
+}
+
+.my-team .content .inner-content .buttons button:hover
+{
+    background-color: #e6e6e6;
+    transition: 0.4s;
+}
+
+.my-team .content .inner-content .buttons button img
+{
+    vertical-align: text-top;
+    margin: 0px 20px 0px 15px;
+    width: 15px;
+}
+
+.my-team .content .inner-content .add
+{
+    text-align: center;
+}
+
+/*--------------------------------------
+--------------my-team-end---------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+---------recommendations-start----------
+--------------------------------------*/
+
+.recommendations
+{
+    min-height: 100vh;
+}
+
+.recommendations .content .inner-content
+{
+    padding-top: 62px;
+    width: 1040px;
+    margin: auto;
+}
+
+.recommendations .content #tabs
+{
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.recommendations .content .nav-tabs
+{
+    padding-top: 62px;
+    border-bottom: none;
+    width: 1040px;
+    margin: auto;
+}
+
+.recommendations .content .nav-tabs li a
+{
+    font-size: 15px;
+    font-family: notosans-bold;
+    color: #2E384D;
+    border: none;
+    border-bottom: 5px solid transparent;
+    padding: 18px 0px 13px;
+    margin-right: 60px;
+}
+
+.recommendations .content .nav-tabs li a:hover
+{
+    background-color: transparent;
+}
+
+.recommendations .content .nav-tabs li.active a
+{
+    border: none;
+    background-color: transparent;
+    border-bottom: 5px solid #2AFD95;
+}
+
+/*------current-engagement------*/
+
+.recommendations .content .inner-content .current-engagement .left
+{
+    width: 49%;
+    display: inline-block;
+}
+
+.recommendations .content .inner-content .current-engagement .left h1
+{
+    font-size: 20px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+}
+
+.recommendations .content .inner-content .current-engagement .right
+{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 8px;
+    margin-bottom: 30px;
+}
+
+.recommendations .content .inner-content .current-engagement .right button
+{
+    font-size: 14px;
+    font-family: notosans-bold;
+    color: #2E384D;
+    background-color: #2AFD95;
+    text-decoration: none;
+    padding: 14px 18px;
+    border: none;
+}
+
+.recommendations .content .inner-content .current-engagement .right button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+.recommendations .content .inner-content .current-engagement .box
+{
+    background-color: #ffffff;
+    width: 333px;
+    padding: 25px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px 16px 0px;
+}
+
+.recommendations .content .inner-content .current-engagement .member 
+{
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 30px;
+}
+
+.recommendations .content .inner-content .current-engagement .member .team-member 
+{
+    float: left;
+}
+
+.recommendations .content .inner-content .current-engagement .member ul
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 21px;
+    font-family: notosans-regular;
+    margin: 6px 0px 0px 30px;
+    line-height: 28px;
+}
+
+.recommendations .content .inner-content .current-engagement .member ul .second
+{
+    font-size: 12px;
+    font-family: notosans-bold;
+    padding-top: 5px;
+}
+
+.recommendations .content .inner-content .current-engagement .member ul .third
+{
+    font-size: 12px;
+    font-family: notosans-bold;
+    line-height: 10px;
+}
+
+.recommendations .content .inner-content .current-engagement .member .linkedin
+{
+    float: right;
+    margin: 10px 0px 0px 0px;
+}
+
+.recommendations .content .inner-content .current-engagement .team
+{
+    padding: 20px 0px;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.recommendations .content .inner-content .current-engagement .team-detail
+{
+    display: flow-root;
+}
+
+.recommendations .content .inner-content .current-engagement .team-detail h2
+{
+    float: left;
+    font-size: 14px;
+    font-family: sourcesans-bold;
+    margin: 4px 0px 16px;
+}
+
+.recommendations .content .inner-content .current-engagement .team-detail p
+{
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    font-family: notosans-regular;
+    margin: 0px;
+}
+
+.recommendations .content .inner-content .current-engagement .buttons
+{
+    padding: 20px 0px 0px;
+    text-align: center;
+}
+
+.recommendations .content .inner-content .current-engagement .buttons button
+{
+    background-color: #f5f5f5;
+    font-size: 13px;
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    width: 48.5%;
+    border: none;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 1px;
+}
+
+.recommendations .content .inner-content .current-engagement .buttons button:hover
+{
+    background-color: #e6e6e6;
+    transition: 0.4s;
+}
+
+.recommendations .content .inner-content .current-engagement .buttons button:nth-of-type(1)
+{
+    margin-right: 4px;
+}
+
+/*------advisor------*/
+
+.recommendations .content .inner-content .advisor .left
+{
+    width: 49%;
+    display: inline-block;
+}
+
+.recommendations .content .inner-content .advisor .left h1
+{
+    font-size: 20px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+    margin-bottom: 30px;
+}
+
+.recommendations .content .inner-content .advisor .box
+{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 25px 35px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px 16px 0px;
+}
+
+.recommendations .content .inner-content .advisor .member 
+{
+    padding-bottom: 30px;
+}
+
+.recommendations .content .inner-content .advisor .member .left
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.recommendations .content .inner-content .advisor .member .left .team-member 
+{
+    float: left;
+}
+
+.recommendations .content .inner-content .advisor .member .left ul
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 21px;
+    font-family: notosans-regular;
+    margin: 6px 0px 0px 30px;
+    line-height: 28px;
+}
+
+.recommendations .content .inner-content .advisor .member .left ul .second
+{
+    font-size: 12px;
+    font-family: notosans-bold;
+    padding-top: 2px;
+}
+
+.recommendations .content .inner-content .advisor .member .left ul .third
+{
+    font-size: 12px;
+    font-family: notosans-bold;
+    line-height: 10px;
+}
+
+.recommendations .content .inner-content .advisor .member .left .linkedin
+{
+    margin: 10px 0px 0px -25px;
+}
+
+.recommendations .content .inner-content .advisor .member .right
+{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+.recommendations .content .inner-content .advisor .member .right .pass
+{
+    color: #2E384D;
+    font-size: 14px;
+    font-family: notosans-bold;
+    opacity: 0.45;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.recommendations .content .inner-content .advisor .member .right .request
+{
+    color: #2E384D;
+    font-size: 14px;
+    font-family: notosans-bold;
+    background-color: var(--spring-green);
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.recommendations .content .inner-content .advisor .member .right button:hover 
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+.recommendations .content .inner-content .advisor .bio h1
+{
+    font-size: 14px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+}
+
+.recommendations .content .inner-content .advisor .bio p
+{
+    font-size: 14px;
+    font-family: notosans-regular;
+    color: var(--mine-shaft);
+}
+
+.recommendations .content .inner-content .advisor .area
+{
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 25px;
+}
+
+.recommendations .content .inner-content .advisor .area h1
+{
+    font-size: 14px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+    margin-bottom: 10px;
+}
+
+.recommendations .content .inner-content .advisor .area .left
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.recommendations .content .inner-content .advisor .area .left p
+{
+    font-size: 14px;
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #9cfece;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.recommendations .content .inner-content .advisor .area .right
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.recommendations .content .inner-content .advisor .area .right ul
+{
+    font-size: 14px;
+    font-family: notosans-regular;
+    color: var(--mine-shaft);
+}
+
+.recommendations .content .inner-content .advisor .industry h1
+{
+    font-size: 14px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+    margin-bottom: 10px;
+}
+
+.recommendations .content .inner-content .advisor .industry p
+{
+    font-size: 14px;
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+}
+
+.recommendations .content .inner-content .advisor .industry .right
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.recommendations .content .inner-content .advisor .industry .left
+{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+/*------accelerators------*/
+
+.recommendations .content .inner-content .accelerators .left
+{
+    width: 49%;
+    display: inline-block;
+}
+
+.recommendations .content .inner-content .accelerators .left h1
+{
+    font-size: 20px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+}
+
+.recommendations .content .inner-content .accelerators .right
+{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 8px;
+    margin-bottom: 30px;
+}
+
+.recommendations .content .inner-content .accelerators .right button
+{
+    font-size: 14px;
+    font-family: notosans-bold;
+    color: #2E384D;
+    background-color: #2AFD95;
+    text-decoration: none;
+    padding: 14px 18px;
+    border: none;
+}
+
+.recommendations .content .inner-content .accelerators .right button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+.recommendations .content .inner-content .accelerators .box
+{
+    background-color: #ffffff;
+    width: 333px;
+    padding: 15px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px 16px 0px;
+}
+
+.recommendations .content .inner-content .accelerators .box .info
+{
+    text-align: center;
+}
+
+.recommendations .content .inner-content .accelerators .box .info img
+{
+    margin-top: 40px;
+}
+
+.recommendations .content .inner-content .accelerators .box .info h2
+{
+    font-size: 20px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+    margin: 35px 0px 45px;
+}
+
+.recommendations .content .inner-content .accelerators .box .location .left
+{
+    display: inline-block;
+    width: 49%;
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.recommendations .content .inner-content .accelerators .box .location .left img
+{
+    margin-right: 5px;
+}
+
+.recommendations .content .inner-content .accelerators .box .location .right
+{
+    display: inline-block;
+    width: 49%;
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.recommendations .content .inner-content .accelerators .box .industries
+{
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.recommendations .content .inner-content .accelerators .box .industries h3
+{
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin: 10px 0px 5px;
+}
+
+.recommendations .content .inner-content .accelerators .box .industries p
+{
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+    font-size: 15px;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+.recommendations .content .inner-content .accelerators .box .apply p
+{
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin: 0px;
+    padding-top: 15px;
+}
+
+/*------investors------*/
+
+.recommendations .content .inner-content .investors .left
+{
+    width: 49%;
+    display: inline-block;
+}
+
+.recommendations .content .inner-content .investors .left h1
+{
+    font-size: 20px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+}
+
+.recommendations .content .inner-content .investors .right
+{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 8px;
+    margin-bottom: 30px;
+}
+
+.recommendations .content .inner-content .investors .right button
+{
+    font-size: 14px;
+    font-family: notosans-bold;
+    color: #2E384D;
+    background-color: #2AFD95;
+    text-decoration: none;
+    border: none;
+    padding: 14px 18px;
+}
+
+.recommendations .content .inner-content .investors .right button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+.recommendations .content .inner-content .investors .box
+{
+    background-color: #ffffff;
+    width: 333px;
+    padding: 15px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px 16px 0px;
+}
+
+.recommendations .content .inner-content .investors .box .info
+{
+    text-align: center;
+}
+
+.recommendations .content .inner-content .investors .box .info img
+{
+    margin-top: 40px;
+}
+
+.recommendations .content .inner-content .investors .box .info h2
+{
+    font-size: 20px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+    margin: 35px 0px 45px;
+}
+
+.recommendations .content .inner-content .investors .box .location .left
+{
+    display: inline-block;
+    width: 49%;
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.recommendations .content .inner-content .investors .box .location .left img
+{
+    margin-right: 5px;
+}
+
+.recommendations .content .inner-content .investors .box .location .right
+{
+    display: inline-block;
+    width: 49%;
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.recommendations .content .inner-content .investors .box .industries
+{
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.recommendations .content .inner-content .investors .box .industries h3
+{
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin: 10px 0px 5px;
+}
+
+.recommendations .content .inner-content .investors .box .industries p
+{
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+    font-size: 15px;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+.recommendations .content .inner-content .investors .box .members .left
+{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-right: 7px;
+}
+
+.recommendations .content .inner-content .investors .box .members .left h3
+{
+    margin: 24px;
+    font-size: 41px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+    
+}
+
+.recommendations .content .inner-content .investors .box .members .left h3 span
+{
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    font-size: 14px;
+}
+
+.recommendations .content .inner-content .investors .box .members .right
+{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.recommendations .content .inner-content .investors .box .members .right h3
+{
+    margin: 24px;
+    font-size: 41px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+
+}
+
+.recommendations .content .inner-content .investors .box .members .right h3 span
+{
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    font-size: 14px;
+}
+
+.recommendations .content .inner-content .investors .box .apply p
+{
+
+    font-size: 14px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px;
+    border: 1px solid var(--mine-shaft);
+    border-radius: 4px;
+}
+
+/*------service-providers------*/
+
+.recommendations .content .inner-content .service-providers .left
+{
+    width: 49%;
+    display: inline-block;
+}
+
+.recommendations .content .inner-content .service-providers .left h1
+{
+    font-size: 20px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+}
+
+.recommendations .content .inner-content .service-providers .right
+{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 8px;
+    margin-bottom: 30px;
+}
+
+.recommendations .content .inner-content .service-providers .right button
+{
+    font-size: 14px;
+    font-family: notosans-bold;
+    color: #2E384D;
+    background-color: #2AFD95;
+    text-decoration: none;
+    border: none;
+    padding: 14px 18px;
+}
+
+.recommendations .content .inner-content .service-providers .right button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+.recommendations .content .inner-content .service-providers .box
+{
+    background-color: #ffffff;
+    width: 333px;
+    padding: 15px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px 16px 0px;
+}
+
+.recommendations .content .inner-content .service-providers .box .info
+{
+    text-align: center;
+}
+
+.recommendations .content .inner-content .service-providers .box .info img
+{
+    margin-top: 40px;
+}
+
+.recommendations .content .inner-content .service-providers .box .info h2
+{
+    font-size: 20px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+    margin: 20px 0px 45px;
+}
+
+.recommendations .content .inner-content .service-providers .box .location
+{
+    margin-bottom: 15px;
+}
+
+.recommendations .content .inner-content .service-providers .box .location .left
+{
+    display: inline-block;
+    width: 49%;
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.recommendations .content .inner-content .service-providers .box .location .left img
+{
+    margin-right: 5px;
+}
+
+.recommendations .content .inner-content .service-providers .box .location .right
+{
+    display: inline-block;
+    width: 49%;
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.recommendations .content .inner-content .service-providers .box .services h3
+{
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    font-size: 14px;
+    margin: 10px 0px 5px;
+}
+
+.recommendations .content .inner-content .service-providers .box .services p
+{
+    font-family: sourcesans-regular;
+    color: var(--mine-shaft);
+    font-size: 15px;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+.recommendations .content .inner-content .service-providers .buttons
+{
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.recommendations .content .inner-content .service-providers .buttons a
+{
+    background-color: #f5f5f5;
+    font-size: 14px;
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    width: 48.5%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 0px;
+    border-radius: 1px;
+}
+
+.recommendations .content .inner-content .service-providers .buttons a:nth-of-type(1)
+{
+    margin-right: 4px;
+}
+
+/*--------------------------------------
+----------recommendations-end-----------
+--------------------------------------*/
+
+
+/*--------------------------------------
+-------------account-start--------------
+--------------------------------------*/
+
+.account
+{
+    min-height: 100vh;
+}
+
+.account .content .inner-content
+{
+    padding-top: 62px;
+    width: 805px;
+    margin: auto;
+}
+
+.account .content .inner-content .left
+{
+    display: inline-block;
+    width: 333px;
+    margin: 90px 22px 16px 0px;
+    vertical-align: top;
+}
+
+.account .content .inner-content .left h1
+{
+    font-size: 30px;
+    font-family: notosans-bold;
+    margin-bottom: 20px;
+}
+
+.account .content .inner-content .my-account
+{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 25px 15px;
+    border-radius: 4px;
+}
+
+.account .content .inner-content .my-account .member 
+{
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 15px;
+}
+
+.account .content .inner-content .my-account .member h1 
+{
+    display: block;
+    vertical-align: top;
+    font-size: 21px;
+    font-family: notosans-regular;
+    margin: 10px 0px 0px 0px;
+}
+
+.account .content .inner-content .my-account .team
+{
+    padding: 20px 0px;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.account .content .inner-content .my-account .team-detail
+{
+    display: flow-root;
+}
+
+.account .content .inner-content .my-account .team-detail h2
+{
+    float: left;
+    font-size: 14px;
+    font-family: sourcesans-bold;
+    margin: 4px 0px 16px;
+}
+
+.account .content .inner-content .my-account .team-detail p
+{
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    font-family: notosans-regular;
+    margin: 0px;
+}
+
+.account .content .inner-content .right
+{
+    width: 433px;
+    display: inline-block;
+    margin: 90px 10px 16px 0px;
+    vertical-align: top;
+}
+
+.account .content .inner-content .right h1
+{
+    font-size: 30px;
+    font-family: notosans-bold;
+    margin-bottom: 20px;
+}
+
+.account .content .inner-content .account-details
+{
+    background-color: #ffffff;
+    padding: 35px 50px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.account .content .inner-content .account-details form
+{
+    position: relative;
+}
+
+.account .content .inner-content .account-details .upload-pic
+{
+    padding: 17px 25px;
+    background-color: #f5f5f5;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.account .content .inner-content .account-details .upload-pic p
+{
+    font-size: 11px;
+    margin: 10px 0px 0px;
+    font-family: sourcesans-regular;
+}
+
+.account .content .inner-content .account-details .upload-file
+{
+    width: 116px;
+    height: 102px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.account .content .inner-content .account-details .form-control-file
+{
+    height: 100%;
+}
+
+.account .content .inner-content .account-details .form-group
+{
+    margin-bottom: 15px;
+}
+
+.account .content .inner-content .account-details label
+{
+    font-family: sourcesans-bold;
+    font-size: 12px;
+    color: #B0BAC9;
+    margin-bottom: 3px;
+}
+
+.account .content .inner-content .account-details .form-control
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: #2E384D;
+    background-color: #fafafa;
+    border: none;
+    padding: 11px 18px;
+}
+
+.account .content .inner-content .account-details input::placeholder
+{
+    color: black;
+}
+
+.account .content .inner-content .account-details .form-control:focus 
+{
+    border-color: #ffffff;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+}
+
+.account .content .inner-content .account-details button
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    width: 100%;
+    border-radius: 2px;
+    padding: 14px 0px;
+    cursor: pointer;
+}
+
+.account .content .inner-content .account-details button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+/*--------------------------------------
+--------------account-end---------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+-----------empty-state-start------------
+--------------------------------------*/
+
+.empty-state
+{
+    min-height: 100vh;
+}
+
+.empty-state .content .inner-content
+{
+    padding-top: 62px;
+    width: 1040px;
+    margin: auto;
+}
+
+.empty-state .content .inner-content .box
+{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 90px 10px 16px 0px;
+    position: relative;
+}
+
+.empty-state .content .inner-content .bar-progress
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 80px;
+}
+
+.empty-state .content .inner-content .update-tracker
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.empty-state .content .inner-content .update-tracker h1
+{
+    font-family: notosans-regular;
+    font-size: 26px;
+    color: var(--mine-shaft);
+    margin: 10px 0px 20px;
+}
+
+.empty-state .content .inner-content .update-tracker form
+{
+    margin-top: 15px;
+}
+
+.empty-state .content .inner-content .update-tracker .form-group
+{
+    margin-bottom: 15px;
+}
+
+.empty-state .content .inner-content .update-tracker label
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    color: #B0BAC9;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.empty-state .content .inner-content .update-tracker .form-control
+{
+    font-family: sourcesans-regular;
+    font-size: 19px;
+    color: #2E384D;
+    background-color: #F5F5F5;
+    border: none;
+    padding: 14px 18px;
+    height: 53px;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.empty-state .content .inner-content .account-details input::placeholder
+{
+    color: black;
+}
+
+.empty-state .content .inner-content .update-tracker .form-control:focus 
+{
+    border-color: #ffffff;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+}
+
+.empty-state .content .inner-content .update-tracker button
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    width: 160px;
+    border-radius: 2px;
+    padding: 16px 0px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.empty-state .content .inner-content .update-tracker button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+.empty-state .content .inner-content .edit
+{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.empty-state .content .inner-content .info
+{
+    margin-top: 75px;
+    text-align: center;
+}
+
+.empty-state .content .inner-content .info h2
+{
+    font-family: notosans-bold;
+    font-size: 26px;
+    color: var(--mine-shaft);
+    margin-bottom: 29px;
+}
+
+.empty-state .content .inner-content .info button
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    border-radius: 2px;
+    padding: 14px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.empty-state .content .inner-content .info button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+/*--------------------------------------
+------------empty-state-end-------------
+--------------------------------------*/
+
+/*--------------------------------------
+------------about contact-------------
+--------------------------------------*/
+
+.contact-info .content .inner-content .about-startup .form-group:nth-of-type(odd)
+{
+    float: left;
+    width: 17%;
+    margin-left: 10px;
+}
+
+.contact-info .content .inner-content .about-startup .form-group:nth-of-type(even)
+{
+    float: left;
+    width: 15%;
+    margin-left: 14px;
+}
+
+.contact-info .content .inner-content .about-startup label
+{
+    margin-left: 15px;
+}
+
+.contact-info .content .inner-content .about-textarea .form-group
+{
+    float: left;
+    width: 100%;
+}
+
+.contact-info .content .inner-content .about-textarea .form-control
+{
+    font-family: sourcesans-regular;
+    font-size: 15px;
+    color: #2E384D;
+    background-color: #F5F5F5;
+    border: none;
+    padding: 11px 18px;
+    height: 120px;
+}
+
+/*--------------------------------------
+------------about contact end-------------
+--------------------------------------*/
+
+/*--------------------------------------
+------------dashboard-start-------------
+--------------------------------------*/
+
+.dashboard
+{
+    min-height: 100vh;
+}
+
+.dashboard .animated-counter 
+{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.dashboard .animated-counter img 
+{
+    width: 100%;
+}
+
+.dashboard .animated-counter .number 
+{
+    font-size: 44px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 63px;
+    font-family: notosans-regular;
+}
+
+.dashboard .animated-counter p
+{
+    font-family: sourcesans-regular;
+    line-height: 15px;
+    color: #B0BAC9;    
+    position: absolute;
+    top: 115px;
+    left: 92px;
+}
+
+.dashboard .content .inner-content
+{
+    padding-top: 62px;
+    width: 1005px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.dashboard .content .inner-content .box1
+{
+    width: 321px;
+    display: inline-block;
+    position: relative;
+    margin-left: 17px;
+    vertical-align: top;
+}
+
+.dashboard .content .inner-content .box1:first-of-type
+{
+    margin-left: 0px;
+}
+
+.dashboard .content .inner-content .box1 h1
+{
+    font-family: notosans-bold;
+    font-size: 17px;
+    color: var(--mine-shaft);
+    margin-bottom: 20px;
+}
+
+.dashboard .content .inner-content .box1 .edit
+{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.dashboard .content .inner-content .box1 .inner-box
+{
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 25px 25px;
+    text-align: center;
+}
+
+.dashboard .content .inner-content .box1 .inner-box img
+{
+    margin-bottom: 35px;
+}
+
+.dashboard .content .inner-content .box1 .inner-box form
+{
+    text-align: left;
+}
+
+.dashboard .content .inner-content .box1 .inner-box form .form-group
+{
+    margin-bottom: 0px;
+}
+
+.dashboard .content .inner-content .box1 .inner-box form .form-group label
+{
+    font-family: sourcesans-bold;
+    font-size: 15px;
+    color: #B0BAC9;
+    display: block;
+}
+
+.dashboard .content .inner-content .box1 .inner-box form .form-group input
+{
+    display: inline-block;
+    width: 60%;
+    background-color: #fafafa;
+    border: none;
+    box-shadow: none;
+    height: 36px;
+    font-family: sourcesans-regular;
+    font-size: 14px;
+}
+
+.dashboard .content .inner-content .box1 .inner-box form .form-group button
+{
+    display: inline-block;
+    width: 38%;
+    font-family: sourcesans-bold;
+    font-size: 14px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    border-radius: 4px;
+    padding: 8px 0px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dashboard .content .inner-content .box1 .inner-box form .form-group button:hover
+{
+    background-color: #23d37c;
+    transition: 0.4s;
+}
+
+.dashboard .content .inner-content .box2
+{
+    width: 492px;
+    display: inline-block;
+    position: relative;
+    margin: 25px 0px 0px 17px;
+    vertical-align: top;
+}
+
+.dashboard .content .inner-content .mar-left
+{
+    margin-left: 0px;
+}
+
+.dashboard .content .inner-content .box2 h1
+{
+    font-family: notosans-bold;
+    font-size: 17px;
+    color: var(--mine-shaft);
+    margin-bottom: 20px;
+}
+
+.dashboard .content .inner-content .box2 .edit
+{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.dashboard .content .inner-content .box2 .inner-box
+{
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 35px 10px;
+    text-align: left;
+}
+
+.dashboard .content .inner-content .box2 .inner-box h2
+{
+    font-family: notosans-bold;
+    font-size: 44px;
+    color: var(--spring-green);
+    margin: 40px 0px 20px;
+}
+
+.dashboard .content .inner-content .box2 .inner-box .heading
+{
+    font-size: 16px;
+    font-family: sourcesans-bold;
+    color: var(--mine-shaft);
+    margin-top: 25px;
+}
+
+.dashboard .content .inner-content .box2 .inner-box a
+{
+    font-size: 25px;
+    font-family: sourcesans-regular;
+    color: #2E384D;
+    text-decoration: underline;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+}
+
+.dashboard .content .inner-content .box2 .inner-box .bor
+{
+    border-bottom: 4px solid #F5F5F5;
+    margin: 35px 0px;
+}
+
+.dashboard .content .inner-content .box2 .inner-box .para
+{
+    font-size: 16px;
+    font-family: sourcesans-regular;
+    color: #2E384D;
+    line-height: 32px;
+    width: 85%;
+    margin-bottom: 37px;
+}
+
+.dashboard .content .inner-content .box2 .inner-box .detail
+{
+    display: flow-root;
+}
+
+.dashboard .content .inner-content .box2 .inner-box .detail h3
+{
+    float: left;
+    font-size: 16px;
+    font-family: sourcesans-bold;
+    margin: 4px 0px 22px;
+}
+
+.dashboard .content .inner-content .box2 .inner-box .detail p
+{
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    font-family: sourcesans-regular;
+    margin: 0px;
+}
+
+.dashboard .content .inner-content .box3
+{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 25px 0px 60px 0px;
+    vertical-align: top;
+}
+
+.dashboard .content .inner-content .mar-left
+{
+    margin-left: 0px;
+}
+
+.dashboard .content .inner-content .box3 h1
+{
+    font-family: notosans-bold;
+    font-size: 17px;
+    color: var(--mine-shaft);
+    margin-bottom: 20px;
+}
+
+.dashboard .content .inner-content .box3 .edit
+{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.dashboard .content .inner-content .box3 .inner-box
+{
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 40px 35px 35px;
+    text-align: center;
+}
+
+.dashboard .content .inner-content .box3 .inner-box .member
+{
+    display: inline-block;
+    width: 19%;
+}
+
+.dashboard .content .inner-content .box3 .inner-box .member h2
+{
+    font-family: notosans-regular;
+    font-size: 21px;
+    color: var(--mine-shaft);
+    margin: 10px 0px;
+}
+.dashboard .content .inner-content .box3 .inner-box .member h3
+{
+    font-family: notosans-bold;
+    font-size: 16px;
+    color: var(--mine-shaft);
+    margin: 5px 0px;
+}
+
+.dashboard .content .inner-content .box3 .inner-box button
+{
+    display: inline-block;
+    font-family: sourcesans-bold;
+    font-size: 14px;
+    background-color: var(--spring-green);
+    border: none;
+    color: var(--mine-shaft);
+    border-radius: 4px;
+    padding: 17px 30px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dashboard .content .inner-content .box3 .inner-box h1
+{
+    margin: 60px 0px 30px;
+    font-size: 30px;
+    font-family: notosans-bold;
+    color: var(--mine-shaft);
+}
+
+/*--------------------------------------
+-------------dashboard-end--------------
+--------------------------------------*/
+
+
+/*--------------------------------------
+--------------media-queries-------------
+--------------------------------------*/
+
+@media screen and (max-width: 1400px)
+{
+    /*-------login-------*/
+
+    .login .right .login-form img
+    {
+        margin-bottom: 30px;
+    }
+
+    .login .right .login-form h1
+    {
+        font-family: notosans-regular;
+        font-size: 28px;
+        color: #2E384D;
+        margin-bottom: 20px;
+    }
+
+    .login .right .login-form h2
+    {
+        font-family: sourcesans-regular;
+        font-size: 14px;
+        color: #8798AD;
+    }
+
+    .login .right .login-form form
+    {
+        margin-top: 25px;
+    }
+
+    .login .right .login-form .form-group
+    {
+        margin-bottom: 20px;
+    }
+
+    .login .right .login-form label
+    {
+        font-family: sourcesans-bold;
+        font-size: 12px;
+        color: #B0BAC9;
+        margin-bottom: 5px;
+    }
+
+    .login .right .login-form .forgot-password
+    {
+        font-family: sourcesans-bold;
+        font-size: 12px;
+        color: #B0BAC9;
+        margin-bottom: 5px;
+        float: right;
+        text-decoration: none;
+    }
+
+    .login .right .login-form .form-control
+    {
+        font-family: sourcesans-regular;
+        font-size: 14px;
+        color: #2E384D;
+        border: none;
+        padding: 10px 18px;
+    }
+
+    .login .right .login-form .form-control:focus 
+    {
+        border-color: #ffffff;
+        box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+    }
+
+    .login .right .login-form button
+    {
+        font-family: sourcesans-bold;
+        font-size: 14px;
+        background-color: var(--spring-green);
+        border: none;
+        color: var(--mine-shaft);
+        width: 100%;
+        border-radius: 2px;
+        padding: 10px 0px;
+        cursor: pointer;
+    }
+
+    .login .right .login-form .checkbox
+    {
+        margin-top: 17px;
+    }
+
+    .login .right .login-form .checkbox label
+    {
+        font-family: sourcesans-regular;
+        font-size: 14px;
+        color: var(--mine-shaft);
+        margin-bottom: 0px;
+    }
+
+    .login .right .login-form .checkbox input
+    {
+        width: 25px;
+        height: 22px;
+        border-color: var(--mine-shaft);
+        background-color: #fafafa;
+        border-width: 3px;
+    }
+
+    .login .right .login-form .checkbox a:first-child
+    {
+        margin-left: 25px;
+    }
+
+    .login .right .login-form .checkbox p
+    {
+        display: inline;
+        vertical-align: super;
+        margin-left: 7px;
+    }
+
+    .login .right .login-form .checkbox a
+    {
+        font-family: sourcesans-regular;
+        font-size: 14px;
+        color: var(--mine-shaft);
+        text-decoration: underline;
+    }
+
+    .login .right .login-form .checkbox .terms-of-use
+    {
+        margin-left: 32px;
+    }
+
+    .login .right .login-form p
+    {
+        font-family: sourcesans-regular;
+        font-size: 14px;
+        margin-top: 40px;
+        text-align: center;
+        color: var(--mine-shaft);
+    }
+
+    .login .right .login-form p span
+    {
+        opacity: 0.3;
+    }
+
+    .login .right .login-form p a
+    {
+        font-family: sourcesans-bold;
+        font-size: 14px;
+        color: var(--mine-shaft);
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width: 1350px)
+{
+    /*-------my-team-------*/
+    
+    .my-team .content .inner-content
+    {
+        width: 691px;
+    }
+    
+    /*-------recommendations-------*/
+    
+    .recommendations .content .inner-content
+    {
+        width: 691px;
+    }
+    
+    .recommendations .content .nav-tabs
+    {
+        padding: 62px 35px 0px;
+    }
+    
+    .recommendations .content .inner-content .advisor .member .right
+    {
+        margin-top: 0px;
+    }
+    
+    .recommendations .content .inner-content .advisor .member .right .pass
+    {
+        display: block;
+    }
+    
+    .recommendations .content .inner-content .advisor .member .right .request
+    {
+        display: inline-block;
+    }
+    
+    .recommendations .content .inner-content .advisor .area .left
+    {
+        width: 100%;
+    }
+    
+    .recommendations .content .inner-content .advisor .area .right
+    {
+        width: 100%;
+    }
+    
+    /*-------account-------*/
+    
+    .account .content .inner-content
+    {
+        padding-top: 62px;
+        width: 733px;
+        margin: auto;
+    }
+
+    .account .content .inner-content .left
+    {
+        display: inline-block;
+        width: 333px;
+        margin: 90px 10px 16px 0px;
+        vertical-align: top;
+    }
+
+    .account .content .inner-content .left h1
+    {
+        font-size: 30px;
+        font-family: notosans-bold;
+        margin-bottom: 20px;
+    }
+
+    .account .content .inner-content .my-account
+    {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 25px 15px;
+        border-radius: 4px;
+    }
+
+    .account .content .inner-content .my-account .member 
+    {
+        border-bottom: 2px solid #f5f5f5;
+        padding-bottom: 15px;
+    }
+
+    .account .content .inner-content .my-account .member h1 
+    {
+        display: block;
+        vertical-align: top;
+        font-size: 21px;
+        font-family: notosans-regular;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .account .content .inner-content .my-account .team
+    {
+        padding: 20px 0px;
+        border-bottom: 2px solid #f5f5f5;
+    }
+
+    .account .content .inner-content .my-account .team-detail
+    {
+        display: flow-root;
+    }
+
+    .account .content .inner-content .my-account .team-detail h2
+    {
+        float: left;
+        font-size: 14px;
+        font-family: sourcesans-bold;
+        margin: 4px 0px 16px;
+    }
+
+    .account .content .inner-content .my-account .team-detail p
+    {
+        float: right;
+        text-align: right;
+        font-size: 14px;
+        font-family: notosans-regular;
+        margin: 0px;
+    }
+
+    .account .content .inner-content .right
+    {
+        width: 373px;
+        display: inline-block;
+        margin: 90px 10px 16px 0px;
+        vertical-align: top;
+    }
+
+    .account .content .inner-content .right h1
+    {
+        font-size: 30px;
+        font-family: notosans-bold;
+        margin-bottom: 20px;
+    }
+
+    .account .content .inner-content .account-details
+    {
+        background-color: #ffffff;
+        padding: 35px 15px;
+        border-radius: 4px;
+    }
+    
+    /*-------empty-state-------*/
+    
+    .empty-state .content .inner-content
+    {
+        padding-top: 62px;
+        width: 740px;
+        margin: auto;
+    }
+    
+    .empty-state .content .inner-content .bar-progress
+    {
+        margin-right: 20px;
+    }
+    
+    /*-------dashboard-------*/
+    
+    .dashboard .animated-counter 
+    {
+        position: relative;
+        width: 90%;
+        margin: auto;
+    }
+
+    .dashboard .animated-counter img 
+    {
+        width: 100%;
+    }
+
+    .dashboard .animated-counter .number 
+    {
+        font-size: 44px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 35px;
+        font-family: notosans-regular;
+    }
+
+    .dashboard .animated-counter p
+    {
+        font-family: sourcesans-regular;
+        line-height: 15px;
+        color: #B0BAC9;    
+        position: absolute;
+        top: 105px;
+        left: 64px;
+    }
+
+    .dashboard .content .inner-content
+    {
+        width: 750px;
+    }
+
+    .dashboard .content .inner-content .box1
+    {
+        width: 244px;
+        margin-left: 5px;
+    }
+
+    .dashboard .content .inner-content .box1 h1
+    {
+        font-size: 14px;
+    }
+    
+    .dashboard .content .inner-content .box1 .edit img
+    {
+        width: 18px;
+    }
+
+    .dashboard .content .inner-content .box1 .inner-box
+    {
+        padding: 15px 20px 25px;
+    }
+
+    .dashboard .content .inner-content .box1 .inner-box img
+    {
+        width: 100%;
+    }
+
+    .dashboard .content .inner-content .box1 .inner-box form .form-group label
+    {
+        font-size: 13px;
+    }
+
+    .dashboard .content .inner-content .box1 .inner-box form .form-group input
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dashboard .content .inner-content .box1 .inner-box form .form-group button
+    {
+        width: 100%;
+    }
+
+    .dashboard .content .inner-content .box2
+    {
+        width: 368px;
+        margin: 25px 0px 0px 5px;
+    }
+
+    .dashboard .content .inner-content .box2 h1
+    {
+        font-size: 14px;
+    }
+    
+    .dashboard .content .inner-content .box2 .edit img
+    {
+        width: 18px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box
+    {
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 5px;
+        padding: 15px 25px 10px;
+        text-align: left;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box h2
+    {
+        font-size: 40px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box .heading
+    {
+        font-size: 16px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box a
+    {
+        font-size: 22px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box .para
+    {
+        font-size: 14px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box .detail h3
+    {
+        font-size: 14px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box .detail p
+    {
+        font-size: 14px;
+    }
+
+    .dashboard .content .inner-content .box3 h1
+    {
+        font-size: 14px;
+    }
+
+    .dashboard .content .inner-content .box3 .edit img
+    {
+        width: 18px;
+    }
+
+    .dashboard .content .inner-content .box3 .inner-box
+    {
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 5px;
+        padding: 40px 15px 35px;
+        text-align: center;
+    }
+
+    .dashboard .content .inner-content .box3 .inner-box .member
+    {
+        display: inline-block;
+        width: 19%;
+    }
+
+    .dashboard .content .inner-content .box3 .inner-box .member h2
+    {
+        font-size: 18px;
+    }
+    .dashboard .content .inner-content .box3 .inner-box .member h3
+    {
+        font-size: 14px;
+    }
+    
+    /*-------preferences-------*/
+
+    .preferences .content .inner-content
+    {
+        width: 700px;
+    }
+
+    .preferences .content .inner-content .my-preferences .left
+    {
+        width: 344px;
+        margin-right: 7px;
+        vertical-align: top;
+    }
+
+    .preferences .content .inner-content .my-preferences .left h1
+    {
+        font-size: 26px;
+    }
+
+    .preferences .content .inner-content .my-preferences .left p
+    {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .preferences .content .inner-content .my-preferences .right
+    {
+        width: 344px;
+        padding: 0px 0px;
+        vertical-align: bottom;
+    }
+
+    .preferences .content .inner-content .my-preferences .right .bg-white
+    {
+        width: 344px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .preferences .my-preferences .progressbar
+    {
+        margin-left: -14px;
+        padding-top: 20px;
+    }
+
+    .preferences .box1 
+    {
+        width: 700px;
+        vertical-align: top;
+    }
+
+    .preferences .box1 .inner-box
+    {
+        width: 344px;
+    }
+
+    .preferences .box1 .inner-box:nth-of-type(odd)
+    {
+        margin-right: 7px;
+        margin-bottom: 24px;
+    }
+
+    .preferences .box1 .inner-box:first-of-type
+    {
+        padding-bottom: 55px;
+    }
+
+    .preferences .box1 .inner-box h1
+    {
+        font-family: sourcesans-bold;
+        font-size: 17px;
+        margin: 0px 0px 20px;
+    }
+
+    .preferences .box1 .inner-box .detail
+    {
+        display: flow-root;
+        margin-top: -14px;
+    }
+
+    .preferences .box1 .inner-box .detail h2
+    {
+        font-family: sourcesans-regular;
+        font-size: 14px;
+        float: left;
+    }
+
+    .preferences .box1 .inner-box .detail .progressbar
+    {
+        margin-left: -14px;
+        padding-top: 20px;
+        float: right;
+        width: 188px;
+        margin-right: -15px;
+    }
+
+    .preferences .box2
+    {
+        width: 700px;
+        display: block;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .preferences .box2 .roles
+    {
+        width: 344px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 7px;
+    }
+    
+    .preferences .box2 .info
+    {
+        width: 344px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0px;
+    }
+    
+    .preferences .box2 .info p
+    {
+        font-size: 12.5px;
+    }
+    
+    .preferences .desktop
+    {
+        display: none;
+    }
+    
+    .preferences .mobile
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1199px)
+{
+    /*-------header-------*/
+    
+    header .scrollable-bar
+    {
+        display: inline-block;
+    }
+    
+    header ul
+    {
+        margin-top: 10px;
+    }
+    
+    header ul .pad-left
+    {
+        padding-left: 0px;
+    }
+    
+    /*-------rightbar-------*/
+    
+    #rightbar
+    {
+        width: 425px;
+    }
+    
+    #rightbar .bar-content
+    {
+        padding: 0px 50px;
+    }
+    
+    #rightbar .summary
+    {
+        font-size: 34px;
+    }
+    
+    /*-------browse-startups-------*/
+    
+    .browse-startups .round-border 
+    {
+        width: 900px;
+    }
+
+    .browse-startups .upper-content
+    {
+        width: 900px;
+    }
+
+    .browse-startups .upper-content h1
+    {
+        font-size: 30px;
+    }
+
+    .browse-startups .content .content-toggle section .left
+    {
+        width: 400px;
+    }
+
+    .browse-startups .content .content-toggle section .right
+    {
+        width: 400px;
+    }
+
+    .browse-startups .content .content-toggle section .one
+    {
+        width: 280px;
+    }
+
+    .browse-startups .box
+    {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    /*-------browse-startups-------*/
+
+    .browse-startups .round-border 
+    {
+        width: 700px;
+    }
+
+    .browse-startups .upper-content
+    {
+        width: 700px;
+    }
+
+    .browse-startups .content .content-toggle section .left
+    {
+        width: 400px;
+    }
+    
+    .browse-startups .content .content-toggle section .left input
+    {
+        margin-bottom: 12px;
+    }
+
+    .browse-startups .content .content-toggle section .right
+    {
+        width: 400px;
+    }
+
+    .browse-startups .content .content-toggle section .one
+    {
+        width: 215px;
+    }
+
+    .browse-startups .box
+    {
+        width: 700px;
+    }
+    
+    .browse-startups .box .right
+    {
+        width: 660px;
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    
+    .browse-startups .box .right .inner .one 
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    .browse-startups .box .right .inner .two 
+    {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    /*-------login-------*/
+    
+    .login .left
+    {
+        display: none;
+    }
+    
+    /*------#sidebar-------*/
+    
+    #sidebar 
+    {
+        width: 200px;
+        left: -200px;
+        transition: 1s ease left;
+        padding: 17.5px 0px;
+    }
+    
+    #sidebar .close
+    {
+        display: block;
+        position: absolute;
+        top: 23.5px;
+        right: 20px;
+        opacity: 1;
+    }
+    
+    #sidebar.active
+    {
+        left: 0;
+    }
+    
+    #sidebar .user 
+    {
+        margin-left: 20px;
+    }
+    
+    #sidebar h1 
+    {
+        margin: 15px 0px 0px 20px;
+    }
+    
+    #sidebar h2 
+    {
+        margin: 0px 0px 25px 20px;
+    }
+    
+    #sidebar ul li a 
+    {
+        padding: 15px 0px 15px 20px;
+        font-size: 14px;
+    }
+    
+    #sidebar ul li a img 
+    {
+        width: 23px;
+    }
+    
+    #sidebar .logout 
+    {
+        left: 35px;
+        font-size: 14px;
+    }
+    
+    /*-------rightbar-------*/
+    
+    #rightbar
+    {
+        overflow-y: scroll !important;
+    }
+
+    #rightbar .bar-content
+    {
+        padding: 25px 25px !important;
+        top: 0 !important;
+        left: 0 !important;
+        margin-right: 0 !important;
+        transform: translate(0, 0) !important;
+        width: 100% !important;
+    }
+    
+    /*-------content-------*/
+    
+    .content 
+    {
+        margin-left: 0px;
+    }
+    
+    /*-------contact-info-------*/
+
+    .contact-info .content .inner-content
+    {
+        width: 700px;
+    }
+    
+    .content .inner-content h1
+    {
+        font-size: 23px;
+    }
+    
+    .content .inner-content .form-control
+    {
+        height: 40px;
+        padding: 9px 18px;
+    }
+
+    .content .inner-content .about-startup .form-control
+    {
+        height: 40px;
+        padding: 9px 18px;
+    }
+    
+    .content .inner-content button 
+    {
+        font-size: 13px;
+        padding: 12px 0px;
+    }
+
+    /* about */
+    .contact-info .content .inner-content .about-startup .form-group:nth-of-type(even) 
+    {
+         width: 15%;
+         margin-left: 13px;
+    }
+    
+    /*-------recommendations-------*/
+    
+    .recommendations .content .nav-tabs li a
+    {
+        margin-right: 45px;
+    }
+}
+
+@media screen and (max-height: 800px)
+{
+    /*-------rightbar-------*/
+    
+    #rightbar
+    {
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    #rightbar .bar-content 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-right: 0;
+        transform: translate(0, 0);
+        padding: 25px 100px;
+    }
+    
+    #rightbar .bar-content span
+    {
+        padding: 10px 13px;
+    }
+    
+    #rightbar .summary
+    {
+        font-size: 24px;
+    }
+
+    #rightbar::-webkit-scrollbar 
+    {
+        width: 3px;
+    }
+
+    #rightbar::-webkit-scrollbar-track 
+    {
+        background: #f1f1f1; 
+    }
+
+    #rightbar::-webkit-scrollbar-thumb 
+    {
+        background: #888; 
+    }
+
+    #rightbar::-webkit-scrollbar-thumb:hover 
+    {
+        background: #555;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    
+    /*-------browse-startups-------*/
+
+    .browse-startups .round-border 
+    {
+        width: 90%;
+    }
+
+    .browse-startups .upper-content
+    {
+        width: 90%;
+    }
+    
+    .browse-startups .upper-content h1 
+    {
+        font-size: 24px;
+    }
+
+    .browse-startups .content .content-toggle section .left
+    {
+        width: 100%;
+    }
+
+    .browse-startups .content .content-toggle section .left input
+    {
+        margin-bottom: 12px;
+    }
+
+    .browse-startups .content .content-toggle section .right
+    {
+        width: 100%;
+    }
+
+    .browse-startups .content .content-toggle section .one
+    {
+        width: 215px;
+    }
+
+    .browse-startups .box
+    {
+        width: 90%;
+    }
+
+    .browse-startups .box .right
+    {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    
+    .browse-startups .box .right a .hide-element
+    {
+        display: none;
+    }
+    
+    .browse-startups .box .right a br
+    {
+        display: block;
+    }
+
+    .browse-startups .box .right .inner .one 
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .browse-startups .box .right .inner .two 
+    {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .browse-startups .box .right .inner p br
+    {
+        display: block;
+    }
+    
+    /*-------content-------*/
+
+    .content 
+    {
+        margin-left: 0px;
+        padding: 100px 0px 38px;
+    }
+    
+    /*-------contact-info-------*/
+
+    .contact-info .content .inner-content
+    {
+        width: 450px;
+        top: 0;
+        left: 0;
+        position: relative;
+        transform: translate(0, 0);
+        margin: auto;
+    }
+
+    .contact-info .content .inner-content .form-group:nth-of-type(odd) 
+    {
+        width: 100%;
+    }
+    
+    .contact-info .content .inner-content .form-group:nth-of-type(even) 
+    {
+        width: 100%;
+    }
+    /* about */
+    .contact-info .content .inner-content .about-startup .form-group:nth-of-type(odd) 
+    {
+        width: 38%;
+        margin-right: 10px;
+    }
+    
+    .contact-info .content .inner-content .about-startup .form-group:nth-of-type(even) 
+    {
+         width: 28%;
+         margin-left: 0;
+    }
+
+    .contact-info .content .inner-content .about-startup label
+    {
+        margin-left: 0;
+    }
+
+    /*-------rightbar-------*/
+    
+    #rightbar
+    {
+        width: 375px;
+        overflow-y: scroll;
+    }
+    
+    /*-------account-------*/
+    
+    .account .content .inner-content
+    {
+        width: 350px;
+        padding-top: 0px;
+    }
+    
+    .account .content .inner-content .left
+    {
+        width: 350px;
+        margin: 0px 0px 38px;
+    }
+    
+    .account .content .inner-content .left h1
+    {
+        font-size: 24px;
+    }
+    
+    .account .content .inner-content .right
+    {
+        width: 350px;
+        margin: 0px 0px 38px;
+    }
+    
+    .account .content .inner-content .right h1
+    {
+        font-size: 24px;
+    }
+    
+    /*-------my-team-------*/
+    
+    .my-team .content .inner-content h1
+    {
+        margin: -40px 0px 30px;
+    }
+    
+    .my-team .content .inner-content
+    {
+        width: 300px;
+        padding: 30px 0px 0px 0px;
+    }
+    
+    .my-team .content .inner-content .box
+    {
+        width: 300px;
+    }
+    
+    .my-team .content .inner-content h1
+    {
+        font-size: 25px;
+    }
+    
+    .my-team .content .inner-content .buttons a
+    {
+        width: 47.5%;
+    }
+    
+    /*-------recommendations-------*/
+    
+    .recommendations .content .inner-content
+    {
+        width: 300px;
+        padding-top: 10px;
+    }
+    
+    .recommendations .content .inner-content .current-engagement .left
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .recommendations .content .inner-content .current-engagement .right
+    {
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    .recommendations .content .inner-content .current-engagement .box
+    {
+        width: 300px;
+    }
+    
+    .recommendations .content .inner-content .advisor .box
+    {
+        padding: 25px 15px;
+    }
+    
+    .recommendations .content .inner-content .advisor .member .left
+    {
+        width: 100%;
+    }
+    
+    .recommendations .content .inner-content .advisor .member .right
+    {
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .recommendations .content .inner-content .advisor .member .right .request
+    {
+        margin-left: 0px;
+    }
+    
+    .recommendations .content .inner-content .advisor .industry .left
+    {
+        width: 100%;
+    }
+    
+    .recommendations .content .inner-content .advisor .industry .right
+    {
+        width: 100%;
+    }
+    
+    .recommendations .content .inner-content .accelerators .left
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .recommendations .content .inner-content .accelerators .right
+    {
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    .recommendations .content .inner-content .accelerators .box .location .left
+    {
+        text-align: left;
+    }
+    
+    .recommendations .content .inner-content .accelerators .box .location .right
+    {
+        text-align: right;
+    }
+    
+    .recommendations .content .inner-content .accelerators .box
+    {
+        width: 300px;
+    }
+    
+    .recommendations .content .inner-content .investors .left
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .recommendations .content .inner-content .investors .right
+    {
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .recommendations .content .inner-content .investors .box .location .left
+    {
+        text-align: left;
+    }
+
+    .recommendations .content .inner-content .investors .box .location .right
+    {
+        text-align: right;
+    }
+    
+    .recommendations .content .inner-content .investors .box .members .left
+    {
+        margin-right: 6px;
+    }
+
+    .recommendations .content .inner-content .investors .box
+    {
+        width: 300px;
+    }
+    
+    .recommendations .content .inner-content .service-providers .left
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .recommendations .content .inner-content .service-providers .right
+    {
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .recommendations .content .inner-content .service-providers .box .location .left
+    {
+        text-align: left;
+    }
+
+    .recommendations .content .inner-content .service-providers .box .location .right
+    {
+        text-align: right;
+    }
+
+    .recommendations .content .inner-content .service-providers .box
+    {
+        width: 300px;
+    }
+    
+    .recommendations .content .nav-tabs
+    {
+        padding: 0px 35px;
+        margin-top: -38px;
+    }
+    
+    .recommendations .content .nav-tabs li a
+    {
+        margin-right: 20px;
+        font-size: 13px;
+    }
+    
+    /*-------empty-state-------*/
+
+    .empty-state .content .inner-content
+    {
+        padding-top: 62px;
+        width: 550px;
+        text-align: center;
+    }
+
+    .empty-state .content .inner-content .bar-progress
+    {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    
+    .empty-state .content .inner-content .box
+    {
+        margin: 0px 10px 16px 0px;
+    }
+    
+    .empty-state .content .inner-content .update-tracker label
+    {
+        text-align: left;
+    }
+    
+    /*-------dashboard-------*/
+    
+    .dashboard .animated-counter 
+    {
+        position: relative;
+        width: 90%;
+        margin: auto;
+    }
+
+    .dashboard .animated-counter img 
+    {
+        width: 100%;
+    }
+
+    .dashboard .animated-counter .number 
+    {
+        font-size: 44px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 63px;
+        font-family: notosans-regular;
+    }
+
+    .dashboard .animated-counter p
+    {
+        font-family: sourcesans-regular;
+        line-height: 15px;
+        color: #B0BAC9;    
+        position: absolute;
+        top: 115px;
+        left: 92px;
+    }
+
+    .dashboard .content .inner-content
+    {
+        width: 300px;
+        padding: 0px;
+        margin: 0px auto;
+    }
+
+    .dashboard .content .inner-content .box1
+    {
+        width: 100%;
+        margin: 0px 0px 10px;
+    }
+    
+    .dashboard .content .inner-content .box1 h1
+    {
+        font-size: 16px;
+    }
+
+    .dashboard .content .inner-content .box1 .inner-box
+    {
+        padding: 15px 15px 25px;
+    }
+    
+    .dashboard .content .inner-content .box1 .inner-box img
+    {
+        width: 100%;
+    }
+
+    .dashboard .content .inner-content .box2
+    {
+        width: 300px;
+        margin: 0px 0px 10px;
+    }
+    
+    .dashboard .content .inner-content .box2 h1
+    {
+        font-size: 16px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box
+    {
+        padding: 15px 15px 10px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box h2
+    {
+        margin: 20px 0px;
+    }
+
+    .dashboard .content .inner-content .box2 .inner-box .para
+    {
+        width: 100%;
+    }
+    
+    .dashboard .content .inner-content .box3
+    {
+        margin: 0px 0px 10px;
+    }
+
+    .dashboard .content .inner-content .box3 h1
+    {
+        font-size: 16px;
+    }
+
+    .dashboard .content .inner-content .box3 .inner-box
+    {
+        width: 100%;
+    }
+
+    .dashboard .content .inner-content .box3 .inner-box .member
+    {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /*-------preferences-------*/
+
+    .preferences .content .inner-content
+    {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .preferences .content .inner-content .my-preferences .left
+    {
+        width: 300px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .preferences .content .inner-content .my-preferences .left h1
+    {
+        margin-top: 0px;
+    }
+
+    .preferences .content .inner-content .my-preferences .right
+    {
+        width: 300px;
+    }
+
+    .preferences .content .inner-content .my-preferences .right .bg-white
+    {
+        width: 300px;
+    }
+
+    .preferences .my-preferences .progressbar
+    {
+        margin-left: -14px;
+        padding-top: 20px;
+    }
+
+    .preferences .box1 
+    {
+        width: 300px;
+        vertical-align: top;
+    }
+
+    .preferences .box1 .inner-box
+    {
+        width: 300px;
+    }
+
+    .preferences .box1 .inner-box:nth-of-type(odd)
+    {
+        margin-right: 7px;
+        margin-bottom: 24px;
+    }
+
+    .preferences .box1 .inner-box:first-of-type
+    {
+        padding-bottom: 55px;
+    }
+
+    .preferences .box1 .inner-box h1
+    {
+        font-family: sourcesans-bold;
+        font-size: 15px;
+        margin: 0px 0px 20px;
+    }
+
+    .preferences .box1 .inner-box .detail h2
+    {
+        font-family: sourcesans-regular;
+        font-size: 12.5px;
+        float: left;
+    }
+
+    .preferences .box1 .inner-box .detail .progressbar
+    {
+        width: 156px;
+    }
+    
+    .preferences .box1 .inner-box .detail .progressbar li:before
+    {
+        width: 75%;
+        left: -37.75%
+    }
+
+    .preferences .box2
+    {
+        width: 300px;
+    }
+
+    .preferences .box2 .roles
+    {
+        width: 300px;
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .preferences .box2 .info
+    {
+        width: 300px;
+        display: block;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 717px)
+{
+    header .scrollable-bar
+    {
+        display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    header ul
+    {
+        width: 688px;
+    }
+}
+
+@media screen and (max-height: 575px)
+{
+    /*-------login-------*/
+    
+    .login .left, .login .right
+    {
+        min-height: 620px;
+    }
+    
+    /*-------confirmation-------*/
+
+    .confirmation img
+    {
+        width: 200px !important;
+        margin-bottom: 40px;
+    }
+
+    .confirmation h1
+    {
+        font-size: 20px !important;
+    }
+    
+    .confirmation button
+    {
+        padding: 12px 0px;
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    /*-------login-------*/
+
+    .login .right .login-form
+    {
+        width: 100%;
+        padding: 20px 20px 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-right: 0;
+        transform: translate(0,0);
+    }
+    
+    .login .right .login-form h1
+    {
+        font-size: 30px;
+    }
+    
+    /*-------account-------*/
+
+    .account .content .inner-content
+    {
+        width: 300px;
+    }
+
+    .account .content .inner-content .left
+    {
+        width: 100%;
+    }
+    
+    .account .content .inner-content .left h1
+    {
+        font-size: 20px;
+    }
+
+    .account .content .inner-content .right
+    {
+        width: 100%;
+    }
+    
+    .account .content .inner-content .right h1
+    {
+        font-size: 20px;
+    }
+   
+    /*-------sidebar-------*/
+    
+    #sidebar 
+    {
+        left: -575px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    
+    #sidebar .mob-logout
+    {
+        display: block;
+    }
+    
+    #sidebar .mob-logout img
+    {
+        width: 8px;
+        margin: 0px 7.5px;
+    }
+
+    #sidebar .logout
+    {
+        display: none
+    }
+    
+    /*-------rightbar-------*/
+    
+    #rightbar
+    {
+        width: 305px;
+    }
+    
+    #rightbar .team-member .left h1
+    {
+        font-size: 17px;
+    }
+    
+    #rightbar .team-member .right .upload-pic
+    {
+        padding: 15px 20px;
+    }
+    
+    #rightbar .form-group
+    {
+        margin-bottom: 12px;
+    }
+    
+    #rightbar .form-control
+    {
+        height: 40px;
+        font-size: 13px;
+    }
+    
+    #rightbar .skill span
+    {
+        font-size: 13px;
+        padding: 7px 6.5px;
+    }
+    
+    #rightbar button
+    {
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+    
+    #rightbar .discard
+    {
+        font-size: 14px;
+        padding: 10px 0px;
+    }
+    
+    /*-------confirmation-------*/
+
+    .confirmation .confirmation-box
+    {
+        padding: 0px 20px;
+    }
+
+    .confirmation img
+    {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .confirmation h1
+    {
+        font-size: 20px;
+    }
+
+    .confirmation button
+    {
+        width: 100%;
+        padding: 12px 0px;
+    }
+
+    /*-------content-------*/
+
+    .content 
+    {
+        margin-left: 0px;
+    }
+    
+    .content .bar
+    {
+        padding: 0px 15px;
+    }
+    
+    .content .bar .mob-menu 
+    {
+        left: 23px;
+    }
+    
+    .content .bar ul li a
+    {
+        padding: 0px 7px;
+    }
+    
+    /*-------contact-info-------*/
+
+    .contact-info .content .inner-content
+    {
+        width: 90%;
+        padding: 40px 15px;
+    }
+    
+    .contact-info .content .inner-content button 
+    {
+        width: 100%;
+    }
+    
+    /*-------recommendations-------*/
+    
+    .recommendations .content #tabs
+    {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-top: -38px;
+    }
+
+    .recommendations .content #tabs .nav-tabs
+    {
+        padding: 0px;
+        margin-top: 0px;
+        width: 676px;
+    }
+
+    .recommendations .content #tabs .nav-tabs li
+    {
+        display: inline-block!important;
+        width: auto !important;
+    }
+    
+    .recommendations .content .nav-tabs li a
+    {
+        margin-right: 0px;
+        padding: 15px 23px 15px;
+        border: 0px solid transparent;
+    }
+    
+    .recommendations .content .nav-tabs li.active a
+    {
+        background-color: #2AFD95;
+        border-bottom: 0px solid transparent;
+    }
+    
+    /*-------empty-state-------*/
+
+    .empty-state .content .inner-content
+    {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .empty-state .content .inner-content .update-tracker label
+    {
+        text-align: center;
+    }
+
+    .empty-state .content .inner-content .update-tracker .form-control
+    {
+        height: 45px;
+        font-size: 16px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .empty-state .content .inner-content .update-tracker button
+    {
+        width: 100%;
+        padding: 12px 0px;
+    }
+    
+    .empty-state .content .inner-content .info
+    {
+        margin-top: 45px;
+    }
+    
+    .empty-state .content .inner-content .info h2
+    {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 410px)  
+{
+    .contact-info .content .inner-content .about-startup .form-group:nth-of-type(odd) 
+    {
+        width: 41%;
+        margin-right: 16px;
+    }
+    
+    .contact-info .content .inner-content .about-startup .form-group:nth-of-type(even) 
+    {
+        width: 25%;
+    }
+
+    .contact-info .content .inner-content .about-startup label
+    {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .contact-info .content .inner-content .about-startup .form-group:nth-of-type(odd) 
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .contact-info .content .inner-content .about-startup .form-group:nth-of-type(even) 
+    {
+         width: 100%;
+    }
+
+    .contact-info .content .inner-content .about-startup label
+    {
+        margin-left: 0;
+    }
+    /*-------login-------*/
+
+    .login .right .login-form
+    {
+        width: 100%;
+        padding: 20px 20px 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-right: 0;
+        transform: translate(0,0);
+    }
+
+    .login .right .login-form h1
+    {
+        font-size: 28px;
+    }
+    
+    /*-------confirmation-------*/
+
+    .confirmation h1
+    {
+        font-size: 18px;
+    }   
+}

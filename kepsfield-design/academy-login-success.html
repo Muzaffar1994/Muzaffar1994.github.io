@@ -1,0 +1,599 @@
+<head>
+    <title>
+        Academy Login Success
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/my-js.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/light.js"></script>
+</head>
+
+<body style="position: relative;">
+    <a style="position: fixed; z-index: 100; bottom: 20px; right: 20px; background-color: black; padding: 16px 14px; border-radius: 50%;" href="../index.html">
+        <img width="20px;" src="../images/back.png" alt="">
+    </a>
+    
+    <div class="academy">
+        <header>
+            <div class="burger-menu">
+                <button id="drawer_toggle_on">
+                    <i class="fal fa-bars"></i>
+                </button>
+
+                <div id="drawer">
+                    <div class="level_a">
+                        <ul>
+                            <li id="drawer_toggle_off">
+                                <i class="fal fa-times"></i>
+                            </li>
+                            <li>
+                                <a href="overview.html">OverView</a>
+                            </li>
+
+                            <li>
+                                <a class="level_b_toggle">
+                                    Our Services
+                                    <i class="fal fa-angle-down"></i>
+                                </a>
+
+                                <div class="level_b">
+
+                                    <img class="white-line" src="images/line_white.png" alt="">
+
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a class="logo-white" href="#">
+                                                    <img src="images/logo-white.png" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li><a href="our-services.html" class="tab_toggle selected"
+                                                            data-activetab="tab_1">Our Services</a></li>
+                                                    <li><a href="strategy-development.html" class="tab_toggle"
+                                                            data-activetab="tab_2">Strategy Development</a></li>
+                                                    <li><a href="m-and-a-advisory.html" class="tab_toggle"
+                                                            data-activetab="tab_3">M &amp; A Advisory</a></li>
+                                                    <li><a href="transaction-services.html" class="tab_toggle"
+                                                            data-activetab="tab_4">Transaction Services</a></li>
+                                                    <li><a href="valuations.html" class="tab_toggle"
+                                                            data-activetab="tab_5">Valuations</a></li>
+                                                    <li><a href="data-and-analytics.html" class="tab_toggle"
+                                                            data-activetab="tab_6">Data &amp; Analytics</a></li>
+                                                    <li><a href="telecoms.html" class="tab_toggle"
+                                                            data-activetab="tab_7">Telecoms</a></li>
+                                                    <li><a href="case-study.html" class="tab_toggle"
+                                                            data-activetab="tab_8">Case Studies</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="level_b_tab reveal" id="tab_1" style="display: block;">
+                                                    <h3>
+                                                        Tailored strategic <br>
+                                                        advise aimed at <br>
+                                                        exucation
+                                                    </h3>
+                                                    <p>
+                                                        Our mission is to help our clients <br>
+                                                        with hands-on strategic advice <br>
+                                                        that ignites action.
+                                                    </p>
+
+                                                    <a href="our-services.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_2">
+                                                    <h3>
+                                                        Strategy <br>
+                                                        development
+                                                    </h3>
+                                                    <p>
+                                                        We support you with fact-based <br>
+                                                        data driven strategic decision <br>
+                                                        making enabling your team to <br>
+                                                        start execution immediately.
+                                                    </p>
+
+                                                    <a href="strategy-development.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_3">
+                                                    <h3>
+                                                        M&amp;A advisory
+                                                    </h3>
+                                                    <p>
+                                                        Learn how our expertise can help <br>
+                                                        you with your M&amp;A strategy and <br>
+                                                        execution.
+                                                    </p>
+
+                                                    <a href="m-and-a-advisory.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_4">
+                                                    <h3>
+                                                        Transaction services
+                                                    </h3>
+                                                    <p>
+                                                        We provide you with the insights <br>
+                                                        required to ensure you maximise <br>
+                                                        the return on your transaction.
+                                                    </p>
+
+                                                    <a href="transaction-services.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_5">
+                                                    <h3>
+                                                        Valuations
+                                                    </h3>
+                                                    <p>
+                                                        We support our clients on topics <br>
+                                                        ranging from assessing deal value <br>
+                                                        and value analytics to valuation for <br>
+                                                        regulatory and reporting <br>
+                                                        purposes.
+                                                    </p>
+
+                                                    <a href="valuations.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_6">
+                                                    <h3>
+                                                        Data &amp; Analytics
+                                                    </h3>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, <br>
+                                                        consectetur adipiscing elit, sed do <br>
+                                                        eiusmod tempor incididunt ut <br>
+                                                        labore et dolore magna aliqua.
+                                                    </p>
+
+                                                    <a href="data-and-analytics.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_7">
+                                                    <h3>
+                                                        Telecoms
+                                                    </h3>
+                                                    <p>
+                                                        Our team has extensive
+                                                        experience in supporting C-level
+                                                        decision making in the
+                                                        Telecommunication industry.
+                                                    </p>
+
+                                                    <a href="telecoms.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_8">
+                                                    <h3>
+                                                        Case studies
+                                                    </h3>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, <br>
+                                                        consectetur adipiscing elit, sed do <br>
+                                                        eiusmod tempor incididunt ut <br>
+                                                        labore et dolore magna aliqua.
+                                                    </p>
+
+                                                    <a href="case-study.html">SEE OUR CASE STUDIES</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="level_b_toggle">
+                                    Our People
+                                    <i class="fal fa-angle-down"></i>
+                                </a>
+
+                                <div class="level_b">
+
+                                    <img class="white-line" src="images/line_white.png" alt="">
+
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a class="logo-white" href="#">
+                                                    <img src="images/logo-white.png" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li><a href="our-people.html" class="tab_toggle selected"
+                                                            data-activetab="tab_9">Our People</a></li>
+                                                    <li><a href="managing-partner.html" class="tab_toggle"
+                                                            data-activetab="tab_10">Managing Partner</a></li>
+                                                    <li><a href="contact-us.html" class="tab_toggle"
+                                                            data-activetab="tab_11">Contact Us</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="level_b_tab reveal" id="tab_9" style="display: block;">
+                                                    <h3>
+                                                        Lorem ipsum dolor <br>
+                                                        sit amet, consectetur <br>
+                                                        adipiscing elit
+                                                    </h3>
+                                                    <p>
+                                                        Ut enim ad minim veniam, quis <br>
+                                                        nostrud exercitation ullamco <br>
+                                                        laboris nisi ut aliquip.
+                                                    </p>
+
+                                                    <a href="our-people.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_10">
+                                                    <h3>
+                                                        Managing partners
+                                                    </h3>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, <br>
+                                                        consectetur adipiscing elit, sed do <br>
+                                                        eiusmod tempor incididunt ut <br>
+                                                        labore et dolore magna aliqua.
+                                                    </p>
+
+                                                    <a href="managing-partner.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_11">
+                                                    <h3>
+                                                        Contact us
+                                                    </h3>
+                                                    <p>
+                                                        <span class="text-bold">KEPSFIELD BV</span> <br>
+                                                        Hofplein 20 <br>
+                                                        3032AC Rotterdam <br>
+                                                        The Netherlands
+                                                    </p>
+
+                                                    <a href="contact-us.html">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="level_b_toggle">
+                                    Academy
+                                    <i class="fal fa-angle-down"></i>
+                                </a>
+
+                                <div class="level_b">
+
+                                    <img class="white-line" src="images/line_white.png" alt="">
+
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a class="logo-white" href="#">
+                                                    <img src="images/logo-white.png" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li><a href="academy.html" class="tab_toggle selected"
+                                                            data-activetab="tab_12">ACADEMY</a></li>
+                                                    <li><a href="course-contents.html" class="tab_toggle"
+                                                            data-activetab="tab_13">COURSES</a></li>
+                                                    <li><a href="academy-login.html" class="tab_toggle"
+                                                            data-activetab="tab_14">LOGIN</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="level_b_tab reveal" id="tab_12" style="display: block;">
+                                                    <h3>
+                                                        Best-in-class <br>
+                                                        blended learning <br>
+                                                        solutions
+                                                    </h3>
+                                                    <p>
+                                                        We offer blended learning <br>
+                                                        solutions that help people reach <br>
+                                                        their full potential.
+                                                    </p>
+
+                                                    <a href="academy.html">Learn More</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_13">
+                                                    <h3>
+                                                        Start learning today
+                                                    </h3>
+                                                    <p>
+                                                        Our best courses made available <br>
+                                                        specially for you.
+                                                    </p>
+
+                                                    <a href="course-contents.html">Buy</a>
+                                                </div>
+
+                                                <div class="level_b_tab" id="tab_14">
+                                                    <h3>
+                                                        Login
+                                                    </h3>
+                                                    <p>
+                                                        Do you already have an account? <br>
+                                                        Login using your login details
+                                                    </p>
+
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-10">
+                                                                <div class="form-group">
+                                                                    <input type="email" class="form-control"
+                                                                        placeholder="Email" id="email">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-10">
+                                                                <div class="form-group">
+                                                                    <input type="password" class="form-control"
+                                                                        placeholder="Password" id="pwd">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-10">
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        <button>LOGIN</button>
+                                                                    </div>
+
+                                                                    <div class="col-6 m-auto">
+                                                                        <a href="#">Forgotten Password</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                    <h4>
+                                                        Not registered yet?
+                                                    </h4>
+
+                                                    <a href="academy-login.html">Create account</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="education.html">Education</a>
+                            </li>
+
+                            <li>
+                                <a href="contact-us.html">Contact Us</a>
+                            </li>
+
+                            <li class="terms">
+                                <a href="#">
+                                    Privacy Policy
+                                </a>
+
+                                <a href="#">
+                                    Terms of use
+                                </a>
+
+                                <p>
+                                    &copy; 2020 Kepsfield b.v.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button id="search-toggle-on">
+                    <img class="search" src="images/Search-01.png" alt="">
+                </button>
+
+                <div id="search-drawer">
+                    <input type="search" placeholder="Type to search...">
+
+                    <button id="search-toggle-off">
+                        <i class="fal fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="overview.html">
+                            OVERVIEW
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="our-services.html">
+                            OUR SERVICES
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="our-people.html">
+                            OUR PEOPLE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="active" href="academy.html">
+                            ACADEMY
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="education.html">
+                            EDUCATION
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact-us.html">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-green.png" alt="">
+                </a>
+            </div>
+        </header>
+
+        <div class="custom-container">
+
+            <section class="hero">
+                <img class="line-academy" src="images/line_color.png" alt="">
+
+                <img src="images/academy-hero.jpg" alt="">
+
+                <div class="image-block">
+                    <img src="images/academy-screen.png" alt="">
+                </div>
+
+                <div class="text-block">
+                    <h1>
+                        FULL POTENTIAL
+                    </h1>
+
+                    <p>
+                        Our mission is to help you and your <br>
+                        employees reach full potential.
+                    </p>
+                </div>
+            </section>
+
+            <section class="secondary-menu">
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 m-auto">
+                                <a class="logo" href="#">
+                                    <img src="images/academy.png" alt="">
+                                    <p>KEPSFIELD ACADEMY</p>
+                                </a>
+
+                                <a class="login" href="academy-login.html">
+                                    LOGIN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <section class="academy-login">
+            <div class="login">
+                <div class="content">
+                    <h1>
+                        Login
+                    </h1>
+
+                    <p>
+                        Do you already have an account? <br>
+                        Login using your login details
+                    </p>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-12 order-1 order-lg-1">
+                                <input type="email" class="form-control" placeholder="Email*">
+                            </div>
+                            <div class="col-12 order-2 order-lg-2">
+                                <input type="password" class="form-control" placeholder="Password*">
+                            </div>
+                            <div class="col-6 col-md-12 col-lg-6 order-3 order-md-4 order-lg-3">
+                                <button type="submit" class="btn btn-default btn-custom">LOGIN</button>
+                            </div>
+
+                            <div class="col-6 col-md-12 col-lg-6 order-4 order-md-3 order-lg-4">
+                                <a class="forgot-password" href="#">Forgotten Password</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="register">
+                <div class="content">
+                    <h1>
+                        Success
+                    </h1>
+
+                    <p>
+                        You are successfully registered. An <br>
+                        activation link was sent by an email.
+                    </p>
+
+                    <button type="submit" class="btn btn-default btn-custom btn-custom-2">CLOSE</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6 p-0">
+                            <ul>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-lg-6 p-0">
+                            <p>
+                                © 2020 Kepsfield B.V.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>

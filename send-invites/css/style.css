@@ -1,0 +1,1202 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.custom-container
+{
+    width: 970px;
+    margin: auto;
+}
+
+.order-block
+{
+    width: 32px;
+    position: absolute;
+    top: 310px;
+    right: 30px;
+}
+
+.order-block p
+{
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    margin: 0px !important;
+    color: #010C15 !important;
+    line-height: 30px !important;
+}
+
+.order-block p.bor
+{
+    border: 1px solid #010C15;
+    margin: 5px 0px !important;
+}
+
+.order-block p:nth-of-type(3)
+{
+    opacity: 0.65;
+    font-weight: 500 !important;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+---------------------header----------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+header
+{
+    margin: 38px 0px;
+}
+
+header img
+{
+    width: 221px;
+    margin-top: 3.5px;
+}
+
+header a.login
+{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 0px;
+    color: #1B00FF;
+    display: block;
+    width: 121px;
+    margin-left: auto;
+    text-align: center;
+    border: 1px solid #1B00FF;
+    border-radius: 22px;
+    text-decoration: none;
+}
+
+header a:hover
+{
+    text-decoration: none;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+----------------------hero-----------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+.hero
+{
+    position: relative;
+}
+
+.hero .oval
+{
+    width: 39px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+
+.hero h1
+{
+    color: #010C15;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 64px;
+    margin-top: 20px;
+}
+
+.hero h1 .text
+{
+    font-size: 52px;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: #771BFF;
+}
+
+.hero h1 .dot
+{
+    font-size: 84px;
+    line-height: 0px;
+}
+
+.hero p
+{
+    color: #010C15;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-top: 20px;
+    line-height: 38px;
+}
+
+.hero a
+{
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    width: 260px;
+    padding: 4px 0px 4px 30px;
+    background-color: #771BFF;
+    border-radius: 36px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 35px;
+}
+
+.hero a img
+{
+    width: 52px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15.5px 20px;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+
+.hero .right
+{
+    position: relative;
+}
+
+.hero .plane
+{
+    width: 487px;
+}
+
+.hero .reports
+{
+    width: 635px;
+}
+
+.hero .right .vertical-text
+{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #010C15;
+    margin: 0px;
+    transform: rotate(270deg);
+    top: 200px;
+    right: -55px;
+    opacity: 0.7;
+}
+
+.hero .right .order-block
+{
+    width: 32px;
+    position: absolute;
+    top: 310px;
+    right: -30px;
+}
+
+.hero .right .order-block p
+{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px;
+    color: #010C15;
+}
+
+.hero .right .order-block p.bor
+{
+    border: 1px solid #010C15;
+}
+
+.hero .right .order-block p:nth-of-type(3)
+{
+    opacity: 0.65;
+    font-weight: 500;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+--------------------features---------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+.features
+{
+    margin: 100px 0px;
+}
+
+.features .custom-container
+{
+    text-align: center;
+}
+
+.features h1
+{
+    color: #771BFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.features h2
+{
+    color: #010C15;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.features .box
+{
+    position: relative;
+    height: 420px;
+    text-align: left;
+    padding: 90px 0px 0px 80px;
+    border-radius: 24px;
+    margin-bottom: 125px;
+}
+
+.features .box:nth-of-type(4)
+{
+    margin-bottom: 0px;
+}
+
+.features .box h1
+{
+    color: #EBEEFF;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.features .box p
+{
+    color: #EBEEFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.features .box h2
+{
+    position: absolute;
+    opacity: 0.1;
+    color: #EBEEFF;
+    font-size: 100px;
+    font-weight: 600;
+    margin: 0px;
+    line-height: 112px;
+    bottom: 20px;
+    left: -43px;
+}
+
+.features .box img
+{
+    position: absolute;
+    width: 549px;
+    box-shadow: 0 1px 30px 0 rgba(0,0,0,0.2);
+    right: -88px;
+    bottom: -25px;
+}
+
+.features .box .order-block
+{
+    top: 20px;
+    right: -110px;
+}
+
+.features .box .white-box
+{
+    position: absolute;
+    background-color: white;
+    width: 43px;
+    height: 112px;
+    bottom: 20px;
+    left: -43px;
+}
+
+.features .box:nth-of-type(even) h2
+{
+    color: #010C15;
+}
+
+.features .box:nth-of-type(even) h1
+{
+    color: #010C15;
+}
+
+.features .box:nth-of-type(even) p
+{
+    color: #010C15;
+}
+
+.features .box-1
+{
+    background-color: #270062;
+}
+
+.features .box-2
+{
+    background-color: #F0ECE4;
+}
+
+.features .box-3
+{
+    background-color: #313030;
+}
+
+.features .box-4
+{
+    background-color: #D3DBE5;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+----------------------demo-----------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+.demo
+{
+    padding: 50px 0px 75px;
+    background-color: rgba(119,27,255,0.05);
+}
+
+.demo .custom-container
+{
+    position: relative;
+}
+
+.demo h1
+{
+    color: #771BFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.demo h2
+{
+    color: #010C15;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.demo a
+{
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    width: 260px;
+    padding: 4px 0px 4px 30px;
+    background-color: #771BFF;
+    border-radius: 36px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 70px;
+    margin-left: auto;
+}
+
+.demo a img
+{
+    width: 52px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15.5px 20px;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+
+.demo .order-block
+{
+    top: 50px;
+    right: -110px;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+---------------------footer----------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+footer
+{
+    padding: 18px 0px;
+}
+
+footer p
+{
+    opacity: 0.6;
+    color: #010C15;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+footer ul
+{
+    text-align: right;
+}
+
+footer ul li
+{
+    display: inline-block;
+}
+
+footer ul li a
+{
+    opacity: 0.7;
+    color: #010C15;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-left: 45px;
+    text-decoration: underline;
+}
+
+footer ul li a:hover
+{
+    color: #010C15;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+-----------------media-querires------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+@media screen and (max-width: 1199px)
+{
+    .custom-container
+    {
+        width: 800px;
+    }
+    
+    .hero h1
+    {
+        font-size: 32px;
+        line-height: 54px;
+    }
+
+    .hero h1 .text
+    {
+        font-size: 44px;
+    }
+
+    .hero h1 .dot
+    {
+        font-size: 64px;
+    }
+
+    .hero p
+    {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .hero a
+    {
+        font-size: 16px;
+        width: 245px;
+        margin-top: 30px;
+    }
+
+    .hero a img
+    {
+        width: 50px;
+        padding: 11.5px 18px;
+        margin-left: 25px;
+    }
+
+    .hero .right
+    {
+        position: relative;
+    }
+    
+    .hero .right .vertical-text 
+    {
+        right: -30px;
+    }
+    
+    .hero .right .order-block
+    {
+        right: -5px;
+    }
+
+    .hero .plane
+    {
+        width: 400px;
+    }
+
+    .hero .reports
+    {
+        width: 100%;
+    }
+    
+    .features
+    {
+        margin: 75px 0px;
+    }
+
+    .features h2
+    {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .features .box
+    {
+        padding: 90px 0px 0px 60px;
+        margin-bottom: 100px;
+    }
+
+    .features .box h1
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .features .box p
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .features .box h2
+    {
+        font-size: 90px;
+        left: -40px;
+    }
+
+    .features .box img
+    {
+        width: 500px;
+        right: -65px;
+    }
+
+    .features .box .order-block
+    {
+        right: -85px;
+    }
+
+    .demo h1
+    {
+        font-size: 16px;
+    }
+
+    .demo h2
+    {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .demo a
+    {
+        font-size: 16px;
+        width: 245px;
+        margin-top: 60px;
+    }
+
+    .demo a img
+    {
+        width: 50px;
+        padding: 11.5px 18px;
+        margin-left: 25px;
+    }
+
+    .demo .order-block
+    {
+        top: 50px;
+        right: -85px;
+    }
+
+    footer p
+    {
+        font-size: 13px;
+    }
+
+    footer ul li a
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    header img 
+    {
+        width: 200px;
+    }
+    
+    header a.login 
+    {
+        padding: 12px 0px;
+    }
+    
+    .hero
+    {
+        text-align: center;
+    }
+    
+    .hero .left
+    {
+        margin-top: 30px;
+    }
+    
+    .hero .reports 
+    {
+        width: 400px;
+        margin-top: 30px;
+    }
+    
+    .hero h1 
+    {
+        font-size: 32px;
+        line-height: 46px;
+    }
+    
+    .hero h1 .text 
+    {
+        font-size: 42px;
+    }
+    
+    .hero h1 .dot 
+    {
+        font-size: 58px;
+    }
+    
+    .hero .right .vertical-text 
+    {
+        right: -25px;
+    }
+    
+    .hero .right .order-block 
+    {
+        right: 0px;
+    }
+    
+    .hero a
+    {
+        margin: 30px auto 0px;
+    }
+    
+    .custom-container 
+    {
+        width: 600px;
+        text-align: center;
+    }
+    
+    .features h2 
+    {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    
+    .features .box 
+    {
+        padding: 30px 0px 0px 0px;
+        text-align: center;
+        margin-bottom: 170px;
+        height: 355px;
+    }
+    
+    .features .box:nth-of-type(4)
+    {
+        margin-bottom: 170px;
+    }
+    
+    .features .box h1 
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .features .box p 
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .features .box img 
+    {
+        width: 70%;
+        right: auto;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        margin-right: -50%;
+        transform: translate(-50%, 15%);
+    }
+    
+    .features .box .order-block 
+    {
+        right: -60px;
+    }
+    
+    .demo 
+    {
+        padding: 50px 0px;
+    }
+    
+    .demo h2 
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .demo a 
+    {
+        margin: 30px auto 0px;
+    }
+    
+    .demo .order-block 
+    {
+        right: -60px;
+    }
+    
+    footer 
+    {
+        padding: 20px 0px;
+    }
+    
+    footer p 
+    {
+        font-size: 14px;
+    }
+    
+    footer ul 
+    {
+        text-align: center;
+        margin-top: 7px;
+    }
+    
+    footer ul li a 
+    {
+        margin: 0px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .order-block p 
+    {
+        font-size: 20px !important;
+    }
+    
+    .order-block p.bor 
+    {
+        margin: 2px 0px !important;
+    }
+    
+    header img 
+    {
+        width: 160px;
+    }
+    
+    header a.login 
+    {
+        font-size: 12px;
+        padding: 10px 0px;
+        width: 110px;
+    }
+    
+    .hero .plane 
+    {
+        width: 300px;
+    }
+    
+    .hero .reports 
+    {
+        width: 300px;
+    }
+    
+    .hero h1 
+    {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    .hero h1 .text 
+    {
+        font-size: 34px;
+    }
+    
+    .hero p 
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .hero h1 .dot 
+    {
+        font-size: 50px;
+    }
+    
+    .hero a 
+    {
+        font-size: 14px;
+        width: 225px;
+    }
+    
+    .hero a img 
+    {
+        width: 46px;
+        padding: 10.5px 17px;
+        margin-left: 26px;
+    }
+
+    .custom-container 
+    {
+        width: 440px;
+    }
+    
+    .features 
+    {
+        margin: 50px 0px;
+    }
+    
+    .features h1 
+    {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .features h2 
+    {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    .features .box 
+    {
+        margin-bottom: 100px;
+        height: 300px;
+    }
+    
+    .features .box:nth-of-type(4) 
+    {
+        margin-bottom: 100px;
+    }
+    
+    .features .box h1 
+    {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+    
+    .features .box p 
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .features .box h2 
+    {
+        font-size: 60px;
+        left: -25px;
+    }
+    
+    .features .box .order-block 
+    {
+        right: -50px;
+    }
+    
+    .demo .order-block 
+    {
+        right: -50px;
+    }
+    
+    .demo h2 
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .demo a 
+    {
+        font-size: 14px;
+        width: 225px;
+    }
+
+    .demo a img 
+    {
+        width: 46px;
+        padding: 10.5px 17px;
+        margin-left: 26px;
+    }
+    
+    footer p 
+    {
+        font-size: 12px;
+    }
+    
+    footer ul li a 
+    {
+        font-size: 12px;
+        margin: 0px 15px;
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .custom-container 
+    {
+        width: 250px;
+    }
+    
+    .order-block 
+    {
+        width: 24px !important;
+    }
+
+    .order-block p.bor 
+    {
+        margin: 0px !important;
+    }
+
+    .order-block p 
+    {
+        font-size: 16px !important;
+    }
+    
+    header 
+    {
+        margin: 25px 0px;
+    }
+    
+    header img 
+    {
+        width: 140px;
+    }
+    
+    header a.login 
+    {
+        padding: 8px 0px;
+        width: 100px;
+    }
+    
+    .hero .oval 
+    {
+        width: 30px;
+    }
+    
+    .hero .plane 
+    {
+        width: 200px;
+    }
+    
+    .hero .reports 
+    {
+        width: 200px;
+        display: block;
+        margin: 20px auto 0px;
+    }
+    
+    .hero .left 
+    {
+        margin-top: 10px;
+    }
+    
+    .hero h1 
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .hero h1 .text 
+    {
+        font-size: 30px;
+    }
+    
+    .hero h1 .dot 
+    {
+        font-size: 45px;
+    }
+    
+    .hero p 
+    {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .hero a 
+    {
+        font-size: 12px;
+        width: 200px;
+    }
+    
+    .hero a img 
+    {
+        width: 42px;
+        padding: 7.5px 14px;
+        margin-left: 20px;
+    }
+    
+    .hero .right
+    {
+        width: 250px;
+        margin: auto;
+    }
+    
+    .hero .right .vertical-text 
+    {
+        font-size: 12px;
+        right: -70px;
+    }
+    
+    .hero .right .order-block 
+    {
+        right: -45px;
+    }
+    
+    .features h1 
+    {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .features h2 
+    {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .features .box 
+    {
+        height: 240px;
+    }
+    
+    .features .box h1 
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .features .box p 
+    {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .features .box h2 
+    {
+        display: none;
+    }
+    
+    .features .box img 
+    {
+        width: 90%;
+        transform: translate(-50%, 30%);
+    }
+    
+    .features .box .order-block 
+    {
+        right: -45px;
+    }
+    
+    .demo .custom-container 
+    {
+        width: 275px;
+    }
+    
+    .demo h1 
+    {
+        font-size: 14px;
+    }
+    
+    .demo h2 
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .demo a 
+    {
+        font-size: 12px;
+        width: 200px;
+    }
+    
+    .demo a img 
+    {
+        width: 42px;
+        padding: 7.5px 14px;
+        margin-left: 20px;
+    }
+    
+    .demo .order-block 
+    {
+        right: -32px;
+        top: 75px;
+    }
+    
+    footer ul li
+    {
+        display: block;
+    }
+}

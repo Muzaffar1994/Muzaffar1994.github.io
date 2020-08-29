@@ -1,0 +1,165 @@
+<head>
+    <title>Me</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body style="position: relative;">
+    <a style="position: fixed; z-index: 100; bottom: 20px; right: 20px; background-color: black; padding: 16px 14px; border-radius: 50%;" href="../index.html">
+        <img width="20px;" src="../images/back.png" alt="">
+    </a>
+   
+    <header class="container-fluid">
+       <div class="row">
+           <div class="col-3 logo">
+               <img src="images/logo.png">
+           </div>
+           
+           <div class="col-9 menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Food</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                
+                <a href="#" class="button">GET STARTED</a>
+           </div>
+       </div>
+   </header>
+   
+    <img src="images/logo.png" alt="" class="mob-logo">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Food</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            
+            <a href="#" class="button">Get Started</a>
+        </div>
+    </div>
+
+    <span id="menu" onclick="openNav()">&#9776;</span>
+   
+    <div class="container" id="me">
+        <div class="row">
+           
+            <div class="col-12 section-one">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-11 progressbar-sec">
+                        <ul class="progressbar">
+                            <li class="active"><a href="Me.html">Me</a></li>
+                            <li><a href="My-Dog.html">My Dog</a></li>
+                            <li><a href="Recipes.html">Recipes</a></li>
+                            <li><a href="Summary.html">Summary</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 section-two">
+                <div class="row">
+                   <div class="col-12 right">
+                       <h1>
+                           Let's find a meal plan to fit your pup's unique nutritional needs
+                       </h1>
+                   </div>
+                   
+                    <div class="col-lg-6 col-xl-5 left">
+                        <img src="images/dog-food.jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-6 col-xl-7 right">
+                        
+                        
+                        <form>
+                            <div class="form-group">
+                                <label>My Name is</label>
+                                <input type="text" class="custom-input">
+                            </div>
+                            <div class="form-group">
+                                <label id='pet_data'>My Pup's name is</label>
+                                <input type="text" class="custom-input">
+                            </div>
+                            <div class="form-group">
+                                <label>Our zip code is </label>
+                                <input type="text" class="custom-input">
+                            </div>
+                            <div class="form-group">
+                                <label>My email is </label>
+                                <input type="email" class="custom-input">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-continue">
+                <a href="My-Dog.html">CONTINUE</a>
+            </div>
+            
+            <div class="col-12 section-three">
+                <div class="row">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4 box">
+                        <img src="images/nutrious-ingredients.jpg" alt="">
+                        
+                        <h1>
+                            Nutritious Ingredients
+                        </h1>
+                        
+                        <p>
+                            Pupums recipes are simple, consisting of whole foods thoughtfully paired with essential vitamins and minerals. High-quality meat is ALWAYS are number one ingredient. No fillers, no artificial ingredients, no soy, and no hormones. Ever.
+                        </p>
+                    </div>
+                    
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4 box">
+                        <img src="images/tailored-nutrition.jpg" alt="">
+
+                        <h1>
+                            Tailored Nutrition
+                        </h1>
+
+                        <p>
+                            Tell us about your pup's unique health characteristics, nutritional needs, taste preferences, and more. We then create a tailored unique meal plan, complete with easy portion control for optimal weight management specifically for your dog.
+                        </p>
+                    </div>
+                    
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4 box">
+                        <img src="images/delivered-to-home.jpg" alt="">
+
+                        <h1>
+                            Delivered to Your Home
+                        </h1>
+
+                        <p>
+                            Your pup's food will be delivered to your door every month. Just open and scoop according to your pup's plan. Fewer trips to the pet store = more time for play!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+<script>
+    function openNav() 
+    {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() 
+    {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>

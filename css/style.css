@@ -1,0 +1,748 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header{
+    padding: 15px 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+header .logo{
+    color: #452845;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header .logo span{
+    font-size: 26px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 5px double #452845;
+    display: inline-block;
+}
+
+header ul{
+    float: right;
+    margin-top: 8px;
+}
+
+header ul li a{
+    color: #452845;
+    font-family: 'Unica One', cursive;
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s;
+}
+
+header ul li a:hover{
+    color: #452845;
+    text-decoration: none;
+    border-bottom: 1px solid #452845;
+}
+
+#home{
+    background-color: #452845;
+    height: 100vh;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+#home .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+#home .content .logo{
+    font-size: 75px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    border: 10px double #ffffff;
+    border-radius: 5px;
+    padding: 0px 20px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#home .content h1{
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Unica One', cursive;
+    margin-bottom: 15px;
+}
+
+#home .content p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    line-height: 150%;
+}
+
+#home .content a.learn-more{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 15px 40px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#home .content a.learn-more:hover{
+    background-color: white;
+    color: #452845;
+    transition: 0.4s;
+}
+
+#about-me{
+    padding: 75px 0px 0px;
+    text-align: center;
+}
+
+#about-me h2{
+    font-family: 'Unica One', cursive;
+    font-size: 50px;
+    color: #452845;
+    margin-bottom: 75px;
+}
+
+#about-me .content{
+    border-bottom: 3px dashed #452845;
+    padding: 0px 0px 75px;
+}
+
+#about-me .content img{
+    width: 225px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#about-me .content p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #452845;
+    line-height: 175%;
+}
+
+#skills{
+    padding: 75px 0px 0px;
+    text-align: center;
+}
+
+#skills h2{
+    font-family: 'Unica One', cursive;
+    font-size: 50px;
+    color: #452845;
+    margin-bottom: 75px;
+}
+
+#skills .content{
+    border-bottom: 3px dashed #452845;
+    padding: 0px 0px 75px;
+}
+
+#skills img{
+    margin-right: 50px;
+    vertical-align: middle;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#skills img:hover{
+    transform: scale(1.25);
+}
+
+#skills img:nth-last-of-type(1){
+    margin: 0px;
+}
+
+#skills .html, #skills .css{
+    width: 65px;
+}
+
+#skills .jquery{
+    width: 150px;
+}
+
+#skills .bootstrap{
+    width: 110px;
+}
+
+#skills .sass{
+    width: 90px;
+}
+
+#skills .webflow{
+    width: 75px;
+}
+
+#skills .wordpress{
+    width: 150px;
+}
+
+#portfolio{
+    padding: 75px 0px 25px;
+    text-align: center;
+}
+
+#portfolio h2{
+    font-family: 'Unica One', cursive;
+    font-size: 50px;
+    color: #452845;
+    margin-bottom: 75px;
+}
+
+#portfolio .content a{
+    text-decoration: none;
+    margin-bottom: 50px;
+    display: block;
+}
+
+#portfolio .content a:hover img{
+    transform: scale(1.1);
+}
+
+#portfolio .content img{
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+#portfolio .content h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #452845;
+    padding-top: 30px;
+}
+
+#contact-me{
+    background-color: #452845;
+    position: relative;
+    height: calc(100vh - 66px);
+}
+
+#contact-me .content{
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contact-me h2{
+    font-family: 'Unica One', cursive;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+#contact-me label{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#contact-me input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    padding: 12px 0px;
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+
+#contact-me input::placeholder{
+    color: white;
+}
+
+#contact-me input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+#contact-me button{
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 15px 68.5px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#contact-me button:hover{
+    background-color: white;
+    color: #452845;
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 1199px)
+{
+    #home .content .logo{
+        font-size: 65px;
+    }
+    
+    #home .content h1{
+        font-size: 50px;
+    }
+    
+    #home .content p{
+        font-size: 18px;
+    }
+    
+    #about-me h2{
+        margin-bottom: 60px;
+    }
+    
+    #about-me .content p{
+        margin: 21px 0px 0px;
+    }
+    
+    #skills h2{
+        margin-bottom: 60px;
+    }
+
+    #skills img{
+        margin-right: 35px;
+    }
+
+    #skills .html, #skills .css{
+        width: 50px;
+    }
+
+    #skills .jquery{
+        width: 130px;
+    }
+
+    #skills .bootstrap{
+        width: 95px;
+    }
+
+    #skills .sass{
+        width: 75px;
+    }
+
+    #skills .webflow{
+        width: 60px;
+    }
+
+    #skills .wordpress{
+        width: 130px;
+    }
+    
+    #portfolio h2{
+        margin-bottom: 60px;
+    }
+    
+    #portfolio .content h3{
+        font-size: 20px;
+    }
+    
+    #contact-me h2{
+        margin-bottom: 60px;
+    }
+    
+    #contact-me .content{
+        width: 500px;
+    }
+    
+    #contact-me label{
+        font-size: 18px;
+    }
+    
+    #contact-me input {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 991px)
+{
+    header .logo{
+        font-size: 16px;
+    }
+    
+    header .logo span{
+        font-size: 24px;
+        margin-right: 7px;
+    }
+    
+    header ul{
+        margin-top: 7px;
+    }
+    
+    header ul li a{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    
+    #home .content .logo{
+        font-size: 60px;
+        border: 8px double #ffffff;
+    }
+    
+    #home .content h1{
+        font-size: 45px;
+    }
+    
+    #about-me h2{
+        margin-bottom: 50px;
+    }
+
+    #about-me .content p{
+        text-align: center;
+        margin: 40px 0px 0px;
+    }
+    
+    #skills h2{
+        margin-bottom: 50px;
+    }
+
+    #skills img{
+        margin-right: 25px;
+    }
+
+    #skills .html, #skills .css{
+        width: 40px;
+    }
+
+    #skills .jquery{
+        width: 110px;
+    }
+
+    #skills .bootstrap{
+        width: 75px;
+    }
+
+    #skills .sass{
+        width: 65px;
+    }
+
+    #skills .webflow{
+        width: 50px;
+    }
+
+    #skills .wordpress{
+        width: 110px;
+    }
+
+    #portfolio h2{
+        margin-bottom: 60px;
+    }
+
+    #portfolio .content h3{
+        font-size: 20px;
+    }
+    
+    #portfolio h2{
+        margin-bottom: 50px;
+    }
+
+    #contact-me h2{
+        margin-bottom: 50px;
+    }
+    
+    #contact-me .content{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    header .logo{
+        display: none;
+    }
+    
+    header ul{
+        float: none;
+        text-align: center;
+        margin: 0px;
+    }
+    
+    #home .content .logo{
+        font-size: 50px;
+        border: 6px double #ffffff;
+    }
+    
+    #home .content h1{
+        font-size: 30px;
+    }
+    
+    #home .content p{
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+    
+    #home .content a.learn-more {
+        font-size: 14px;
+    }
+
+    #about-me{
+        padding: 55px 0px 0px;
+    }
+    
+    #about-me h2{
+        font-size: 40px;
+    }
+
+    #about-me .content{
+        padding: 0px 0px 55px;
+    }
+
+    #skills{
+        padding: 55px 0px 0px;
+    }
+    
+    #skills h2{
+        font-size: 40px;
+    }
+
+    #skills .content{
+        padding: 0px 0px 55px;
+    }
+
+    #skills .html, #skills .css{
+        width: 35px;
+        margin-bottom: 50px;
+    }
+
+    #skills .jquery{
+        width: 100px;
+        margin-bottom: 50px;
+    }
+
+    #skills .bootstrap{
+        width: 65px;
+        margin-bottom: 50px;
+    }
+
+    #skills .sass{
+        width: 60px;
+        margin-bottom: 50px;
+    }
+
+    #skills .webflow{
+        width: 45px;
+    }
+
+    #skills .wordpress{
+        width: 100px;
+    }
+    
+    #portfolio {
+        padding: 55px 0px 5px;
+    }
+    
+    #portfolio h2{
+        font-size: 40px;
+    }
+    
+    #portfolio .content h3{
+        font-size: 18px;
+    }
+    
+    #contact-me{
+        height: auto;
+    }
+    
+    #contact-me .content{
+        position: static;
+        width: 400px;
+        margin: auto;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        padding: 50px 0px;
+    }
+    
+    #contact-me h2{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 575px)
+{
+    header ul li a{
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    
+    #about-me .content{
+        width: 320px;
+        margin: auto;
+    }
+    
+    #about-me .content img{
+        width: 200px;
+    }
+    
+    #about-me .content p{
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0px;
+    }
+    
+    #skills .content{
+        width: 320px;
+        margin: auto;
+    }
+
+    #skills img:hover{
+        transform: scale(1);
+    }
+
+    #skills img{
+        margin-right: 15px;
+    }
+
+    #skills .html, #skills .css{
+        width: 40px;
+    }
+
+    #skills .jquery{
+        width: 100px;
+    }
+
+    #skills .bootstrap{
+        width: 70px;
+        margin-right: 0px;
+    }
+
+    #skills .sass{
+        width: 60px;
+        margin-bottom: 0px;
+    }
+
+    #skills .webflow{
+        width: 45px;
+    }
+
+    #skills .wordpress{
+        width: 100px;
+    }
+    
+    #portfolio{
+        padding: 50px 0px 10px;
+    }
+    
+    #portfolio .content{
+        width: 320px;
+        margin: auto;
+    }
+    
+    #portfolio .content a{
+        margin-bottom: 40px;
+    }
+    
+    #portfolio .content a:hover img{
+        transform: scale(1);
+    }
+    
+    #portfolio .content h3{
+        padding-top: 20px;
+    }
+
+    #contact-me .content{
+        width: 320px;
+    }
+    
+    #contact-me label{
+        font-size: 16px;
+    }
+    
+    #contact-me input{
+        font-size: 14px;
+    }
+    
+    #contact-me button{
+        font-size: 14px;
+    }
+}

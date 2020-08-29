@@ -1,0 +1,565 @@
+<head>
+    <title>My Dog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <script src="assets/front/js/jquery.min.js"></script>
+    <script src="assets/front/js/bootstrap.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body style="position: relative;">
+    <a style="position: fixed; z-index: 100; bottom: 20px; right: 20px; background-color: black; padding: 16px 14px; border-radius: 50%;" href="../index.html">
+        <img width="20px;" src="../images/back.png" alt="">
+    </a>
+   
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-3 logo">
+                <img src="images/logo.png">
+            </div>
+
+            <div class="col-9 menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Food</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+
+                <a href="#" class="button">GET STARTED</a>
+            </div>
+        </div>
+    </header>
+
+    <img src="images/logo.png" alt="" class="mob-logo">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Our Food</li>
+                <li>Our Mission</li>
+                <li>Login</li>
+            </ul>
+
+            <a href="#">Get Started</a>
+        </div>
+    </div>
+
+    <span id="menu" onclick="openNav()">&#9776;</span>
+   
+    <div class="container" id="my-dog">
+        <div class="row">
+
+            <div class="col-12 section-one">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-11 progressbar-sec">
+                        <ul class="progressbar">
+                            <li class="active"><a href="Me.html">Me</a></li>
+                            <li class="active"><a href="My-Dog.html">My Dog</a></li>
+                            <li><a href="Recipes.html">Recipes</a></li>
+                            <li><a href="Summary.html">Summary</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-two">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>
+                            Tell us more about Poochie so we can find the perfect nutrients for their diet
+                        </h1>
+
+                        <div class="col-12 section-same">
+                            <div class="row">
+                                <div class="col-md-11 box">
+                                    <div class="row">
+                                        <div class="col-12 inner-content">
+                                            <div class="col-12 outer-layer">
+                                                <div class="inner-layer">
+                                                    <h1>
+                                                        What the breed tells us:
+                                                    </h1>
+
+                                                    <p>
+                                                        Which nutrients are needed for your pup. Certain breeds are prone to specific health condition. Knowing the breed let's us Tailor the meal to keep your pup happy and healthy for years to come.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Poochie is a</label>
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="Single Breed">Single Breed</option>
+                                <option value="Mixed Breed">Mixed Breed</option>
+                                <option value="Multiple Breed">Multiple Breed</option>
+                            </select>
+                            <label><span class="hide">,</span></label>
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="Australian Shepherd">Australian Shepherd</option>
+                                <option value="German Shepherd">German Shepherd</option>
+                            </select>
+
+                            <label>
+                                <div class="popup">
+                                    <a class="hvr-box" href="www.bzbuz.com"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                                    
+                                    
+                                    <span class="popuphover">
+                                        Please enter the age your
+                                    </span>
+                                    
+                                    <span class="hide">.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-three">
+                <h1>
+                    How old is Poochie?
+                </h1>
+
+                <div class="row">
+                    <div class="col-11 col-sm-9 col-md-7 col-lg-5 box1">
+                        <div class="row">
+                            <div class="col-4 inner-box">
+                                <a href="#" class="active">Age</a>
+                            </div>
+
+                            <div class="col-3 inner-box">
+                                <p>or</p>
+                            </div>
+
+                            <div class="col-5 inner-box">
+                                <a href="#">Birthday</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-lg-6 box2">
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="1 years">1 years</option>
+                                <option value="2 years">2 years</option>
+                                <option value="3 years">3 years</option>
+                            </select>
+
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="1 months">1 months</option>
+                                <option value="2 months">2 months</option>
+                                <option value="3 months">3 months</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-9 col-lg-6 box3">
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">January</option>
+                                <option value="">February</option>
+                                <option value="">March</option>
+                                <option value="">April</option>
+                                <option value="">May</option>
+                                <option value="">June</option>
+                                <option value="">July</option>
+                                <option value="">August</option>
+                                <option value="">September</option>
+                                <option value="">October</option>
+                                <option value="">November</option>
+                                <option value="">December</option>
+                            </select>
+
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                            </select>
+
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">2010</option>
+                                <option value="">2011</option>
+                                <option value="">2012</option>
+                                <option value="">2013</option>
+                                <option value="">2014</option>
+                                <option value="">2015</option>
+                                <option value="">2016</option>
+                                <option value="">2017</option>
+                                <option value="">2018</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-same">
+                <div class="row">
+                    <div class="col-md-11 box">
+                        <div class="row">
+                            <div class="col-12 inner-content"> 
+                                <div class="col-12 outer-layer">
+                                    <div class="inner-layer">
+                                        <h1>
+                                            How age impacts diet:
+                                        </h1>
+
+                                        <p>
+                                            Dogs need different types and quantities of food as they grow up, and grow old. We make sure Poochie's blend is matched to their needs at every stage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-four">
+                <div class="row">
+                    <div class="col-12 col-lg-8 col-xl-6 box">
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">He</option>
+                                <option value="">She</option>
+                            </select>
+
+                            <label>is</label>
+
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">Neutered</option>
+                                <option value="">Not Neutered</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-same">
+                <div class="row">
+                    <div class="col-md-11 box">
+                        <div class="row">
+                            <div class="col-12 inner-content">
+                                <div class="col-12 outer-layer">
+                                    <div class="inner-layer">
+                                        <h1>
+                                            What this means for Poochie's ideal meal:
+                                        </h1>
+
+                                        <p>
+                                            Male and female dogs have different nutritional needs. And if Poochie is sprayed or neutered, his/her metabolism could be working at a different pace: crucial details in designing their blend.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-five">
+                <div class="row">
+                    <div class="col-md-8 col-lg-6 box">
+                        <div class="form-group">
+                            <label>and his ideal weight is</label>
+
+                            <input type="text" class="custom-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-six">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-12 col-xl-10 box">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1>
+                                    Poochie's body is
+                                </h1>
+                            </div>
+
+                            <div class="col-12 col-md-4 sec">
+                                <div class="row">
+                                    <div class="col-11 inner-box active">
+                                        <h2>
+                                            Skinny
+                                        </h2>
+
+                                        <p>Outline of ribs visible and no muscle definition</p>
+
+                                        <img src="images/skinny.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 sec">
+                                <div class="row">
+                                    <div class="col-11 inner-box">
+                                        <h2>
+                                            Just Right
+                                        </h2>
+
+                                        <p>Last rib visible and clearly outlined waste.</p>
+
+                                        <img src="images/just_right.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 sec">
+                                <div class="row">
+                                    <div class="col-11 inner-box">
+                                        <h2>
+                                            Plump
+                                        </h2>
+
+                                        <p>No waste line visible and a bit of a tummy.</p>
+
+                                        <img src="images/plump.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-slider">
+               <h1>and leads a lifestyle that ressembles:</h1>
+               
+                <div class="control-slider">
+                    <div class="design-row">
+                        <div class="progress-bar"></div>
+                        <div class="knob"></div>
+                    </div>
+                    
+                    <div class="controls-row">
+                        <span class="sleepy" style="" onclick="moveKnob('20px')">Sleepy</span>
+                        <span class="normal" style="" onclick="moveKnob('50%')">Normal</span>
+                        <span class="active" style="" onclick="moveKnob('98%')">Active</span>
+                    </div>
+                    
+                    <div class="controls-row upper-row">
+                        <span class="sleepy" onclick="moveKnob('20px')"></span>
+                        <span class="normal" onclick="moveKnob('50%')"></span>
+                        <span class="active" onclick="moveKnob('98%')"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-same">
+                <div class="row">
+                    <div class="col-md-11 box">
+                        <div class="row">
+                            <div class="col-12 inner-content">
+                                <div class="col-12 outer-layer">
+                                    <div class="inner-layer">
+                                        <h1>
+                                            How this plays into diet:
+                                        </h1>
+
+                                        <p>
+                                            Activity, weight and body type are important factors in determining the amount and type of food for your pup. Dogs that chase squirrels need different nutrition than dogs that like to cuddle up by the fire for long naps.  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-seven">
+                <div class="row">
+                    <div class="col-md-9 col-lg-7 col-xl-6 box">
+                        <div class="form-group">
+                            <label>Poochie</label>
+
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">does</option>
+                                <option value="">doesn't</option>
+                            </select>
+
+                            <label>have allergies, and</label>
+                        </div>
+                    </div>
+                </div>    
+                    
+                <div class="row">
+                    <div class="col-md-9 col-lg-7 col-xl-6 box">
+                        <div class="form-group">
+                            <label>he mainly eats</label>
+
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">raw food</option>
+                                <option value="">raw food</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>    
+                    
+                <div class="row">   
+                    <div class="col-md-9 col-lg-7 col-xl-6 box">
+                        <div class="form-group">
+                            <label>and he</label>
+
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">does</option>
+                                <option value="">doesn't</option>
+                            </select>
+
+                            <label>have a prescription diet.</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="col-12 section-eight">
+                <div class="row">
+                    <div class=" col-lg-10 box">
+                        <h1>Does Poochie have any health issues we should know about? Check off the ones that apply.</h1>
+                        <label>
+                            <div class="popup">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+
+                                <span class="popuptext" id="myPopup">
+                                    Please enter the age your pup is in months. This number should be between 1 and 23
+                                </span>
+
+                            </div>
+                        </label>
+                        
+                        <label class="contain"><span>Joint: Chronic mobility issues, stiffness, or trouble getting up.</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="contain"><span>Skin &amp; Coat: Dry, flaky or itchy skin; for a dull or brittle coat.</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="contain"><span>Digestion: Sensitive digestion, or diarrhea or constipation.</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 section-continue">
+                <a href="Recipes.html">CONTINUE</a>
+            </div>
+
+        </div>
+    </div>    
+</body>
+
+<script>
+    var sheet = document.createElement('style'),  
+        $rangeInput = $('.range input'),
+        prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
+
+    document.body.appendChild(sheet);
+
+    var getTrackStyle = function (el) {  
+        var curVal = el.value,
+            val = (curVal - 1) * 16.666666667,
+            style = '';
+
+        // Set active label
+        $('.range-labels li').removeClass('active selected');
+
+        var curLabel = $('.range-labels').find('li:nth-child(' + curVal + ')');
+
+        curLabel.addClass('active selected');
+        curLabel.prevAll().addClass('selected');
+
+        // Change background gradient
+        for (var i = 0; i < prefs.length; i++) {
+            style += '.range {background: linear-gradient(to right, #37adbf 0%, #37adbf ' + val + '%, #fff ' + val + '%, #fff 100%)}';
+            style += '.range input::-' + prefs[i] + '{background: linear-gradient(to right, #8CCEF2 0%, #8CCEF2 ' + val + '%, #8CCEF2 ' + val + '%, #8CCEF2 100%)}';
+        }
+
+        return style;
+    }
+
+    $rangeInput.on('input', function () {
+        sheet.textContent = getTrackStyle(this);
+    });
+
+    // Change input value on label click
+    $('.range-labels li').on('click', function () {
+        var index = $(this).index();
+
+        $rangeInput.val(index + 1).trigger('input');
+
+    });
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".fa.fa-info-circle").click(function()
+        {
+            $(this).siblings(".popuptext").toggle();
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    function moveKnob(x){
+        $(".design-row .knob").css("left", x);
+    }
+</script>
+
+<script>
+    function openNav() 
+    {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() 
+    {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>

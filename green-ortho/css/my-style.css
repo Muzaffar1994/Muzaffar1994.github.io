@@ -1,0 +1,8395 @@
+/* Reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+body
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: gothic;
+    src: url(../font/GOTHIC.ttf);
+}
+
+@font-face
+{
+    font-family: gothic-italic;
+    src: url(../font/GOTHICI.ttf);
+}
+
+@font-face
+{
+    font-family: arial;
+    src: url(../font/Arial.ttf);
+}
+
+#mail-status 
+{
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: white;
+}
+
+#mail-status-overlay 
+{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+
+/*-------------------------------
+-------------header--------------
+-------------------------------*/
+
+header
+{
+    padding: 14px 0px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 8px 5px 0px rgba(230,227,230,1);
+}
+
+header img
+{
+    width: 250px;
+}
+
+header p
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 28px;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+header p a
+{
+    color: black;
+    text-decoration: none;
+}
+
+header p a:hover
+{
+    color: black;
+    text-decoration: none;
+}
+
+header .menu
+{
+    display: inline-block;
+}
+
+header .menu li
+{
+    display: inline-block;
+    text-align: right;
+    border-right: 2px solid #75c5b5;
+}
+
+header .menu li:last-of-type
+{
+    border-right: 0px solid #75c5b5;
+}
+
+header .menu li a
+{
+    color: black;
+    font-size: 18px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    text-decoration: none;
+    margin: 0px 14px;
+}
+
+header .contact
+{
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+}
+
+header .contact li:first-of-type
+{
+    margin-bottom: 8px;
+}
+
+header .contact li a
+{
+    text-decoration: none;
+    color: white !important;
+    background-color: #fa7c02;
+    padding: 4px 20px 3px;
+    display: block;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 17px;
+}
+
+header .contact li:first-of-type a
+{
+    letter-spacing: 3px;
+}
+
+header .contact li a .fa-phone-alt
+{
+    vertical-align: initial;
+    width: 13px;
+}
+
+header .contact li a svg
+{
+    vertical-align: bottom;
+    width: 18px;
+}
+
+/*---------------------------
+----------side-nav-----------
+---------------------------*/
+
+.mob-heading
+{
+    padding: 15px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 20px;
+    display: none;
+}
+
+.mob-heading a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.mob-heading a:hover
+{
+    color: black;
+    text-decoration: none;
+}
+
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #75c5b5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a 
+{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff !important;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+
+.sidenav .click i
+{
+    font-size: 16px;
+}
+
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+.sidenav .menu
+{
+    text-align: center;
+}
+
+.sidenav .menu .menu-1 li a
+{
+    color: white !important;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.sidenav .menu .contact li
+{
+    margin-top: 20px;
+}
+
+.sidenav .menu .contact li a
+{
+    background-color: #fa7c02;
+    color: white !important;
+    width: 300px;
+    margin: auto;
+    font-size: 16px;
+    height: 34px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.sidenav .menu .contact li a .fa-phone-alt
+{
+    vertical-align: initial;
+    width: 13px;
+}
+
+.sidenav .menu .contact li a svg
+{
+    vertical-align: text-top;
+    width: 18px;
+}
+
+#menu
+{
+    display: none;
+    position: absolute;
+    top: 20;
+    right: 25px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.phone
+{
+    display: none;
+}
+
+.chat
+{
+    display: none;
+}
+
+/*-------------------------------
+----------content-hero-----------
+-------------------------------*/
+
+.content
+{
+    padding-top: 85px;
+}
+
+.content .hero
+{
+    background-image: url(../img/hero1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 0px 38px;
+}
+
+.content .hero .list-1
+{
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.content .hero .list-1 li
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 46px;
+    margin: 0px 24px;
+}
+
+.content .hero .list-1 li p
+{
+    font-family: "Sawarabi Mincho"; 
+}
+
+.content .hero .list-1 li:last-of-type
+{
+    margin-right: 0px;
+    line-height: 60px;
+}
+
+.content .hero .list-2
+{
+    text-align: right;
+}
+
+.content .hero .list-2 li
+{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.content .hero .list-2 li:last-of-type
+{
+    margin-right: 0px;
+}
+
+/*-------------------------------
+---------content-heading---------
+-------------------------------*/
+
+.content .heading
+{
+    text-align: center;
+    margin: 110px 0px 40px;
+    padding-bottom: 25px;
+}
+
+.content .heading.pad
+{
+    margin: 110px 0px;
+}
+
+.content .heading h1
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: #00a99d;
+    font-size: 35px;
+    margin: 0px 0px 10px 28px;
+    letter-spacing: 8px;
+}
+
+.content .heading img
+{
+    width: 790px;
+}
+
+/*-------------------------------
+----------content-point----------
+-------------------------------*/
+
+.content .point .custom-heading
+{
+    text-align: center;
+    margin-bottom: 75px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    color: #a7a7a7;
+    font-family: gothic-italic;
+}
+
+.content .one .custom-heading
+{
+    margin-top: 80px;
+}
+
+.content .point .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -60px;
+    padding: 0px 20px;
+    background-color: white;
+}
+
+.content .point .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 50%;
+}
+
+.content .point .custom-heading .bor p
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 50%; 
+    padding: 27px 18px 23px;
+    margin: 3px;
+    font-size: 34px;
+    line-height: 32px;
+}
+
+.content .point .custom-heading .bor p span
+{
+    font-size: 42px;
+}
+
+.content .point .para
+{
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.content .point .para .left-quote
+{
+    position: absolute;
+    top: -20px;
+    left: 25px;
+}
+
+.content .point .para .right-quote
+{
+    position: absolute;
+    bottom: -15px;
+    right: 25px;
+}
+
+.content .point .para h2
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+    margin-left: 10px;
+    color: #000000;
+    line-height: 40px;
+}
+
+.content .point .para .bor-1
+{
+    border: 7px solid #f6e6a9;
+    width: 625px;
+    margin: -27px auto auto;
+    border-radius: 20px;
+}
+
+.content .point .para .bor-2
+{
+    border: 7px solid #f6e6a9;
+    width: 770px;
+    margin: -27px auto 13px;
+    border-radius: 20px;
+}
+
+.content .point .para .bor-3
+{
+    border: 7px solid #f6e6a9;
+    width: 670px;
+    margin: -27px auto auto;
+    border-radius: 20px;
+}
+
+.content .point .para .bor-4
+{
+    border: 7px solid #f6e6a9;
+    width: 530px;
+    margin: -27px auto auto;
+    border-radius: 20px;
+}
+
+.content .point .para .bor-5
+{
+    border: 7px solid #f6e6a9;
+    width: 640px;
+    margin: -27px auto auto;
+    border-radius: 20px;
+}
+
+.content .point .para .bor-6
+{
+    border: 7px solid #f6e6a9;
+    width: 685px;
+    margin: -27px auto 13px;
+    border-radius: 20px;
+}
+
+.content .point .point-content .text
+{
+    background-color: #75c5b5;
+    padding: 30px 0px;
+    color: white;
+}
+
+.content .point .point-content .text h3
+{
+    padding: 0px 30px;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.content .point .point-content .text .mar-left
+{
+    margin-left: -15px;
+}
+
+.content .point .point-content .text h3 span
+{
+    margin-left: 65px;
+}
+
+.content .point .point-content .text h3 span.mar-left
+{
+    margin-left: 15px;
+}
+
+.content .point .point-content .text .bor-right
+{
+    border: 1px solid white;
+    margin: 14px 0px 14px 30px;
+}
+
+.content .point .point-content .text .bor-left
+{
+    border: 1px solid white;
+    margin: 14px 30px 14px 0px;
+}
+
+.content .point .point-content .text p
+{
+    padding: 0px 45px 0px 30px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+}
+
+.content .point .point-content .text p.pad-right
+{
+    padding: 0px 30px;
+}
+
+.content .point .point-content .pad-bot
+{
+    padding-bottom: 22px;
+}
+
+.content .point .point-content .text .mar-equal
+{
+    padding: 0px 30px 0px 30px;
+}
+
+.content .point .point-content .image
+{
+    padding: 0px;
+}
+
+.content .point .point-content .image img
+{
+    width: 100%;
+}
+
+.content .point .pad-none
+{
+    padding: 0px;
+}
+
+.content .point .pad-bot
+{
+    padding-bottom: 150px;
+}
+
+.content .point .relative-content
+{
+    background-color: #fbf3d4;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 55px;
+    position: relative;
+}
+
+.content .point .relative-content img
+{
+    position: absolute;
+    top: -35px;
+    left: 73%;
+}
+
+.content .point .relative-content .reverse
+{
+    position: absolute;
+    top: -35px;
+    left: 23%;
+}
+
+.content .point .relative-content p
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+}
+
+/*-------------------------------
+----------content-types----------
+-------------------------------*/
+
+.content .types
+{
+    background-color: #fbf3d4;
+    padding: 80px 0px 0px;
+    margin: 155px 0px 125px;
+}
+
+.content .types .custom-heading
+{
+    text-align: center;
+    margin-bottom: 0px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .types .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #fbf3d4;
+}
+
+.content .types .custom-heading .bor
+{
+    background-color: #fbf3d4;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .types-2 .custom-heading .bor
+{
+    margin: 0px 20px 80px;
+}
+
+.content .types .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 125px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 8px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .types .heading
+{
+    margin: 40px 0px;
+}
+
+.content .types .heading img
+{
+    width: 750px;
+}
+
+.content .types .heading h1
+{
+    margin: 25px 0px 20px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.content .types .box .pad-none
+{
+    padding: 0px;
+}
+
+.content .types .box .card
+{
+    padding: 20px 25px;
+    width: 530px;
+    height: 520px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 80px;
+}
+
+.content .types-2 .box .card
+{
+    height: 710px;
+}
+
+.content .types-2 .box .custom-card
+{
+    height: 710px;
+}
+
+.content .types .box .mar-left-auto
+{
+    margin-left: auto;
+}
+
+.content .types .box .card .heading
+{
+    position: relative;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.content .types .box .card .heading .quote-left
+{
+    width: 29px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.content .types .box .card .heading .quote-right
+{
+    width: 29px;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+}
+
+.content .types .box .card .heading h4
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 0px 0px 10px;
+}
+
+.content .types .box .card h3
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 15px auto 10px;
+    text-align: center;
+    background-color: #e9c128;
+    border-radius: 30px;
+    padding: 10px 0px 8px;
+    color: white;
+    width: 95%;
+}
+
+.content .types .box .card p
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+/*-------------------------------
+--------content-research---------
+-------------------------------*/
+
+.content .research .custom-heading
+{
+    text-align: center;
+    margin-bottom: 0px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .research .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .research .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .research .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 125px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 8px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .research .box
+{
+    margin: 75px 0px 150px;
+}
+
+.content .research .box.pad-bot-none
+{
+    margin: 75px 0px 0px;
+}
+
+.content .research .box .pad-none
+{
+    padding: 0px;
+}
+
+.content .research .box .bg-color
+{
+    background-color: #75c5b5;
+}
+
+.content .research .box .card
+{
+    background-color: #75c5b5;
+    padding: 20px 0px;
+    border-radius: 0px;
+    border: 0px;
+}
+
+.content .research .box .card p
+{
+    color: white;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 20px;
+    padding: 0px 35px;
+    line-height: 36px;
+}
+
+.content .research .box .card p span
+{
+    font-family: arial; 
+    font-size: 19px;
+}
+
+.content .research .box .card .mar-bot
+{
+    margin-bottom: 30px;
+}
+
+.content .research .box .card h1
+{
+    color: white;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    margin: 15px 0px 25px;
+    font-size: 22px;
+    padding: 0px 35px;
+}
+
+.content .research .box .card h3
+{
+    color: white;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 38px;
+    padding: 0px 30px 0px 35px;
+    letter-spacing: 2px;
+}
+
+.content .research .box .card h3 span
+{
+    font-family: arial; 
+    font-size: 19px;
+    vertical-align: middle;
+}
+
+.content .research .box .card .bor-right 
+{
+    border: 1px solid white;
+    margin: 25px 0px 20px 35px;
+}
+
+.content .research .box .image img
+{
+    width: 100%;
+}
+
+/*-------------------------------
+------content-clinic-intro-------
+-------------------------------*/
+
+.content .clinic-intro
+{
+    padding-bottom: 150px;
+}
+
+.content .clinic-intro .custom-heading
+{
+    text-align: center;
+    margin-bottom: 100px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .clinic-intro .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .clinic-intro .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .clinic-intro .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 85px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .clinic-intro .box .pad-none
+{
+    padding: 0px;
+}
+
+.content .clinic-intro .box .card
+{
+    padding: 20px 30px;
+    width: 530px;
+    height: 480px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 80px;
+    background-color: #e3f3f0;
+}
+
+.content .clinic-intro .box .mar-left-auto
+{
+    margin-left: auto;
+}
+
+.content .clinic-intro .box .card h3
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 0px auto 25px;
+    text-align: center;
+    background-color: #75c5b5;
+    border-radius: 30px;
+    padding: 10px 0px 8px;
+    color: white;
+    width: 95%;
+}
+
+.content .clinic-intro .box .card p
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.content .clinic-intro .heading
+{
+    margin: 40px 0px;
+}
+
+.content .clinic-intro .heading img
+{
+    width: 750px;
+}
+
+.content .clinic-intro .heading h2
+{
+    margin: 35px 0px 40px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 38px;
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+
+.content .clinic-intro iframe
+{
+    width: 100%;
+    height: 640px;
+}
+
+/*-------------------------------
+---content-staff-recriutment----
+-------------------------------*/
+
+.content .staff-recriutment
+{
+    padding-bottom: 80px;
+}
+
+.content .staff-recriutment .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .staff-recriutment .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .staff-recriutment .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .staff-recriutment .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 145px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .staff-recriutment .card
+{
+    background-color: #e3f3f0;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    padding: 0px 60px 60px;
+}
+
+.content .staff-recriutment .card h3
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin: 60px auto;
+    width: 75%;
+    padding: 15px 0px 11px;
+    background-color: #75c5b5;
+    border-radius: 25px;
+}
+
+.content .staff-recriutment .card .staff-pad
+{
+    margin-bottom: 40px;
+}
+
+.content .staff-recriutment .card p
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 26px;
+    line-height: 48px;
+    letter-spacing: 1px;
+}
+
+.content .staff-recriutment .card .staff
+{
+    width: 100%;
+}
+
+.content .staff-recriutment .card .table table
+{
+    background-color: white;
+    width: 100%;
+}
+
+.content .staff-recriutment .card .table table .heading
+{
+    padding: 25px 0px;
+    width: 200px;
+    color: #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border: 2px solid #75c5b5;
+}
+
+.content .staff-recriutment .card .table table .description
+{
+    padding: 25px 0px 25px 55px;
+    color: #000000;
+    opacity: 0.8;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border: 2px solid #75c5b5;
+}
+
+.content .staff-recriutment .card .table table .description.pad-custom
+{
+    padding: 8px 0px 8px 55px;
+    line-height: 25px;
+}
+
+.content .staff-recriutment .card h4
+{
+    text-align: center;
+    font-size: 20px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.content .staff-recriutment .card a
+{
+    width: 49%;
+    display: inline-block;
+}
+
+.content .staff-recriutment .card .tel-2
+{
+    text-align: right;
+}
+
+/*-------------------------------
+----------content-cost----------
+-------------------------------*/
+
+.content .cost
+{
+    margin-bottom: 150px;
+}
+
+.content .cost .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .cost .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .cost .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .cost .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 145px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .cost .custom-heading .bor p span
+{
+    font-size: 42px;
+}
+
+.content .cost .flow-image
+{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.content .cost .para
+{
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.content .cost .para .left-quote
+{
+    position: absolute;
+    top: -20px;
+    left: 25px;
+}
+
+.content .cost .para .right-quote
+{
+    position: absolute;
+    bottom: -15px;
+    right: 25px;
+}
+
+.content .cost .para h2
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+    margin-left: 10px;
+    color: #000000;
+    line-height: 45px;
+    z-index: 2;
+}
+
+.content .cost .para h2 .bor-bot-1
+{
+    border: 5px solid #f6e6a9;
+    border-radius: 20px;
+    position: absolute;
+    width: 550px;
+    left: 135px;
+    margin-top: -20px;
+    z-index: -1;
+}
+
+.content .cost .para h2 .bor-bot-2
+{
+    border: 5px solid #f6e6a9;
+    border-radius: 20px;
+    position: absolute;
+    width: 590px;
+    left: 175px;
+    margin-top: -20px;
+    z-index: -1;
+}
+
+.content .cost .price-list h3
+{
+    color: #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 70px 0px 20px;
+}
+
+.content .cost .price-list .listing
+{
+    display: flow-root;
+    border-top: 2px solid #75c5b5;
+}
+
+.content .cost .price-list .listing h4
+{
+    float: left;
+    font-size: 24px;
+    padding: 15px 25px;
+}
+
+.content .cost .price-list .listing p
+{
+    float: right;
+    font-size: 24px;
+    padding: 15px 25px;
+}
+
+.content .cost .price-list .listing .custom-color
+{
+    color: #75c5b5;
+}
+
+/*-------------------------------
+----------content-flow----------
+-------------------------------*/
+
+.content .flow
+{
+    margin-bottom: 150px;
+}
+
+.content .flow .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .flow .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .flow .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .flow .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 145px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .flow .custom-heading .bor p span
+{
+    font-size: 42px;
+}
+
+.content .flow .flow-image
+{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.content .flow .para
+{
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.content .flow .para .left-quote
+{
+    position: absolute;
+    top: -20px;
+    left: 25px;
+}
+
+.content .flow .para .right-quote
+{
+    position: absolute;
+    bottom: -15px;
+    right: 25px;
+}
+
+.content .flow .para h2
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+    margin-left: 10px;
+    color: #000000;
+    line-height: 40px;
+}
+
+/*-------------------------------
+--------content-location---------
+-------------------------------*/
+
+.content .location
+{
+    padding-bottom: 80px;
+}
+
+.content .location .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .location .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .location .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .location .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 145px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .location .card
+{
+    border: none;
+    width: 480px;
+    margin-left: auto;
+}
+
+.content .location .card h1
+{
+    background-color: #e9c128;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 20px;
+    color: white !important;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.content .location .card .table
+{
+    border-top: 2px solid #75c5b5;
+    margin-bottom: 5px;
+}
+
+.content .location .card table
+{
+    border: none;
+    width: 100%;
+}
+
+.content .location .card tr
+{
+    border: none;
+}
+
+.content .location .card td
+{
+    border-bottom: 2px solid #75c5b5;
+    border-top: none;
+    padding: 13px 15px;
+}
+
+.content .location .card td span
+{
+    border-top: 2px solid #75c5b5;
+}
+
+.content .location .card .heading
+{
+    border-right: 2px solid #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 17px;
+    color: #75c5b5;
+    letter-spacing: 3px;
+}
+
+.content .location .card .three
+{
+    padding: 36px 15px;
+}
+
+.content .location .card .description
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+.content .location .card .four
+{
+    font-size: 20px;
+    padding: 0px;
+}
+
+.content .location .card .bor-none
+{
+    border: none;
+}
+
+.content .location .card h3
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.content .location .card .green
+{
+    background-color: #75c5b5;
+    padding: 15px;
+    color: white;
+}
+
+.content .location .card .green h4
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white !important;
+}
+
+.content .location .card .green p
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    color: white !important;
+}
+
+.content .location .card .green p span
+{
+    font-family: arial;
+    color: white !important;
+}
+
+.content .location .card .green .bor
+{
+    border: 1px solid white;
+    margin: 13px 0px;
+}
+
+/*-------------------------------
+-------content-reservation-------
+-------------------------------*/
+
+.content .reservation
+{
+    background-color: #fbf3d4;
+    padding: 80px 0px 150px;
+}
+
+.content .reservation.bg-white
+{
+    background-color: #ffffff;
+    padding: 0px 0px 100px;
+}
+
+.content .reservation .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .reservation .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #fbf3d4;
+}
+
+.content .reservation .custom-heading .bor
+{
+    background-color: #fbf3d4;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .reservation .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 50px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .reservation .heading img
+{
+    width: 750px;
+}
+
+.content .reservation .heading h2
+{
+    margin: 35px 0px 40px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 38px;
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+
+.content .reservation .box .pad-none
+{
+    padding: 0px;
+}
+
+.content .reservation .box .card
+{
+    padding: 15px 25px 30px 30px;
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 80px;
+    background-color: #75c5b5;
+}
+
+.content .reservation .box .mar-left-auto
+{
+    margin-left: auto;
+}
+
+.content .reservation .box .card p
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-top: 9px;
+}
+
+.content .reservation .box .image img
+{
+    width: 100%;
+}
+
+.content .reservation ul
+{
+    text-align: center;
+}
+
+.content .reservation ul li:first-of-type
+{
+    margin-bottom: 52px;
+}
+
+.content .reservation ul li:first-of-type a
+{
+    letter-spacing: 4px;
+}
+
+.content .reservation ul li a
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 42px;
+    color: black;
+    text-decoration: none;
+    padding: 15 40px;
+}
+
+.content .reservation ul li a:hover
+{
+	opacity: 0.7:
+}
+
+.content .reservation ul li a .fa-phone-alt
+{
+    width: 35px;
+}
+
+.content .reservation ul li .consult
+{
+    font-size: 38px;
+    color: white !important;
+    background-color: #fa7c02;
+    border-radius: 10px;
+}
+
+.content .reservation ul li .consult svg
+{
+    vertical-align: sub;
+    width: 40px;
+}
+
+/*-------------------------------
+---------content-implant---------
+-------------------------------*/
+
+.content .implant
+{
+    padding: 80px 0px 150px;
+}
+
+.content .implant .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .implant .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .implant .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .implant .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 50px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .implant .heading img
+{
+    width: 750px;
+}
+
+.content .implant .heading h2
+{
+    margin: 35px 0px 40px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 34px;
+    letter-spacing: 5px;
+    line-height: 50px;
+}
+
+.content .implant .teeth
+{
+    margin: auto;
+    display: block;
+}
+
+.content .implant .relative-content
+{
+    background-color: #e3f3f0;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 55px;
+    position: relative;
+}
+
+.content .implant .relative-content img
+{
+    position: absolute;
+    top: -35px;
+    left: 73%;
+}
+
+.content .implant .relative-content .reverse
+{
+    position: absolute;
+    top: -35px;
+    left: 63%;
+}
+
+.content .implant .relative-content p
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 26px;
+    line-height: 50px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+/*-------------------------------
+-------content-advantages--------
+-------------------------------*/
+
+.content .advantages
+{
+    padding: 80px 0px 60px;
+    background-color: #fbf3d4;
+}
+
+.content .advantages .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .advantages .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #fbf3d4;
+}
+
+.content .advantages .custom-heading .bor
+{
+    background-color: #fbf3d4;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .advantages .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 50px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .advantages .box
+{
+    position: relative;
+}
+
+.content .advantages .box .mar
+{
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: -90px;
+    left: -80px;
+    font-family: gothic-italic;
+}
+
+.content .advantages .box .bor
+{
+    background-color: transparent;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 50%;
+}
+
+.content .advantages .box .bor p
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 50%; 
+    padding: 27px 18px 23px;
+    margin: 3px;
+    font-size: 34px;
+    line-height: 32px;
+}
+
+.content .advantages .box .bor p span
+{
+    font-size: 42px;
+}
+
+.content .advantages .box .card h1
+{
+    color: #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #75c5b5;
+    display: inline-block;
+}
+
+.content .advantages .box .card h1.one
+{
+    width: 69%;
+}
+
+.content .advantages .box .card h1.two
+{
+    width: 69%;
+}
+
+.content .advantages .box .card h1.three
+{
+    width: 86%;
+}
+
+.content .advantages .box .card h1.four
+{
+    width: 80%;
+    margin: 53px 0px 73px;
+}
+
+.content .advantages .box .card h1.five
+{
+    width: 86%;
+    margin: 53px 0px 73px;
+}
+
+.content .advantages .box .card h1.six
+{
+    width: 93%;
+}
+
+.content .advantages .box .card h1.seven
+{
+    width: 100%;
+}
+
+.content .advantages .box .card h1.eight
+{
+    width: 93%;
+}
+
+.content .advantages .box .card 
+{
+    padding: 30px 35px 25px;
+    width: 490px;
+    height: 390px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 120px auto auto;
+}
+
+.content .advantages .box .card img
+{
+    margin-top: 10px;
+}
+
+/*-------------------------------
+------content-disadvantages------
+-------------------------------*/
+
+.content .disadvantages
+{
+    padding: 80px 0px 60px;
+    background-color: #e3f3f0;
+}
+
+.content .disadvantages .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .disadvantages .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #e3f3f0;
+}
+
+.content .disadvantages .custom-heading .bor
+{
+    background-color: #e3f3f0;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .disadvantages .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 50px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .disadvantages .box 
+{
+    position: relative;
+}
+
+.content .disadvantages .box .mar
+{
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: -90px;
+    left: -80px;
+    font-family: gothic-italic;
+}
+
+.content .disadvantages .box .bor
+{
+    background-color: transparent;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 50%;
+}
+
+.content .disadvantages .box .bor p
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 50%; 
+    padding: 27px 18px 23px;
+    margin: 3px;
+    font-size: 34px;
+    line-height: 32px;
+}
+
+.content .disadvantages .box .bor p span
+{
+    font-size: 42px;
+}
+
+.content .disadvantages .box .card h1
+{
+    color: #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #75c5b5;
+    display: inline-block;
+}
+
+.content .disadvantages .box .card h1.one
+{
+    width: 68%;
+    margin-top: 28px;
+}
+
+.content .disadvantages .box .card h1.two
+{
+    width: 49%;
+    margin-bottom: 48px;
+}
+
+.content .disadvantages .box .card h1.three
+{
+    width: 56%;
+    margin-top: 28px;
+}
+
+.content .disadvantages .box .card h1.four
+{
+    width: 55%;
+    margin-bottom: 48px;
+}
+
+.content .disadvantages .box .card h1.five
+{
+    width: 68%;
+    margin-top: 28px;
+}
+
+.content .disadvantages .box .card h1.six
+{
+    width: 86%;
+    margin-bottom: 48px;
+}
+
+.content .disadvantages .box .card h1.seven
+{
+    width: 75%;
+}
+
+.content .disadvantages .box .card h1.eight
+{
+    width: 86%;
+}
+
+.content .disadvantages .box .card h1.nine
+{
+    width: 30%;
+}
+
+.content .disadvantages .box .card 
+{
+    padding: 30px 25px 25px;
+    width: 490px;
+    height: 390px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 120px auto auto;
+}
+
+.content .disadvantages .box .card img
+{
+    margin-top: 10px;
+}
+
+/*-------------------------------
+--------content-redirect---------
+-------------------------------*/
+
+.content .redirect
+{
+    padding: 80px 0px 150px;
+}
+
+.content .redirect .box
+{
+    text-align: center;
+}
+
+.content .redirect .box h1
+{
+    text-align: center;
+    color: #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+
+.content .redirect .box .card 
+{
+    padding: 25px;
+    width: 530px;
+    height: 435px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e3f3f0;
+    text-align: center;
+}
+
+.content .redirect .box .card a
+{
+    width: 350px;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    color: white;
+    text-decoration: none;
+    margin: 25px auto;
+    background-color: #75c5b5;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+/*-------------------------------
+------content-consultation-------
+-------------------------------*/
+
+.content .consultation .heading
+{
+    margin: 40px 0px;
+}
+
+.content .consultation .heading img
+{
+    width: 900px;
+}
+
+.content .consultation .heading h2
+{
+    margin: 35px 0px 40px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 26px;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.content .consultation form .form-group
+{
+    margin-bottom: 0px;
+}
+
+.content .consultation form .form-group label
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    background-color: #75c5b5;
+    color: white;
+    font-size: 24px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 500;
+    padding: 38px 0px 38px 25px;
+    border-bottom: 2px solid white;
+}
+
+.content .consultation form .form-group .input-bor
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+    border: 2px solid #75c5b5;
+    border-left: 0px solid transparent;
+    padding: 19px 20px;
+    margin-left: -5px;
+    text-align: left;
+}
+
+.content .consultation form .form-group .bor-top
+{
+    border-top: 0px solid transparent;
+    padding: 20px 20px;
+}
+
+.content .consultation form .form-group input
+{
+    height: 60px;
+    border: 2px solid #cccccc;
+    color: #000000;
+    border-radius: 0px;
+    padding-left: 25px;
+    width: 100%;
+    margin: auto;
+    font-size: 24px;
+}
+
+.content .consultation form .form-group textarea
+{
+    border: 2px solid #cccccc;
+    color: #cccccc;
+    border-radius: 0px;
+    padding-left: 25px;
+    width: 100%;
+    margin: auto;
+    font-size: 24px;
+}
+
+.content .consultation form .form-group .custom-pad-bottom
+{
+    padding-bottom: 212px;
+}
+
+.content .consultation form button
+{
+    background-color: #fa7c02;
+    color: white;
+    border: 0px solid transparent;
+    padding: 10px 220px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 38px;
+    margin: 65px auto 165px;
+    display: block;
+}
+
+.content .consultation form .form-group .form-check
+{
+    display: inline-block;
+    text-align: left;
+}
+
+.content .consultation form .form-group .form-check label
+{
+    color: #000000;
+    width: 158px;
+    background-color: white;
+    padding: 22px 40px 34px;
+    font-size: 19px;
+}
+
+.content .consultation form .form-group .form-check .custom-input
+{
+    width: 22px;
+    position: absolute;
+    top: 2px;
+    left: 23px;
+    background-color: #ededee;
+}
+
+.content .consultation form .form-group .form-check .label-width-1
+{
+    width: 220px;
+}
+
+.content .consultation form .form-group .form-check .label-width-2
+{
+    width: 200px;
+}
+
+.content .consultation form .form-group .radio-pad
+{
+    padding: 5px 0px;
+    text-align: left;
+}
+
+/*-------------------------------
+---------whitening-types---------
+-------------------------------*/
+
+.content .whitening-types
+{
+    background-color: #ffffff;
+    padding: 80px 0px 0px;
+    margin: 155px 0px 125px;
+}
+
+.content .whitening-types .custom-heading
+{
+    text-align: center;
+    margin-bottom: 175px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .whitening-types .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .whitening-types .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .whitening-types .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 125px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 8px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .whitening-types .heading
+{
+    margin: 40px 0px;
+}
+
+.content .whitening-types .heading img
+{
+    width: 750px;
+}
+
+.content .whitening-types .heading h1
+{
+    margin: 25px 0px 20px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.content .whitening-types .box .pad-none
+{
+    padding: 0px;
+}
+
+.content .whitening-types .box .card
+{
+    padding: 20px 25px;
+    width: 530px;
+    height: 700px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 80px;
+    box-shadow: 0px 0px 7px 2px rgba(230,230,230,1);
+}
+
+.content .whitening-types .box .mar-left-auto
+{
+    margin-left: auto;
+}
+
+.content .whitening-types .box .card .heading
+{
+    position: relative;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.content .whitening-types .box .card .heading .quote-left
+{
+    width: 29px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.content .whitening-types .box .card .heading .quote-right
+{
+    width: 29px;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+}
+
+.content .whitening-types .box .card .heading h4
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 0px 0px 10px;
+}
+
+.content .whitening-types .box .card h3
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 15px auto 10px;
+    text-align: center;
+    background-color: #e9c128;
+    border-radius: 30px;
+    padding: 10px 0px 8px;
+    color: white;
+    width: 95%;
+}
+
+.content .whitening-types .box .card p
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.content .whitening-types .box .card .custom-mar-bot
+{
+    margin-bottom: 210px;
+}
+
+/*-------------------------------
+--------------cases--------------
+-------------------------------*/
+
+.content .cases
+{
+    background-color: #ffffff;
+    padding: 80px 0px 0px;
+    margin: 155px 0px 125px;
+}
+
+.content .cases .custom-heading
+{
+    text-align: center;
+    margin-bottom: 150px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .cases .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .cases .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .cases .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 125px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 8px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .cases .box
+{
+    background-color: #e3f3f0;
+    padding: 50px 40px 60px;
+    margin-bottom: 85px;
+    border-radius: 5px;
+}
+
+.content .cases .box h3
+{
+    margin: auto;
+    text-align: center;
+    background-color: #75c5b5;
+    width: 440px;
+    padding: 7px 0px;
+    border-radius: 20px;
+    color: white;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.content .cases .box .card
+{
+    border: 0px solid transparent;
+    background-color: transparent !important;
+}
+
+.content .cases .box .card img
+{
+    width: 100%;
+}
+
+.content .cases .box .card p
+{
+    margin-top: 40px;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: "Sawarabi Mincho";
+}
+
+.content .cases .box .mar-top
+{
+    margin-top: 50px;
+}
+
+/*-------------------------------
+----------------qa---------------
+-------------------------------*/
+
+.content .qa .custom-heading
+{
+    text-align: center;
+    margin-bottom: 50px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .qa .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .qa .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .qa .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 125px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 8px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.qa
+{
+    margin-bottom: 150px;
+}
+
+.qa h3
+{
+    text-align: center;
+    color: #75c5b5;
+    text-decoration: underline;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.qa input 
+{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.qa .row 
+{
+    display: flex;
+}
+
+.qa .row .col 
+{
+    flex: 1;
+}
+
+.qa .row .col:last-child 
+{
+    margin-left: 1em;
+}
+
+.qa .tabs 
+{
+    overflow: hidden;
+}
+
+.qa .tab 
+{
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.qa .tab-label 
+{
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 2px solid #75c5b5;
+    cursor: pointer;
+    color: #000000;
+    font-size: 24px;
+}
+
+.qa .tab-label .custom-color
+{
+    color: #75c5b5;
+    font-size: 32px;
+}
+
+.qa .arrow
+{
+    margin-left: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+
+.qa .tab-label::after 
+{
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    margin-left: 20px;
+    color: #75c5b5;
+    transition: all .35s;
+}
+
+.qa .tab-content 
+{
+    max-height: 0;
+    padding: 0px !important;
+    color: #2c3e50;
+    background: white;
+    transition: all .35s;
+}
+
+.qa .tab-content .bor-top
+{
+    border-top: 2px solid #75c5b5;
+}
+
+.qa .tab-content .content
+{
+    padding: 40px 0px 40px 55px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.qa .tab-content .content span
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+}
+
+.qa .tab-content .content .mar-top
+{
+    margin-top: 25px;
+}
+
+.qa .tab-close 
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+}
+
+.qa .tab-close:hover 
+{
+    background: #1a252f;
+}
+
+.qa input:checked + .tab-label::after 
+{
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.qa input:checked ~ .tab-content 
+{
+    max-height: 100vh;
+    padding: 1em;
+}
+
+/*-------------------------------
+------content-counselling-1------
+-------------------------------*/
+
+.content .counselling-1
+{
+    padding: 80px 0px 60px;
+    background-color: #ffffff;
+}
+
+.content .counselling-1 .custom-heading
+{
+    text-align: center;
+    margin-bottom: 0px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .counselling-1 .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .counselling-1 .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .counselling-1 .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 50px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .counselling-1 .box
+{
+    position: relative;
+}
+
+.content .counselling-1 .box .mar
+{
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: -50px;
+    font-family: gothic-italic;
+}
+
+.content .counselling-1 .box .bor
+{
+    background-color: transparent;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 50%;
+}
+
+.content .counselling-1 .box .bor p
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 50%; 
+    padding: 27px 20px 23px;
+    margin: 3px;
+    font-size: 34px;
+    line-height: 32px;
+}
+
+.content .counselling-1 .box .bor p span
+{
+    font-size: 42px;
+}
+
+.content .counselling-1 .box .card h1
+{
+    color: #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    font-size: 36px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #75c5b5;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.content .counselling-1 .box .card 
+{
+    padding: 30px 35px 25px;
+    width: 430px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 120px auto auto;
+}
+
+.content .counselling-1 .box .card-2
+{
+    padding: 30px 35px 25px;
+    width: 630px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 60px auto auto;
+}
+
+.content .counselling-1 .box .card .inner-box img
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 40px 0px 0px 17px;
+}
+
+.content .counselling-1 .box .card .inner-box p
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 67%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 40px 0px 0px 25px;
+    line-height: 30px;
+}
+
+.content .counselling-1 .custom-auto
+{
+    margin: 0px auto !important;
+}
+
+.content .counselling-1 .box .card-2
+{
+    padding: 30px 35px 25px;
+    width: 630px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 60px auto auto;
+}
+
+.content .counselling-1 .box .card-3
+{
+    padding: 30px 35px 25px;
+    width: 530px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 60px auto auto;
+}
+
+/*-------------------------------
+----content-office-whitening-----
+-------------------------------*/
+
+.content .office-whitening
+{
+    padding: 80px 0px 150px;
+}
+
+.content .office-whitening .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .office-whitening .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .office-whitening .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .office-whitening .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 50px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .office-whitening .heading img
+{
+    width: 900px;
+}
+
+.content .office-whitening .heading h2
+{
+    margin: 35px 0px 40px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+
+.content .office-whitening h3
+{
+    margin: 35px 0px 40px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: #75c5b5;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 45px;
+}
+
+.content .office-whitening .box
+{
+    position: relative;
+}
+
+.content .office-whitening .box .mar
+{
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: -50px;
+    font-family: gothic-italic;
+}
+
+.content .office-whitening .box .mar-2
+{
+    top: 10px;
+    left: -50px;
+}
+
+.content .office-whitening .box .bor
+{
+    background-color: transparent;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 50%;
+}
+
+.content .office-whitening .box .bor p
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 50%; 
+    padding: 27px 20px 23px;
+    margin: 3px;
+    font-size: 34px;
+    line-height: 32px;
+}
+
+.content .office-whitening .box .bor p span
+{
+    font-size: 42px;
+}
+
+.content .office-whitening .box .card h1
+{
+    color: #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #75c5b5;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.content .office-whitening .box .card 
+{
+    padding: 30px 35px 25px;
+    width: 430px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 50px auto auto;
+}
+
+.content .office-whitening .box .card-2 h1
+{
+    margin-left: 40px !important; 
+    padding-left: 25px !important;
+}
+
+.content .office-whitening .box .card .inner-box img
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px 0px 0px 0px;
+    width: 100%;
+}
+
+.content .office-whitening .box .card .inner-box p
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px 0px 0px 0px;
+    line-height: 30px;
+}
+
+.content .office-whitening .custom-auto
+{
+    margin: 0px auto !important;
+}
+
+.content .office-whitening .tab 
+{
+    overflow: hidden;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.content .office-whitening .tab button 
+{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 25px;
+    transition: 0.3s;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.content .office-whitening .tab button:hover 
+{
+    background-color: transparent;
+}
+
+.content .office-whitening .tab button.active 
+{
+    background-color: #75c5b5;
+    color: white;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content .office-whitening .tabcontent 
+{
+    display: none;
+    padding: 50px 50px;
+    background-color: #75c5b5;
+    border-top: none;
+    color: white;
+}
+
+.content .office-whitening .tabcontent ul
+{
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.content .office-whitening .tabcontent ul li
+{
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+/*-------------------------------
+----content-home-whitening-----
+-------------------------------*/
+
+.content .home-whitening
+{
+    padding: 80px 0px 150px;
+}
+
+.content .home-whitening .custom-heading
+{
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #75c5b5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+
+.content .home-whitening .custom-heading .mar
+{
+    display: inline-block;
+    margin-top: -35px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.content .home-whitening .custom-heading .bor
+{
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 45px;
+}
+
+.content .home-whitening .custom-heading .bor h2
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 40px; 
+    padding: 10px 50px 5px;
+    margin: 3px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+}
+
+.content .home-whitening .heading img
+{
+    width: 900px;
+}
+
+.content .home-whitening .heading h2
+{
+    margin: 35px 0px 40px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+
+.content .home-whitening h3
+{
+    margin: 35px 0px 40px;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    color: #75c5b5;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 45px;
+}
+
+.content .home-whitening .box
+{
+    position: relative;
+}
+
+.content .home-whitening .box .mar
+{
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: -50px;
+    font-family: gothic-italic;
+}
+
+.content .home-whitening .box .bor
+{
+    background-color: transparent;
+    margin: 0px 20px 0px;
+    display: inline-block;
+    border: 2px solid #75c5b5; 
+    display: inline-block; 
+    border-radius: 50%;
+}
+
+.content .home-whitening .box .bor p
+{
+    background-color: #75c5b5; 
+    color: white; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 50%; 
+    padding: 27px 20px 23px;
+    margin: 3px;
+    font-size: 34px;
+    line-height: 32px;
+}
+
+.content .home-whitening .box .bor p span
+{
+    font-size: 42px;
+}
+
+.content .home-whitening .box .card h1
+{
+    color: #75c5b5;
+    font-family: "M PLUS 1p"; font-weight: 500;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #75c5b5;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.content .home-whitening .box .card 
+{
+    padding: 30px 35px 25px;
+    width: 430px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 50px auto auto;
+}
+
+.content .home-whitening .box .card-2
+{
+    padding: 30px 35px 25px;
+    width: 630px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 60px auto auto;
+}
+
+.content .home-whitening .box .card .inner-box img
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px 0px 0px 0px;
+    width: 100%;
+}
+
+.content .home-whitening .box .card .inner-box p
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px 0px 0px 0px;
+    line-height: 30px;
+}
+
+.content .home-whitening .custom-auto
+{
+    margin: 0px auto !important;
+}
+
+.content .home-whitening .box .card-2
+{
+    padding: 30px 35px 25px;
+    width: 630px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 60px auto auto;
+}
+
+.content .home-whitening .box .card-3
+{
+    padding: 30px 35px 25px;
+    width: 530px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin: 60px auto auto;
+}
+
+.content .home-whitening .tab 
+{
+    overflow: hidden;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.content .home-whitening .tab button 
+{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 25px;
+    transition: 0.3s;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #75c5b5;
+    border: 3px solid #75c5b5;
+    border-left: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    margin-left: -7px;
+    border-top-right-radius: 10px;
+}
+
+.content .home-whitening .tab .custom-bor-left
+{
+    border-left: 3px solid #75c5b5;
+    margin-left: 0px;
+}
+
+.content .home-whitening .tab button:hover 
+{
+    background-color: transparent;
+}
+
+.content .home-whitening .tab button.active 
+{
+    background-color: #75c5b5;
+    color: white;
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content .home-whitening .tabcontent2
+{
+    display: none;
+    padding: 50px;
+    background-color: #75c5b5;
+    border-top: none;
+    color: white;
+}
+
+.content .home-whitening .tabcontent2 ul
+{
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.content .home-whitening .tabcontent2 ul li
+{
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+/*-------------------------------
+------------sub-footer-----------
+-------------------------------*/
+
+.sub-footer
+{
+    background-color: #75c5b5;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.sub-footer h1
+{
+    font-family: "Sawarabi Mincho";
+    font-size: 28px;
+    color: white;
+    letter-spacing: 4px;
+    margin-bottom: 7px;
+}
+
+.sub-footer h2
+{
+    font-family: arial;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 28px;
+}
+
+.sub-footer h3
+{
+    font-family: arial;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+/*-------------------------------
+--------------footer-------------
+-------------------------------*/
+
+footer
+{
+    background-color: #75c5b5;
+    padding: 50px 0px;
+}
+
+footer .links p
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 20px;
+    color: white !important;
+    margin-bottom: 10px;
+}
+
+footer .links .bor
+{
+    border: 1px solid white !important;
+    margin-bottom: 30px;
+}
+
+footer .links ul li
+{
+    margin-bottom: 20px;
+}
+
+footer .links ul li a
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: white !important;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .links ul li a img
+{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+footer .doctors-file
+{
+    text-align: center;
+    margin: 30px 0px 55px;
+}
+
+footer .warning
+{
+    text-align: center;
+}
+
+footer .warning svg
+{
+    display: block;
+    margin: auto;
+    width: 46px;
+}
+
+footer .warning h1
+{
+    font-family: "M PLUS 1p"; font-weight: 500;
+    font-size: 36px;
+    color: white !important;
+    letter-spacing: 5px;
+    border-bottom: 2px solid white !important;
+    display: inline-block;
+    margin: 20px 0px 20px;
+    padding-bottom: 10px;
+}
+
+footer .warning p
+{
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    color: white !important;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+footer .warning a
+{
+    font-family: "M PLUS 1p"; font-weight: 700;
+    font-size: 16px;
+    color: #75c5b5 !important;
+    background-color: white !important;
+    padding: 3px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+footer .warning .bor
+{
+    border: 1px solid white !important;
+    margin: 55px 30px;
+}
+
+footer .warning h2
+{
+    color: white !important;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 28px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+footer .warning h3
+{
+    font-size: 14px;
+    color: white !important;
+    font-family: arial;
+    margin-bottom: 30px;
+}
+
+footer .warning h4
+{
+    font-size: 16px;
+    color: white !important;
+    font-family: arial;
+}
+
+/*-------------------------------
+----------media-queries----------
+-------------------------------*/
+
+@media screen and (max-width: 1199px)
+{    
+    /*-----header-----*/
+    
+    header p
+    {
+        font-size: 24px;
+        margin-right: 0px;
+    }
+
+    header .menu li a
+    {
+        font-size: 16px;
+        margin: 0px 6px;
+    }
+
+    header .contact li a
+    {
+        padding: 4px 15px 3px;
+        font-size: 14px;
+    }
+
+    header .contact li:first-of-type a
+    {
+        letter-spacing: 2.5px;
+    }
+    
+    header .contact li a img
+    {
+        vertical-align: sub;
+    }
+    
+    /*-----content-hero-----*/
+    
+    .content .hero .list-1 li
+    {
+        font-size: 42px;
+        margin: 0px 20px;
+    }
+
+    .content .hero .list-2 li img
+    {
+        width: 135px;
+    }
+    
+    /*-----content-heading-----*/
+
+    .content .heading
+    {
+        text-align: center;
+        margin: 80px 0px 40px;
+        padding-bottom: 25px;
+    }
+
+    .content .heading h1
+    {
+        font-size: 32px;
+    }
+
+    .content .heading img
+    {
+        width: 740px;
+    }
+    
+    /*-----content-point-----*/
+    
+    .content .point .custom-heading
+    {
+        margin-top: 150px;
+    }
+    
+    .content .one .custom-heading
+    {
+        margin-top: 80px;
+    }
+
+    .content .point .custom-heading .bor p
+    {
+        padding: 23px 17px 20px;
+        font-size: 30px;
+    }
+
+    .content .point .custom-heading .bor p span
+    {
+        font-size: 40px;
+    }
+    
+    .content .point .para
+    {
+        margin-bottom: 70px;
+    }
+
+    .content .point .para h2
+    {
+        font-size: 32px;
+    }
+
+    .content .point .para .bor-1
+    {
+        width: 575px;
+    }
+
+    .content .point .para .bor-2
+    {
+        width: 725px;
+    }
+
+    .content .point .para .bor-3
+    {
+        width: 630px;
+    }
+
+    .content .point .para .bor-4
+    {
+        width: 500px;
+    }
+
+    .content .point .para .bor-5
+    {
+        width: 610px;
+    }
+    
+    .content .point .para .bor-6
+    {
+        width: 645px;
+    }
+    
+    .content .point .point-content .text
+    {
+        padding: 20px 0px;
+    }
+    
+    .content .point .point-content .text h3
+    {
+        font-size: 22px;
+    }
+    
+    .content .point .point-content .text p
+    {
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .content .point .point-content .image
+    {
+        margin: auto;
+    }
+    
+    .content .point .relative-content p 
+    {
+        font-size: 14px;
+        line-height: 27px;
+    }
+    
+    .content .point .pad-none
+    {
+        padding: 0px 7.5px;
+    }
+    
+    .content .point .pad-bot
+    {
+        padding-bottom: 100px;
+    }
+    
+    /*-----content-types-----*/
+    
+    .content .types
+    {
+        margin: 80px 0px 125px;
+        padding: 80px 0px 50px;
+    }
+    
+    .content .types .box .pad-none
+    {
+        padding: 0px 15px;
+    }
+
+    .content .types .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .types .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .types .heading img
+    {
+        width: 700px;
+    }
+
+    .content .types .box .card
+    {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    
+    .content .types .box .card .heading h4
+    {
+        font-size: 22px;
+    }
+    
+    .content .types .box .card h3
+    {
+        font-size: 22px;
+    }
+    
+    .content .types .box .card p 
+    {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+    /*-----content-research-----*/
+
+    .content .research .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .research .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+    
+    .content .research .box .card
+    {
+        padding: 10px 0px;
+    }
+    
+    .content .research .box .card p
+    {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .content .research .box .card h1
+    {
+        margin: 10px 0px 20px;
+    }
+    
+    .content .research .box .card h3
+    {
+        font-size: 32px;
+        letter-spacing: 1.5px;
+    }
+    
+    .content .research .box .card h3 span
+    {
+        font-size: 15px;
+    }
+    
+    .content .research .box .card .mar-bot
+    {
+        margin-bottom: 20px;
+    }
+    
+    /*-----content-clinic-intro-----*/
+    
+    .content .clinic-intro
+    {
+        padding-bottom: 80px;
+    }
+
+    .content .clinic-intro .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .clinic-intro .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .clinic-intro .box .pad-none
+    {
+        padding: 0px 15px;
+    }
+
+    .content .clinic-intro .box .card
+    {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    
+    .content .clinic-intro .box .card h3
+    {
+        font-size: 22px;
+    }
+    
+    .content .clinic-intro .box .card p
+    {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .content .clinic-intro .heading
+    {
+        margin: 40px 0px 35px;
+    }
+
+    .content .clinic-intro .heading img
+    {
+        width: 700px;
+    }
+
+    .content .clinic-intro .heading h2
+    {
+        font-size: 35px;
+    }
+
+    .content .clinic-intro iframe
+    {
+        width: 100%;
+        height: 540px;
+    } 
+    
+    /*-----content-implant-----*/
+
+    .content .implant
+    {
+        padding: 80px 0px 150px;
+    }
+
+    .content .implant .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .implant .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .implant .heading img
+    {
+        width: 700px;
+    }
+
+    .content .implant .heading h2
+    {
+        font-size: 28px;
+    }
+
+    .content .implant .teeth
+    {
+        width: 100%;
+    }
+    
+    /*-----content-staff-recriutment-----*/
+
+    .content .staff-recriutment .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .staff-recriutment .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .staff-recriutment .card
+    {
+        background-color: #e3f3f0;
+        border: 0px solid transparent;
+        border-radius: 10px;
+        padding: 0px 60px 60px;
+    }
+
+    .content .staff-recriutment .card h3
+    {
+        color: white;
+        font-size: 32px;
+        width: 85%;
+    }
+
+    .content .staff-recriutment .card p
+    {
+        font-family: "M PLUS 1p"; font-weight: 500;
+        color: black;
+        font-size: 22px;
+        line-height: 42px;
+        letter-spacing: 0px;
+    }
+
+    .content .staff-recriutment .card h4
+    {
+        font-size: 18px;
+    }
+    
+    .content .staff-recriutment .card a img
+    {
+        width: 90%;
+    }
+    
+    /*-----content-location-----*/
+
+    .content .location .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .location .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+    
+    /*-----content-reservation-----*/
+    
+    .content .reservation
+    {
+        padding: 80px 0px 80px;
+    }
+
+    .content .reservation .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .reservation .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .reservation .heading img
+    {
+        width: 700px;
+    }
+
+    .content .reservation .heading h2
+    {
+        font-size: 35px;
+    }
+
+    .content .reservation .box .pad-none
+    {
+        padding: 0px;
+    }
+
+    .content .reservation .box .card
+    {
+        padding: 18.5px 25px;
+    }
+
+    .content .reservation .box .card p
+    {
+        font-size: 14px;
+        line-height: 31px;
+        margin-top: 0px;
+    }
+
+    .content .reservation .box .image img
+    {
+        width: 100%;
+    }
+
+    .content .reservation ul
+    {
+        text-align: center;
+    }
+
+    .content .reservation ul li:first-of-type
+    {
+        margin-bottom: 52px;
+    }
+
+    .content .reservation ul li:first-of-type a
+    {
+        letter-spacing: 4px;
+    }
+
+    .content .reservation ul li a
+    {
+        font-size: 34px;
+    }
+
+    .content .reservation ul li .consult
+    {
+        font-size: 30px;
+    }
+    
+    /*-----content-advantages-----*/
+
+    .content .advantages .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .advantages .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .advantages .box .bor p
+    {
+        font-size: 32px;
+        padding: 25px 18px 21px;
+    }
+
+    .content .advantages .box .bor p span
+    {
+        font-size: 40px;
+    }
+
+    .content .advantages .box .card h1
+    {
+        font-size: 19px;
+        margin-bottom: 21px;
+    }
+
+    .content .advantages .box .card h1.one
+    {
+        width: 65%;
+    }
+
+    .content .advantages .box .card h1.two
+    {
+        width: 65%;
+    }
+
+    .content .advantages .box .card h1.three
+    {
+        width: 81%;
+    }
+
+    .content .advantages .box .card h1.four
+    {
+        width: 76%;
+        margin: 53px 0px 73px;
+    }
+
+    .content .advantages .box .card h1.five
+    {
+        width: 81%;
+        margin: 53px 0px 73px;
+    }
+
+    .content .advantages .box .card h1.six
+    {
+        width: 88%;
+    }
+
+    .content .advantages .box .card h1.seven
+    {
+        width: 94%;
+    }
+
+    .content .advantages .box .card h1.eight
+    {
+        width: 87%;
+    }
+
+    .content .advantages .box .card 
+    {
+        width: 430px;
+    }
+    
+    /*-----content-disadvantages-----*/
+
+    .content .disadvantages .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .disadvantages .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .disadvantages .box .bor p
+    {
+        font-size: 32px;
+        padding: 25px 18px 21px;
+    }
+
+    .content .disadvantages .box .bor p span
+    {
+        font-size: 40px;
+    }
+
+    .content .disadvantages .box .card h1
+    {
+        font-size: 19px;
+        margin-bottom: 21px;
+    }
+
+    .content .disadvantages .box .card h1.one
+    {
+        width: 64%;
+        margin-top: 28px;
+    }
+
+    .content .disadvantages .box .card h1.two
+    {
+        width: 46%;
+        margin-bottom: 48px;
+    }
+
+    .content .disadvantages .box .card h1.three
+    {
+        width: 53%;
+        margin-top: 28px;
+    }
+
+    .content .disadvantages .box .card h1.four
+    {
+        width: 52%;
+        margin-bottom: 48px;
+    }
+
+    .content .disadvantages .box .card h1.five
+    {
+        width: 64%;
+        margin-top: 28px;
+    }
+
+    .content .disadvantages .box .card h1.six
+    {
+        width: 81%;
+        margin-bottom: 48px;
+    }
+
+    .content .disadvantages .box .card h1.seven
+    {
+        width: 70%;
+    }
+
+    .content .disadvantages .box .card h1.eight
+    {
+        width: 82%;
+    }
+
+    .content .disadvantages .box .card h1.nine
+    {
+        width: 29%;
+    }
+
+    .content .disadvantages .box .card 
+    {
+        width: 430px;
+    }
+    
+    /*-----content-redirect-----*/
+
+    .content .redirect .box .card 
+    {
+        padding: 25px;
+        width: auto;
+        height: auto;
+    }
+
+    .content .redirect .box .card a
+    {
+        width: 350px;
+        margin: 25px auto 0px;
+    }
+    
+    .content .redirect .box .card img
+    {
+        width: 100%;
+    }
+    
+    /*-----content-consultation-----*/
+    
+    .content .consultation .heading
+    {
+        margin: 40px 0px;
+    }
+
+    .content .consultation .heading img
+    {
+        width: 800px;
+    }
+
+    .content .consultation .heading h2
+    {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .content .consultation form .form-group label
+    {
+        font-size: 23px;
+        padding: 38px 0px 38px 15px;
+    }
+
+    .content .consultation form .form-group input
+    {
+        font-size: 24px;
+    }
+
+    .content .consultation form .form-group textarea
+    {
+        font-size: 24px;
+    }
+
+    .content .consultation form .form-group .form-check label
+    {
+        width: 120px;
+        padding: 22px 0px 34px 40px;
+        font-size: 19px;
+    }
+
+    .content .consultation form .form-group .form-check .label-width-1
+    {
+        width: 175px;
+    }
+
+    .content .consultation form .form-group .form-check .label-width-2
+    {
+        width: 160px;
+    }
+    
+    .content .consultation form .form-group .textarea-input 
+    {
+        padding: 19.5px 0px;
+    }
+    
+    .content .consultation form button 
+    {
+        font-size: 34px;
+    }
+    
+    /*-----whitening-types-----*/
+
+    .content .whitening-types
+    {
+        margin: 0px 0px 125px;
+        padding: 0px 0px 50px;
+    }
+
+    .content .whitening-types .box .pad-none
+    {
+        padding: 0px 15px;
+    }
+
+    .content .whitening-types .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .whitening-types .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .whitening-types .heading img
+    {
+        width: 700px;
+    }
+
+    .content .whitening-types .box .card
+    {
+        width: auto;
+        margin-bottom: 30px;
+        height: 670px;
+    }
+
+    .content .whitening-types .box .card .heading h4
+    {
+        font-size: 20px;
+    }
+
+    .content .whitening-types .box .card h3
+    {
+        font-size: 22px;
+    }
+
+    .content .whitening-types .box .card p 
+    {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+    /*-----cases-----*/
+    
+    .content .cases 
+    {
+        padding: 0px;
+        margin: 125px 0px 55px;
+    }
+    
+    .content .cases .custom-heading 
+    {
+        margin-bottom: 100px;
+    }
+
+    .content .cases .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .cases .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .cases .box h3
+    {
+        width: 340px;
+        font-size: 20px;
+    }
+    
+    /*-----cost-----*/
+
+    .content .cost
+    {
+        margin-bottom: 150px;
+    }
+
+    .content .cost .custom-heading 
+    {
+        margin-bottom: 100px;
+    }
+
+    .content .cost .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .cost .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .cost .para h2
+    {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .content .cost .para h2 .bor-bot-1
+    {
+        width: 480px;
+        left: 95px;
+        margin-top: -18px;
+    }
+
+    .content .cost .para h2 .bor-bot-2
+    {
+        width: 520px;
+        left: 130px;
+        margin-top: -18px;
+    }
+
+    .content .cost .price-list h3
+    {
+        font-size: 30px;
+    }
+
+    .content .cost .price-list .listing h4
+    {
+        font-size: 22px;
+    }
+
+    .content .cost .price-list .listing p
+    {
+        font-size: 22px;
+    }
+    
+    /*-----flow-----*/
+    
+    .content .flow
+    {
+        margin-bottom: 150px;
+    }
+
+    .content .flow .custom-heading 
+    {
+        margin-bottom: 100px;
+    }
+
+    .content .flow .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .flow .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .flow .para h2
+    {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    
+    /*-----qa-----*/
+
+    .content .qa .custom-heading 
+    {
+        margin-bottom: 100px;
+    }
+
+    .content .qa .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .qa .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .qa
+    {
+        margin-bottom: 150px;
+    }
+
+    .qa h3
+    {
+        font-size: 50px;
+    }
+
+    .qa .tab-label 
+    {
+        font-size: 22px;
+    }
+
+    .qa .tab-label .custom-color
+    {
+        font-size: 30px;
+    }
+
+    .qa .tab-content .content
+    {
+        padding: 35px 0px 35px 50px;
+        font-size: 22px;
+    }
+    
+    /*-------------------------------
+    ------content-counselling-1------
+    -------------------------------*/
+
+    .content .counselling-1 .custom-heading 
+    {
+        margin-bottom: 10px;
+    }
+
+    .content .counselling-1 .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .counselling-1 .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .counselling-1 .box .mar
+    {
+        top: -5px;
+        left: -40px;
+    }
+
+    .content .counselling-1 .box .bor p 
+    {
+        padding: 17px 20px 17px;
+        font-size: 28px;
+    }
+    
+    .content .counselling-1 .box .card h1
+    {
+        font-size: 32px;
+    }
+    
+    /*-----content-office-whitening-----*/
+    
+    .content .office-whitening 
+    {
+        padding: 0px 0px 100px;
+    }
+
+    .content .office-whitening .custom-heading 
+    {
+        margin-bottom: 10px;
+    }
+
+    .content .office-whitening .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .office-whitening .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .office-whitening .box .bor p 
+    {
+        padding: 17px 20px 17px;
+        font-size: 28px;
+    }
+    
+    .content .office-whitening .heading img 
+    {
+        width: 800px;
+    }
+
+    .content .office-whitening .box .card h1
+    {
+        font-size: 26px;
+    }
+    
+    .content .office-whitening .box .card-2 h1 
+    {
+        padding-left: 35px !important;
+    }
+
+    /*-----content-home-whitening-----*/
+    
+    .content .home-whitening 
+    {
+        padding: 0px 0px 100px;
+    }
+
+    .content .home-whitening .custom-heading 
+    {
+        margin-bottom: 10px;
+    }
+
+    .content .home-whitening .custom-heading .mar
+    {
+        margin-top: -30px;
+    }
+
+    .content .home-whitening .custom-heading .bor h2
+    {
+        font-size: 35px;
+    }
+
+    .content .home-whitening .box .bor p 
+    {
+        padding: 17px 20px 17px;
+        font-size: 28px;
+    }
+
+    .content .home-whitening .heading img 
+    {
+        width: 800px;
+    }
+
+    .content .home-whitening .box .card h1
+    {
+        font-size: 26px;
+    }
+
+    .content .home-whitening .box .card-2 h1 
+    {
+        padding-left: 35px !important;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    /*-----header-----*/
+
+    header p
+    {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    header .menu
+    {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    header .contact
+    {
+        display: block;
+        text-align: center;
+    }
+
+    header .contact li a
+    {
+        width: 250px;
+        margin: auto;
+    }
+    
+    /*-----content-hero-----*/
+    
+    .content
+    {
+        padding-top: 153px;
+    }
+
+    .content .hero
+    {
+        padding: 35px 0px;
+    }
+
+    .content .hero .list-1 li
+    {
+        font-size: 36px;
+        margin: 0px 15px;
+    }
+
+    .content .hero .list-2 li img
+    {
+        width: 115px;
+    }
+    
+    /*-----content-heading-----*/
+
+    .content .heading
+    {
+        margin: 65px 0px 40px;
+    }
+
+    .content .heading h1
+    {
+        font-size: 26px;
+    }
+
+    .content .heading img
+    {
+        width: 640px;
+    }
+    
+    /*-----content-point-----*/
+    
+    .content .point .custom-heading
+    {
+        margin-top: 150px;
+    }
+
+    .content .one .custom-heading
+    {
+        margin-top: 80px;
+    }
+
+    .content .point .custom-heading .bor p
+    {
+        padding: 22px 17px 20px;
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .content .point .custom-heading .bor p span
+    {
+        font-size: 32px;
+    }
+
+    .content .point .para
+    {
+        margin-bottom: 70px;
+    }
+
+    .content .point .para h2
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .content .point .para .bor-1
+    {
+        width: 450px;
+        border: 5px solid #f6e6a9;
+        margin: -23px auto auto;
+    }
+
+    .content .point .para .bor-2
+    {
+        width: 575px;
+        border: 5px solid #f6e6a9;
+        margin: -23px auto auto;
+    }
+
+    .content .point .para .bor-3
+    {
+        width: 500px;
+        border: 5px solid #f6e6a9;
+        margin: -23px auto auto;
+    }
+
+    .content .point .para .bor-4
+    {
+        width: 400px;
+        border: 5px solid #f6e6a9;
+        margin: -23px auto auto;
+    }
+
+    .content .point .para .bor-5
+    {
+        width: 480px;
+        border: 5px solid #f6e6a9;
+        margin: -23px auto auto;
+    }
+    
+    .content .point .para .bor-6
+    {
+        width: 500px;
+        border: 5px solid #f6e6a9;
+        margin: -23px auto auto;
+    }
+
+    .content .point .point-content .text
+    {
+        margin: auto;
+    }
+    
+    .content .point .pad-none
+    {
+        padding: 0px 5px;
+    }
+    
+    .content .point .pad-bot
+    {
+        padding-bottom: 100px;
+    }
+    
+    .content .point .rel-content
+    {
+        margin: auto;
+    }
+    
+    /*-----content-types-----*/
+
+    .content .types .custom-heading .bor h2
+    {
+        font-size: 30px;
+        padding: 10px 100px 5px;
+        letter-spacing: 4px;
+    }
+
+    .content .types .heading img
+    {
+        width: 600px;
+    }
+    
+    .content .types .heading h1 
+    {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .content .types .box .card
+    {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    
+    .content .types .box .pad-none
+    {
+        padding: 0px;
+    }
+
+    .content .types .box .card .heading h4
+    {
+        font-size: 20px;
+    }
+    
+    /*-----whitening-types-----*/
+    
+    .content .whitening-types 
+    {
+        padding: 0px;
+    }
+    
+    .content .whitening-types .custom-heading 
+    {
+        margin-bottom: 100px;
+    }
+
+    .content .whitening-types .custom-heading .bor h2
+    {
+        font-size: 30px;
+        padding: 10px 100px 5px;
+        letter-spacing: 4px;
+    }
+
+    .content .whitening-types .heading img
+    {
+        width: 600px;
+    }
+
+    .content .whitening-types .heading h1 
+    {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .content .whitening-types .box .card
+    {
+        width: auto;
+        margin-bottom: 30px;
+        height: 640px;
+    }
+
+    .content .whitening-types .box .pad-none
+    {
+        padding: 0px;
+    }
+
+    .content .whitening-types .box .card .heading h4
+    {
+        font-size: 20px;
+    }
+    
+    .content .whitening-types .box .card .custom-mar-bot 
+    {
+        margin-bottom: 180px;
+    }
+    
+    /*-----content-research-----*/
+
+    .content .research .custom-heading .bor h2
+    {
+        font-size: 30px;
+        padding: 10px 100px 5px;
+        letter-spacing: 4px;
+    }
+
+    .content .research .box .card
+    {
+        padding: 10px 0px;
+        margin: auto;
+    }
+    
+    .content .research .box .bg-color
+    {
+        background-color: transparent;
+    }
+    
+    .content .research .box .pad-none
+    {
+        margin: auto;
+    }
+    
+    .content .research .box .image
+    {
+        margin: auto;
+    }
+    
+    /*-----content-clinic-intro-----*/
+
+    .content .clinic-intro .custom-heading .bor h2
+    {
+        font-size: 30px;
+        padding: 10px 100px 5px;
+        letter-spacing: 4px;
+    }
+
+    .content .clinic-intro .box .pad-none
+    {
+        margin: auto;
+        padding: 0px;
+    }
+
+    .content .clinic-intro .heading img
+    {
+        width: 600px;
+    }
+
+    .content .clinic-intro .heading h2
+    {
+        font-size: 30px;
+    }
+
+    .content .clinic-intro iframe
+    {
+        height: 440px;
+    }
+    
+    /*-----content-implant-----*/
+
+    .content .implant
+    {
+        padding: 0px 0px 80px;
+    }
+
+    .content .implant .custom-heading .bor h2
+    {
+        font-size: 30px;
+        padding: 10px 100px 5px;
+        letter-spacing: 4px;
+    }
+
+    .content .implant .heading img
+    {
+        width: 600px;
+    }
+
+    .content .implant .heading h2
+    {
+        font-size: 24px;
+        margin: 25px 30px;
+        line-height: 40px;
+    }
+
+    .content .implant .relative-content p
+    {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    
+    /*-----content-staff-recriutment-----*/
+
+    .content .staff-recriutment .custom-heading .bor h2
+    {
+        font-size: 30px;
+        padding: 10px 100px 5px;
+        letter-spacing: 4px;
+    }
+
+    .content .staff-recriutment .card
+    {
+        padding: 0px 30px 60px;
+    }
+
+    .content .staff-recriutment .card h3
+    {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .content .staff-recriutment .card p
+    {
+        font-family: "M PLUS 1p"; font-weight: 500;
+        color: black;
+        font-size: 22px;
+        line-height: 42px;
+        letter-spacing: 0px;
+    }
+    
+    .content .staff-recriutment .card .staff
+    {
+        width: 300px;
+        display: block;
+        margin: 30px auto 0px;
+    }
+    
+    .content .staff-recriutment .card .table table .heading
+    {
+        padding: 25px 0px;
+        width: 180px;
+        color: #75c5b5;
+        font-family: "M PLUS 1p"; font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 16px;
+        border: 2px solid #75c5b5;
+    }
+
+    .content .staff-recriutment .card .table table .description
+    {
+        padding: 25px 0px 25px 25px;
+        color: #000000;
+        opacity: 0.8;
+        font-family: "M PLUS 1p"; font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 16px;
+        border: 2px solid #75c5b5;
+    }
+
+    .content .staff-recriutment .card .table table .description.pad-custom
+    {
+        padding: 8px 0px 8px 25px;
+        line-height: 25px;
+    }
+
+    .content .staff-recriutment .card h4
+    {
+        font-size: 14px;
+    }
+
+    .content .staff-recriutment .card a img
+    {
+        width: 90%;
+    }
+    
+    /*-----content-location-----*/
+
+    .content .location .custom-heading .bor h2
+    {
+        font-size: 30px;
+        padding: 10px 100px 5px;
+        letter-spacing: 4px;
+    }
+    
+    .content .location .map
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .content .location .map iframe
+    {
+        width: 480px;
+        height: 470px;
+    }
+
+    .content .location .card
+    {
+        width: 480px;
+        margin: auto;
+    }
+    
+    /*-----content-reservation-----*/
+
+    .content .reservation .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+    .content .reservation .heading img
+    {
+        width: 600px;
+    }
+
+    .content .reservation .heading h2
+    {
+        font-size: 30px;
+    }
+
+    .content .reservation .box .pad-none
+    {
+        padding: 0px;
+        margin: auto;
+    }
+
+    .content .reservation .box .card
+    {
+        padding: 18.5px 25px;
+    }
+
+    .content .reservation .box .card p
+    {
+        font-size: 14px;
+        line-height: 31px;
+        margin-top: 0px;
+    }
+    
+    .content .reservation .box .image
+    {
+        margin: auto;
+    }
+
+    .content .reservation .box .image img
+    {
+        width: 100%;
+    }
+
+    .content .reservation ul
+    {
+        text-align: center;
+    }
+
+    .content .reservation ul li:first-of-type
+    {
+        margin-top: 30px;
+        margin-bottom: 32px;
+    }
+
+    .content .reservation ul li:first-of-type a
+    {
+        letter-spacing: 4px;
+    }
+
+    .content .reservation ul li a
+    {
+        font-size: 28px;
+    }
+    
+    .content .reservation ul li a .fa-phone-alt
+    {
+        vertical-align: sub;
+    }
+
+    .content .reservation ul li .consult
+    {
+        font-size: 26px;
+    }
+    
+    .content .reservation ul li .consult svg
+    {
+        width: 30px;
+    }
+    
+    /*-----content-advantages-----*/
+
+    .content .advantages .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    
+    /*-----content-disadvantages-----*/
+
+    .content .disadvantages .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    
+    /*-----content-redirect-----*/
+
+    .content .redirect .box .card 
+    {
+        padding: 25px;
+        width: auto;
+        height: auto;
+    }
+
+    .content .redirect .box .card a
+    {
+        width: 350px;
+        margin: 25px auto 0px;
+    }
+    
+    .content .redirect .box .mar-top-custom
+    {
+        margin-top: 30px;
+    }
+    
+    /*-----content-consultation-----*/
+
+    .content .consultation .heading
+    {
+        margin: 40px 0px;
+    }
+
+    .content .consultation .heading img
+    {
+        width: 725px;
+    }
+
+    .content .consultation .heading h2
+    {
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 35px;
+    }
+    
+    .content .consultation form .form-group label 
+    {
+        font-size: 16px;
+        padding: 35px 0px 35px 15px;
+    }
+    
+    .content .consultation form .form-group input 
+    {
+        height: 54px;
+        font-size: 16px;
+        padding-left: 12px;
+    }
+    
+    .content .consultation form .form-group .input-bor 
+    {
+        padding: 15px 0px;
+    }
+    
+    .content .consultation form .form-group .bor-top 
+    {
+        padding: 16px 0px;
+    }
+    
+    .content .consultation form .form-group .form-check
+    {
+        padding-left: 13px;
+    }
+    
+    .content .consultation form .form-group .form-check .custom-input 
+    {
+        width: 16px;
+        position: absolute;
+        top: -12px;
+        left: 14px;
+        background-color: #ededee;
+    }
+    
+    .content .consultation form .form-group .form-check label 
+    {
+        width: 91px;
+        padding: 8px 0px 15px 27px;
+        font-size: 16px;
+    }
+    
+    .content .consultation form .form-group .form-check .label-width-1 
+    {
+        width: 139px;
+    }
+    
+    .content .consultation form .form-group .form-check .label-width-2 
+    {
+        width: 123px;
+    }
+    
+    .content .consultation form .form-group .textarea-input
+    {
+        padding: 14.5px 0px;
+    }
+    
+    .content .consultation form .form-group textarea 
+    {
+        font-size: 16px;
+        padding-left: 12px;
+    }
+    
+    /*-----cases-----*/
+    
+    .content .cases .custom-heading 
+    {
+        margin-bottom: 70px;
+    }
+
+    .content .cases .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    
+    .content .cases .box 
+    {
+        background-color: #e3f3f0;
+        padding: 50px 40px 60px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+    }
+
+    .content .cases .box h3
+    {
+        width: 240px;
+        font-size: 16px;
+    }
+    
+    .content .cases .box .mar-bot
+    {
+        margin-bottom: 50px;
+    }
+    
+    .content .cases .box .card p 
+    {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+    /*-----cost-----*/
+    
+    .content .cost 
+    {
+        margin-bottom: 100px;
+    }
+
+    .content .cost .custom-heading 
+    {
+        margin-bottom: 70px;
+    }
+
+    .content .cost .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+    .content .cost .para h2
+    {
+        letter-spacing: 1px;
+        font-size: 17px;
+        line-height: 35px;
+    }
+
+    .content .cost .para h2 .bor-bot-1
+    {
+        width: 360px;
+        left: 70px;
+        margin-top: -17px;
+    }
+
+    .content .cost .para h2 .bor-bot-2
+    {
+        width: 385px;
+        left: 100px;
+        margin-top: -17px;
+    }
+
+    .content .cost .price-list h3
+    {
+        font-size: 30px;
+    }
+
+    .content .cost .price-list .listing h4
+    {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .content .cost .price-list .listing p
+    {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    /*-----flow-----*/
+
+    .content .flow
+    {
+        margin-bottom: 150px;
+    }
+
+    .content .flow .custom-heading 
+    {
+        margin-bottom: 70px;
+    }
+
+    .content .flow .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+    .content .flow .para h2
+    {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    
+    /*-----qa-----*/
+
+    .content .qa .custom-heading 
+    {
+        margin-bottom: 70px;
+    }
+
+    .content .qa .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+    .qa
+    {
+        margin-bottom: 70px;
+    }
+
+    .qa h3
+    {
+        font-size: 45px;
+    }
+
+    .qa .tab-label 
+    {
+        font-size: 20px;
+    }
+
+    .qa .tab-label .custom-color
+    {
+        font-size: 28px;
+    }
+
+    .qa .tab-content .content
+    {
+        padding: 30px 0px 30px 45px;
+        font-size: 20px;
+    }
+    
+    /*----content-counselling-1-----*/
+
+    .content .counselling-1 .custom-heading 
+    {
+        margin-bottom: 20px;
+    }
+
+    .content .counselling-1 .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+    .content .counselling-1 .box .mar
+    {
+        top: -5px;
+        left: -40px;
+    }
+
+    .content .counselling-1 .box .bor p 
+    {
+        padding: 17px 20px 17px;
+        font-size: 28px;
+    }
+    
+    .content .counselling-1 .box .card 
+    {   
+        margin: 80px auto auto;
+    }
+    
+    .content .counselling-1 .box .card-2 
+    {
+        width: 430px;
+    }
+    
+    .content .counselling-1 .box .card-3 
+    {
+        width: 430px;
+    }
+
+    .content .counselling-1 .box .card h1
+    {
+        font-size: 24px;
+    }
+    
+    /*-----content-office-whitening-----*/
+
+    .content .office-whitening .custom-heading 
+    {
+        margin-bottom: 20px;
+    }
+
+    .content .office-whitening .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    
+    .content .office-whitening .heading h2 
+    {
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 30px;
+    }
+
+    .content .office-whitening .box .mar
+    {
+        top: -5px;
+        left: -40px;
+    }
+    
+    .content .office-whitening .box .mar-2 
+    {
+        top: 15px;
+    }
+    
+    .content .office-whitening .heading img 
+    {
+        width: 700px;
+    }
+
+    .content .office-whitening .box .bor p 
+    {
+        padding: 17px 20px 17px;
+        font-size: 28px;
+    }
+
+    .content .office-whitening .box .card h1
+    {
+        font-size: 24px;
+    }
+
+    /*-----content-home-whitening-----*/
+
+    .content .home-whitening .custom-heading 
+    {
+        margin-bottom: 20px;
+    }
+
+    .content .home-whitening .custom-heading .bor h2
+    {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    
+    .content .home-whitening .heading h2 
+    {
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 30px;
+    }
+
+    .content .home-whitening .box .mar
+    {
+        top: -5px;
+        left: -40px;
+    }
+    
+    .content .home-whitening .heading img 
+    {
+        width: 700px;
+    }
+
+    .content .home-whitening .box .bor p 
+    {
+        padding: 17px 20px 17px;
+        font-size: 28px;
+    }
+
+    .content .home-whitening .box .card h1
+    {
+        font-size: 24px;
+    }
+
+    /*-----sub-footer-----*/
+
+    .sub-footer h1
+    {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .sub-footer h2
+    {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 23px;
+    }
+
+    .sub-footer h3
+    {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    
+    /*-----footer-----*/
+
+    footer .links p
+    {
+        font-size: 18px;
+    }
+
+    footer .links ul li
+    {
+        margin-bottom: 15px;
+    }
+
+    footer .links ul li a
+    {
+        font-size: 12px;
+    }
+
+    footer .links ul li a img
+    {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    footer .warning h1
+    {
+        font-size: 32px;
+    }
+
+    footer .warning p
+    {
+        font-size: 16px;
+    }
+
+    footer .warning .bor
+    {
+        margin: 45px 30px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    /*-----content-hero-----*/
+
+    .content .hero
+    {
+        padding: 20px 0px;
+    }
+
+    .content .hero .list-1 li
+    {
+        font-size: 30px;
+        margin: 0px 10px;
+    }
+    
+    .content .hero .list-1 li:last-of-type 
+    {
+        line-height: 30px;
+        margin: 0px 5px;
+    }
+
+    .content .hero .list-2 li img
+    {
+        width: 100px;
+    }
+
+    /*-----content-heading-----*/
+
+    .content .heading
+    {
+        margin: 65px 0px 40px;
+    }
+
+    .content .heading h1
+    {
+        font-size: 18px;
+        margin-left: 0px;
+    }
+
+    .content .heading img
+    {
+        width: 490px;
+        margin-left: -17px;
+    }
+    
+    /*-----content-point-----*/
+
+    .content .point .custom-heading
+    {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .content .one .custom-heading
+    {
+        margin-top: 80px;
+    }
+
+    .content .point .custom-heading .bor p
+    {
+        padding: 22px 17px 20px;
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .content .point .custom-heading .bor p span
+    {
+        font-size: 32px;
+    }
+
+    .content .point .para h2
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .content .point .para .bor-1
+    {
+        width: 390px;
+    }
+
+    .content .point .para .bor-2
+    {
+        width: 490px;
+        margin-bottom: 15px;
+    }
+
+    .content .point .para .bor-3
+    {
+        width: 425px;
+    }
+
+    .content .point .para .bor-4
+    {
+        width: 340px;
+    }
+
+    .content .point .para .bor-5
+    {
+        width: 410px;
+    }
+    
+    .content .point .para .bor-6
+    {
+        width: 425px;
+        margin-bottom: 15px;
+    }
+
+    .content .point .point-content .text
+    {
+        margin: auto;
+    }
+    
+    .content .point .para .left-quote 
+    {
+        left: 0px;
+    }
+    
+    .content .point .para .right-quote 
+    {
+        right: 0px;
+    }
+    
+    /*-----content-types-----*/
+
+    .content .types .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+    
+    .content .types .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+
+    .content .types .heading img
+    {
+        width: 500px;
+    }
+
+    .content .types .heading h1 
+    {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+    
+    .content .types .box .card .heading .quote-left
+    {
+        left: 15px;
+    }
+    
+    /*-----whitening-types-----*/
+
+    .content .whitening-types .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .whitening-types .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+
+    .content .whitening-types .heading img
+    {
+        width: 500px;
+    }
+
+    .content .whitening-types .heading h1 
+    {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+
+    .content .whitening-types .box .card 
+    {
+        height: 610px;
+    }
+
+    .content .whitening-types .box .card .heading .quote-left
+    {
+        left: 15px;
+    }
+
+    /*-----content-research-----*/
+
+    .content .research .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+    
+    .content .research .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+    
+    /*-----content-clinic-intro-----*/
+
+    .content .clinic-intro .custom-heading .bor h2
+    {
+        font-size: 24px;
+    }
+    
+    .content .clinic-intro .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+
+    .content .clinic-intro .box .pad-none
+    {
+        margin: auto;
+        padding: 0px;
+    }
+
+    .content .clinic-intro .heading img
+    {
+        width: 500px;
+    }
+
+    .content .clinic-intro .heading h2
+    {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+
+    .content .clinic-intro iframe
+    {
+        height: 280px;
+    }
+    
+    /*-----content-staff-recriutment-----*/
+
+    .content .staff-recriutment .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .staff-recriutment .card h3
+    {
+        font-size: 20px;
+    }
+
+    .content .staff-recriutment .card p
+    {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .content .staff-recriutment .card .table table .heading
+    {
+        padding: 25px 0px;
+        width: 130px;
+        letter-spacing: 2px;
+        font-size: 14px;
+        border: 2px solid #75c5b5;
+    }
+
+    .content .staff-recriutment .card .table table .description
+    {
+        padding: 25px 0px 25px 15px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        border: 2px solid #75c5b5;
+    }
+
+    .content .staff-recriutment .card .table table .description.pad-custom
+    {
+        padding: 8px 0px 8px 15px;
+        line-height: 25px;
+    }
+
+    .content .staff-recriutment .card h4
+    {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .content .staff-recriutment .card h4 br
+    {
+        display: none;
+    }
+    
+    .content .staff-recriutment .card a
+    {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+    .content .staff-recriutment .card a img
+    {
+        width: 290px;
+    }
+    
+    /*-----content-location-----*/
+
+    .content .location .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .location .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+
+    /*-----content-reservation-----*/
+
+    .content .reservation .custom-heading .bor h2
+    {
+        font-size: 24px;
+    }
+
+    .content .reservation .heading img
+    {
+        width: 500px;
+    }
+
+    .content .reservation .heading h2
+    {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+
+    .content .reservation ul
+    {
+        text-align: center;
+    }
+
+    .content .reservation ul li a
+    {
+        font-size: 24px;
+    }
+
+    .content .reservation ul li a .fa-phone-alt
+    {
+        vertical-align: initial;
+        width: 22px;
+    }
+
+    .content .reservation ul li .consult
+    {
+        font-size: 22px;
+    }
+
+    .content .reservation ul li .consult svg
+    {
+        width: 26px;
+    }
+
+    /*-----content-implant-----*/
+
+    .content .implant
+    {
+        padding: 0px 0px 80px;
+    }
+
+    .content .implant .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .implant .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+
+    .content .implant .heading img
+    {
+        width: 500px;
+    }
+
+    .content .implant .heading h2
+    {
+        font-size: 20px;
+        margin: 25px 30px;
+        line-height: 35px;
+    }
+
+    .content .implant .relative-content p
+    {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    
+    /*-----content-advantages-----*/
+
+    .content .advantages .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .advantages .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+    
+    /*-----content-disadvantages-----*/
+
+    .content .disadvantages .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .disadvantages .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+    
+    /*-----content-consultation-----*/
+
+    .content .consultation .heading
+    {
+        margin: 30px 0px;
+    }
+
+    .content .consultation .heading img
+    {
+        width: 575px;
+    }
+
+    .content .consultation .heading h2
+    {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+    
+    .content .consultation form .form-group label 
+    {
+        font-size: 12px;
+        padding: 30px 0px 30px 10px;
+    }
+    
+    .content .consultation form .form-group .form-check label 
+    {
+        width: 65px;
+        padding: 7px 0px 12px 19px;
+        font-size: 11px;
+    }
+    
+    .content .consultation form .form-group .input-bor 
+    {
+        padding: 12px 0px;
+    }
+    
+    .content .consultation form .form-group .bor-top 
+    {
+        padding: 13px 0px;
+    }
+    
+    .content .consultation form .form-group input 
+    {
+        height: 46px;
+    }
+    
+    .content .consultation form .form-group .form-check .label-width-1 
+    {
+        width: 103px;
+    }
+    
+    .content .consultation form .form-group .form-check .label-width-2 
+    {
+        width: 91px;
+    }
+    
+    .content .consultation form .form-group .form-check 
+    {
+        padding-left: 9px;
+    }
+    
+    .content .consultation form .form-group .form-check .custom-input 
+    {
+        top: -11px;
+        left: 9px;
+    }
+    
+    .content .consultation form .form-group .textarea-input 
+    {
+        padding: 10px 0px;
+    }
+    
+    .content .consultation form .form-group .radio-pad 
+    {
+        padding: 13.5px 0px;
+    }
+    
+    .content .consultation form button 
+    {
+        padding: 10px 130px 10px;
+        font-size: 28px;
+    }
+    
+    /*-----cases-----*/
+    
+    .content .cases .box h3
+    {
+        width: 340px;
+        font-size: 20px;
+    }
+    
+    .content .cases .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .cases .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+    
+    /*-----cost-----*/
+
+    .content .cost 
+    {
+        margin-bottom: 100px;
+    }
+
+    .content .cost .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .cost .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+
+    .content .cost .para h2
+    {
+        letter-spacing: 1px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+    
+    .content .cost .para .left-quote 
+    {
+        left: 0px;
+    }
+    
+    .content .cost .para .right-quote 
+    {
+        right: 0px;
+    }
+
+    .content .cost .para h2 .bor-bot-1 
+    {
+        width: 285px;
+        left: 40px;
+        margin-top: -14px;
+        border: 4px solid #f6e6a9;
+    }
+
+    .content .cost .para h2 .bor-bot-2
+    {
+        width: 305px;
+        left: 60px;
+        margin-top: -14px;
+        border: 4px solid #f6e6a9;
+    }
+
+    .content .cost .price-list h3
+    {
+        font-size: 26px;
+    }
+
+    .content .cost .price-list .listing h4
+    {
+        font-size: 13px;
+        padding: 15px 5px;
+    }
+
+    .content .cost .price-list .listing p
+    {
+        font-size: 13px;
+        padding: 15px 5px;
+    }
+    
+    /*-----flow-----*/
+
+    .content .flow
+    {
+        margin-bottom: 115px;
+    }
+
+    .content .flow .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .flow .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+
+    .content .flow .para h2
+    {
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 0px;
+    }
+    
+    .content .flow .para .left-quote 
+    {
+        left: 0px;
+    }
+    
+    .content .flow .para .right-quote 
+    {
+        right: 0px;
+    }
+    
+    /*-----qa-----*/
+
+    .content .qa .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .qa .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+    
+    .content .qa .custom-heading 
+    {
+        margin-bottom: 50px;
+    }
+
+    .qa
+    {
+        margin-bottom: 70px;
+    }
+
+    .qa h3
+    {
+        font-size: 35px;
+    }
+
+    .qa .tab-label 
+    {
+        font-size: 18px;
+    }
+
+    .qa .tab-label .custom-color
+    {
+        font-size: 26px;
+    }
+
+    .qa .tab-content .content
+    {
+        padding: 20px 0px 20px 35px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    /*----content-counselling-1-----*/
+
+    .content .counselling-1 .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .counselling-1 .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+
+    .content .counselling-1 .custom-heading 
+    {
+        margin-bottom: 10px;
+    }
+
+    .content .counselling-1 .box .mar
+    {
+        top: -5px;
+        left: -40px;
+    }
+
+    .content .counselling-1 .box .card h1
+    {
+        margin-left: 0px;
+    }
+    
+    /*-----content-office-whitening-----*/
+
+    .content .office-whitening .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+
+    .content .office-whitening .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+    
+    .content .office-whitening .heading img 
+    {
+        width: 550px;
+    }
+
+    .content .office-whitening .custom-heading 
+    {
+        margin-bottom: 10px;
+    }
+    
+    .content .office-whitening .heading h2 br
+    {
+        display: none;
+    }
+    
+    .content .office-whitening .box .mar-2 
+    {
+        left: -25px;
+    }
+
+    .content .office-whitening .box .card h1
+    {
+        margin-left: 0px;
+    }
+
+    .content .office-whitening .tab button
+    {
+        border-top-right-radius: 0px;
+        margin-left: 0px;
+        width: 100%;
+        border-left: 3px solid #75c5b5;
+    }
+
+    .content .office-whitening .tab button.active 
+    {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    /*-----content-home-whitening-----*/
+
+    .content .home-whitening .custom-heading .bor h2
+    {
+        font-size: 24px;
+        padding: 10px 80px 5px;
+    }
+    
+    .content .home-whitening .heading h2 br
+    {
+        display: none;
+    }
+
+    .content .home-whitening .custom-heading .mar
+    {
+        margin-top: -25px;
+    }
+    
+    .content .home-whitening .heading img 
+    {
+        width: 550px;
+    }
+
+    .content .home-whitening .custom-heading 
+    {
+        margin-bottom: 10px;
+    }
+
+    .content .home-whitening .box .card h1
+    {
+        margin-left: 0px;
+    }
+    
+    .content .home-whitening .tab button
+    {
+        border-top-right-radius: 0px;
+        margin-left: 0px;
+        width: 100%;
+        border-left: 3px solid #75c5b5;
+    }
+    
+    .content .home-whitening .tab button.active 
+    {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    
+    /*-----footer-----*/
+    
+    footer .links p
+    {
+        display: inline-block;
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    
+    footer .links ul
+    {
+        margin-bottom: 30px;
+    }
+    
+    footer .links .bor
+    {
+        display: none;
+    }
+    
+    footer .doctors-file
+    {
+        margin: 10px 0px 40px;
+    }
+    
+    footer .warning h1 
+    {
+        font-size: 22px;
+    }
+    
+    footer .warning .bor 
+    {
+        margin: 32px 30px 30px;
+    }
+    
+    footer .warning h3
+    {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .row
+    {
+        margin: 0px;
+    }
+    
+    .content
+    {
+        padding-top: 50px;
+    }
+    
+    /*-----header-----*/
+    
+    header
+    {
+        display: none;
+    }
+    
+    /*-----sidebar-----*/
+    
+    #menu
+    {
+        display: block;
+        position: fixed;
+        top: 14px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .phone
+    {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .phone svg
+    {
+        width: 25px;
+    }
+
+    .chat
+    {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 85px;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .chat svg
+    {
+        width: 25px;
+    }
+    
+    .mob-heading
+    {
+        display: block;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 2;
+        box-shadow: 0px 8px 5px 0px rgba(230,227,230,1);
+    }
+    
+    .mob-heading a img
+    {
+        width: 200px;
+    }
+
+    /*-----content-hero-----*/
+
+    .content .hero
+    {
+        background-position: top;
+    }
+
+    .content .hero .list-1 li
+    {
+        font-size: 26px;
+        margin: 0px 8px;
+    }
+
+    .content .hero .list-1 li:last-of-type 
+    {
+        line-height: 30px;
+        margin: 0px 5px;
+    }
+
+    .content .hero .list-2 li
+    {
+        margin: 0px 5px;
+    }
+
+    .content .hero .list-2 li img
+    {
+        width: 80px;
+    }
+    
+    /*-----content-heading-----*/
+
+    .content .heading
+    {
+        margin: 65px 0px 40px;
+    }
+
+    .content .heading h1
+    {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .content .heading img
+    {
+        margin-left: -17px;
+        width: 90%;
+    }
+    
+    .content .heading.pad {
+        margin: 70px 0px;
+    }
+    
+    /*-----content-point-----*/
+
+    .content .point .custom-heading
+    {
+        margin-top: 75px;
+        margin-bottom: 50px;
+    }
+
+    .content .one .custom-heading
+    {
+        margin-top: 60px;
+    }
+    
+    .content .point .custom-heading .mar
+    {
+        margin-top: -45px;
+        padding: 0px 15px;
+    }
+
+    .content .point .custom-heading .bor p
+    {
+        padding: 20px 17px 18px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .content .point .custom-heading .bor p span
+    {
+        font-size: 26px;
+    }
+    
+    .content .point .para
+    {
+        margin-bottom: 40px;
+    }
+
+    .content .point .para h2
+    {
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 1px;
+    }
+
+    .content .point .para .bor-1
+    {
+        width: 250px;    
+        border: 3px solid #f6e6a9;
+        margin: -18px auto auto;
+    }
+
+    .content .point .para .bor-2
+    {
+        width: 310px;    
+        border: 3px solid #f6e6a9;
+        margin: -18px auto 14px;
+    }
+
+    .content .point .para .bor-3
+    {
+        width: 270px;    
+        border: 3px solid #f6e6a9;
+        margin: -18px auto auto;
+    }
+
+    .content .point .para .bor-4
+    {
+        width: 220px;    
+        border: 3px solid #f6e6a9;
+        margin: -18px auto auto;
+    }
+
+    .content .point .para .bor-5
+    {
+        width: 265px;    
+        border: 3px solid #f6e6a9;
+        margin: -18px auto auto;
+    }
+    
+    .content .point .para .bor-6
+    {
+        width: 270px;    
+        border: 3px solid #f6e6a9;
+        margin: -18px auto 14px;
+    }
+
+    .content .point .point-content .text
+    {
+        margin: auto;
+    }
+    
+    .content .point .point-content .text h3
+    {
+        font-size: 16px;
+        padding: 0px 15px;
+        line-height: 30px;
+    }
+    
+    .content .point .point-content .text h3 span
+    {
+        margin-left: 45px;
+    }
+    
+    .content .point .point-content .text .mar-left
+    {
+        margin-left: 0px;
+    }
+    
+    .content .point .point-content .text .bor-left
+    {
+        margin: 14px 15px 14px 0px;
+    }
+    
+    .content .point .point-content .text .bor-right
+    {
+        margin: 14px 0px 14px 15px;
+    }
+    
+    .content .point .point-content .text p
+    {
+        padding: 0px 15px;
+    }
+    
+    .content .point .point-content .text .mar-equal
+    {
+        padding: 0px 15px;
+    }
+
+    .content .point .para .left-quote 
+    {
+        left: 0px;
+        top: -25px;
+        width: 70px;
+    }
+
+    .content .point .para .right-quote 
+    {
+        right: 0px;
+        bottom: -20px;
+        width: 70px;
+    }
+    
+    .content .point .relative-content
+    {
+        padding: 15px;
+    }
+    
+    .content .point .pad-bot
+    {
+        padding-bottom: 50px;
+    }
+    
+    /*-----content-types-----*/
+    
+    .content .types 
+    {
+        margin: 50px 0px 75px;
+        padding: 50px 0px 30px;
+    }
+    
+    .content .types .heading
+    {
+        padding: 0px;
+    }
+
+    .content .types .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+    }
+
+    .content .types .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .content .types .heading img
+    {
+        width: 90%;
+    }
+
+    .content .types .heading h1 
+    {
+        font-size: 14px;
+        margin: 10px 0px;
+        line-height: 30px;
+    }
+    
+    .content .types .box .card
+    {
+        height: auto;
+    }
+    
+    .content .types .box .card img
+    {
+        width: 100%;
+    }
+
+    .content .types .box .card .heading .quote-left
+    {
+        left: 17px;
+    }
+    
+    .content .types .box .card .heading .quote-right
+    {
+        top: -10px;
+    }
+    
+    .content .types .box .card .heading
+    {
+        padding-bottom: 10px;
+    }
+    
+    .content .types .box .card .heading h4
+    {
+        font-size: 14px;
+        margin: 5px 0px;
+    }
+    
+    .content .types .box .card h3
+    {
+        font-size: 18px;
+    }
+    
+    .content .types .box .card p
+    {
+        font-size: 14px;
+    }
+    
+    /*-----whitening-types-----*/
+
+    .content .whitening-types 
+    {
+        margin: 50px 0px 75px;
+    }
+
+    .content .whitening-types .heading
+    {
+        padding: 0px;
+    }
+    
+    .content .whitening-types .custom-heading
+    {
+        margin-bottom: 70px;
+    }
+
+    .content .whitening-types .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+    }
+
+    .content .whitening-types .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .content .whitening-types .heading img
+    {
+        width: 90%;
+    }
+
+    .content .whitening-types .heading h1 
+    {
+        font-size: 14px;
+        margin: 10px 0px;
+        line-height: 30px;
+    }
+
+    .content .whitening-types .box .card
+    {
+        height: auto;
+    }
+    
+    .content .whitening-types .box .card img
+    {
+        width: 100%;
+    }
+
+    .content .whitening-types .box .card .heading .quote-left
+    {
+        left: 17px;
+    }
+
+    .content .whitening-types .box .card .heading .quote-right
+    {
+        top: -10px;
+    }
+
+    .content .whitening-types .box .card .heading
+    {
+        padding-bottom: 10px;
+    }
+
+    .content .whitening-types .box .card .heading h4
+    {
+        font-size: 13px;
+        margin: 5px 0px;
+    }
+
+    .content .whitening-types .box .card h3
+    {
+        font-size: 18px;
+    }
+
+    .content .whitening-types .box .card p
+    {
+        font-size: 14px;
+    }
+    
+    /*-----content-research-----*/
+    
+    .content .research .box 
+    {
+        margin: 50px 0px 75px;
+    }
+
+    .content .research .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+    }
+
+    .content .research .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+    
+    .content .research .box .card p
+    {
+        padding: 0px 15px;
+        font-size: 14px;
+    }
+    
+    .content .research .box .card p span
+    {
+        font-size: 15px;
+    }
+    
+    .content .research .box .card h1
+    {
+        padding: 0px 15px;
+        font-size: 18px;
+    }
+    
+    .content .research .box .card h3
+    {
+        padding: 0px 15px;
+        font-size: 26px;
+    }
+    
+    .content .research .box .card h3 span 
+    {
+        font-size: 15px;
+    }
+    
+    .content .research .box .card .bor-right 
+    {
+        margin: 25px 0px 20px 15px;
+    }
+    
+    /*-----content-clinic-intro-----*/
+    
+    .content .clinic-intro
+    {
+        padding-bottom: 50px;
+    }
+    
+    .content .clinic-intro .custom-heading
+    {
+        margin-bottom: 50px;
+    }
+
+    .content .clinic-intro .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+    }
+
+    .content .clinic-intro .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+    
+    .content .clinic-intro .box .card
+    {
+        padding: 20px 15px;
+        height: auto;
+    }
+    
+    .content .clinic-intro .box .card h3
+    {
+        font-size: 18px;
+    }
+    
+    .content .clinic-intro .box .card img
+    {
+        height: 175px;
+    }
+    
+    .content .clinic-intro .box .card p 
+    {
+        font-size: 14px;
+    }
+
+    .content .clinic-intro .box .pad-none
+    {
+        margin: auto;
+        padding: 0px;
+    }
+    
+    .content .clinic-intro .heading
+    {
+        margin: 0px;
+    }
+
+    .content .clinic-intro .heading img
+    {
+        width: 90%;
+    }
+
+    .content .clinic-intro .heading h2
+    {
+        font-size: 14px;
+        margin: 10px 0px;
+        line-height: 30px;
+    }
+
+    .content .clinic-intro iframe
+    {
+        height: 185px;
+    }
+    
+    /*-----content-staff-recriutment-----*/
+    
+    .content .staff-recriutment .card 
+    {
+        padding: 0px 10px 30px;
+    }
+    
+    .content .staff-recriutment .card .pad-none
+    {
+        padding: 0px;
+    }
+
+    .content .staff-recriutment .custom-heading
+    {
+        margin-bottom: 50px;
+    }
+
+    .content .staff-recriutment .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+    }
+
+    .content .staff-recriutment .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .content .staff-recriutment .card h3
+    {
+        font-size: 14px;
+        margin: 30px 0px;
+    }
+
+    .content .staff-recriutment .card p
+    {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .content .staff-recriutment .card .staff 
+    {
+        width: 100%;
+    }
+
+    .content .staff-recriutment .card .table table .heading
+    {
+        padding: 25px 0px;
+        width: 80px;
+        letter-spacing: 0px;
+        font-size: 12px;
+        border: 2px solid #75c5b5;
+    }
+
+    .content .staff-recriutment .card .table table .description
+    {
+        padding: 25px 0px 25px 5px;
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+
+    .content .staff-recriutment .card .table table .description.pad-custom
+    {
+        padding: 8px 0px 8px 5px;
+        line-height: 23px;
+    }
+
+    .content .staff-recriutment .card h4
+    {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .content .staff-recriutment .card h4 br
+    {
+        display: none;
+    }
+
+    .content .staff-recriutment .card a
+    {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+    .content .staff-recriutment .card a img
+    {
+        width: 230px;
+    }
+    
+    /*-----content-consultation-----*/
+
+    .content .consultation .heading img
+    {
+        width: 90%;
+    }
+
+    .content .consultation .heading h2
+    {
+        font-size: 14px;
+        letter-spacing: 0px;
+        width: 90%;
+        margin: 25px auto;
+    }
+    
+    .content .consultation .heading h2 br
+    {
+        display: none;
+    }
+    
+    /*-----content-cases-----*/
+    
+    .content .cases 
+    {
+        padding: 0px;
+        margin: 50px 0px 35px;
+    }
+
+    .content .cases .custom-heading
+    {
+        margin-bottom: 50px;
+    }
+
+    .content .cases .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+    }
+
+    .content .cases .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .content .cases .box 
+    {
+        background-color: #e3f3f0;
+        padding: 30px 15px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+    }
+
+    .content .cases .box h3
+    {
+        width: 240px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .content .cases .box .mar-top 
+    {
+        margin-top: 30px;
+    }
+
+    .content .cases .box .mar-bot
+    {
+        margin-bottom: 30px;
+    }
+    
+    .content .cases .box .card p 
+    {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    
+    /*-----cost-----*/
+
+    .content .cost 
+    {
+        margin-bottom: 50px;
+    }
+
+    .content .cost .custom-heading
+    {
+        margin-bottom: 50px;
+    }
+
+    .content .cost .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+    }
+
+    .content .cost .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .content .cost .para h2
+    {
+        letter-spacing: 1px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .content .cost .para h2 br
+    {
+        display: none;
+    }
+
+    .content .cost .para .left-quote 
+    {
+        left: -5px;
+        top: -25px;
+    }
+
+    .content .cost .para .right-quote 
+    {
+        right: -5px;
+        bottom: -20px;
+    }
+
+    .content .cost .para h2 .bor-bot-1 
+    {
+        display: none;
+    }
+
+    .content .cost .para h2 .bor-bot-2
+    {
+        display: none;
+    }
+
+    .content .cost .price-list h3
+    {
+        font-size: 26px;
+    }
+
+    .content .cost .price-list .listing h4
+    {
+        font-size: 14px;
+        float: none;
+        text-align: center;
+        padding: 15px 5px 7.5px;
+    }
+
+    .content .cost .price-list .listing p
+    {
+        font-size: 14px;
+        float: none;
+        text-align: center;
+        padding: 5.5px 5px 10px;
+        line-height: 20px;
+    }
+
+    /*-----content-location-----*/
+    
+    .content .location
+    {
+        padding-bottom: 50px;
+    }
+
+    .content .location .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+    }
+
+    .content .location .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+    
+    .content .location .pad-none
+    {
+        padding: 0px;
+    }
+    
+    .content .location .map iframe
+    {
+        width: 330px;
+        height: 370px;
+    }
+    
+    .content .location .card
+    {
+        width: 330px;
+    }
+    
+    .content .location .card h1 
+    {
+        font-size: 14px;
+        padding: 10px 9px;
+        letter-spacing: 2px;
+    }
+    
+    .content .location .card .description 
+    {
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    
+    .content .location .card .heading 
+    {
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    
+    .content .location .card td 
+    {
+        padding: 13px 10px;
+    }
+    
+    .content .location .card .four 
+    {
+        padding: 2px 0px;
+    }
+    
+    .content .location .card h3 
+    {
+        font-size: 14px;
+    }
+    
+    .content .location .card .green h4 
+    {
+        font-size: 20px;
+    }
+    
+    .content .location .card .green 
+    {
+        padding: 15px 9px;
+    }
+    
+    .content .location .card .green p 
+    {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    /*-----content-reservation-----*/
+    
+    .content .reservation
+    {
+        padding: 50px 0px;
+    }
+    
+    .content .reservation .heading
+    {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding-bottom: 0px;
+    }
+    
+    .content .reservation .custom-heading
+    {
+        margin-bottom: 40px;
+    }
+
+    .content .reservation .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+    
+    .content .reservation .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .content .reservation .heading img
+    {
+        width: 90%;
+    }
+
+    .content .reservation .heading h2
+    {
+        font-size: 14px;
+        margin: 10px 0px;
+        line-height: 30px;
+    }
+
+    .content .reservation ul
+    {
+        text-align: center;
+    }
+
+    .content .reservation ul li a
+    {
+        font-size: 22px;
+        padding: 7px 10px;
+    }
+
+    .content .reservation ul li a img
+    {
+        vertical-align: sub;
+        width: 20px;
+    }
+
+    .content .reservation ul li .consult
+    {
+        font-size: 16px;
+    }
+
+    .content .reservation ul li .consult svg
+    {
+        width: 20px;
+    }
+    
+    .content .reservation .box .card
+    {
+        padding: 18.5px 15px;
+    }
+    
+    .content .reservation .box .card p
+    {
+        line-height: 30px;
+    }
+
+    /*-----content-implant-----*/
+
+    .content .implant
+    {
+        padding: 0px 0px 50px;
+    }
+
+    .content .implant .heading
+    {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .content .implant .custom-heading
+    {
+        margin-bottom: 40px;
+    }
+
+    .content .implant .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+
+    .content .implant .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .content .implant .heading img
+    {
+        width: 90%;
+    }
+
+    .content .implant .heading h2
+    {
+        font-size: 16px;
+        margin: 15px 20px;
+        line-height: 30px;
+        letter-spacing: 3px;
+    }
+    
+    .content .implant .relative-content
+    {
+        padding: 15px;
+    }
+
+    .content .implant .relative-content p
+    {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    
+    .content .implant .relative-content p br
+    {
+        display: none;
+    }
+    
+    /*-----content-advantages-----*/
+
+    .content .advantages .custom-heading
+    {
+        margin-bottom: 40px;
+    }
+
+    .content .advantages .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+
+    .content .advantages .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+    
+    .content .advantages .pad-none
+    {
+        padding: 0px;
+    }
+    
+    .content .advantages .box .card
+    {
+        width: 330px;
+        padding: 30px 15px 25px;
+    }
+    
+    .content .advantages .box .mar 
+    {
+        top: -85px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+    
+    .content .advantages .box .bor p 
+    {
+        font-size: 26px;
+        padding: 18px 18px 14px;
+    }
+    
+    .content .advantages .box .bor p span 
+    {
+        font-size: 30px;
+    }
+    
+    .content .advantages .box .card h1 
+    {
+        font-size: 17px;
+        margin-bottom: 21px;
+    }
+    
+    .content .advantages .box .card h1.one 
+    {
+        width: 66%;
+    }
+    
+    .content .advantages .box .card h1.two 
+    {
+        width: 66%;
+    }
+    
+    .content .advantages .box .card h1.three 
+    {
+        width: 84%;
+    }
+    
+    .content .advantages .box .card h1.four 
+    {
+        width: 78%;
+    }
+    
+    .content .advantages .box .card h1.five 
+    {
+        width: 84%;
+    }
+    
+    .content .advantages .box .card h1.six 
+    {
+        width: 90%;
+    }
+    
+    .content .advantages .box .card h1.seven 
+    {
+        width: 96%;
+    }
+    
+    .content .advantages .box .card h1.eight 
+    {
+        width: 90%;
+    }
+    
+    /*-----content-disadvantages-----*/
+
+    .content .disadvantages .custom-heading
+    {
+        margin-bottom: 40px;
+    }
+
+    .content .disadvantages .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+
+    .content .disadvantages .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .content .disadvantages .pad-none
+    {
+        padding: 0px;
+    }
+
+    .content .disadvantages .box .card
+    {
+        width: 330px;
+        padding: 30px 15px 25px;
+    }
+
+    .content .disadvantages .box .mar 
+    {
+        top: -85px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    .content .disadvantages .box .bor p 
+    {
+        font-size: 26px;
+        padding: 18px 18px 14px;
+    }
+
+    .content .disadvantages .box .bor p span 
+    {
+        font-size: 30px;
+    }
+
+    .content .disadvantages .box .card h1 
+    {
+        font-size: 17px;
+        margin-bottom: 21px;
+    }
+
+    .content .disadvantages .box .card h1.one
+    {
+        width: 70%;
+        margin-top: 28px;
+    }
+
+    .content .disadvantages .box .card h1.two
+    {
+        width: 52%;
+        margin-bottom: 48px;
+    }
+
+    .content .disadvantages .box .card h1.three
+    {
+        width: 57%;
+        margin-top: 28px;
+    }
+
+    .content .disadvantages .box .card h1.four
+    {
+        width: 57%;
+        margin-bottom: 48px;
+    }
+
+    .content .disadvantages .box .card h1.five
+    {
+        width: 70%;
+        margin-top: 28px;
+    }
+
+    .content .disadvantages .box .card h1.six
+    {
+        width: 90%;
+        margin-bottom: 48px;
+    }
+
+    .content .disadvantages .box .card h1.seven
+    {
+        width: 76%;
+    }
+
+    .content .disadvantages .box .card h1.eight
+    {
+        width: 89%;
+    }
+
+    .content .disadvantages .box .card h1.nine
+    {
+        width: 33%;
+    }
+    
+    /*-----content-redirect-----*/
+    
+    .content .redirect 
+    {
+        padding: 50px 0px;
+    }
+
+    .content .redirect .box h1 
+    {
+        font-size: 28px;
+    }
+
+    .content .redirect .box .card a
+    {
+        width: 250px;
+        font-size: 18px;
+    }
+
+    .content .redirect .box .mar-top-custom
+    {
+        margin-top: 30px;
+    }
+    
+    /*-----content-consultation-----*/
+    
+    .content .consultation form .form-group label 
+    {
+        display: block;
+        width: 100%;
+        border-bottom: 0px;
+        font-size: 16px;
+        padding: 20px 0px 20px 13px;
+    }
+    
+    .content .consultation form .form-group .input-bor 
+    {
+        display: block;
+        width: 100%;
+        border-left: 2px solid #75c5b5;
+        border-right: 2px solid #75c5b5;
+        border-top: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+        padding: 9px 0px;
+        margin-left: 0px;
+    }
+    
+    .content .consultation form .form-group .custom-pad-bottom 
+    {
+        padding-bottom: 20px;
+    }
+    
+    .content .consultation form .form-group .form-check 
+    {
+        padding-left: 14px;
+    }
+    
+    .content .consultation form .form-group .form-check .custom-input 
+    {
+        top: -7px;
+        left: 12px;
+    }
+    
+    .content .consultation form .form-group .form-check label 
+    {
+        width: 65px;
+        padding: 11px 0px 10px 19px;
+        font-size: 11px;
+    }
+    
+    .content .consultation form .form-group .textarea-input 
+    {
+        border-bottom: 2px solid #75c5b5;
+    }
+    
+    .content .consultation form .form-group textarea 
+    {
+        font-size: 16px;
+        height: 150px;
+    }
+
+    .content .consultation form button 
+    {
+        padding: 10px 117px;
+        font-size: 24px;
+        margin: 65px auto;
+    }
+    
+    /*-----flow-----*/
+
+    .content .flow
+    {
+        margin-bottom: 85px;
+    }
+
+    .content .flow .custom-heading
+    {
+        margin-bottom: 40px;
+    }
+
+    .content .flow .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+
+    .content .flow .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+    
+    .content .flow .para 
+    {
+        padding: 0px 10px;
+    }
+    
+    .content .flow .para h2 br
+    {
+        display: none;
+    }
+    
+    /*-----qa-----*/
+
+    .content .qa .custom-heading
+    {
+        margin-bottom: 40px;
+    }
+
+    .content .qa .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+
+    .content .qa .custom-heading .mar
+    {
+        margin-top: -25px;
+        padding: 0px;
+    }
+
+    .qa
+    {
+        margin-bottom: 50px;
+    }
+
+    .qa h3
+    {
+        font-size: 30px;
+    }
+
+    .qa .tab-label 
+    {
+        font-size: 13px;
+    }
+
+    .qa .tab-label .custom-color
+    {
+        font-size: 18px;
+    }
+    
+    .qa .arrow 
+    {
+        margin-left: 5px;
+        width: 10px;
+    }
+
+    .qa .tab-content .content
+    {
+        padding: 15px 0px 15px 15px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .qa .row .col:last-child 
+    {
+        margin-left: 0px;
+        padding: 0px;
+    }
+    
+    /*----content-counselling-1-----*/
+    
+    .content .counselling-1 
+    {
+        padding: 40px 0px;
+        background-color: #ffffff;
+    }
+
+    .content .counselling-1 .custom-heading
+    {
+        margin-bottom: 0px;
+    }
+
+    .content .counselling-1 .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+
+    .content .counselling-1 .box .mar
+    {
+        top: -5px;
+        left: -60px;
+    }
+
+    .content .counselling-1 .box .bor p 
+    {
+        padding: 14px 20px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .content .counselling-1 .box .bor p span 
+    {
+        font-size: 28px;
+    }
+    
+    .content .counselling-1 .box .card
+    {
+        width: auto;
+        padding: 30px 0px 25px;
+    }
+
+    .content .counselling-1 .box .card h1
+    {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    
+    .content .counselling-1 .box .card .inner-box img 
+    {
+        display: block;
+        width: 80px;
+        margin: 30px auto;
+    }
+    
+    .content .counselling-1 .box .card .inner-box p 
+    {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        margin: 0px auto;
+    }
+    
+    /*-----content-office-whitening-----*/
+
+    .content .office-whitening 
+    {
+        padding: 40px 0px;
+        background-color: #ffffff;
+    }
+
+    .content .office-whitening .custom-heading
+    {
+        margin-bottom: 0px;
+    }
+
+    .content .office-whitening .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+
+    .content .office-whitening .box .mar
+    {
+        top: -5px;
+        left: -60px;
+    }
+
+    .content .office-whitening .box .bor p 
+    {
+        padding: 14px 20px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .content .office-whitening .box .bor p span 
+    {
+        font-size: 28px;
+    }
+    
+    .content .office-whitening .heading h2 
+    {
+        font-size: 16px;
+    }
+    
+    .content .office-whitening h3 
+    {
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .content .office-whitening .box .card
+    {
+        width: auto;
+        padding: 30px 0px 25px;
+    }
+
+    .content .office-whitening .box .card h1
+    {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .content .office-whitening .box .card .inner-box img 
+    {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .content .office-whitening .box .card .inner-box p 
+    {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        margin: 0px auto;
+    }
+    
+    .content .office-whitening .heading img 
+    {
+        width: 95%;
+        margin-left: 5px;
+    }
+    
+    .content .office-whitening .box .mar-2
+    {
+        top: 15px;
+    }
+
+    .content .office-whitening .tabcontent 
+    {
+        padding: 25px;
+    }
+
+    /*-----content-home-whitening-----*/
+
+    .content .home-whitening 
+    {
+        padding: 40px 0px;
+        background-color: #ffffff;
+    }
+
+    .content .home-whitening .custom-heading
+    {
+        margin-bottom: 0px;
+    }
+
+    .content .home-whitening .custom-heading .bor h2
+    {
+        font-size: 14px;
+        padding: 10px 10px 8px 14px;
+        letter-spacing: 2px;
+    }
+
+    .content .home-whitening .box .mar
+    {
+        top: -5px;
+        left: -60px;
+    }
+
+    .content .home-whitening .box .bor p 
+    {
+        padding: 14px 20px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .content .home-whitening .box .bor p span 
+    {
+        font-size: 28px;
+    }
+    
+    .content .home-whitening .heading h2 
+    {
+        font-size: 16px;
+    }
+    
+    .content .home-whitening h3 
+    {
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .content .home-whitening .box .card
+    {
+        width: auto;
+        padding: 30px 0px 25px;
+    }
+
+    .content .home-whitening .box .card h1
+    {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .content .home-whitening .box .card .inner-box img 
+    {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .content .home-whitening .box .card .inner-box p 
+    {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        margin: 0px auto;
+    }
+
+    .content .home-whitening .heading img 
+    {
+        width: 95%;
+        margin-left: 5px;
+    }
+    
+    .content .home-whitening .tabcontent2
+    {
+        padding: 25px;
+    }
+    
+    /*-----sub-footer-----*/
+
+    .sub-footer h1
+    {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .sub-footer h2
+    {
+        font-size: 9px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .sub-footer h3
+    {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    
+    /*-----footer-----*/
+    
+    footer .pad-none
+    {
+        padding: 0px;
+    }
+    
+    footer .links p
+    {
+        font-size: 20px;
+    }
+    
+    footer .links ul li a
+    {
+        font-size: 14px;
+    }
+
+    footer .doctors-file .mar-bot
+    {
+        margin-bottom: 20px;
+    }
+    
+    footer .warning p
+    {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    footer .warning h1 
+    {
+        font-size: 13px;
+    }
+    
+    footer .warning h2 
+    {
+        font-size: 24px;
+    }
+
+    footer .warning h3
+    {
+        font-size: 12px;
+    }
+    
+    footer .warning h4
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 396px)
+{
+    .content .staff-recriutment .card .table table .description.pad-custom-two
+    {
+        padding: 18px 0px 18px 5px;
+    }   
+}

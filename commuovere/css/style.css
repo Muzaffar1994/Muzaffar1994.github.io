@@ -1,0 +1,4709 @@
+/* Reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+@font-face
+{
+    font-family: yugothib;
+    src: url(../fonts/yugothib.ttf);
+}
+
+@font-face
+{
+    font-family: alternategot;
+    src: url(../fonts/alternategotno3d.ttf);
+}
+
+body
+{
+    overflow-x: hidden;
+    background-image: url(../images/bg-body.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 1000px;
+    margin: auto;
+}
+
+/*---------------------------
+-----------header------------
+---------------------------*/
+
+header
+{
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px rgba(168,168,168,1);
+    height: 100px;
+}
+
+header img
+{
+    width: 260px;
+    margin-top: 21px;
+}
+
+header .menu
+{
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+}
+
+header .menu li
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 43px 15px;
+}
+
+header .menu li a
+{
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    padding: 12px 5px;
+    font-size: 14px;
+}
+
+header .menu li a.active
+{
+    border-bottom: 2px solid #333333;
+}
+
+header .menu .mail
+{
+    padding: 0px 10px;
+}
+
+header .menu .mail a
+{
+    background-color: #ec008c;
+    padding: 28px 8px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+header .menu .mail a img
+{
+    width: 28px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/*---------------------------
+----------side-nav-----------
+---------------------------*/
+
+.mob-image
+{
+    width: 150px;
+    display: none;
+    margin: 7px 15px 8px;
+}
+
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a 
+{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover 
+{
+    color: #000000;
+}
+
+.sidenav .click i
+{
+    font-size: 16px;
+}
+
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+.sidenav .menu
+{
+    text-align: center;
+}
+
+.sidenav .menu .menu-1 li a
+{
+    color: #333333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.sidenav .menu .menu-1 .mail
+{
+    background-color: #ec008c;
+}
+
+.sidenav .menu .menu-1 .mail a
+{
+    color: #ffffff;
+}
+
+.sidenav .menu .menu-1 .mail a img
+{
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+#menu
+{
+    display: none;
+    position: absolute;
+    top: 20;
+    right: 25px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/*---------------------------
+------------hero-------------
+---------------------------*/
+
+.hero
+{
+    background-color: black;
+    position: relative;
+    font-family: yugothib;
+}
+
+.hero img
+{
+    width: 100%;
+    height: calc(100vh - 100px);
+    opacity: 0.7;
+}
+
+.hero .text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero .text h1
+{
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ffffff;
+    letter-spacing: 5px;
+    display: inline-block;
+}
+
+.hero .text h2
+{
+    font-size: 32px;
+    letter-spacing: 5px;
+    line-height: 55px;
+}
+
+/*---------------------------
+-----------hero-2------------
+---------------------------*/
+
+.hero-2
+{
+    background-color: black;
+    position: relative;
+    font-family: yugothib;
+    background-image: url(../images/service-hero.jpg);
+    height: 600px;
+    background-size: cover;
+}
+
+.hero-2 img
+{
+    width: 100%;
+    opacity: 0.7;
+}
+
+.hero-2 .text
+{
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    color: white;
+}
+
+.hero-2 .text h1
+{
+    font-size: 52px;
+    letter-spacing: 15px;
+    padding-bottom: 40px;
+    font-family: alternategot;
+}
+
+.hero-2 .text .custom-border h2
+{
+    position: absolute;
+    top: -10px;
+    font-family: yugothib;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+/*---------------------------
+------custom-heading-1-------
+---------------------------*/
+
+.custom-heading-1
+{
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.custom-heading-1 .bor
+{
+    border-bottom: 1px solid #333333;
+    width: 50%;
+}
+
+.custom-heading-1 span
+{
+    position: absolute;
+    font-size: 24px;
+    font-family: alternategot;
+    letter-spacing: 7px;
+    left: -170px;
+    top: -50px;
+}
+
+.custom-heading-1 h1
+{
+    width: 40%;
+    display: block;
+    background-color: white;
+    margin: -12px auto auto;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-family: yugothib;
+    padding-left: 30px;
+    position: relative;
+}
+
+/*---------------------------
+------custom-heading-2-------
+---------------------------*/
+
+.custom-heading-2
+{
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.custom-heading-2 .bor
+{
+    border-bottom: 1px solid #333333;
+    width: 100%;
+}
+
+.custom-heading-2 h1
+{
+    width: 50%;
+    display: block;
+    text-align: right;
+    background-color: white;
+    margin: -12px auto auto 0px;
+    letter-spacing: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    padding-right: 20px;
+    position: relative;
+}
+
+.custom-heading-2 h1 .one
+{
+    position: relative;
+    top: -9px;
+    font-size: 18px;
+}
+
+.custom-heading-2 h1 .two
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    position: relative;
+    top: -5px;
+    margin-left: 20px;
+    margin: 0px 5px 0px 15px;
+}
+
+.custom-heading-2 h1 .three
+{
+    font-family: alternategot;
+    font-size: 20px;
+    position: relative;
+    top: -8px;
+}
+
+/*---------------------------
+------custom-heading-3-------
+---------------------------*/
+
+.custom-heading-3
+{
+    margin-bottom: 30px;
+    margin: 0px 0px 50px 75px;
+    padding: 100px 0px 100px 110px;
+    border-left: 2px solid #333333;
+    position: relative;
+}
+
+.custom-heading-3 h1
+{
+    font-size: 30px;
+    color: #333333;
+    font-family: yugothib;
+    letter-spacing: 5px;
+}
+
+.custom-heading-3 h2
+{
+    position: absolute;
+
+    font-size: 30px;
+    font-family: alternategot;
+    letter-spacing: 8px;
+    transform: rotate(90deg);
+    left: -45px;
+    top: 105px;
+}
+
+/*---------------------------
+------custom-heading-4-------
+---------------------------*/
+
+.custom-heading-4
+{
+    position: absolute !important;
+    top: 112px !important;
+}
+
+.custom-heading-4 .bor
+{
+    border-bottom: 2px solid #333333 !important;
+    width: 50% !important;
+}
+
+.custom-heading-4 h1
+{
+    font-family: alternategot !important;
+    font-size: 30px !important;
+    transform: rotate(90deg) !important;
+    position: relative !important;
+    top: 15px !important;
+    left: 40px !important;
+    letter-spacing: 8px !important;
+}
+
+/*---------------------------
+------custom-heading-5-------
+---------------------------*/
+
+.custom-heading-5
+{
+    position: absolute;
+    padding-bottom: 75px;
+    width: 50%;
+    top: 180px;
+    left: -20px;
+}
+
+.custom-heading-5 .bor
+{
+    border-bottom: 1px solid #333333;
+    width: 50%;
+}
+
+.custom-heading-5 .second-heading
+{
+    position: absolute;
+    font-size: 24px;
+    font-family: alternategot;
+    letter-spacing: 7px;
+    left: -90px;
+    top: -70px;
+    line-height: 25px;
+}
+
+.custom-heading-5 .second-heading .custom-margin
+{
+    margin-left: 90px;
+}
+
+.custom-heading-5 h1
+{
+    width: 40%;
+    display: block;
+    background-color: white;
+    margin: -12px auto auto;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-family: yugothib;
+    padding-left: 30px;
+    position: relative;
+}
+
+/*---------------------------
+------custom-heading-6-------
+---------------------------*/
+
+.custom-heading-6
+{
+    position: absolute !important;
+    top: 325px !important;
+    left: -155px !important;
+}
+
+.custom-heading-6 .bor
+{
+    border-bottom: 2px solid #333333 !important;
+    width: 50% !important;
+}
+
+.custom-heading-6 h1
+{
+    font-family: alternategot !important;
+    font-size: 30px !important;
+    transform: rotate(90deg) !important;
+    position: relative !important;
+    top: 15px !important;
+    left: 40px !important;
+    letter-spacing: 8px !important;
+}
+
+/*---------------------------
+------custom-heading-7-------
+---------------------------*/
+
+.custom-heading-7
+{
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.custom-heading-7 .bor
+{
+    border-bottom: 1px solid #333333;
+    width: 100%;
+}
+
+.custom-heading-7 h1
+{
+    width: 51.5%;
+    display: block;
+    text-align: right;
+    background-color: white;
+    margin: -12px auto auto 0px;
+    letter-spacing: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    padding-right: 20px;
+    position: relative;
+}
+
+.custom-heading-7 h1 .two
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    position: relative;
+    top: -5px;
+    margin-left: 20px;
+    margin: 0px 5px 0px 15px;
+}
+
+/*---------------------------
+------custom-heading-8-------
+---------------------------*/
+
+.custom-heading-8
+{
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.custom-heading-8 .bor
+{
+    border-bottom: 1px solid #333333;
+    width: 50%;
+}
+
+.custom-heading-8 span
+{
+    position: absolute;
+    font-size: 24px;
+    font-family: alternategot;
+    letter-spacing: 7px;
+    left: -60px;
+    top: -50px;
+}
+
+.custom-heading-8 h1
+{
+    width: 40%;
+    display: block;
+    background-color: white;
+    margin: -12px 0px auto 200px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-family: yugothib;
+    padding-left: 30px;
+    position: relative;
+}
+
+/*---------------------------
+------custom-heading-9-------
+---------------------------*/
+
+.custom-heading-9
+{
+    position: absolute !important;
+    top: 112px !important;
+}
+
+.custom-heading-9 .bor
+{
+    border-bottom: 2px solid #333333 !important;
+    width: 50% !important;
+}
+
+.custom-heading-9 h1
+{
+    font-family: alternategot !important;
+    font-size: 30px !important;
+    transform: rotate(90deg) !important;
+    position: relative !important;
+    top: 15px !important;
+    left: 40px !important;
+    letter-spacing: 8px !important;
+}
+
+/*---------------------------
+------custom-heading-10------
+---------------------------*/
+
+.custom-heading-10
+{
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.custom-heading-10 .bor
+{
+    border-bottom: 1px solid #333333;
+    width: 100%;
+}
+
+.custom-heading-10 h1
+{
+    width: 70%;
+    display: block;
+    text-align: right;
+    background-color: #f9f8f4;
+    margin: -12px auto auto 0px;
+    letter-spacing: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    padding-right: 20px;
+    position: relative;
+}
+
+.custom-heading-10 h1 .one
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    position: relative;
+    top: -5px;
+    margin-left: 20px;
+    margin: 0px 5px 0px 15px;
+}
+
+.custom-heading-10 .two
+{
+    position: absolute;
+    font-size: 24px;
+    font-family: alternategot;
+    letter-spacing: 7px;
+    right: -70px;
+    top: -50px;
+}
+
+/*---------------------------
+------custom-heading-11------
+---------------------------*/
+
+.custom-heading-11
+{
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.custom-heading-11 .bor
+{
+    border-bottom: 1px solid #333333;
+    width: 50%;
+}
+
+.custom-heading-11 span
+{
+    position: absolute;
+    font-size: 24px;
+    font-family: alternategot;
+    letter-spacing: 7px;
+    left: -170px;
+    top: -50px;
+}
+
+.custom-heading-11 h1
+{
+    width: 40%;
+    display: block;
+    background-color: white;
+    margin: -12px 0px auto 200px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-family: yugothib;
+    padding-left: 30px;
+    position: relative;
+}
+
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+----------------Home-Start-----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*---------------------------
+---------real-estate---------
+---------------------------*/
+
+#home .real-estate
+{
+    padding: 100px 0px;
+    font-size: 0px;
+}
+
+#home .real-estate .left
+{
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#home .real-estate .left img
+{
+    width: 75%;
+}
+
+#home .real-estate .right
+{
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#home .real-estate .right .content
+{
+    width: 485px;
+    margin-left: 100px;
+}
+
+#home .real-estate .right .content h1
+{
+    font-family: yugothib;
+    font-size: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+
+#home .real-estate .right .content ul
+{
+    background-color: white;
+    padding: 20px 20px 20px 0px;
+}
+
+#home .real-estate .right .content ul li
+{
+    margin-bottom: 35px;
+}
+
+#home .real-estate .right .content ul li .bullet
+{
+    width: 17px;
+    height: 17px;
+    background-color: #e37fb0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+
+#home .real-estate .right .content ul li p
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+    letter-spacing: 5px;
+}
+
+#home .real-estate .customer-first
+{
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+#home .real-estate .customer-first h1
+{
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 28px;
+    letter-spacing: 7px;
+    vertical-align: top;
+    font-family: alternategot;
+    margin: 115px 0px 0px -115px;
+    color: #333333;
+}
+
+#home .real-estate .customer-first img
+{
+    width: 325px;
+    margin-left: -80px;
+}
+
+#home .real-estate .detail h1
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 22px;
+    color: #333333;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    padding-left: 15px;
+}
+
+#home .real-estate .detail .box
+{
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+#home .real-estate .detail .box p
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+#home .real-estate .detail .box p:nth-of-type(4)
+{
+    margin-bottom: 0px;
+}
+
+/*---------------------------
+--------characteristic-------
+---------------------------*/
+
+#home .characteristic
+{
+    background-color: #f9f8f4;
+}
+
+#home .characteristic .bg-color
+{
+    background-image: url(../images/bg-body-2.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    padding: 100px 0px;
+}
+
+#home .characteristic .bg-color .content
+{
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+    position: relative;
+}
+
+#home .characteristic .bg-color .content .number
+{
+    background-color: #c70062;
+    color: white;
+    padding: 0px 0px 10px 10px;
+    display: inline-block;
+    width: 125px;
+    margin: -95px 0px 0px -75px;
+}
+
+#home .characteristic .bg-color .content .number h1
+{
+    font-family: alternategot;
+    font-size: 70px;
+    margin-bottom: 2px;
+}
+
+#home .characteristic .bg-color .content .number h2
+{
+    font-family: alternategot;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 16px;
+}
+
+#home .characteristic .bg-color .content h3
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    display: block;
+    margin-left: 74px;
+    margin-top: -105px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+#home .characteristic .bg-color .content .box
+{
+    width: 260px;
+    border: 4px solid #000000;
+    padding: 20px;
+    margin-left: auto;
+    background-color: #ffffff;
+}
+
+#home .characteristic .bg-color .content .box .dummy-image
+{
+    width: 60px;
+    opacity: 0;
+}
+
+#home .characteristic .bg-color .content .box p
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333333;
+    line-height: 30px;
+}
+
+/*---------------------------
+-----------promise-----------
+---------------------------*/
+
+#home .promise
+{
+    padding: 100px 0px 0px;
+}
+
+#home .promise .content
+{
+    text-align: center;
+    color: #333333;
+}
+
+#home .promise .content h1
+{
+    font-family: alternategot;
+    font-size: 24px;
+    letter-spacing: 6px;
+    border-bottom: 3px solid #ba0d5c;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+#home .promise .content h1 span
+{
+    font-size: 58px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+#home .promise .content h2
+{
+    font-family: yugothib;
+    font-size: 26px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+#home .promise .content .box
+{
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+#home .promise .content .box p
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+/*---------------------------
+------------Voice------------
+---------------------------*/
+
+#home .voice
+{
+    padding: 0px 0px 100px;
+}
+
+#home .voice .content-full
+{
+    font-size: 0px;
+    margin-bottom: 100px;
+}
+
+#home .voice .content-full .left
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .voice .content-full .left img
+{
+    width: 100%;
+    margin-top: 150px;
+}
+
+#home .voice .content-full .right
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .voice .content-full .right .inner-content
+{
+    border-left: 1px solid #333333;
+    padding: 40% 0px 0px 50px;
+    margin-left: 100px;
+}
+
+#home .voice .content-full .right .inner-content h1
+{
+    font-family: alternategot;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+#home .voice .content-full .right .inner-content h2
+{
+    font-family: yugothib;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: #333333;
+}
+
+#home .voice .content .inner-content
+{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .voice .content .inner-content.even
+{
+    margin-left: 95px;
+}
+
+#home .voice .content .inner-content .left
+{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .voice .content .inner-content .left img
+{
+    width: 100%;
+    padding: 0px 20px;
+}
+
+#home .voice .content .inner-content .right
+{
+    width: 58%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .voice .content .inner-content .right h1
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#home .voice .content .inner-content .right span
+{
+    opacity: 0;
+}
+
+#home .voice .content .inner-content .right .inner-right
+{
+    position: relative;
+}
+
+#home .voice .content .inner-content .right .inner-right img
+{
+    width: 100%;
+}
+
+#home .voice .content .inner-content .right .inner-right h2
+{
+    position: absolute;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 25px;
+    font-weight: 500;
+    top: 9px;
+    left: 15px;
+}
+
+#home .voice .content .inner-content .box
+{
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#home .voice .content .box p
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 38px;
+}
+
+/*---------------------------
+---------Consulting----------
+---------------------------*/
+
+#home .consulting
+{
+    padding: 100px 0px 0px;
+    position: relative;
+}
+
+#home .consulting .content
+{
+    padding-bottom: 100px;
+}
+
+#home .consulting .content .box
+{
+    padding: 15px 30px;
+    color: #333333;
+}
+
+#home .consulting .content .box:nth-of-type(odd)
+{
+    background-color: #f3f0e7;
+}
+
+#home .consulting .content .box .left
+{
+    width: 23%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .consulting .content .box .left h1
+{
+    font-family: alternategot;
+    font-size: 24px;
+    letter-spacing: 6px;
+    margin-top: 20px;
+}
+
+#home .consulting .content .box .left h2
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 500;
+    margin: 10px 0px 20px;
+}
+
+#home .consulting .content .box .middle
+{
+    width: 1%;
+    display: inline-block;
+    vertical-align: top;
+    border-left: 4px solid #333333;
+    height: 99px;
+}
+
+#home .consulting .content .box .right
+{
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .consulting .content .box .right h3
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 5px;
+    line-height: 35px;
+    margin-left: 15px;
+}
+
+/*---------------------------
+-------------Faq-------------
+---------------------------*/
+
+#home .faq
+{
+    padding: 100px 0px 0px;
+    font-size: 0px;
+    position: relative;
+}
+
+#home .faq .left
+{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .faq .left .content
+{
+    width: 90%;
+    margin-right: auto;
+}
+
+#home .faq .left .content img
+{
+    width: 100%;
+}
+
+#home .faq .left .content h1
+{
+    font-family: yugothib;
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-top: 70px;
+}
+
+#home .faq .right
+{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .faq .right .content
+{
+    width: 80%;
+    margin-left: auto;
+}
+
+#home .faq .right .content .inner-content
+{
+    margin-bottom: 3px;
+}
+
+#home .faq .right .content .accordion 
+{
+    background-color: #f3f0e7;
+    cursor: pointer;
+    padding: 10px 18px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-size: 18px;
+    margin: auto;
+    background-image: url(../images/caret-down.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 5% 90%;
+}
+
+#home .faq .right .content .accordion.active
+{
+    background-image: url(../images/caret-up.png);
+}
+
+#home .faq .right .content .accordion .inner-left
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+}
+
+#home .faq .right .content .accordion .inner-left h1
+{
+    font-family: alternategot;
+    font-size: 70px;
+    color: #333333;
+}
+
+#home .faq .right .content .accordion .inner-right
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+}
+
+#home .faq .right .content .accordion .inner-right p
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 35px;
+}
+
+#home .faq .right .content .panel 
+{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#home .faq .right .content .panel .inner-left
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    padding: 18px 0px;
+}
+
+#home .faq .right .content .panel .inner-left h1
+{
+    font-family: alternategot;
+    font-size: 70px;
+    color: #333333;
+}
+
+#home .faq .right .content .panel .inner-right
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    padding: 18px 0px;
+}
+
+#home .faq .right .content .panel .inner-right p
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 35px;
+}
+
+/*---------------------------
+-------Company-Profile-------
+---------------------------*/
+
+#home .company-profile
+{
+    padding: 100px 0px;
+    font-size: 0px;
+}
+
+#home .company-profile .left
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #c70062;
+    padding: 50px;
+    color: white;
+}
+
+#home .company-profile .left h1 
+{
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 35px;
+}
+
+#home .company-profile .left h1 span
+{
+    font-family: alternategot;
+    margin-left: 30px;
+}
+
+#home .company-profile .left .inner-left
+{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .company-profile .left .inner-left p
+{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+#home .company-profile .left .inner-right
+{
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#home .company-profile .left .inner-right p
+{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+#home .company-profile .right
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    background: black;
+}
+
+#home .company-profile .right iframe
+{
+    filter: grayscale(100%);
+}
+
+/*---------------------------
+---------Contact-Us----------
+---------------------------*/
+
+#home .contact-us
+{
+    padding: 100px 0px;
+    position: relative;
+}
+
+#home .contact-us h1
+{
+    font-family: yugothib;
+    font-size: 32px;
+    letter-spacing: 7px;
+    margin-bottom: 100px;
+    line-height: 50px;
+}
+
+#home .contact-us p
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 7px;
+    margin-bottom: 80px;
+    line-height: 35px;
+}
+
+#home .contact-us form
+{
+    font-size: 0px;
+}
+
+#home .contact-us form label
+{
+    display: inline-block;
+    width: 40%;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    vertical-align: top;
+    margin-top: 12px;
+    letter-spacing: 5px;
+}
+
+#home .contact-us form input, #home .contact-us form textarea
+{
+    border: 2px solid #cccccc;
+    padding: 5px 10px;
+    width: 60%;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    vertical-align: top;
+}
+
+#home .contact-us form .bor
+{
+    border-bottom: 1px solid #333333;
+    margin: 60px 0px;
+}
+
+#home .contact-us form button
+{
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    border: none;
+    color: white;
+    padding: 17px 120px;
+    margin-top: 100px;
+    cursor: pointer;
+    
+    
+    background: #ad1754;
+    background: -moz-linear-gradient(left,  #ad1754 0%, #ad1754 25%, #c70062 30%, #c70062 70%, #ad1754 75%, #ad1754 100%);
+    background: -webkit-linear-gradient(left,  #ad1754 0%,#ad1754 25%,#c70062 30%,#c70062 70%,#ad1754 75%,#ad1754 100%);
+    background: linear-gradient(to right,  #ad1754 0%,#ad1754 25%,#c70062 30%,#c70062 70%,#ad1754 75%,#ad1754 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad1754', endColorstr='#ad1754',GradientType=1 );
+}
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+-----------------Home-End------------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+--------Asset-Building-Blog-Start----------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+/*---------------------------
+-----------hero-2------------
+---------------------------*/
+
+#asset-building-blog .hero-2 .text .custom-border
+{
+    position: relative;
+    width: 400px;
+}
+
+#asset-building-blog .hero-2 .text .custom-border .bor
+{
+    border-bottom: 1px solid #ffffff;
+    margin-left: 205px;
+}
+
+/*---------------------------
+----------content------------
+---------------------------*/
+
+#asset-building-blog .hero-2
+{
+    background-image: url(../images/asset-building-blog-hero.jpg);
+}
+
+#asset-building-blog .content
+{
+    padding: 100px 0px 0px;
+}
+
+#asset-building-blog .content .card
+{
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#asset-building-blog .content .card .box
+{
+    width: 280px;
+    background-color: white;
+    margin: auto;
+}
+
+#asset-building-blog .content .card .box img
+{
+    width: 100%;
+}
+
+#asset-building-blog .content .card .box h1
+{
+    font-family: yugothib;
+    font-size: 20px;
+    margin: 20px 0px 10px;
+    text-align: left;
+}
+
+#asset-building-blog .content .card .box p
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333333;
+    line-height: 30px;
+    text-align: left;
+}
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+---------Asset-Building-Blog-End-----------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+----------------Blog-Start-----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+/*---------------------------
+------------hero-2-----------
+---------------------------*/
+
+#blog .hero-2
+{
+    background-image: url(../images/asset-building-blog-hero.jpg);
+}
+
+#blog .hero-2 .text .custom-border
+{
+    position: relative;
+    width: 400px;
+}
+
+#blog .hero-2 .text .custom-border .bor
+{
+    border-bottom: 1px solid #ffffff;
+    margin-left: 205px;
+}
+
+/*---------------------------
+----------content------------
+---------------------------*/
+
+#blog .content
+{
+    padding: 100px 0px 0px;
+    font-size: 0px;
+}
+
+#blog .content .left
+{
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#blog .content .left h1
+{
+    color: #999999;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 3px;
+    border-left: 4px solid #ec008c;
+    padding: 30px 0px 15px 50px;
+}
+
+#blog .content .left h2
+{
+    color: #333333;
+    font-size: 26px;
+    font-family: yugothib;
+    letter-spacing: 3px;
+    border-left: 4px solid #ec008c;
+    padding: 15px 0px 30px 50px;
+}
+
+#blog .content .left img
+{
+    width: 100%;
+    margin-top: 100px;
+}
+
+#blog .content .left p
+{
+    color: #333333;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+#blog .content .right
+{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#blog .content .right .card
+{
+    width: 300px;
+    margin-left: auto;
+    background-color: white;
+}
+
+#blog .content .right .card .box
+{
+    padding-bottom: 30px;
+}
+
+#blog .content .right .card .box h1
+{
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #333333;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+#blog .content .right .card .box ul li a
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 3px;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+#blog .content .right .card .box ul li a img
+{
+    width: 10px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#blog .content .box-2
+{
+    font-size: 0px;
+    padding: 100px 0px;
+}
+
+#blog .content .box-2 .left
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0px;
+}
+
+#blog .content .box-2 .left a
+{
+    font-size: 16px;
+    color: #999999;
+    text-decoration: none;
+}
+
+#blog .content .box-2 .left a img
+{
+    width: 9px;
+    margin: 0px 10px 0px 0px;
+    vertical-align: middle;
+}
+
+#blog .content .box-2 .right
+{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+#blog .content .box-2 .right a
+{
+    font-size: 16px;
+    color: #999999;
+    text-decoration: none;
+}
+
+#blog .content .box-2 .right a img
+{
+    width: 9px;
+    margin-left: 10px;
+}
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+-----------------Blog-End------------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+--------------Company-Start----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+/*---------------------------
+-----------hero-2------------
+---------------------------*/
+
+#company .hero-2 .text .custom-border
+{
+    position: relative;
+    width: 400px;
+}
+
+#company .hero-2 .text .custom-border .bor
+{
+    border-bottom: 1px solid #ffffff;
+    margin-left: 125px;
+}
+
+/*---------------------------
+----------message------------
+---------------------------*/
+
+#company .message
+{
+    padding: 100px 0px;
+}
+
+#company .message .left
+{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+#company .message .left img
+{
+    width: 100%;
+}
+
+#company .message .right
+{
+    display: inline-block;
+    width: 66%;
+    vertical-align: top;
+}
+
+#company .message .right .box
+{
+    width: 610px;
+    margin-left: auto;
+    background-color: white;
+    padding: 15px 15px 0px;
+}
+
+#company .message .right .box p
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333333;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+
+#company .message .right .box .custom-padding
+{
+    padding-bottom: 15px;
+}
+
+/*---------------------------
+----------profile------------
+---------------------------*/
+
+#company .profile
+{
+    padding-bottom: 100px;
+    font-size: 0px;
+}
+
+#company .profile .left
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #c70062;
+    padding: 25px;
+}
+
+#company .profile .left .inner-left
+{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#company .profile .left .inner-left p
+{
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+#company .profile .left .inner-right
+{
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#company .profile .left .inner-right p
+{
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    border-left: 2px solid #ffffff;
+    padding-left: 25px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+#company .profile .right
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#company .profile .right iframe
+{
+    filter: grayscale(100%);
+} 
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+---------------Company-End-----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+--------------Contact-Start----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+/*---------------------------
+------------hero-2-----------
+---------------------------*/
+
+#contact .hero-2 .text .custom-border
+{
+    position: relative;
+    width: 400px;
+}
+
+#contact .hero-2 .text .custom-border .bor
+{
+    border-bottom: 1px solid #ffffff;
+    margin-left: 175px;
+}
+
+/*---------------------------
+----------content------------
+---------------------------*/
+
+#contact .content
+{
+    padding: 100px 0px;
+    font-size: 0px;
+    position: relative;
+}
+
+#contact .content .left
+{
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#contact .content .left h1
+{
+    font-size: 26px;
+    font-family: yugothib;
+    letter-spacing: 3px;
+    margin-bottom: 100px;
+    color: #333333;
+}
+
+#contact .content .left p
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+    color: #333333;
+    line-height: 30px;
+}
+
+#contact .content .left h2
+{
+    font-size: 20px;
+    font-family: yugothib;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+#contact .content .left .bor
+{
+    border-bottom: 1px dashed #333333;
+    margin: 55px 0px 40px;
+}
+
+#contact .content .left h3
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+    color: #333333;
+    margin: 40px 0px 10px;
+}
+
+#contact .content .left ul li
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+    color: #333333;
+    line-height: 30px;
+}
+
+#contact .content .right
+{
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 80px;
+}
+
+#contact .content form
+{
+    font-size: 0px;
+}
+
+#contact .content form label
+{
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    vertical-align: top;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+#contact .content form input, #contact .content form textarea
+{
+    border: 2px solid #cccccc;
+    padding: 5px 10px;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    vertical-align: top;
+}
+
+#contact .content form .bor
+{
+    border-bottom: 1px solid #333333;
+    margin: 50px 0px 20px;
+}
+
+#contact .content form button
+{
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 17px 0px;
+    margin-top: 50px;
+    cursor: pointer;
+
+    background: #ad1754;
+    background: -moz-linear-gradient(left,  #ad1754 0%, #ad1754 25%, #c70062 30%, #c70062 70%, #ad1754 75%, #ad1754 100%);
+    background: -webkit-linear-gradient(left,  #ad1754 0%,#ad1754 25%,#c70062 30%,#c70062 70%,#ad1754 75%,#ad1754 100%);
+    background: linear-gradient(to right,  #ad1754 0%,#ad1754 25%,#c70062 30%,#c70062 70%,#ad1754 75%,#ad1754 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad1754', endColorstr='#ad1754',GradientType=1 );
+}
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+---------------Contact-End-----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+--------------Recruit-Start----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+/*---------------------------
+------------hero-2-----------
+---------------------------*/
+
+#recruit .hero-2 .text .custom-border
+{
+    position: relative;
+    width: 400px;
+}
+
+#recruit .hero-2 .text .custom-border .bor
+{
+    border-bottom: 1px solid #ffffff;
+    margin-left: 125px;
+}
+
+/*---------------------------
+----------content------------
+---------------------------*/
+
+#recruit .content
+{
+    padding: 100px 0px;
+    font-size: 0px;
+    position: relative;
+}
+
+#recruit .content .inner-content
+{
+    width: 700px;
+    margin-left: auto;
+}
+
+#recruit .content h1
+{
+    font-family: yugothib;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+#recruit .content .card
+{
+    background-color: white;
+}
+
+#recruit .content .card .box .left
+{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+
+#recruit .content .card .box .left p
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #333333;
+    line-height: 30px;
+}
+
+#recruit .content .card .box .right
+{
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+}
+
+#recruit .content .card .box .right p
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #333333;
+    line-height: 30px;
+}
+
+#recruit .content .card .bor
+{
+    border-bottom: 2px dashed #333333;
+    margin: 50px 30px 50px 0px;
+
+}
+
+#recruit .content .card .box p
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+    letter-spacing: 3px;
+}
+
+#recruit .content .card .box img
+{
+    width: 8px;
+    margin: 8px 0px;
+}
+
+#recruit .content .card .box .custom-margin
+{
+    margin-bottom: 50px;
+}
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+---------------Recruit-End-----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+--------------Service-Start----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+/*---------------------------
+-----------hero-2------------
+---------------------------*/
+
+#service .hero-2 .text .custom-border
+{
+    position: relative;
+    width: 300px;
+}
+
+#service .hero-2 .text .custom-border .bor
+{
+    border-bottom: 1px solid #ffffff;
+    margin-left: 120px;
+}
+
+/*---------------------------
+----------content------------
+---------------------------*/
+
+#service .content
+{
+    padding: 100px 0px 50px;
+}
+
+#service .content h1
+{
+    font-family: yugothib;
+    font-size: 28px;
+    color: #333333;
+    line-height: 45px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+#service .content .inner-content
+{
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+#service .content .inner-content .card
+{
+    width: 280px;
+    margin: auto;
+}
+
+#service .content .inner-content .card h2
+{
+
+    background: #ad1754;
+    background: -moz-linear-gradient(left,  #ad1754 0%, #ad1754 25%, #c70062 30%, #c70062 70%, #ad1754 75%, #ad1754 100%);
+    background: -webkit-linear-gradient(left,  #ad1754 0%,#ad1754 25%,#c70062 30%,#c70062 70%,#ad1754 75%,#ad1754 100%);
+    background: linear-gradient(to right,  #ad1754 0%,#ad1754 25%,#c70062 30%,#c70062 70%,#ad1754 75%,#ad1754 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad1754', endColorstr='#ad1754',GradientType=1 );
+    border-left: 2px solid #ad1754;
+    border-right: 2px solid #ad1754;
+    color: white;
+    font-family: yugothib;
+    font-size: 20px;
+    padding: 10px 0px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#service .content .inner-content .card .box
+{
+    padding: 20px;
+    border-left: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+
+#service .content .inner-content .card .box p
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333333;
+    line-height: 25px;
+    text-align: left;
+}
+
+#service .content .inner-content:nth-of-type(2) .card .box p
+{
+    margin-bottom: 65px;
+}
+
+#service .content .inner-content:nth-of-type(3) .card .box p
+{
+    margin-bottom: 40px;
+}
+
+#service .content .inner-content .card .box .bor
+{
+    border-bottom: 2px dashed #333333;
+    margin: 15px 0px 20px;
+}
+
+#service .content .inner-content .card .box a
+{
+    background-color: #f3f0e7;
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+--------------Service-End-----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+---------------Voice-Start-----------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+/*---------------------------
+-----------hero-2------------
+---------------------------*/
+
+#voice .hero-2 .text .custom-border
+{
+    position: relative;
+    width: 400px;
+}
+
+#voice .hero-2 .text .custom-border .bor
+{
+    border-bottom: 1px solid #ffffff;
+    margin-left: 150px;
+}
+
+/*---------------------------
+----------content------------
+---------------------------*/
+
+#voice .content
+{
+    padding: 100px 0px 0px;
+}
+
+#voice .content .inner-content
+{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0px;
+    margin-bottom: 100px;
+}
+
+#voice .content .card
+{
+    width: 450px;
+    margin: auto;
+    background-color: white;
+    padding-right: 20px;
+}
+
+#voice .content .card .left
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    position: relative;
+}
+
+#voice .content .card .left img
+{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+#voice .content .card .left h1
+{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 0.5px;
+    left: 5px;
+    font-family: alternategot;
+    letter-spacing: 2px;
+}
+
+#voice .content .card .left h2
+{
+    position: absolute;
+    color: #333333;
+    font-size: 48px;
+    top: -23px;
+    left: 105px;
+    font-family: alternategot;
+    letter-spacing: 2px;
+}
+
+#voice .content .card .right
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    padding: 20px 0px 0px 40px;
+}
+
+#voice .content .card .right .bor-1
+{
+    border-bottom: 2px solid #333333;
+    margin-bottom: 5px;
+}
+
+#voice .content .card .right .bor-2
+{
+    border-bottom: 1px solid #333333;
+}
+
+#voice .content .card .right h1
+{
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 25px;
+    letter-spacing:1px;
+    color: #333333;
+}
+
+#voice .content .card .right .bor-3
+{
+    border-bottom: 2px dashed #333333;
+    margin: 20px 0px;
+}
+
+#voice .content .card .right h2
+{
+    font-size: 22px;
+    font-family: yugothib;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 33px;
+    color: #333333;
+}
+
+#voice .content .card .box .bor
+{
+    border-bottom: 2px dashed #333333;
+    margin-bottom: 30px;
+}
+
+#voice .content .card .box p
+{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif; 
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+/*-----------------------------------------
+-------------------------------------------
+-------------------------------------------
+----------------Voice-End------------------
+-------------------------------------------
+-------------------------------------------
+-----------------------------------------*/
+
+
+/*---------------------------
+---------Sub-footer----------
+---------------------------*/
+
+.sub-footer
+{
+    background-color: #ad1754;
+    padding: 40px 0px;
+    font-size: 0px;
+}
+
+.sub-footer .left
+{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sub-footer .left h1
+{
+    font-size: 28px;
+    font-family: yugothib;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.sub-footer .left h2
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.sub-footer .right
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.sub-footer .right a
+{
+    font-size: 18px;
+    display: block;
+    border: 3px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 17px 0px;
+}
+
+/*---------------------------
+---------pagination----------
+---------------------------*/
+
+.pagination
+{
+    text-align: center;
+    padding: 0px 0px 100px;
+}
+
+.pagination ul
+{
+    display: inline-block;
+}
+
+.pagination ul li
+{
+    display: inline-block;
+}
+
+.pagination ul li a
+{
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.pagination ul li a.active
+{
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.pagination ul li a img
+{
+    width: 12px;
+    margin-top: 3px;
+}
+
+/*---------------------------
+-----------Footer------------
+---------------------------*/
+
+footer
+{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px -3px 5px 0px rgba(168,168,168,1);
+}
+
+footer img
+{
+    width: 85px;
+    padding: 20px 0px;
+}
+
+/*---------------------------
+-------Media-Queriers--------
+---------------------------*/
+
+@media only screen and (max-width: 1400px) 
+{
+    .custom-heading-4
+    {
+        left: -60px !important;
+    }
+    
+    .custom-heading-6
+    {
+        left: -215px !important;
+    }
+    
+    .custom-heading-9
+    {
+        left: -110px !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) 
+{
+    .container
+    {
+        width: 700px;
+    }
+
+    header
+    {
+        height: auto;
+    }
+
+    header img.logo
+    {
+        width: 200px;
+        display: block;
+        margin: 0px auto;
+        padding: 20px 0px;
+    }
+
+    header .menu
+    {
+        float: none;
+        text-align: center;
+        display: block;
+    }
+
+    header .menu li
+    {
+        padding: 35px 15px;
+    }
+
+    header .menu li a
+    {
+        padding: 10px 5px;
+    }
+
+    header .menu .mail a
+    {
+        padding: 20.5px 8px;
+    }
+    
+    .hero img
+    {
+        height: auto;
+    }
+    
+    .hero .text h1
+    {
+        font-size: 22px;
+    }
+
+    .hero .text h2 
+    {
+        font-size: 28px;
+        line-height: 50px;
+    }
+    
+    .hero-2 
+    {
+        height: 400px;
+    }
+
+    .hero-2 .text h1 
+    {
+        font-size: 40px;
+        letter-spacing: 12px;
+        padding-bottom: 30px;
+    }
+
+    .hero-2 .text .custom-border h2 
+    {
+        font-size: 20px;
+    }
+    
+    .custom-heading-2
+    {
+        padding-bottom: 50px;
+    }
+
+    .custom-heading-2 h1
+    {
+        width: 70%;
+        letter-spacing: 3px;
+    }
+    
+    .custom-heading-3
+    {
+        margin: 0px 0px 50px 75px;
+        padding: 90px 0px 90px 100px;
+    }
+
+    .custom-heading-3 h1
+    {
+        font-size: 26px;
+    }
+
+    .custom-heading-3 h2
+    {
+        font-size: 26px;
+        letter-spacing: 7px;
+        left: -40px;
+        top: 95px;
+    }
+    
+    .custom-heading-4
+    {
+        display: none;
+    }
+    
+    .custom-heading-5
+    {
+        display: none;
+    }
+    
+    .custom-heading-6
+    {
+        display: none;
+    }
+    
+    .custom-heading-7
+    {
+        padding-bottom: 50px;
+    }
+    
+    .custom-heading-9
+    {
+        display: none;
+    }
+
+    .custom-heading-7 h1
+    {
+        width: 70%;
+        letter-spacing: 3px;
+    }
+
+    .custom-heading-8 h1
+    {
+        width: 55%;
+        margin: -12px 0px auto 100px;
+    }
+    
+    .custom-heading-11 h1 
+    {
+        width: 61%;
+        margin: -12px 0px auto 100px;
+    }
+
+    .pagination
+    {
+        padding: 0px 0px 75px;
+    }
+    
+    #home .real-estate
+    {
+        padding: 75px 0px;
+    }
+
+    #home .real-estate .left
+    {
+        width: 100%;
+    }
+
+    #home .real-estate .left img
+    {
+        width: 500px;
+        display: block;
+        margin: auto;
+    }
+
+    #home .real-estate .right
+    {
+        width: 100%;
+    }
+
+    #home .real-estate .right .content
+    {
+        margin: auto;
+    }
+
+    #home .real-estate .right .content h1
+    {
+        font-size: 26px;
+        margin-top: 50px;
+    }
+
+    #home .real-estate .right .content ul
+    {
+        background-color: white;
+        padding: 20px 20px 20px 0px;
+    }
+
+    #home .real-estate .right .content ul li
+    {
+        margin-bottom: 35px;
+    }
+    
+    #home .real-estate .right .content ul li:nth-of-type(7)
+    {
+        margin-bottom: 0px;
+    }
+
+    #home .real-estate .customer-first
+    {
+        margin-top: 75px;
+    }
+
+    #home .real-estate .customer-first h1
+    {
+        font-size: 28px;
+    }
+
+    #home .real-estate .customer-first img
+    {
+        width: 325px;
+        margin-left: -80px;
+    }
+
+    #home .real-estate .detail h1
+    {
+        font-size: 20px;
+    }
+
+    #home .real-estate .detail .box p:nth-of-type(4)
+    {
+        margin-bottom: 0px;
+    }
+    
+    #home .characteristic .bg-color .content
+    {
+        width: 49%;
+    }
+    
+    #home .characteristic .bg-color .content .box 
+    {
+        margin: auto;
+        width: 250px;
+    }
+    
+    #home .characteristic .bg-color .content .box .dummy-image
+    {
+        width: 45px;
+    }
+    
+    #home .characteristic .bg-color .content .number 
+    {
+        width: 110px;
+    }
+    
+    #home .characteristic .bg-color .content .number h1 
+    {
+        font-size: 65px;
+    }
+    
+    #home .characteristic .bg-color .content .number h2 
+    {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    
+    #home .characteristic .bg-color .content h3
+    {
+        font-size: 18px;
+    }
+    
+    #home .promise .content h1 
+    {
+        font-size: 22px;
+    }
+    
+    #home .promise .content h1 span 
+    {
+        font-size: 54px;
+    }
+    
+    #home .promise .content h2 
+    {
+        font-size: 24px;
+        line-height: 45px;
+    }
+    
+    #home .promise .content .box
+    {
+        margin-bottom: 50px;
+    }
+    
+    #home .promise .content .box p 
+    {
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 2px;
+    }
+    
+    #home .voice .content-full
+    {
+        margin-bottom: 75px;
+    }
+
+    #home .voice .content-full .left img
+    {
+        margin-top: 125px;
+    }
+
+    #home .voice .content-full .right .inner-content
+    {
+        padding: 40% 0px 0px 50px;
+        margin-left: 75px;
+    }
+
+    #home .voice .content-full .right .inner-content h1
+    {
+        font-size: 30px;
+    }
+
+    #home .voice .content-full .right .inner-content h2
+    {
+        font-size: 30px;
+    }
+    
+    #home .voice .content .inner-content
+    {
+        width: 450px;
+        margin: auto;
+        display: block;
+    }
+    
+    #home .voice .content .inner-content.even 
+    {
+        margin-left: auto;
+        margin-top: 50px;
+    }
+    
+    #home .consulting 
+    {
+        padding: 75px 0px 0px;
+    }
+    
+    #home .consulting .content 
+    {
+        padding-bottom: 75px;
+    }
+    
+    #home .consulting .content .box 
+    {
+        padding: 15px 15px;
+    }
+    
+    #home .consulting .content .box .left h1 
+    {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    
+    #home .consulting .content .box .left h2 
+    {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+    #home .consulting .content .box .right 
+    {
+        width: 74%;
+    }
+    
+    #home .consulting .content .box .right h3 
+    {
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-left: 10px;
+    }
+    
+    #home .faq
+    {
+        padding: 75px 0px 0px;
+    }
+    
+    #home .faq .left .content h1 
+    {
+        font-size: 25px;
+        letter-spacing: 3px;
+        margin-top: 60px;
+    }
+    
+    #home .faq .right .content 
+    {
+        width: 90%;
+    }
+    
+    #home .faq .right .content .accordion .inner-left h1 
+    {
+        font-size: 60px;
+    }
+    
+    #home .faq .right .content .accordion .inner-right p 
+    {
+        font-size: 14px;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+    
+    #home .faq .right .content .panel .inner-left h1 
+    {
+        font-size: 60px;
+    }
+    
+    #home .faq .right .content .panel .inner-right p 
+    {
+        font-size: 14px;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+    
+    #home .company-profile
+    {
+        padding: 75px 0px;
+    }
+    
+    #home .company-profile .left 
+    {
+        width: 700px;
+        display: block;
+        margin: auto;
+    }
+    
+    #home .company-profile .right 
+    {
+        width: 700px;
+        display: block;
+        margin: auto;
+    }
+    
+    #home .company-profile .right iframe
+    {
+        height: 500px;
+    }
+    
+    #home .contact-us 
+    {
+        padding: 75px 0px;
+    }
+    
+    #home .contact-us h1 
+    {
+        font-size: 28px;
+        letter-spacing: 5px;
+        margin-bottom: 75px;
+    }
+    
+    #home .contact-us p 
+    {
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin-bottom: 60px;
+    }
+    
+    #home .contact-us form .bor 
+    {
+        margin: 50px 0px;
+    }
+    
+    #home .contact-us form button 
+    {
+        padding: 15px 120px;
+        margin-top: 75px;
+    }
+    
+    #asset-building-blog .hero-2 .text .custom-border .bor
+    {
+        margin-left: 180px;
+    }
+
+    #asset-building-blog .content
+    {
+        padding: 75px 0px 0px;
+    }
+
+    #asset-building-blog .content .card
+    {
+        width: 49%;
+        margin-bottom: 50px;
+    }
+    
+    #blog .hero-2 .text .custom-border .bor
+    {
+        margin-left: 175px;
+    }
+
+    #blog .content
+    {
+        padding: 75px 0px 0px;
+        font-size: 0px;
+    }
+
+    #blog .content .left
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #blog .content .left h1
+    {
+        padding: 20px 0px 10px 50px;
+    }
+
+    #blog .content .left h2
+    {
+        padding: 10px 0px 20px 50px;
+    }
+
+    #blog .content .left img
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #blog .content .right
+    {
+        width: 100%;
+    }
+
+    #blog .content .right .card
+    {
+        margin-left: 0px;
+    }
+
+    #blog .content .right .card .box
+    {
+        padding-bottom: 30px;
+    }
+
+    #blog .content .box-2
+    {
+        padding: 20px 0px 50px;
+    }
+    
+    #company .hero-2 .text .custom-border .bor
+    {
+        margin-left: 105px;
+    }
+
+    #company .message
+    {
+        padding: 75px 0px 100px;
+    }
+
+    #company .message .left
+    {
+        width: 100%;
+    }
+
+    #company .message .left img
+    {
+        width: 50%;
+        display: block;
+        margin: auto auto 50px;
+    }
+
+    #company .message .right
+    {
+        width: 100%;
+    }
+
+    #company .message .right .box
+    {
+        width: auto;
+        margin-left: 0px;
+    }
+
+    #company .profile
+    {
+        padding-bottom: 75px;
+    }
+
+    #company .profile .left
+    {
+        width: 100%;
+    }
+
+    #company .profile .right
+    {
+        width: 100%;
+    }
+    
+    #contact .hero-2 .text .custom-border .bor
+    {
+        margin-left: 150px;
+    }
+
+    #contact .content
+    {
+        padding: 75px 0px;
+    }
+
+    #contact .content .left
+    {
+        width: 100%;
+    }
+
+    #contact .content .right
+    {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 50px;
+    }
+    
+    #recruit .hero-2 .text .custom-border .bor
+    {
+        margin-left: 105px;
+    }
+
+    #recruit .content
+    {
+        padding: 75px 0px;
+        font-size: 0px;
+    }
+
+    #recruit .content .inner-content
+    {
+        width: auto;
+    }
+    
+    #service .hero-2 .text .custom-border .bor 
+    {
+        margin-left: 100px;
+    }
+
+    #service .content
+    {
+        padding: 75px 0px 25px;
+    }
+
+    #service .content h1
+    {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 50px;
+    }
+
+    #service .content .inner-content
+    {
+        width: 49%;
+    }
+    
+    #voice .hero-2 .text .custom-border .bor
+    {
+        margin-left: 125px;
+    }
+
+    #voice .content
+    {
+        padding: 100px 0px 25px;
+    }
+
+    #voice .content .inner-content
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .sub-footer .left 
+    {
+        width: 80%;
+    }
+    
+    .sub-footer .left h1
+    {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    
+    .sub-footer .left h2
+    {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    .sub-footer .right
+    {
+        width: 20%;
+    }
+    
+    .sub-footer .right a 
+    {
+        font-size: 15px;
+        padding: 14px 0px;
+    }
+    
+    footer img 
+    {
+        width: 70px;
+        padding: 15px 0px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .container
+    {
+        width: 90%;
+    }
+    
+    header
+    {
+        display: none;
+    }
+
+    #menu
+    {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .mob-image
+    {
+        display: block;
+    }
+    
+    .hero .text h1 
+    {
+        font-size: 20px;
+        margin-bottom: 40px;
+        letter-spacing: 5px;
+    }
+    
+    .hero .text h2 
+    {
+        font-size: 24px;
+        line-height: 45px;
+    }
+    
+    .hero-2 
+    {
+        height: 300px;
+    }
+
+    .hero-2 .text h1 
+    {
+        font-size: 36px;
+    }
+
+    .hero-2 .text .custom-border h2 
+    {
+        font-size: 18px;
+    }
+    
+    .custom-heading-1
+    {
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .custom-heading-1 .bor
+    {
+        border-bottom: 1px solid #333333;
+        width: 50%;
+    }
+
+    .custom-heading-1 span
+    {
+        font-size: 20px;
+        letter-spacing: 5px;
+        left: -70px;
+    }
+
+    .custom-heading-1 h1
+    {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    
+    .custom-heading-2 h1
+    {
+        width: 90%;
+    }
+    
+    .custom-heading-3
+    {
+        margin: 0px 0px 50px 50px;
+        padding: 75px 0px 75px 80px;
+    }
+
+    .custom-heading-3 h1
+    {
+        font-size: 22px;
+    }
+
+    .custom-heading-3 h2
+    {
+        font-size: 22px;
+        letter-spacing: 7px;
+        left: -35px;
+        top: 75px;
+    }
+    
+    .custom-heading-7 h1
+    {
+        width: 90%;
+    }
+    
+    .custom-heading-8
+    {
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .custom-heading-8 .bor
+    {
+        border-bottom: 1px solid #333333;
+        width: 50%;
+    }
+
+    .custom-heading-8 h1
+    {
+        font-size: 20px;
+        padding-left: 20px;
+        width: 60%;
+    }
+
+    .custom-heading-8 span
+    {
+        font-size: 20px;
+        letter-spacing: 5px;
+        left: -70px;
+    }
+    
+    .custom-heading-10
+    {
+        padding-bottom: 50px;
+    }
+
+    .custom-heading-10 h1 .one
+    {
+        font-size: 20px;
+        top: 0px;
+    }
+
+    .custom-heading-10 .two
+    {
+        font-size: 20px;
+    }
+    
+    .custom-heading-11 h1
+    {
+        font-size: 20px;
+    }
+
+    .pagination
+    {
+        padding: 0px 0px 50px;
+    }
+    
+    #home .real-estate
+    {
+        padding: 50px 0px;
+    }
+    
+    #home .real-estate .right .content h1
+    {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    
+    #home .real-estate .right .content ul li p
+    {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #home .real-estate .customer-first
+    {
+        margin-top: 50px;
+    }
+    
+    #home .real-estate .detail h1
+    {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+    #home .real-estate .detail .box p
+    {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    
+    #home .promise .content h1 
+    {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #home .promise .content h1 span
+    {
+        font-size: 54px;
+    }
+    
+    #home .promise .content h2 
+    {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    #home .voice .content .box p 
+    {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    #home .consulting .content .box .left
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #home .consulting .content .box .middle 
+    {
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        border-bottom: 3px solid #333333;
+        border-left: none;
+        height: 3px;
+    }
+    
+    #home .consulting .content .box .right 
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #home .consulting .content .box .right h3
+    {
+        margin-left: 0px;
+        line-height: 25px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    #home .consulting .content .box .right h3 br
+    {
+        display: none;
+    }
+    
+    #home .faq 
+    {
+        padding: 50px 0px 0px;
+    }
+    
+    #home .faq .left 
+    {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    #home .faq .left .content 
+    {
+        width: 50%;
+        margin: auto auto 50px;
+    }
+    
+    #home .faq .right
+    {
+        width: 100%;
+    }
+    
+    #home .faq .right .content 
+    {
+        width: 100%;
+    }
+    
+    #home .company-profile 
+    {
+        padding: 50px 0px 0px;
+    }
+    
+    #home .company-profile .left 
+    {
+        width: 100%;
+        padding: 25px;
+    }
+    
+    #home .company-profile .right 
+    {
+        width: 100%;
+    }
+    
+    #home .contact-us 
+    {
+        padding: 50px 0px;
+    }
+    
+    #home .characteristic .bg-color .content
+    {
+        width: 100%;
+    }
+    
+    #home .characteristic .bg-color .content .box
+    {
+        margin: auto;
+    }
+    
+    #home .voice .content-full
+    {
+        margin-bottom: 50px;
+    }
+
+    #home .voice .content-full .left img
+    {
+        margin-top: 125px;
+    }
+
+    #home .voice .content-full .right .inner-content
+    {
+        margin-left: 50px;
+    }
+
+    #home .voice .content-full .right .inner-content h1
+    {
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+    #home .voice .content-full .right .inner-content h2
+    {
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+    
+    #home .contact-us h1
+    {
+        font-size: 24px;
+        letter-spacing: 3px;
+        margin-bottom: 50px;
+    }
+    
+    #home .contact-us p 
+    {
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+        line-height: 30px;
+    }
+    
+    #home .contact-us form label 
+    {
+        font-size: 14px;
+        margin-top: 12px;
+        letter-spacing: 1px;
+    }
+    
+    #home .contact-us form input, #home .contact-us form textarea 
+    {
+        border: 2px solid #cccccc;
+        padding: 5px 10px;
+        width: 60%;
+        display: inline-block;
+        font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
+        vertical-align: top;
+    }
+    
+    #home .contact-us form button 
+    {
+        padding: 10px 120px;
+        margin-top: 50px;
+        font-size: 14px
+    }
+    
+    #asset-building-blog .hero-2 .text .custom-border .bor
+    {
+        margin-left: 160px;
+    }
+
+    #asset-building-blog .content
+    {
+        padding: 50px 0px 0px;
+    }
+
+    #asset-building-blog .content .card
+    {
+        width: 100%;
+    }
+    
+    #blog .hero-2 .text .custom-border .bor
+    {
+        margin-left: 160px;
+    }
+
+    #blog .content
+    {
+        padding: 50px 0px 0px;
+        font-size: 0px;
+    }
+
+    #blog .content .left h1
+    {
+        padding: 15px 0px 10px 50px;
+        font-size: 16px;
+    }
+
+    #blog .content .left h2
+    {
+        padding: 10px 0px 15px 50px;
+        font-size: 24px;
+    }
+
+    #blog .content .box-2 .left a 
+    {
+        font-size: 12px;
+    }
+
+    #blog .content .box-2 .left a img
+    {
+        width: 6px;
+    }
+
+    #blog .content .box-2 .right a 
+    {
+        font-size: 12px;
+    }
+
+    #blog .content .box-2 .right a img
+    {
+        width: 6px;
+    }
+    
+    #company .hero-2 .text .custom-border .bor
+    {
+        margin-left: 95px;
+    }
+
+    #company .message
+    {
+        padding: 50px 0px 100px;
+    }
+
+    #company .profile
+    {
+        padding-bottom: 50px;
+    }
+    
+    #contact .hero-2 .text .custom-border .bor
+    {
+        margin-left: 140px;
+    }
+
+    #contact .content
+    {
+        padding: 75px 0px;
+    }
+
+    #contact .content .left
+    {
+        width: 100%;
+    }
+
+    #contact .content .right
+    {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 50px;
+    }
+    
+    #recruit .hero-2 .text .custom-border .bor
+    {
+        margin-left: 95px;
+    }
+
+    #recruit .content
+    {
+        padding: 50px 0px;
+        font-size: 0px;
+    }
+
+    #recruit .content h1 
+    {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    #recruit .content .card .box .left p
+    {
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 25px;
+    }
+
+    #recruit .content .card .box .right p
+    {
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 25px;
+    }
+
+    #recruit .content .card .bor
+    {
+        margin: 40px 30px 40px 0px;
+    }
+
+    #recruit .content .card .box p
+    {
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 25px; 
+    }
+    
+    #service .hero-2 .text .custom-border .bor 
+    {
+        margin-left: 95px;
+    }
+
+    #service .content
+    {
+        padding: 50px 0px 0px;
+    }
+
+    #service .content h1
+    {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    #service .content .inner-content
+    {
+        width: 100%;
+    }
+    
+    .content .custom-heading-1 span
+    {
+        font-size: 20px;
+        letter-spacing: 5px;
+        left: -80px;
+    }
+
+    .content .custom-heading-1 h1
+    {
+        width: 40%;
+        display: block;
+        background-color: white;
+        margin: -10px auto auto;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-family: yugothib;
+        padding-left: 20px;
+    }
+
+    #voice .hero-2 .text .custom-border .bor
+    {
+        margin-left: 115px;
+    }
+
+    #voice .content
+    {
+        padding: 100px 0px 0px;
+    }
+
+    #voice .content .inner-content
+    {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .sub-footer .left 
+    {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .sub-footer .right
+    {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 575px)
+{
+    .hero .text h1 
+    {
+        font-size: 12px;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+    }
+    
+    .hero .text h2 
+    {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    
+    .hero-2 
+    {
+        height: 200px;
+    }
+
+    .hero-2 .text h1 
+    {
+        font-size: 26px;
+        letter-spacing: 5px;
+        padding-bottom: 20px;
+    }
+
+    .hero-2 .text .custom-border h2 
+    {
+        font-size: 14px;
+        letter-spacing: 2px;
+        top: -7px;
+    }
+    
+    .custom-heading-2 h1
+    {
+        letter-spacing: 1px;
+    }
+    
+    .custom-heading-2 h1 .one 
+    {
+        top: -2px;
+        font-size: 12px;
+    }
+    
+    .custom-heading-2 h1 .two 
+    {
+        font-size: 20px;
+        top: 1px;
+        margin: 0px 0px 0px 5px;
+    }
+    
+    .custom-heading-2 h1 .three 
+    {
+        font-size: 14px;
+        top: -2px;
+    }
+
+    .custom-heading-3
+    {
+        margin: 0px 0px 30px 0px;
+        padding: 50px 0px 50px 60px;
+    }
+
+    .custom-heading-3 h1
+    {
+        font-size: 16px;
+    }
+
+    .custom-heading-3 h2
+    {
+        font-size: 16px;
+        letter-spacing: 5px;
+        left: -25px;
+        top: 55px;
+    }
+    
+    .custom-heading-2 h1
+    {
+        letter-spacing: 1px;
+    }
+    
+    .custom-heading-7 h1
+    {
+        padding: 3px 20px 3px 0px;
+    }
+
+    .custom-heading-7 h1 .two 
+    {
+        font-size: 16px;
+        top: 0px;
+        margin: 0px 0px 0px 5px;
+    }
+    
+    .custom-heading-8 h1
+    {
+        font-size: 16px;
+        padding-left: 20px;
+        letter-spacing: 3px;
+        width: 75%;
+        margin: -7px 0px auto 40px;
+    }
+    
+    .custom-heading-8 span
+    {
+        left: -15px;
+        top: -40px;
+    }
+    
+    .custom-heading-10 h1
+    {
+        width: 85%;
+    }
+
+    .custom-heading-10 h1 .one
+    {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    
+    .custom-heading-10 .two
+    {
+        right: -30px;
+    }
+    
+    .custom-heading-11
+    {
+        padding: 0px 0px 50px;
+    }
+    
+    .custom-heading-11 h1 {
+        font-size: 16px;
+        padding-left: 20px;
+        letter-spacing: 3px;
+        width: 75%;
+        margin: -7px 0px auto 40px;
+    }
+    
+    #home .real-estate
+    {
+        padding: 75px 0px;
+    }
+
+    #home .real-estate .left
+    {
+        width: 100%;
+    }
+
+    #home .real-estate .left img
+    {
+        width: 90%;
+    }
+
+    #home .real-estate .right
+    {
+        width: 100%;
+    }
+    
+    #home .real-estate .right .content
+    {
+        width: 90%;
+    }
+
+    #home .real-estate .right .content h1
+    {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    
+    #home .real-estate .right .content h1 br
+    {
+        display: none;
+    }
+    
+    #home .real-estate .right .content ul li p
+    {
+        width: 90%;
+    }
+    
+    #home .real-estate .right .content ul li p br
+    {
+        display: none;
+    }
+    
+    #home .real-estate .right .content ul li .bullet 
+    {
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+    }
+
+    #home .real-estate .customer-first
+    {
+        margin: 50px 0px;
+    }
+
+    #home .real-estate .customer-first h1 
+    {
+        transform: rotate(0deg);
+        font-size: 24px;
+        letter-spacing: 5px;
+        margin: 0px 0px 30px;
+    }
+
+    #home .real-estate .customer-first img
+    {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #home .real-estate .detail h1
+    {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    #home .characteristic .bg-color .content .number 
+    {
+        margin: -95px 0px 0px -50px;
+    }
+    
+    #home .characteristic .bg-color .content h3 
+    {
+        font-size: 17px;
+        margin-left: 95px;
+        margin-bottom: 32px;
+        line-height: 25px;
+        letter-spacing: 0px;
+    }
+    
+    #home .characteristic .bg-color .content .box .dummy-image
+    {
+        width: 70px;
+    }
+    
+    #home .characteristic .bg-color .content .box p
+    {
+        font-size: 14px;
+    }
+    
+    #home .promise .content h1
+    {
+        font-size: 18px;
+    }
+    
+    #home .promise .content h1 span
+    {
+        font-size: 50px;
+    }
+    
+    #home .promise .content h2 
+    {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    #home .promise .content h2 br
+    {
+        display: none;
+    }
+    
+    #home .voice .content-full
+    {
+        margin: 50px 0px;
+    }
+    
+    #home .voice .content-full .left
+    {
+        width: 100%;
+    }
+    
+    #home .voice .content-full .left img
+    {
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+
+    #home .voice .content-full .right
+    {
+        display: none;
+    }
+    
+    #home .voice .content .inner-content
+    {
+        width: 100%;
+    }
+    
+    #home .voice .content .inner-content .left
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    #home .voice .content .inner-content .left img
+    {
+        width: 260px;
+        display: block;
+        margin: auto;
+    }
+    
+    #home .voice .content .inner-content .right 
+    {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    #home .voice .content .inner-content .right h1
+    {
+        font-size: 16px;
+    }
+    
+    #home .voice .content .inner-content .right .inner-right
+    {
+        width: 260px;
+        margin: auto;
+    }
+    
+    #home .voice .content .inner-content .right .inner-right h2
+    {
+        text-align: left;
+        font-size: 14px;
+    }
+    
+    #home .company-profile .left
+    {
+        padding: 25px 25px 0px 25px;
+    }
+    
+    #home .company-profile .left h1 
+    {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+    
+    #home .company-profile .left h1 span 
+    {
+        margin-left: 10px;
+    }
+    
+    #home .company-profile .left .inner-left
+    {
+        width: 100%;
+    }
+    
+    #home .company-profile .left .inner-left p
+    {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    #home .company-profile .left .inner-right
+    {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #home .company-profile .left .inner-right p
+    {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    #home .company-profile .left .inner-right p br
+    {
+        display: none;
+    }
+    
+    #home .faq .left .content h1 
+    {
+        font-size: 17px;
+    }
+    
+    #asset-building-blog .hero-2 .text .custom-border
+    {
+        width: 200px;
+    }
+
+    #asset-building-blog .hero-2 .text .custom-border .bor
+    {
+        margin-left: 115px;
+    }
+
+    #asset-building-blog .content .card .box
+    {
+        width: 260px;
+    }
+
+    #asset-building-blog .content .card .box h1
+    {
+        font-size: 18px;
+    }
+
+    #asset-building-blog .content .card .box p
+    {
+        font-size: 14px;
+    }
+    
+    #blog .hero-2 .text .custom-border
+    {
+        width: 200px;
+    }
+
+    #blog .hero-2 .text .custom-border .bor
+    {
+        margin-left: 115px;
+    }
+
+    #blog .content .left h1
+    {
+        padding: 15px 0px 10px 20px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    #blog .content .left h2
+    {
+        padding: 10px 0px 15px 20px;
+        font-size: 21px;
+        letter-spacing: 1px;
+    }
+
+    #blog .content .left p 
+    {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #blog .content .right .card 
+    {
+        margin: auto;
+    }
+
+    #blog .content .right .card .box h1 
+    {
+        font-size: 18px;
+    }
+
+    #blog .content .right .card .box ul li a 
+    {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #blog .content .right .card .box ul li a img 
+    {
+        width: 8px;
+    }
+
+    #blog .content .box-2 
+    {
+        padding: 45px 0px 30px;
+    }
+
+    #blog .content .box-2 .left
+    {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #blog .content .box-2 .right
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #company .hero-2 .text .custom-border 
+    {
+        width: 200px;
+    }
+
+    #company .hero-2 .text .custom-border .bor
+    {
+        margin-left: 70px;
+    }
+
+    #company .message .left img 
+    {
+        margin: auto auto 25px;
+    }
+
+    #company .message .right .box p 
+    {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #company .profile .left
+    {
+        padding: 15px;
+    }
+
+    #company .profile .left .inner-left 
+    {
+        width: 30%;
+    }
+
+    #company .profile .left .inner-left p
+    {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    #company .profile .left .inner-right 
+    {
+        width: 70%;
+    }
+
+    #company .profile .left .inner-right p
+    {
+        padding-left: 15px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    #company .profile .right iframe 
+    {
+        height: 350px;
+    }
+    
+    #contact .hero-2 .text .custom-border
+    {
+        width: 200px;
+    }
+
+    #contact .hero-2 .text .custom-border .bor 
+    {
+        margin-left: 100px;
+    }
+
+    #contact .content .left h1 
+    {
+        font-size: 24px;
+        margin-bottom: 75px;
+    }
+
+    #contact .content .left h2 
+    {
+        font-size: 20px;
+    }
+
+    #contact .content .left p 
+    {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #contact .content form label 
+    {
+        font-size: 14px;
+    }
+
+    #contact .content form input, #contact .content form textarea 
+    {
+        font-size: 14px;
+    }
+
+    #contact .content form button
+    {
+        font-size: 14px;
+    }
+    
+    #recruit .hero-2 .text .custom-border
+    {
+        width: 200px;
+    }
+
+    #recruit .hero-2 .text .custom-border .bor
+    {
+        margin-left: 70px;
+    }
+    
+    #service .hero-2 .text .custom-border
+    {
+        width: 200px;
+    }
+
+    #service .hero-2 .text .custom-border .bor 
+    {
+        margin-left: 65px;
+    }
+
+    #service .content
+    {
+        padding: 50px 0px 0px;
+    }
+
+    #service .content h1 
+    {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    #service .content .inner-content
+    {
+        width: 100%;
+    }
+
+    #service .content .inner-content .card 
+    {
+        width: 260px;
+    }
+
+    #service .content .inner-content .card h2 
+    {
+        font-size: 18px;
+    }
+
+    #service .content .inner-content .card .box p
+    {
+        font-size: 14px;
+    }
+
+    #service .content .inner-content .card .box a
+    {
+        font-size: 14px;
+    }
+    
+    #voice .hero-2 .text .custom-border 
+    {
+        width: 200px;
+    }
+
+    #voice .hero-2 .text .custom-border .bor
+    {
+        margin-left: 80px;
+    }
+
+    #voice .content .card 
+    {
+        width: 260px;
+        padding: 0px 10px;
+    }
+
+    #voice .content .card .left 
+    {
+        width: 100%;
+    }
+
+    #voice .content .card .left img
+    {
+        width: 80%;
+        margin: auto auto 35px;
+        display: block;
+    }
+
+    #voice .content .card .left h1 
+    {
+        top: 1.5px;
+        left: 30px;
+    }
+
+    #voice .content .card .left h2 
+    {
+        font-size: 48px;
+        left: 145px;
+    }
+
+    #voice .content .card .right 
+    {
+        width: 100%;
+        padding: 0px 0px 20px;
+    }
+
+    #voice .content .card .right h1 
+    {
+        font-size: 16px;
+    }
+
+    #voice .content .card .right h2 
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #voice .content .card .box p 
+    {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+    .sub-footer .left
+    {
+        text-align: left;
+    }
+    
+    .sub-footer .left h1
+    {
+        line-height: 30px;
+    }
+    
+    .sub-footer .left h2
+    {
+        line-height: 18px;
+    }
+    
+    .sub-footer .right
+    {
+        width: 200px;
+    }
+    
+    footer img 
+    {
+        width: 60px;
+        padding: 10px 0px;
+    }
+}

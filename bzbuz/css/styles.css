@@ -1,0 +1,2088 @@
+/* Reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+@font-face
+{
+    font-family: avenir-book;
+    src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+@font-face
+{
+    font-family: avenir-black;
+    src: url(../fonts/AvenirLTStd-Black.otf);
+}
+
+@font-face
+{
+    font-family: avenir-heavy;
+    src: url(../fonts/AvenirLTStd-Heavy.otf);
+}
+
+@font-face
+{
+    font-family: avenir-light;
+    src: url(../fonts/AvenirLTStd-Light.otf);
+}
+
+@font-face
+{
+    font-family: avenir-medium;
+    src: url(../fonts/AvenirLTStd-Medium.otf);
+}
+
+@font-face
+{
+    font-family: avenir-roman;
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+
+body
+{
+    font-family: avenir-heavy;
+    color: #3A3966;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+/*---------------------------
+-----------header------------
+---------------------------*/
+
+header
+{
+    box-shadow: 0 2px 33px 0 rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+header .logo
+{ 
+    width: 116px;
+    margin-top: 25px;
+}
+
+header .menu
+{
+    top: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+header .menu a
+{
+    text-decoration: none;
+    color: #9A9A9A;
+    font-family: avenir-medium;
+    font-size: 20px;
+}
+
+header .menu a:hover
+{
+    color: #3A3966;;
+}
+
+header .menu li
+{
+    display: inline-block; 
+}
+
+header .menu-mid
+{
+    margin-left: 110px;
+}
+
+header .click i
+{
+    font-size: 16px;
+}
+
+header .change-font
+{
+    font-family: avenir-light;
+}
+
+header .active
+{
+    color: #3A3966 !important;
+}
+
+header .button 
+{	
+    text-decoration: none;
+    font-size: 16px;
+    padding: 22px 30px 20px 33px;
+    border-radius: 8px;
+    background-color: #F7D124;
+    box-shadow: 0 5px 20px 0 rgba(7,42,68,0.1);
+    position: absolute;
+    color: #3A3966;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+header .button:hover
+{	
+    
+    color: #ffffff;
+}
+
+header .back-grey
+{
+    background-color: #F0F0F0;
+    padding: 20px 0px 20px 20px;
+}
+
+header .language
+{
+    text-align: left;
+}
+
+header .language a
+{
+    font-family: avenir-black;
+    text-decoration: none;
+    color: #9A9A9A;
+    margin-right: 8px;
+}
+
+header .language a:hover
+{
+    color: #3A3966;
+}
+
+header .language h2
+{
+    font-size: 14px;
+    color: #9A9A9A;
+    margin-bottom: 11px;
+}
+
+header .language li
+{
+    list-style: none;
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 1.8px;
+}
+
+/*---------------------------
+----------side-nav-----------
+---------------------------*/
+
+.mob-logo
+{
+    width: 125px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    display: none;
+}
+
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fec807;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a 
+{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #3A3966;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+
+.sidenav .click i
+{
+    font-size: 16px;
+}
+
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .menu
+{
+    text-align: center;
+}
+
+.sidenav .items
+{
+    margin-top: 50px;
+}
+
+.sidenav .items a
+{
+    margin-bottom: 10px;
+}
+
+.sidenav .active
+{
+    color: #3A3966 !important;
+}
+
+.sidenav .language
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.sidenav .language a
+{
+    font-family: avenir-black;
+    text-decoration: none;
+    color: #9A9A9A;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.sidenav .language h2
+{
+    font-size: 14px;
+    color: #9A9A9A;
+    margin-bottom: 13px;
+    margin-right: 25px;
+}
+
+.sidenav .language li
+{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#menu
+{
+    display: none;
+    position: absolute;
+    top: 20;
+    right: 25px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/*---------------------------
+-------header-bottom-1-------
+---------------------------*/
+
+.combine .header-bottom-sec
+{
+    position: relative;
+}
+
+.combine .header-bottom-sec img
+{ 
+    position: absolute;
+    top: -120px;
+    right: 0px;
+    width: 36%;
+} 
+
+.combine-mob
+{
+    display: none;
+}
+
+.header-bottom-1
+{
+    margin-top: 155px;
+}
+
+.header-bottom-1 h1
+{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.header-bottom-1 h2
+{
+    font-size: 36px;
+    font-family: avenir-light;
+    margin-bottom: 50px;
+}
+
+.header-bottom-1 p
+{
+    font-size: 20px;
+    font-family: avenir-light;
+    color: #9A9A9A;
+    line-height: 28px;
+    margin-bottom: 70px;
+}
+
+.header-bottom-1 a
+{
+    padding: 40px 18px 14px;
+    border: 2px solid #3A3966;
+    border-radius: 12px;
+    margin-right: 30px;
+}
+
+.header-bottom-1 .apple-logo
+{
+    width: 150px;
+}
+
+.header-bottom-1 .google-logo
+{
+    width: 170px;
+}
+
+/*---------------------------
+-------header-bottom-2-------
+---------------------------*/
+
+.header-bottom-2
+{
+    margin-top: 10px;
+    background-image: url(../images/Oval%206.png);
+    background-size: contain;
+    max-height: 800px;
+    background-repeat: no-repeat;
+}
+
+.header-bottom-2 h1
+{
+    font-size: 48px;
+    font-family: avenir-heavy;
+    line-height: 64px;
+    margin-bottom: 20px;
+    padding-top: 150px;
+}
+
+.header-bottom-2 h2
+{
+    font-size: 18px;
+    font-family: avenir-medium;
+    line-height: 26px;
+}
+
+/*---------------------------
+-----------services----------
+---------------------------*/
+
+.services
+{
+    margin-top: 280px;
+    position: relative;
+}
+
+.services .service-sec
+{
+    position: absolute;
+    left: 0px;
+    top: 45%;
+    width: 20%;
+    padding-left: 0px;
+}
+
+.services .service-sec img
+{
+    width: 100px;
+}
+
+.services h1
+{
+    color: #6E6E6E;
+    text-align: center;
+    font-size: 24px;
+    font-family: avenir-medium;
+    letter-spacing: 2.6px;
+    margin-bottom: 25px;
+}
+
+.services h2
+{
+    text-align: center;
+    font-size: 36px;
+    font-family: avenir-heavy;
+    margin-bottom: 140px;
+}
+
+.services a
+{
+    font-family: avenir-medium;
+    text-decoration: none;
+    color: #3A3966;
+}
+
+.services img
+{
+    width: 100px;
+}
+
+.services .mar-auto
+{
+    margin: auto;
+}
+
+.services .center
+{
+    text-align: center;
+}
+
+.services .text
+{
+    padding-top: 30px;
+    font-size: 24px; 
+    letter-spacing: 2.2px;
+}
+
+.services .service-one
+{
+    border-bottom: 2px solid #3A3966;
+    border-left: 2px solid #3A3966;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services .service-two
+{
+    border-bottom: 2px solid #3A3966;
+    border-left: 2px solid #3A3966;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services .service-three
+{
+    border-bottom: 2px solid #3A3966;
+    border-left: 2px solid #3A3966;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services .service-four
+{
+    border-bottom: 2px solid #3A3966;
+    border-left: 2px solid #3A3966;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services .service-five
+{
+    border-bottom: 2px solid #3A3966;
+    border-left: 2px solid #3A3966;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services .service-six
+{
+    border-bottom: 2px solid #3A3966;
+    border-left: 2px solid #3A3966;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/*---------------------------
+---------flexibility---------
+---------------------------*/
+
+.flexibility
+{
+    margin-top: 160px;
+    position: relative;
+}
+
+.flexibility .flexibility-sec
+{
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    padding-left: 0px;
+}
+
+.flexibility img
+{
+    margin-bottom: 25px;
+    width: 100px;
+}
+
+.flexibility h1
+{
+    font-size: 30px;
+    font-family: avenir-heavy;
+    margin-bottom: 15px;
+}
+
+.flexibility p
+{
+    font-size: 18px;
+    font-family: avenir-medium;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.flexibility .center
+{
+    text-align: center;
+}
+
+/*---------------------------
+--------how-it-works---------
+---------------------------*/
+
+.how-it-works
+{
+    margin-top: 225px;
+    position: relative;
+    background: rgb(252,236,161); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(252,236,161,1) 0%, rgba(254,244,195,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(252,236,161,1) 0%,rgba(254,244,195,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(252,236,161,1) 0%,rgba(254,244,195,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceca1', endColorstr='#ffffff',GradientType=0 );
+}
+
+.how-it-works .drop
+{
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    padding: 0px;
+}
+
+.how-it-works h1
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: avenir-medium;
+    letter-spacing: 2.6px;
+    margin-bottom: 15px;
+    color: #6E6E6E;
+}
+
+.how-it-works h2
+{
+    text-align: center;
+    font-size: 36px;
+    font-family: avenir-heavy;
+    line-height: 54px;
+    margin-bottom: 100px;
+}
+
+.how-it-works h3
+{
+    text-align: left;
+    font-size: 48px;
+    font-family: avenir-heavy;
+    margin-bottom: 10px;
+}
+
+.how-it-works h4
+{
+    text-align: left;
+    font-size: 20px;
+    font-family: avenir-heavy;
+    margin-bottom: 10px;
+    line-height: 27px;
+}
+
+.how-it-works img
+{
+    width: 100%;
+}
+
+.how-it-works .right-text,.left-text 
+{
+    margin: auto 0px;
+    position: relative;
+}
+
+.how-it-works .left-text 
+{
+    right: -100px;
+}
+
+.how-it-works .right-image,.left-image
+{
+    margin-bottom: 60px;
+}
+
+.how-it-works .right-text .one
+{
+    width: 20% !important; 
+}
+
+.how-it-works .right-text img 
+{
+    position: absolute;
+    top: -80px;
+    width: 25%;
+    padding: 0px;
+}
+
+.how-it-works .left-text img
+{
+    position: absolute;
+    top: -80px;
+    width: 25%;
+    padding: 0px;
+}
+
+.how-it-works .mob-ver
+{
+    display: none;
+}
+
+/*---------------------------
+--------------app------------
+---------------------------*/
+
+.app
+{
+    margin-top: 90px;
+    background-image: url(../images/Mask.jpg);
+    background-size: contain;
+    height: 90vh;
+    background-repeat: no-repeat;
+}
+
+.app h1
+{
+    font-size: 36px;
+    font-family: avenir-heavy;
+    margin-bottom: 25px;
+    padding-top: 25%;
+}
+
+.app h2
+{
+    font-size: 24px;
+    font-family: avenir-medium;
+    letter-spacing: 0.74px;
+    margin-bottom: 50px;
+}
+
+.app ul
+{
+    margin-bottom: 30px;
+}
+
+.app li
+{
+    font-size: 20px;
+    font-family: avenir-light;
+    line-height: 44px;
+}
+
+.app i
+{
+    font-size: 15px;
+    color: #509A00;
+    margin-right: 10px;
+}
+
+.app a
+{
+    text-decoration: none;
+    color: #3E3E3E;
+}
+
+.app .black-icon
+{
+    display: inline-block;
+    border: 2px solid black;
+    text-decoration: none;
+    color: white;
+    border-radius: 4.8px;
+    background-color: black;
+    padding: 4px 10px 3px;
+}
+
+.app .black-icon img
+{
+    display: inline-block;
+    width: 27px;
+}
+
+.app .black-icon p
+{
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+    font-family: avenir-light;
+    font-size: 11px; 
+    line-height: 16px;
+}
+
+.app .black-icon p span
+{
+    font-size: 18px;
+    font-family: avenir-medium;
+}
+
+/*---------------------------
+-------------about-----------
+---------------------------*/
+
+.about
+{
+    margin-top: 160px;
+}
+
+.about .center
+{
+    text-align: center;
+}
+
+.about h1
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: avenir-medium;
+    letter-spacing: 2.6px;
+    margin-bottom: 25px;
+}
+
+.about h2
+{
+    text-align: center;
+    font-size: 36px;
+    font-family: avenir-heavy;
+    margin-bottom: 100px;
+    line-height: 54px;
+}
+
+.about img
+{
+    width: 100%;
+}
+
+.about p
+{
+    text-align: left;
+    font-size: 24px;
+    font-family: avenir-medium;
+    line-height: 42px;
+    margin-bottom: 50px;
+}
+
+/*---------------------------
+------------footer-----------
+---------------------------*/
+
+footer
+{
+    margin-top: 240px;
+    position: relative;
+    background: -moz-linear-gradient(-45deg, rgba(253,220,91,0.8) 1%, rgba(253,220,91,0.86) 15%, rgba(255,201,7,0.98) 44%, rgba(255,201,7,1) 50%, rgba(255,201,7,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(253,220,91,0.8) 1%,rgba(253,220,91,0.86) 15%,rgba(255,201,7,0.98) 44%,rgba(255,201,7,1) 50%,rgba(255,201,7,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(253,220,91,0.8) 1%,rgba(253,220,91,0.86) 15%,rgba(255,201,7,0.98) 44%,rgba(255,201,7,1) 50%,rgba(255,201,7,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccfddc5b', endColorstr='#ffc907',GradientType=1 );
+}
+
+footer h1
+{
+    font-size: 36px;
+    font-family: avenir-heavy;
+    margin-bottom: 30px;
+    margin-top: 140px;
+    line-height: 40px;
+}
+
+footer i
+{
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+footer a
+{
+    font-size: 18px;
+    color: #3A3966;
+    text-decoration: none;
+    font-family: avenir-heavy;
+    letter-spacing: 0.26px;
+}
+
+footer a:hover
+{
+    color: #3A3966;
+    text-decoration: none;
+}
+
+footer li
+{
+    margin-bottom: 45px;
+    list-style: none;
+}
+
+footer .social
+{
+    margin-bottom: 30px;
+}
+
+footer .social div
+{
+    margin-right: 30px;
+}
+
+footer .social i
+{
+    color: #3A3966;
+    border-radius: 50%;
+    border: 2px solid #3A3966;
+    width: 54px;
+    height: 54px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+footer .social i:hover
+{
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+footer p
+{
+    font-size: 18px;
+    font-family: avenir-light;
+    margin-bottom: 40px;
+}
+
+.mob-view
+{
+    display: none;
+}
+
+/*---------------------------
+--------footer-bottom--------
+---------------------------*/
+
+.footer-bottom
+{
+    position: relative;
+    font-family: avenir-heavy;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.26px;
+    line-height: 30px;
+    padding: 25px 0px;
+}
+
+.footer-bottom .form
+{
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px 0 rgba(29,17,86,0.12);
+}
+
+
+.footer-bottom .form h1
+{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-family: avenir-heavy;
+    letter-spacing: 0.51px;
+}
+
+.footer-bottom .form input,textarea
+{
+    width: 100%;
+    margin: 0px 0px 18px 0px;
+    padding: 9px 20px;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    color: #4f4f4f;
+    font-size: 14px;
+    font-family: avenir-medium;
+}
+
+::placeholder 
+{
+    opacity: 1; /* Firefox */
+    font-family: avenir-light;
+    font-size: 14px;
+}
+
+.footer-bottom .form button 
+{	
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 33px 13px 36px;
+    border-radius: 8px;
+    background-color: #F7D124;
+    color: #3A3966;
+    border: none;
+    margin-bottom: 60px;
+}
+
+.footer-bottom .form button a
+{	
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 33px 13px 36px;
+    border-radius: 8px;
+    background-color: #F7D124;
+    color: #3A3966;
+    border: none;
+    margin-bottom: 60px;
+}
+
+.footer-bottom .form button a:hover
+{	
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.address p
+{
+    margin: 20px 0px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*---------------------------
+--------media-queries--------
+---------------------------*/
+
+@media screen and (max-width:3000px)
+{
+    .services .service-one
+    {
+        border-left: none;
+        padding-top: 0px;
+    }
+
+    .services .service-two
+    {
+        padding-top: 0px;
+    }
+
+    .services .service-three
+    {
+        padding-top: 0px;
+    }
+
+    .services .service-four
+    {
+        border-bottom: none;
+        border-left: none;
+        padding-bottom: 0px;
+    }
+
+    .services .service-five
+    {
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+
+    .services .service-six
+    {
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+    
+    .combine .header-bottom-sec img
+    { 
+        width: 20%;
+    } 
+}
+
+@media screen and (max-width:2000px)
+{
+    
+    .combine .header-bottom-sec img
+    { 
+        width: 30%;
+    } 
+    
+    .header-bottom-2
+    {
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width:1450px)
+{
+    .header-bottom-2 h1
+    {
+        font-size: 40px;
+        padding-top: 120px;
+    }
+    
+    .app h1 
+    {
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width:1440px)
+{
+    header .logo
+    {
+        width: 116px !important;
+    }
+    
+    .services .service-sec
+    {
+        top: 45%;
+    }
+    
+    .combine .header-bottom-sec img
+    { 
+        width: 36%;
+    }
+
+    .services img
+    {
+        width: 65px;
+    }
+
+    
+    .flexibility
+    {
+        margin-top: 80px;
+        position: relative;
+    }
+
+    .flexibility .flexibility-sec
+    {
+        position: absolute;
+        right: 0px;
+        top: -40px;
+        width: 80px;
+        padding-left: 0px;
+    }
+
+    .flexibility img
+    {
+        margin-bottom: 25px;
+        width: 90px;
+    }
+
+    .flexibility h1
+    {
+        font-size: 28px;
+    }
+
+    .flexibility p
+    {
+        font-size: 16px;
+    }
+
+    .how-it-works .left-image img
+    {
+        width: 82%;
+        display: block;
+        margin-left: auto;
+    }
+    
+    .how-it-works .right-image img
+    {
+        width: 82%;
+        display: block;
+        margin-right: auto;
+    }
+    
+    .how-it-works .right-text .one
+    {
+        width: 17% !important; 
+    }
+
+    .how-it-works .right-text img 
+    {
+        position: absolute;
+        top: -60px;
+        width: 22%;
+        padding: 0px;
+    }
+
+    .how-it-works .left-text img
+    {
+        position: absolute;
+        top: -60px;
+        width: 22%;
+        padding: 0px;
+    }
+    
+    .app
+    {
+        height: 95vh;
+    }
+
+    .app h1
+    {
+        font-size: 32px;
+        padding-top: 20%;
+    }
+
+    .app h2
+    {
+        font-size: 22px;
+    }
+
+    .app li
+    {
+        font-size: 18px;
+    }
+
+    .app .black-icon
+    {
+        display: inline-block;
+        border: 2px solid black;
+        text-decoration: none;
+        color: white;
+        border-radius: 4.8px;
+        background-color: black;
+        padding: 4px 10px 3px;
+    }
+
+    .app .black-icon p
+    {
+        font-size: 10px;
+    }
+
+    .app .black-icon p span
+    {
+        font-size: 16px;
+    }
+    
+    .about
+    {
+        margin-top: 60px;
+    }
+
+    .about h1
+    {
+        font-size: 22px;
+    }
+
+    .about h2
+    {
+        font-size: 32px;
+    }
+
+    .about img
+    {
+        width: 90%;
+    }
+
+    .about p
+    {
+        font-size: 21px;
+    }
+    
+    footer
+    {
+        margin-top: 160px;
+        position: relative;
+    }
+
+    .footer-bottom .form input,textarea
+    {
+        font-size: 13px;
+    }
+
+    ::placeholder 
+    {
+        font-size: 13px;
+    }
+
+    .footer-bottom .form button 
+    {	
+        font-size: 14px;
+        padding: 15px 20px 13px 20px;
+    }
+
+    .footer-bottom .form button a
+    {	
+        font-size: 14px;
+        padding: 15px 20px 13px 20px;
+    }
+}
+
+@media screen and (max-width:1400px)
+{
+    .header-bottom-2 h1
+    {
+        font-size: 40px;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width:1366px)
+{
+
+    header .menu a
+    {
+        font-size: 18px;
+    }
+
+    header .menu li
+    {
+        font-size: 18px;
+    }
+
+    header .button 
+    {	
+        font-size: 14.2px;
+        padding: 22px 28px 20px 31px;
+        left: 20px;
+    }
+
+    header .language h2
+    {
+        font-size: 13px;
+    }
+
+    header .language li
+    {
+        font-size: 22px;
+    }
+
+    .header-bottom-1 h1
+    {
+        font-size: 34.2px;
+    }
+
+    .header-bottom-1 h2
+    {
+        font-size: 34.2px;
+    }
+
+    .header-bottom-1 p
+    {
+        font-size: 19px;
+    }
+
+    .header-bottom-2 h1
+    {
+        font-size: 45.6px;
+        line-height: 54px;
+    }
+
+    .header-bottom-2 h2
+    {
+        font-size: 17.1px;
+    }
+
+    .services h1
+    {
+        font-size: 21.8px;
+    }
+
+    .services h2
+    {
+        font-size: 34.2px;
+    }
+
+    .services .text
+    {
+        font-size: 22.8px;
+    }
+
+    .flexibility img
+    {
+        margin-bottom: 25px;
+    }
+
+    .flexibility h1
+    {
+        font-size: 28.5px;
+    }
+
+    .flexibility p
+    {
+        font-size: 17.1px;
+    }
+
+    .how-it-works h1
+    {
+        font-size: 22.8px;
+    }
+
+    .how-it-works h2
+    {
+        font-size: 35.2px;
+    }
+
+    .how-it-works h3
+    {
+        font-size: 45.6px;
+    }
+
+    .how-it-works h4
+    {
+        font-size: 19px;
+    }
+
+    .app h1
+    {
+        font-size: 34.2px;
+    }
+
+    .app h2
+    {
+        font-size: 22.8px;
+    }
+
+    .app li
+    {
+        font-size: 19px;
+    }
+
+    .app .black-icon p
+    {
+        font-size: 10.45px;
+    }
+
+    .app .black-icon p span
+    {
+        font-size: 17.1px;
+    }
+
+    .about h1
+    {
+        font-size: 22.8px;
+    }
+
+    .about h2
+    {
+        font-size: 34.2px;
+    }
+
+    .about p
+    {
+        font-size: 22.8px;
+    }
+
+    footer h1
+    {
+        font-size: 31.2px;
+    }
+
+    .footer-bottom
+    {
+        font-size: 16px;
+    }
+
+    .footer-bottom .form h1
+    {
+        font-size: 34.2px;
+    }
+
+    .footer-bottom .form input,textarea
+    {
+        font-size: 13.3px;
+    }
+
+    ::placeholder 
+    {
+        font-size: 13.3px;
+    }
+
+    .footer-bottom .form button 
+    {	
+        font-size: 15.2px;
+        padding: 15px 20px 13px 20px;
+    }
+
+    .footer-bottom .form button a
+    {	
+        font-size: 15.2px;
+        padding: 15px 20px 13px 20px;
+    }
+}
+
+@media screen and (max-width:1300px)
+{
+    .header-bottom-2 h1
+    {
+        font-size: 38px;
+        padding-top: 80px;
+    }
+    
+    header .button 
+    {	
+        font-size: 13px;
+        padding: 22px 24px 20px 28px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width:1200px)
+{
+    .services .service-one
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-two
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-three
+    {
+        border-left: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-four
+    {
+        border-bottom: 2px solid #3A3966;
+        border-left: 2px solid #3A3966;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-five
+    {
+        border-bottom: none;
+        border-left: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-six
+    {
+        border-bottom: none;
+        border-left: 2px solid #3A3966;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    header .menu
+    {
+        text-align: right;
+    }
+
+    header .button 
+    {
+        font-size: 14px;
+    }
+    
+    header .menu ul
+    {
+        margin-right: 100px;
+    }
+
+    .flexibility p 
+    {
+        font-size: 14px;
+    }
+    
+    .how-it-works .left-text 
+    {
+        right: 0px;
+    }
+    
+    .app
+    {
+        background-image: none;
+        height: auto;
+    }
+    
+    .about .para
+    {
+        margin-top: 50px;
+    }
+    
+    .about h2 
+    {
+        margin-bottom:70px;
+    }
+    
+    footer
+    {
+        margin-top: 0px;
+    }
+
+    footer h1
+    {
+        margin-top: 40px;
+    }
+    
+    .mob-view
+    {
+        display: block;
+    }
+    
+    .web-view
+    {
+        display: none;
+    }
+    
+    .footer-bottom .form
+    {
+        position: static;
+        box-shadow: none;
+    }
+    
+    .header-bottom-2
+    {
+        background-image: url(../images/Oval%206a.png);
+        background-size: cover;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:1100px)
+{
+    header .button 
+    {	
+        font-size: 12px;
+        padding: 22px 22px 20px 24px;
+        left: 20px;
+    }
+    
+    header .menu ul
+    {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width:991px)
+{
+    header
+    {
+        display: none;
+    }
+    
+    .header-bottom-2
+    {
+        margin-top: 50px;
+    }
+    
+    .header-bottom-2 h1
+    {
+        font-size: 30px;
+        line-height: 34px;
+        padding-top: 90px;
+    }
+    
+    .header-bottom-2 h2
+    {
+        font-size: 14px;
+        font-family: avenir-medium;
+        line-height: 26px;
+    }
+    
+    .combine .header-bottom-sec img
+    { 
+        top: -80px;
+    }
+    
+    .flexibility .flexibility-sec
+    {
+        display: none;
+    }
+    
+    .mob-logo
+    {
+        display: initial;
+    }
+    
+    #menu
+    {
+        display: initial;
+    }
+    
+    .services 
+    {
+        margin-top: 200px;
+        padding-bottom: 100px;
+    }
+    
+    .how-it-works 
+    {
+        margin-top: 100px;
+    }
+    
+    .flexibility .col-lg-4
+    {
+        margin-bottom: 50px;
+    }
+    
+    footer h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:767px)
+{
+    .services .service-one
+    {
+        border-bottom: 2px solid #3A3966;
+        border-left: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-two
+    {
+        border-bottom: 2px solid #3A3966;
+        border-left: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-three
+    {
+        border-bottom: 2px solid #3A3966;
+        border-left: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-four
+    {
+        border-bottom: 2px solid #3A3966;
+        border-left: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-five
+    {
+        border-bottom: 2px solid #3A3966;
+        border-left: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services .service-six
+    {
+        border-bottom: 2px solid #3A3966;
+        border-left: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .services 
+    {
+        margin-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .services .center 
+    {
+        margin-bottom: 60px;
+    }
+    
+    .services h2 
+    {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .header-bottom-1 h1 
+    {
+        font-size: 27px;
+    }
+    
+    .header-bottom-1 h2 
+    {
+        font-size: 27px;
+    }
+    
+    .header-bottom-1 p 
+    {
+        font-size: 17px;
+    }
+    
+    .header-bottom-1 .google-logo 
+    {
+        display: inline-block;
+        width: 150px;
+    }
+    
+    .header-bottom-1 .apple-logo 
+    {
+        display: inline-block;
+        width: 135px;
+    }
+    
+    .header-bottom-1 a 
+    {
+        padding: 38px 20px 15px;
+    }
+    
+    .flexibility 
+    {
+        margin-top: 100px;
+    }
+    
+    .how-it-works .mob-ver
+    {
+        display: initial;
+    }
+    
+    .how-it-works .des-ver
+    {
+        display: none;
+    }
+    
+    .how-it-works .drop 
+    {
+        top: -70px;
+    }
+
+    .how-it-works 
+    {
+        margin-top: 40px;
+        font-size: 26px;
+    }
+    
+    .how-it-works h2 
+    {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    
+    .how-it-works h3 
+    {
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    .how-it-works h4 
+    {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 70px;
+        line-height: 20px;
+    }
+    
+    .service-sec
+    {
+        display: none;
+    }
+    
+
+    .how-it-works .left-text 
+    {
+        right: 0px;
+    }
+    
+    .how-it-works .right-text .one 
+    {
+        width: 12% !important;
+    }
+    
+    .how-it-works .left-text img 
+    {
+        top: -30px;
+        left: 40%;
+        width: 17%;
+    }
+    
+    .how-it-works .right-text img 
+    {
+        top: -30px;
+        left: 40%;
+        width: 17%;
+    }
+    
+    .how-it-works .right-image img 
+    {
+        width: 75%;
+        margin: auto;
+    }
+    
+    .how-it-works .left-image img 
+    {
+        width: 75%;
+        margin: auto;
+    }
+    
+    .how-it-works .right-image,.left-image 
+    {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 576px) 
+{
+    .header-bottom-sec
+    {
+        display: none;
+    }
+    
+    .header-bottom-1 
+    {
+        margin-top: 120px;
+    }
+    
+    .combine-mob
+    {
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
+    
+    .services 
+    {
+        margin-top: 100px;
+        padding-bottom: 0px;
+    }
+    
+    .services img 
+    {
+        width: 80px;
+    }
+    
+    .header-bottom-1 h1 
+    {
+        font-size: 23px;
+    }
+    
+    .header-bottom-1 h2 
+    {
+        font-size: 23px;
+    }
+    
+    .header-bottom-1 p 
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .header-bottom-1 .google-logo 
+    {
+        display: inline-block;
+        width: 100px;
+    }
+
+    .header-bottom-1 .apple-logo 
+    {
+        display: inline-block;
+        width: 90px;
+    }
+
+    .header-bottom-1 a {
+        padding: 23px 15px 12px;
+        margin-right: 10px;
+    }
+
+    .header-bottom-2 h2
+    {
+        font-size: 12px;
+    }
+    
+    .how-it-works .drop 
+    {
+        top: -40px;
+    }
+    
+    .app
+    {
+        margin-top: 40px;
+    }
+
+    .app h1
+    {
+        font-size: 26px;
+    }
+
+    .app h2
+    {
+        font-size: 18px;
+    }
+
+    .app li
+    {
+        font-size: 16px;
+    }
+
+    .app .black-icon p
+    {
+        font-size: 9px;
+    }
+
+    .app .black-icon p span
+    {
+        font-size: 15px;
+    }
+    
+    .about
+    {
+        margin-top: 100px;
+    }
+    
+    .about h2 
+    {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    
+    .about p 
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    footer .social div 
+    {
+        margin-right: 40px;
+    }
+    
+    .footer-bottom p
+    {
+        font-size: 16px;
+    }
+    
+    footer h1
+    {
+        font-size: 24px;
+    }
+    
+    .how-it-works h2 
+    {
+        margin-bottom: 50px;
+    }
+    
+    .how-it-works h3 
+    {
+        font-size: 29px;
+    }
+
+    .how-it-works h4 
+    {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 50px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) 
+{
+    .about h2 
+    {
+        font-size: 25px;
+    }
+
+    .address p
+    {
+        font-size: 14px;
+    }
+
+    .how-it-works h2 
+    {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 365px) 
+{
+    .about h2 
+    {
+        font-size: 22px;
+    }
+
+    .address p
+    {
+        font-size: 12px;
+    }
+
+    .how-it-works h2 
+    {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height: 450px) 
+{
+    .sidenav
+    {
+        padding-top: 15px;
+    }
+
+    .sidenav a 
+    {
+        font-size: 18px;
+    }
+}

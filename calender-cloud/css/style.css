@@ -1,0 +1,2264 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+---------------------header----------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+#home header
+{
+    box-shadow: none;
+}
+
+header
+{
+    background-color: #FFFFFF;	
+    box-shadow: 0 1px 10px 0 rgba(200,200,200,0.37);
+    font-size: 0px;
+}
+
+header .left
+{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+header .left img
+{
+    padding: 21.5px 0px;
+}
+
+header .right
+{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    text-align: right;
+}
+
+header .right a
+{
+    color: #2AB7FF;
+    font-size: 16px;	
+    font-weight: 500;	
+    line-height: 25px;
+    display: inline-block;
+    padding: 28.5px 0px;
+    text-decoration: underline;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+----------------------home-----------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+/*-------------------------
+------------hero-----------
+-------------------------*/
+
+#home .hero
+{
+    padding: 100px 0px 120px;
+    position: relative;
+}
+
+#home .hero .vertical
+{
+    position: absolute;
+    width: 114px;
+    left: 0px;
+    top: 265px;
+}
+
+#home .hero .yellow
+{
+    position: absolute;
+    right: 0px;
+    top: 295px;
+}
+
+#home .hero .custom
+{
+    position: relative;
+}
+
+#home .hero .custom .triangle
+{
+    position: absolute;
+    width: 128px;
+    right: 110px;
+    top: -15px;
+}
+
+#home .hero .custom .purple
+{
+    position: absolute;
+    left: 205px;
+    bottom: -90px;
+}
+
+#home .hero h1
+{
+    color: #0A1132;	
+    font-size: 48px;	
+    font-weight: 600;	
+    line-height: 67px;	
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#home .hero p
+{
+    opacity: 0.8;	
+    color: #0A1132;	
+    font-size: 20px;	
+    line-height: 30px;	
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#home .hero a
+{
+    margin: auto;
+    padding: 20px 0px;
+    display: block;
+    height: 72px;	
+    width: 248px;
+    border-radius: 36px;
+    border: none;
+    background-color: #2AB7FF;	
+    box-shadow: 0 2px 15px 0 rgba(141,141,141,0.5);
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*-------------------------
+---------calendar----------
+-------------------------*/
+
+#home .calendar
+{
+    background-color: #05408E;
+    padding: 90px 0px 190px;
+    position: relative;
+    margin-top: 100px;
+}
+
+#home .calendar .custom
+{
+    position: relative;
+}
+
+#home .calendar .custom .salesforce
+{
+    position: absolute;
+    width: 341px;
+    left: 30px;
+    top: -225px;
+}
+
+#home .calendar .mob-custom
+{
+    display: none;
+}
+
+#home .calendar .calendar-img
+{
+    position: absolute;
+    right: 0px;
+    top: -100px;
+    width: 45%;
+}
+
+#home .calendar h1
+{
+    color: #E9E9E9;	
+    font-size: 44px;	
+    font-weight: 600;	
+    line-height: 66px;
+    margin-bottom: 25px;
+}
+
+#home .calendar p
+{
+    color: #E9E9E9;		
+    font-size: 20px;	
+    line-height: 35px;
+}
+
+#home .calendar .calendar-tab
+{
+    display: none;
+}
+
+#home .calendar .shapes
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 87px;
+    height: 81.5px;
+}
+
+/*-------------------------
+----------content----------
+-------------------------*/
+
+#home .content
+{
+    padding: 130px 0px;
+}
+
+#home .content .custom-margin
+{
+    margin-bottom: 70px;
+}
+
+#home .content img
+{
+    width: 100%;
+}
+
+#home .content h1
+{
+    color: #0A1132;		
+    font-size: 36px;	
+    font-weight: 600;	
+    line-height: 54px;
+    margin: 60px 0px 20px 20px;
+}
+
+#home .content p
+{
+    opacity: 0.8;	
+    color: #0A1132;		
+    font-size: 18px;	
+    line-height: 30px;
+    margin: 0px 0px 0px 20px;
+}
+
+
+#home .content .text-first h1, #home .content .text-first p
+{
+    margin-left: 0px;
+}
+
+/*-------------------------
+------------plan-----------
+-------------------------*/
+
+#home .plan
+{
+    padding: 0px 0px 130px;
+    position: relative;
+}
+
+#home .plan h1
+{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    color: #0A1132;
+    margin-bottom: 20px;
+}
+
+#home .plan h2
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #0A1132;
+    margin-bottom: 80px;
+}
+
+#home .plan .box
+{
+    height: 420px;
+    width: 370px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 14px 0 rgba(91,91,91,0.25);
+    border-top: 12px solid #2AB7FF;
+    padding: 25px 30px 40px;
+    text-align: center;
+    position: relative;
+}
+
+#home .plan .box.left
+{
+    margin-left: auto;
+}
+
+#home .plan .box.left img
+{
+    position: absolute;
+    top: 42px;
+    left: -56px;
+    width: 56px;
+}
+
+#home .plan .box.left .purple
+{
+    position: absolute;
+    left: -185px;
+    top: 265px;
+    width: 90px;
+}
+
+#home .plan .box.right img
+{
+    position: absolute;
+    bottom: 42px;
+    right: -56px;
+    width: 56px;
+}
+
+#home .plan .box.right .yellow
+{
+    position: absolute;
+    right: -185px;
+    top: 5px;
+    width: 120px;
+}
+
+#home .plan .box h1
+{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+    color: #0A1132;
+    margin-bottom: 25px;
+}
+
+#home .plan .box h2 
+{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 54px;
+    text-align: center;
+    color: #6A747D;
+    margin-bottom: 0px;
+}
+
+#home .plan .box h2 span 
+{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #0A1132;
+    margin-bottom: 15px;
+}
+
+#home .plan .box h3
+{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 34px;
+    text-align: center;
+    color: #0A1132;
+    margin-bottom: 40px;
+}
+
+#home .plan .box a
+{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px 0px;
+    margin: auto;
+    color: #FFFFFF;
+    display: inline-block;
+    background-color: #2AB7FF;
+    border-radius: 30px;
+    width: 248px;
+    text-decoration: none;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
+}
+
+#home .plan .box.left h1
+{
+    margin-bottom: 15px;
+}
+
+#home .plan .box.left ul
+{
+    background-color: #e1e6ee;
+    border-radius: 30px;
+    font-size: 0px;
+    width: 280px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+#home .plan .box.left ul li
+{
+    display: inline-block;
+    width: 50%;
+}
+
+#home .plan .box.left ul li a
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #0A1132;
+    margin-bottom: 0px;
+    width: 100%;
+    background-color: transparent;
+    padding: 5px 0px;
+    border-radius: 30px;
+    box-shadow: none;
+}
+
+#home .plan .box.right h2
+{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+    color: #0A1132;
+    margin-bottom: 0px;
+}
+
+#home .plan .box.right ul
+{
+    text-align: left;
+    margin-bottom: 100px;
+    list-style: disc;
+    padding-left: 25px;
+}
+
+#home .plan .box.right ul li
+{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 34px;
+    color: #0A1132;
+    opacity: 80%;
+    margin-bottom: 0px;
+}
+
+#home .plan #dynamic-box ul li a.monthly-button
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0px;
+    width: 100%;
+    background-color: #05408E;
+    cursor: pointer;
+}
+
+#home .plan #dynamic-box ul li a.annual-button
+{
+    color: #0A1132;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#home .plan #dynamic-box .monthly-price
+{
+    display: block;
+}
+
+#home .plan #dynamic-box .annual-price
+{
+    display: none;
+}
+
+#home .plan #dynamic-box .monthly-benefit
+{
+    display: block;
+}
+
+#home .plan #dynamic-box .annual-benefit
+{
+    display: none;
+}
+
+#home .plan #dynamic-box.active ul li a.annual-button
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0px;
+    width: 100%;
+    background-color: #05408E;
+    cursor: pointer;
+}
+
+#home .plan #dynamic-box.active ul li a.monthly-button
+{
+    color: #0A1132;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#home .plan #dynamic-box.active .annual-price
+{
+    display: block;
+}
+
+#home .plan #dynamic-box.active .monthly-price
+{
+    display: none;
+}
+
+#home .plan #dynamic-box.active .annual-benefit
+{
+    display: block;
+    color: red;
+}
+
+#home .plan #dynamic-box.active .monthly-benefit
+{
+    display: none;
+}
+
+/*-------------------------
+------------demo-----------
+-------------------------*/
+
+#home .demo
+{
+    background-color: #f3f3f5;
+    padding: 70px 0px 90px;
+}
+
+#home .demo .demo-content
+{
+    width: 970px;
+    margin: auto;
+}
+
+#home .demo .demo-content h1
+{
+    color: #0A1132;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 67px;
+    text-align: center;   
+    margin-bottom: 65px;
+}
+
+#home .demo .demo-content form label
+{
+    display: block;
+    opacity: 0.65;	
+    color: #0A1132;		
+    font-size: 18px;	
+    font-weight: 500;	
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+#home .demo .demo-content form input
+{
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    border: none;	
+    color: #0A1132;	
+    font-size: 15px;	
+    line-height: 24px;
+    padding: 12px 18px;
+    margin-bottom: 40px;
+}
+
+#home .demo .demo-content form input::placeholder
+{
+    opacity: 0.75;
+}
+
+#home .demo .demo-content form textarea
+{
+    display: block;
+    width: 100%;
+    height: 144px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    border: none;	
+    color: #0A1132;	
+    font-size: 15px;	
+    line-height: 24px;
+    padding: 12px 18px;
+}
+
+#home .demo .demo-content form textarea::placeholder
+{
+    opacity: 0.75;
+}
+
+#home .demo .demo-content form button
+{
+    margin: auto;
+    display: block;
+    height: 60px;
+    width: 248px;
+    border-radius: 30px;
+    border: none;
+    background-color: #2AB7FF;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
+    color: #FFFFFF;	
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/*-----------------------------------------------
+-------------------------------------------------
+---------------------terms-----------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+/*-------------------------
+----------content----------
+-------------------------*/
+
+
+#terms .content
+{
+    width: 970px;
+    margin: 90px auto;
+}
+
+#terms .content h1
+{
+    color: #0A1132;		
+    font-size: 34px;	
+    font-weight: 600;	
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+#terms .content h2
+{
+    opacity: 0.8;	
+    color: #0A1132;		
+    font-size: 20px;	
+    font-weight: 500;	
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+#terms .content p
+{
+    opacity: 0.8;	
+    color: #0A1132;		
+    font-size: 20px;	
+    line-height: 34px;
+    margin-bottom: 40px;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+-------------------gift-card---------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+/*-------------------------
+------------hero-----------
+-------------------------*/
+
+#gift-card .hero
+{
+    position: relative;
+    padding: 30px 0px 110px;
+}
+
+#gift-card .hero .vertical
+{
+    width: 114px;
+    height: 163px;
+    position: absolute;
+    left: 0px;
+    top: 270px;
+}
+
+#gift-card .hero .yellow
+{
+    position: absolute;
+    right: 0px;
+    top: 290px;
+}
+
+#gift-card .hero .triangles
+{
+    width: 81px;
+    height: 128px;
+    position: absolute;
+    right: 0px;
+    top: 110px;
+}
+
+#gift-card .hero .left
+{
+    margin-top: 80px;
+    position: relative;
+}
+
+#gift-card .hero .left h1
+{
+    color: #0A1132;		
+    font-size: 40px;	
+    font-weight: 600;	
+    line-height: 54px;
+    margin-bottom: 15px;
+}
+
+#gift-card .hero .left p
+{
+    color: #0A1132;	
+    font-size: 20px;	
+    font-weight: 400;	
+    line-height: 30px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+#gift-card .hero .left a
+{
+    display: block;
+    width: 248px;
+    height: 72px;
+    border-radius: 36px;
+    border: none;
+    background-color: #2AB7FF;
+    box-shadow: 0 2px 15px 0 rgba(141,141,141,0.5);
+    color: #FFFFFF;	
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    padding: 21px 0px;
+}
+
+#gift-card .hero .left .purple
+{
+    position: absolute;
+    left: 240px;
+    top: 340px;
+}
+
+#gift-card .hero .right img
+{
+    display: block;
+    margin-left: auto;
+}
+
+
+/*-------------------------
+----------content----------
+-------------------------*/
+
+#gift-card .content
+{
+    text-align: center;
+    padding: 0px 0px 100px;
+    position: relative;
+}
+
+#gift-card .content .mask
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#gift-card .content .oval
+{
+    position: absolute;
+    top: 430px;
+    right: 0px;
+}
+
+#gift-card .content h1
+{
+    color: #0A1132;		
+    font-size: 44px;	
+    font-weight: 600;	
+    line-height: 54px;
+    margin-bottom: 60px;
+}
+
+#gift-card .content .widget
+{
+    width: 828px;
+    margin: auto;
+    padding: 10px 14px;
+    position: relative;
+}
+
+#gift-card .content .widget img
+{
+    width: 100%;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+#gift-card .content .widget .left
+{
+    width: 64px;
+    height: 128px;
+    position: absolute;
+    box-shadow: none;
+    top: 160px;
+    left: -64px;  
+}
+
+#gift-card .content .widget .right
+{
+    width: 88.5px;
+    height: 128px;
+    position: absolute;
+    box-shadow: none;
+    bottom: 60px;
+    right: -88.5px;  
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+--------------------footer-----------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+
+footer
+{
+    background-color: #0A1132;
+}
+
+footer .footer-content
+{
+    width: 970px;
+    margin: auto;
+    font-size: 0px;
+}
+
+footer .footer-content .left
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+
+footer .footer-content .left ul
+{
+    margin: 25.5px 0px;
+}
+
+footer .footer-content .left ul li
+{
+    display: inline-block;
+}
+
+footer .footer-content .left ul li a
+{
+    opacity: 0.6;	
+    color: #FFFFFF;	
+    font-size: 13px;	
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-right: 60px;
+}
+
+footer .footer-content .right
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    text-align: right;
+}
+
+footer .footer-content .right p
+{
+    opacity: 0.5;	
+    color: #FFFFFF;		
+    font-size: 12px;	
+    line-height: 24px;
+    margin: 25.5px 0px;
+}
+
+
+/*-----------------------------------------------
+-------------------------------------------------
+----------------media-queries--------------------
+-------------------------------------------------
+-----------------------------------------------*/
+
+@media screen and (max-width: 1920px)
+{
+    #home .calendar 
+    {
+        padding: 90px 0px 390px;
+    }
+    
+    #home .calendar .calendar-img
+    {
+        width: 60%;
+    } 
+}
+
+@media screen and (max-width: 1700px)
+{
+    #home .calendar 
+    {
+        padding: 90px 0px 290px;
+    }
+}
+
+@media screen and (max-width: 1450px)
+{
+    #home .calendar .calendar-img
+    {
+        width: 63%;
+    } 
+    
+    #home .calendar 
+    {
+        padding: 90px 0px 190px;
+    }
+}
+
+@media screen and (max-width: 1400px)
+{
+    #home .calendar .calendar-img
+    {
+        width: 65%;
+    } 
+}
+
+@media screen and (max-width: 1199px)
+{
+    /*-------------------------
+    ------------home-----------
+    -------------------------*/
+    
+    #home .hero h1 
+    {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    
+    #home .hero p 
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    #home .hero a 
+    {
+        padding: 17px 0px;
+        height: 65px;
+        width: 221px;
+        font-size: 18px;
+    }
+    
+    #home .calendar 
+    {
+        padding: 90px 0px 150px;
+    }
+    
+    #home .calendar .custom .salesforce 
+    {
+        width: 260px;
+        left: 30px;
+        top: -190px;
+    }
+    
+    #home .calendar h1 
+    {
+        font-size: 34px;
+        line-height: 50px;
+    }
+    
+    #home .calendar p 
+    {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    
+    #home .content
+    {
+        padding: 100px 0px;
+    }
+    
+    #home .content h1 
+    {
+        font-size: 34px;
+        line-height: 45px;
+        margin: 40px 0px 20px 20px;
+    }
+    
+    #home .content p 
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    #home .plan
+    {
+        padding: 0px 0px 100px;
+    }
+
+    #home .plan h1
+    {
+        font-size: 40px;
+    }
+
+    #home .plan h2
+    {
+        font-size: 18px;
+        margin-bottom: 70px;
+    }
+
+    #home .plan .box.left .purple
+    {
+        left: -95px;
+        width: 60px;
+    }
+
+    #home .plan .box.right .yellow
+    {
+        right: -95px;
+        width: 75px;
+    }
+
+    #home .plan .box a
+    {
+        font-size: 18px;
+    }
+    
+    #home .demo
+    {
+        padding: 70px 0px;
+    }
+    
+    #home .demo .demo-content 
+    {
+        width: 100%;
+    }
+    
+    #home .demo .demo-content h1
+    {
+        font-size: 40px;
+        margin-bottom: 55px;
+    }
+    
+    #home .demo .demo-content form label
+    {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    #home .demo .demo-content form input
+    {
+        font-size: 14px;
+    }
+
+    #home .demo .demo-content form textarea
+    {
+        font-size: 14px;
+    }
+    
+    #home .demo .demo-content form button
+    {
+        font-size: 18px;
+    }
+    
+    /*-------------------------
+    -----------terms-----------
+    -------------------------*/
+    
+    #terms .content
+    {
+        width: 100%;
+        margin: 70px auto;
+    }
+    
+    #terms .content h1 
+    {
+        font-size: 32px;
+    }
+    
+    #terms .content h2 
+    {
+        font-size: 19px;
+    }
+    
+    #terms .content p 
+    {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    /*-------------------------
+    ---------gift-card---------
+    -------------------------*/
+    
+    #gift-card .hero
+    {
+        padding: 30px 0px 130px;
+    }
+
+    #gift-card .hero .vertical
+    {
+        top: 640px;
+    }
+
+    #gift-card .hero .yellow
+    {
+        top: 590px;
+    }
+
+    #gift-card .hero .triangles
+    {
+        top: 410px;
+    }
+
+    #gift-card .hero .left
+    {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #gift-card .hero .left h1
+    {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+    }
+
+    #gift-card .hero .left p
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #gift-card .hero .left a
+    {
+        height: 65px;
+        padding: 17px 0px;
+        margin: auto;
+    }
+
+    #gift-card .hero .left .purple
+    {
+        position: absolute;
+        left: 570px;
+        top: 300px;
+    }
+
+    #gift-card .hero .right img
+    {
+        display: block;
+        margin: auto;
+    }
+
+    #gift-card .content
+    {
+        text-align: center;
+        padding: 0px 0px 100px;
+        position: relative;
+    }
+
+    #gift-card .content .mask
+    {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    #gift-card .content .oval
+    {
+        position: absolute;
+        top: 330px;
+        right: 0px;
+    }
+
+    #gift-card .content h1
+    {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    #gift-card .content .widget
+    {
+        width: 700px;
+    }
+    
+    /*-------------------------
+    ----------footer-----------
+    -------------------------*/
+    
+    footer .footer-content
+    {
+        width: 100%;
+    }
+    
+    footer .footer-content .left ul li a 
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    /*-------------------------
+    ------------home-----------
+    -------------------------*/
+    
+    #home .hero 
+    {
+        padding: 75px 0px 120px;
+    }
+    
+    #home .hero .vertical 
+    {
+        width: 90px;
+    }
+
+    #home .hero .yellow
+    {
+        width: 80px;
+    }
+    
+    #home .hero .custom .purple
+    {
+        width: 75px;
+    }
+    
+    #home .hero .custom .triangle
+    {
+        width: 100px;
+        right: 10px;
+    }
+    
+    #home .hero a 
+    {
+        padding: 14.5px 0px;
+        height: 60px;
+        width: 205px;
+        font-size: 16px;
+    }
+    
+    #home .calendar
+    {
+        margin-top: 0px;
+        padding: 75px 0px 100px;
+        text-align: center;
+    }
+    
+    #home .calendar .custom .salesforce
+    {
+        display: none;
+    }
+    
+    #home .calendar .calendar-img
+    {
+        display: none;
+    }
+    
+    #home .calendar .calendar-tab
+    {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    #home .calendar .shapes 
+    {
+        width: 80px;
+    }
+    
+    #home .calendar .desktop-custom
+    {
+        display: none;
+    }
+    
+    #home .calendar .mob-custom
+    {
+        display: block;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    
+    #home .calendar .mob-custom .calender-custom
+    {
+        width: 100%;
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+        top: 0px;
+    }
+    
+    #home .calendar .mob-custom .circle
+    {
+        width: 100px;
+        position: absolute;
+        z-index: 1;
+        bottom: -48px;
+        left: -7px;
+    }
+    
+    #home .calendar .mob-custom .path
+    {
+        width: 70px;
+        position: absolute;
+        z-index: 1;
+        bottom: -50px;
+        left: 188px;
+    }
+    
+    #home .content
+    {
+        padding: 75px 0px;
+    }
+
+    #home .content h1 
+    {
+        font-size: 28px;
+        line-height: 35px;
+        margin: 20px 0px 20px 20px;
+    }
+
+    #home .content p 
+    {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    #home .plan
+    {
+        padding: 0px 0px 75px;
+    }
+
+    #home .plan h1
+    {
+        font-size: 34px;
+    }
+
+    #home .plan h2
+    {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    
+    #home .plan .box.left
+    {
+        margin: auto auto 50px;
+    }
+    
+    #home .plan .box.right
+    {
+        margin: auto;
+    }
+    
+    #home .plan .box h1
+    {
+        font-size: 24px;
+    }
+    
+    #home .plan .box h2 
+    {
+        font-size: 20px;
+    }
+    
+    home .plan .box h2 span 
+    {
+        font-size: 36px;
+    }
+
+    #home .plan .box a
+    {
+        font-size: 16px;
+        padding: 12px 0px;
+    }
+    
+    #home .demo 
+    {
+        padding: 60px 0px;
+    }
+    
+    #home .demo .demo-content h1
+    {
+        font-size: 34px;
+        line-height: 60px;
+    }
+    
+    #home .demo .demo-content form label
+    {
+        font-size: 15px;
+    }
+    
+    #home .demo .demo-content form input 
+    {
+        font-size: 13px;
+        margin-bottom: 35px;
+    }
+    
+    #home .demo .demo-content form textarea 
+    {
+        font-size: 13px;
+    }
+
+    #home .demo .demo-content form button 
+    {
+        height: 55px;
+        width: 227px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    
+    /*-------------------------
+    -----------terms-----------
+    -------------------------*/
+    
+    #terms .content 
+    {
+        margin: 60px auto;
+    }
+    
+    #terms .content h1 
+    {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #terms .content h2 
+    {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    
+    #terms .content p 
+    {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    
+    /*-------------------------
+    ---------gift-card---------
+    -------------------------*/
+
+    #gift-card .hero
+    {
+        padding: 30px 0px 130px;
+    }
+
+    #gift-card .hero .vertical
+    {
+        top: 640px;
+    }
+
+    #gift-card .hero .yellow
+    {
+        top: 590px;
+    }
+
+    #gift-card .hero .triangles
+    {
+        top: 410px;
+    }
+
+    #gift-card .hero .left
+    {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #gift-card .hero .left h1
+    {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    #gift-card .hero .left p
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #gift-card .hero .left a 
+    {
+        font-size: 18px;
+        height: 60px;
+        padding: 15px 0px;
+        margin: auto;
+    }
+
+    #gift-card .hero .left .purple
+    {
+        position: absolute;
+        left: 450px;
+        top: 280px;
+    }
+
+    #gift-card .hero .right img
+    {
+        display: block;
+        margin: auto;
+    }
+
+    #gift-card .content
+    {
+        text-align: center;
+        padding: 0px 0px 70px;
+        position: relative;
+    }
+
+    #gift-card .content .oval
+    {
+        position: absolute;
+        top: 230px;
+        right: 0px;
+    }
+
+    #gift-card .content h1 
+    {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    #gift-card .content .widget
+    {
+        width: 550px;
+    }
+    
+    #gift-card .content .widget .left 
+    {
+        top: 100px;
+    }
+    
+    /*-------------------------
+    -----------footer-----------
+    -------------------------*/
+    
+    footer .footer-content .left 
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer .footer-content .left ul 
+    {
+        margin: 15px 0px 7.5px;
+    }
+    
+    footer .footer-content .right 
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer .footer-content .right p 
+    {
+        margin: 7.5px 0px 15px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    /*-------------------------
+    ----------header-----------
+    -------------------------*/
+    
+    header
+    {
+        height: 75px;
+    }
+    
+    header .left img
+    {
+        height: 75px;
+    }
+    
+    header .right a 
+    {
+        font-size: 14px;
+        padding: 25px 0px;
+    }
+    
+    /*-------------------------
+    ------------home-----------
+    -------------------------*/
+    
+    #home .hero 
+    {
+        padding: 50px 0px 120px;
+    }
+    
+    #home .hero .custom .triangle 
+    {
+        right: -20px;
+    }
+    
+    #home .hero h1 
+    {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    
+    #home .hero p 
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    #home .hero p br
+    {
+        display: none;
+    }
+    
+    #home .calendar 
+    {
+        padding: 50px 0px 75px;
+    }
+
+    #home .calendar h1 
+    {
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    #home .calendar p 
+    {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    #home .calendar .shapes 
+    {
+        width: 75px;
+    }
+    
+    #home .content
+    {
+        padding: 50px 0px;
+    }
+
+    #home .content h1 
+    {
+        font-size: 26px;
+        line-height: 30px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    #home .content p 
+    {
+        font-size: 15px;
+        margin: 0px 0px 40px 0px;
+    }
+    
+    #home .plan
+    {
+        padding: 0px 0px 50px;
+    }
+
+    #home .plan h1
+    {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #home .plan h2
+    {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    #home .plan .box.left
+    {
+        margin: auto auto 50px;
+    }
+
+    #home .plan .box.right
+    {
+        margin: auto;
+    }
+    
+    #home .plan .box h1 
+    {
+        font-size: 24px;
+    }
+    
+    #home .plan .box h2 
+    {
+        font-size: 20px;
+    }
+    
+    #home .plan .box h2 span
+    {
+        font-size: 35px;
+    }
+    
+    #home .plan .box h3 
+    {
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+
+    #home .plan .box a
+    {
+        font-size: 16px;
+        padding: 13px 0px;
+    }
+
+    #home .demo 
+    {
+        padding: 50px 0px;
+    }
+    
+    #home .demo .demo-content h1 
+    {
+        font-size: 30px;
+        line-height: 55px;
+        margin-bottom: 45px;
+    }
+    
+    #home .demo .demo-content form input 
+    {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    
+    /*-------------------------
+    -----------terms-----------
+    -------------------------*/
+    
+    #terms .content 
+    {
+        margin: 50px auto;
+    }
+    
+    /*-------------------------
+    ---------gift-card---------
+    -------------------------*/
+
+    #gift-card .hero
+    {
+        padding: 30px 0px 130px;
+    }
+
+    #gift-card .hero .vertical
+    {
+        top: 640px;
+    }
+
+    #gift-card .hero .yellow
+    {
+        top: 590px;
+    }
+
+    #gift-card .hero .triangles
+    {
+        top: 410px;
+    }
+
+    #gift-card .hero .left
+    {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #gift-card .hero .left h1
+    {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    #gift-card .hero .left p
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #gift-card .hero .left a 
+    {
+        font-size: 16px;
+        height: 55px;
+        padding: 13px 0px;
+    }
+
+    #gift-card .hero .left .purple
+    {
+        left: 360px;
+    }
+
+    #gift-card .hero .right img
+    {
+        display: block;
+        margin: auto;
+    }
+
+    #gift-card .content
+    {
+        text-align: center;
+        padding: 0px 0px 70px;
+        position: relative;
+    }
+
+    #gift-card .content .oval
+    {
+        position: absolute;
+        top: 230px;
+        right: 0px;
+    }
+
+    #gift-card .content h1 
+    {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    #gift-card .content .widget
+    {
+        width: 90%;
+    }
+
+    #gift-card .content .widget .left 
+    {
+        display: none;
+    }
+    
+    #gift-card .content .widget .right 
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    /*-------------------------
+    ----------header-----------
+    -------------------------*/
+    
+    header
+    {
+        height: 70px;
+    }
+
+    header .left img
+    {
+        height: 70px;
+    }
+
+    header .right a 
+    {
+        font-size: 13px;
+        padding: 22.5px 0px;
+    }
+    
+    /*-------------------------
+    ------------home-----------
+    -------------------------*/
+    
+    #home .hero .custom .triangle 
+    {
+        display: none;
+    }
+    
+    #home .hero .vertical 
+    {
+        top: 245px;
+    }
+    
+    #home .hero .yellow 
+    {
+        top: 265px;
+    }
+    
+    #home .hero h1 
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    #home .hero h1 br
+    {
+        display: none;
+    }
+    
+    #home .hero p 
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    #home .hero a 
+    {
+        height: 50px;
+        width: 205px;
+        font-size: 14px;
+        padding: 11px 0px;
+    }
+    
+    #home .calendar h1 
+    {
+        font-size: 23px;
+        line-height: 35px;
+    }
+    
+    #home .calendar p 
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    #home .calendar .calendar-tab 
+    {
+        margin-bottom: 40px;
+    }
+    
+    #home .calendar .shapes 
+    {
+        width: 80px;
+    }
+    
+    #home .calendar .mob-custom 
+    {
+        margin-bottom: 80px;
+    }
+    
+    #home .calendar .mob-custom .calender-custom
+    {
+        width: 90%;
+    }
+    
+    #home .calendar .mob-custom .circle 
+    {
+        bottom: -48px;
+        left: 12px;
+    }
+    
+    #home .calendar .mob-custom .path 
+    {
+        bottom: -48px;
+        left: 188px;
+    }
+    
+    #home .content .custom-margin 
+    {
+        margin-bottom: 50px;
+    }
+    
+    #home .content h1 
+    {
+        margin: 0px 0px 15px 0px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    #home .content p 
+    {
+        font-size: 14px;
+        margin: 0px 0px 35px 0px;
+    }
+    
+    #home .plan h1
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    #home .plan h2
+    {
+        font-size: 12px;
+    }
+    
+    #home .plan .box.left img
+    {
+        display: none;
+    }
+
+    #home .plan .box.left .purple
+    {
+        display: none;
+    }
+
+    #home .plan .box.right img
+    {
+        display: none;
+    }
+
+    #home .plan .box.right .yellow
+    {
+        display: none;
+    }
+    
+    #home .plan .box h1
+    {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    
+    #home .plan .box h2
+    {
+        font-size: 16px;
+    }
+    
+    #home .plan .box h2 span
+    {
+        font-size: 26px;
+    }
+    
+    #home .plan .box h3
+    {
+        margin-bottom: 35px;
+    }
+    
+    #home .plan .box 
+    {
+        width: 330px;
+        height: 390px;
+        padding: 15px 20px 30px;
+    }
+    
+    #home .plan .box a 
+    {
+        font-size: 14px;
+        padding: 10px 0px;
+        width: 220px;
+    }
+    
+    #home .plan .box.right h2
+    {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    
+    #home .plan .box.right ul 
+    {
+        margin-bottom: 105px;
+    }
+    
+    #home .plan .box.right ul li 
+    {
+        font-size: 13px;
+    }
+    
+    #home .demo .demo-content h1 
+    {
+        font-size: 28px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    #home .demo .demo-content form button 
+    {
+        height: 50px;
+        width: 207px;
+        font-size: 14px;
+    }
+    
+    /*-------------------------
+    -----------terms-----------
+    -------------------------*/
+
+    #terms .content h1 
+    {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    
+    /*-------------------------
+    ---------gift-card---------
+    -------------------------*/
+
+    #gift-card .hero
+    {
+        padding: 30px 0px 40px;
+    }
+
+    #gift-card .hero .vertical
+    {
+        display: none;
+    }
+
+    #gift-card .hero .yellow
+    {
+        display: none;
+    }
+
+    #gift-card .hero .triangles
+    {
+        display: none;
+    }
+
+    #gift-card .hero .left
+    {
+        margin-top: 30px;
+    }
+
+    #gift-card .hero .left h1
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #gift-card .hero .left p
+    {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #gift-card .hero .left a 
+    {
+        font-size: 14px;
+        width: 200px;
+        height: 50px;
+        padding: 10.5px 0px;
+    }
+
+    #gift-card .hero .left .purple
+    {
+        display: none;
+    }
+
+    #gift-card .hero .right img
+    {
+        width: 90%;
+    }
+
+    #gift-card .content
+    {
+        text-align: center;
+        padding: 0px 0px 50px;
+        position: relative;
+    }
+
+    #gift-card .content .oval
+    {
+        display: none;
+    }
+    
+    #gift-card .content .mask
+    {
+        display: none;
+    }
+
+    #gift-card .content h1 
+    {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    #gift-card .content .widget
+    {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #gift-card .content .widget .left 
+    {
+        display: none;
+    }
+
+    #gift-card .content .widget .right 
+    {
+        display: none;
+    }
+    
+    /*-------------------------
+    ----------footer-----------
+    -------------------------*/
+    
+    footer .footer-content .left ul li
+    {
+        display: block;
+    }
+    
+    footer .footer-content .left ul li a
+    {
+        margin: 0px;
+    }
+}

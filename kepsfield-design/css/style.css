@@ -1,0 +1,3410 @@
+/*-----------------------------
+-------------------------------
+-------------fonts-------------
+-------------------------------
+-----------------------------*/
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-ExtraLight.ttf);
+  font-weight: 200; }
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-weight: 300; }
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400; }
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500; }
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600; }
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700; }
+/*-----------------------------
+-------------------------------
+-------------body--------------
+-------------------------------
+-----------------------------*/
+body {
+  font-family: montserrat;
+  position: relative;
+  overflow-x: hidden; }
+  body button:focus {
+    border: 0px !important;
+    outline: 0px !important; }
+  body input:focus {
+    border: 0px !important;
+    outline: 0px !important; }
+  body .line {
+    position: absolute;
+    top: 590px;
+    right: -40px;
+    z-index: 2;
+    width: 100%; }
+  body .line-education {
+    position: absolute;
+    top: 265px;
+    right: -40px;
+    z-index: 2;
+    width: 100%; }
+  body .line-our-people {
+    position: absolute;
+    top: 310px;
+    right: -40px;
+    z-index: 2;
+    width: 100%;
+    height: auto !important; }
+  body .line-academy {
+    position: absolute;
+    top: 290px;
+    right: -40px;
+    z-index: 2;
+    width: 100%; }
+  body .kepsfield-academy {
+    position: absolute;
+    width: 380px;
+    top: 350px;
+    right: 0px;
+    z-index: 3;
+    background-color: #E7335D;
+    padding: 25px 0px 30px; }
+    body .kepsfield-academy .left {
+      width: 35%;
+      display: inline-block;
+      vertical-align: top; }
+      body .kepsfield-academy .left img {
+        width: 76.5px;
+        display: block;
+        margin: auto; }
+    body .kepsfield-academy .right {
+      width: 63%;
+      display: inline-block;
+      vertical-align: top; }
+      body .kepsfield-academy .right p {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 20px 0px;
+        color: white; }
+      body .kepsfield-academy .right a {
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        display: inline-block; }
+        body .kepsfield-academy .right a.buy {
+          padding: 8px 45px 7px;
+          margin-right: 20px;
+          border: 1px solid white; }
+        body .kepsfield-academy .right a:hover {
+          text-decoration: none; }
+
+.custom-container {
+  max-width: 1360px;
+  margin: 0px auto;
+  position: relative; }
+
+/*-----------------------------
+-------------------------------
+------------header-------------
+-------------------------------
+-----------------------------*/
+header {
+  height: 120px;
+  line-height: 120px;
+  background-color: white;
+  padding: 0px 40px; }
+  header .burger-menu {
+    display: inline-block; }
+    header .burger-menu #drawer_toggle_on .fa-bars {
+      font-size: 30px;
+      vertical-align: middle;
+      margin-right: 30px; }
+    header .burger-menu #drawer {
+      position: relative;
+      line-height: normal;
+      display: initial; }
+      header .burger-menu #drawer .level_a {
+        padding: 170px 0 0 100px;
+        position: fixed;
+        width: 35%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        transition: 0.4s linear left;
+        list-style: none;
+        background-color: #0099a7;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase; }
+        header .burger-menu #drawer .level_a ul {
+          min-height: 95%;
+          padding-bottom: 50px;
+          position: relative; }
+        header .burger-menu #drawer .level_a.reveal {
+          left: 0; }
+        header .burger-menu #drawer .level_a .selected {
+          font-weight: 700; }
+        header .burger-menu #drawer .level_a #drawer_toggle_off {
+          position: absolute;
+          top: -125px;
+          left: -50px;
+          z-index: 11; }
+          header .burger-menu #drawer .level_a #drawer_toggle_off .fa-times {
+            font-size: 30px;
+            cursor: pointer; }
+        header .burger-menu #drawer .level_a .level_b {
+          position: fixed;
+          width: 65%;
+          height: 100%;
+          top: 0;
+          left: 35%;
+          background-color: #1aa4b1;
+          z-index: 5;
+          transition: 0 linear left;
+          display: none; }
+          header .burger-menu #drawer .level_a .level_b .white-line {
+            position: absolute;
+            bottom: 120px; }
+          header .burger-menu #drawer .level_a .level_b .level_b_tab {
+            display: none;
+            text-transform: none; }
+            header .burger-menu #drawer .level_a .level_b .level_b_tab h3 {
+              font-size: 34px;
+              font-weight: 300;
+              margin-bottom: 50px; }
+            header .burger-menu #drawer .level_a .level_b .level_b_tab p {
+              font-size: 24px;
+              font-weight: 300;
+              margin-bottom: 50px; }
+              header .burger-menu #drawer .level_a .level_b .level_b_tab p .text-bold {
+                font-weight: 700; }
+            header .burger-menu #drawer .level_a .level_b .level_b_tab form {
+              margin-bottom: 40px; }
+              header .burger-menu #drawer .level_a .level_b .level_b_tab form .form-group {
+                margin-bottom: 30px; }
+                header .burger-menu #drawer .level_a .level_b .level_b_tab form .form-group input {
+                  background-color: transparent;
+                  border: 1px solid white;
+                  border-radius: 0px;
+                  color: white;
+                  padding: 10px 12px; }
+                  header .burger-menu #drawer .level_a .level_b .level_b_tab form .form-group input::placeholder {
+                    color: white; }
+              header .burger-menu #drawer .level_a .level_b .level_b_tab form button {
+                font-size: 14px;
+                font-weight: 700;
+                background-color: white;
+                width: 100%;
+                color: #1aa4b1;
+                padding: 15px 0px;
+                border-radius: 50px; }
+              header .burger-menu #drawer .level_a .level_b .level_b_tab form a {
+                font-size: 14px;
+                font-weight: 300;
+                display: block;
+                text-align: right;
+                text-transform: capitalize; }
+            header .burger-menu #drawer .level_a .level_b .level_b_tab h4 {
+              font-size: 36px;
+              font-weight: 300;
+              margin-bottom: 30px; }
+            header .burger-menu #drawer .level_a .level_b .level_b_tab a {
+              font-size: 18px;
+              font-weight: 700;
+              text-transform: uppercase; }
+          header .burger-menu #drawer .level_a .level_b ul {
+            padding-left: 60px; }
+          header .burger-menu #drawer .level_a .level_b li {
+            list-style: none; }
+        header .burger-menu #drawer .level_a li {
+          margin-bottom: 30px;
+          list-style: none; }
+          header .burger-menu #drawer .level_a li a {
+            color: white;
+            cursor: pointer; }
+            header .burger-menu #drawer .level_a li a:hover {
+              text-decoration: none; }
+            header .burger-menu #drawer .level_a li a.level_b_toggle .fa-angle-down {
+              font-size: 24px;
+              margin-left: 5px;
+              vertical-align: bottom;
+              display: none; }
+          header .burger-menu #drawer .level_a li .logo-white img {
+            width: 182.5px;
+            display: block;
+            margin: 30px 15px 100px auto; }
+          header .burger-menu #drawer .level_a li.terms {
+            position: absolute;
+            bottom: 80px;
+            margin: 0px; }
+            header .burger-menu #drawer .level_a li.terms a {
+              font-size: 14px;
+              font-weight: 600; }
+              header .burger-menu #drawer .level_a li.terms a:nth-of-type(2) {
+                margin-left: 30px; }
+            header .burger-menu #drawer .level_a li.terms p {
+              margin: 20px 0px 0px;
+              font-size: 14px;
+              font-weight: 400; }
+    header .burger-menu #search-drawer {
+      position: absolute;
+      width: calc(100% - 150px);
+      height: 120px;
+      line-height: normal;
+      background-color: #f2f2f2;
+      right: 0;
+      top: -120px;
+      transition: 0.25s linear top; }
+      header .burger-menu #search-drawer input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: #f2f2f2;
+        padding: 0px 30px;
+        font-size: 20px;
+        color: #323E48; }
+      header .burger-menu #search-drawer #search-toggle-off {
+        position: absolute;
+        top: 45px;
+        right: 30px; }
+        header .burger-menu #search-drawer #search-toggle-off .fa-times {
+          font-size: 30px;
+          cursor: pointer;
+          color: #5d656b; }
+      header .burger-menu #search-drawer.reveal {
+        top: 0; }
+    header .burger-menu button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0px; }
+      header .burger-menu button .menu-icon {
+        width: 26.5px;
+        margin-right: 25px; }
+      header .burger-menu button .search {
+        width: 26.5px; }
+  header .menu {
+    display: inline-block; }
+    header .menu ul {
+      padding: 0px;
+      margin: 0px; }
+      header .menu ul li {
+        display: inline-block; }
+        header .menu ul li a {
+          font-size: 18px;
+          font-weight: 500;
+          margin-left: 30px;
+          text-decoration: none;
+          color: #323E48; }
+          header .menu ul li a:hover {
+            text-decoration: none;
+            color: #323E48; }
+          header .menu ul li a.active {
+            color: #00998A;
+            font-weight: 700; }
+  header .logo {
+    float: right; }
+    header .logo a {
+      display: block; }
+      header .logo a img {
+        width: 182.5px;
+        margin-top: 35px; }
+
+/*-----------------------------
+-------------------------------
+----------contact-us-----------
+-------------------------------
+-----------------------------*/
+.contact-us {
+  background-color: #f6f8f7;
+  padding: 150px 0px 100px;
+  margin-bottom: 40px; }
+  .contact-us .content {
+    margin: 0px auto !important; }
+    .contact-us .content .container {
+      max-width: 1230px; }
+      .contact-us .content .container .row {
+        margin: 0px; }
+    .contact-us .content h1 {
+      font-size: 24px !important;
+      font-weight: 700 !important;
+      color: #00998A !important;
+      margin-bottom: 30px !important;
+      margin-left: 15px !important; }
+    .contact-us .content form .form-control {
+      font-size: 14px !important;
+      font-weight: 300 !important;
+      color: black;
+      margin-bottom: 25px;
+      padding: 10px;
+      border: none;
+      border-radius: 0px; }
+      .contact-us .content form .form-control::placeholder {
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        color: black; }
+    .contact-us .content form .btn-custom {
+      background-color: transparent;
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+      text-align: center;
+      margin: auto;
+      width: 160px;
+      padding: 13px 0px 12px;
+      color: #00998A;
+      border: 1px solid #00998A;
+      border-radius: 25px; }
+
+/*-----------------------------
+-------------------------------
+-----------oveview-------------
+-------------------------------
+-----------------------------*/
+.overview {
+  /*-----------------------------
+  -------------hero--------------
+  -----------------------------*/
+  /*-----------------------------
+  -------overview-content--------
+  -----------------------------*/ }
+  .overview .hero {
+    position: relative;
+    margin-bottom: 100px; }
+    .overview .hero img {
+      width: 100%; }
+    .overview .hero .text-block {
+      position: absolute;
+      top: 26%;
+      left: 6%; }
+      .overview .hero .text-block h1 {
+        font-weight: 300;
+        font-size: 48px;
+        margin-bottom: 40px;
+        color: #323E48; }
+      .overview .hero .text-block p {
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 34px;
+        color: #323E48; }
+    .overview .hero .kepsfield-academy-mob {
+      display: none; }
+  .overview .overview-content {
+    margin: 0px auto 100px; }
+    .overview .overview-content .container {
+      max-width: 1230px; }
+      .overview .overview-content .container .row {
+        margin: 0px; }
+    .overview .overview-content h1 {
+      font-weight: 200;
+      font-size: 34px;
+      color: #00998A;
+      margin: 0px; }
+    .overview .overview-content p {
+      font-weight: 200;
+      font-size: 24px;
+      line-height: 34px;
+      color: #323E48;
+      margin: 80px 0px 0px; }
+
+/*-----------------------------
+-------------------------------
+---------our-services----------
+-------------------------------
+-----------------------------*/
+.our-services {
+  /*-----------------------------
+  -------------hero--------------
+  -----------------------------*/
+  /*-----------------------------
+  -----------content-------------
+  -----------------------------*/
+  /*-----------------------------
+  ---------case-studies----------
+  -----------------------------*/ }
+  .our-services .hero {
+    position: relative;
+    margin-bottom: 30px;
+    background-image: url(../images/Our-Services-hero-1360x460px.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 460px; }
+    .our-services .hero img {
+      width: 100%;
+      display: none; }
+    .our-services .hero .line-our-services {
+      position: absolute;
+      display: block;
+      top: 350px;
+      right: -40px;
+      z-index: 2;
+      width: 100%; }
+  .our-services .content {
+    font-size: 0px;
+    margin-bottom: 100px; }
+    .our-services .content .strategy-development {
+      background-color: #752157; }
+    .our-services .content .advisory {
+      background-color: #FFA16C; }
+    .our-services .content .transaction-services {
+      background-color: #9EACAA; }
+    .our-services .content .valuations {
+      background-color: #004876; }
+    .our-services .content .telecoms {
+      background-color: #E7335D; }
+    .our-services .content .analytics {
+      background-color: #016870; }
+    .our-services .content .box {
+      display: inline-block;
+      width: calc(100% / 3);
+      padding: 150px 40px 35px;
+      position: relative;
+      height: 457px;
+      vertical-align: top; }
+      .our-services .content .box h1 {
+        font-size: 32px;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 20px; }
+      .our-services .content .box p {
+        font-size: 21px;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 90px; }
+      .our-services .content .box a {
+        position: absolute;
+        bottom: 35px;
+        font-size: 18px;
+        font-weight: 700;
+        color: white; }
+        .our-services .content .box a:hover {
+          text-decoration: none; }
+  .our-services .case-studies {
+    margin: 100px 0px; }
+    .our-services .case-studies h1 {
+      font-size: 30px;
+      font-weight: 300;
+      margin-bottom: 40px;
+      color: #323E48;
+      display: none; }
+    .our-services .case-studies h2 {
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 60px;
+      color: #323E48;
+      display: none; }
+    .our-services .case-studies .strategy-development img {
+      border-bottom: 8px solid #752157; }
+    .our-services .case-studies .advisory img {
+      border-bottom: 8px solid #FFA16C; }
+    .our-services .case-studies .transaction-services img {
+      border-bottom: 8px solid #9EACAA; }
+    .our-services .case-studies .valuations img {
+      border-bottom: 8px solid #004876; }
+    .our-services .case-studies .telecoms img {
+      border-bottom: 8px solid #016870; }
+    .our-services .case-studies .analytics img {
+      border-bottom: 8px solid #E7335D; }
+    .our-services .case-studies .business img {
+      border-bottom: 8px solid #B4BD00; }
+    .our-services .case-studies .box {
+      margin-bottom: 80px; }
+      .our-services .case-studies .box img {
+        width: 100%;
+        margin-bottom: 70px; }
+      .our-services .case-studies .box h2 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: #323E48; }
+      .our-services .case-studies .box p {
+        font-size: 24px;
+        font-weight: 200;
+        margin-bottom: 30px;
+        color: #323E48; }
+      .our-services .case-studies .box a {
+        font-size: 18px;
+        font-weight: 700;
+        color: #00998A; }
+        .our-services .case-studies .box a:hover {
+          text-decoration: none; }
+    .our-services .case-studies .btn-custom {
+      background-color: transparent;
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+      text-align: center;
+      margin: auto;
+      width: 160px;
+      padding: 13px 0px 12px;
+      color: #00998A;
+      border: 1px solid #00998A;
+      border-radius: 25px; }
+
+/*-----------------------------
+-------------------------------
+-----------services------------
+-------------------------------
+-----------------------------*/
+.services {
+  overflow: hidden;
+  /*-----------------------------
+  -------------hero--------------
+  -----------------------------*/
+  /*-----------------------------
+  --------secondary-menu---------
+  -----------------------------*/
+  /*-----------------------------
+  ------secondary-menu-mob-------
+  -----------------------------*/
+  /*-----------------------------
+  ------------content------------
+  -----------------------------*/
+  /*-----------------------------
+  ---------case-studies----------
+  -----------------------------*/ }
+  .services .hero {
+    position: relative;
+    width: 100%;
+    height: 360px; }
+    .services .hero .line-services {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      bottom: 0px; }
+    .services .hero .text-block {
+      position: absolute;
+      width: 770px;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
+      .services .hero .text-block h1 {
+        font-size: 36px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        color: white; }
+      .services .hero .text-block p {
+        font-size: 28px;
+        font-weight: 300;
+        line-height: normal;
+        color: white; }
+  .services .hero-strategy {
+    background-color: #752157; }
+  .services .hero-advisory {
+    background-color: #FFA16C; }
+  .services .hero-transaction {
+    background-color: #9EACAA; }
+  .services .hero-valuations {
+    background-color: #004876; }
+  .services .hero-telecoms {
+    background-color: #E7335D; }
+  .services .hero-analytics {
+    background-color: #016870; }
+  .services .hero-case {
+    background-color: #0099a8; }
+  .services .secondary-menu {
+    background-color: #323E48;
+    line-height: 100px; }
+    .services .secondary-menu ul {
+      padding: 0px;
+      margin: 0px;
+      text-align: center; }
+      .services .secondary-menu ul li {
+        display: inline-block;
+        list-style: none;
+        padding-right: 30px; }
+        .services .secondary-menu ul li a {
+          font-size: 16px;
+          font-weight: 300;
+          color: white; }
+          .services .secondary-menu ul li a:hover {
+            text-decoration: none; }
+          .services .secondary-menu ul li a.active {
+            color: #00998A;
+            font-weight: 700; }
+        .services .secondary-menu ul li:nth-last-of-type(1) {
+          padding: 0px; }
+  .services .secondary-menu-mob {
+    display: none; }
+  .services .strategy-development h1 {
+    color: #752157; }
+  .services .advisory h1 {
+    color: #FFA16C; }
+  .services .transaction-services h1 {
+    color: #9EACAA; }
+  .services .valuations h1 {
+    color: #004876; }
+  .services .telecoms h1 {
+    color: #E7335D; }
+  .services .analytics h1 {
+    color: #016870; }
+  .services .content {
+    margin: 100px auto; }
+    .services .content .container {
+      max-width: 1230px; }
+      .services .content .container .row {
+        margin: 0px; }
+    .services .content h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 40px; }
+    .services .content p {
+      font-size: 21px;
+      font-weight: 200;
+      margin: 0px 0px 40px; }
+    .services .content ul {
+      margin: 0px 0px 40px; }
+      .services .content ul li {
+        font-size: 20px;
+        font-weight: 200; }
+  .services .case-studies {
+    margin: 100px 0px;
+    margin-bottom: 20px; }
+    .services .case-studies h1 {
+      font-size: 30px;
+      font-weight: 300;
+      margin-bottom: 40px;
+      color: #323E48;
+      display: none; }
+    .services .case-studies h2 {
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 60px;
+      color: #323E48;
+      display: none; }
+    .services .case-studies .strategy-development img {
+      border-bottom: 8px solid #752157; }
+    .services .case-studies .advisory img {
+      border-bottom: 8px solid #FFA16C; }
+    .services .case-studies .transaction-services img {
+      border-bottom: 8px solid #9EACAA; }
+    .services .case-studies .valuations img {
+      border-bottom: 8px solid #004876; }
+    .services .case-studies .telecoms img {
+      border-bottom: 8px solid #016870; }
+    .services .case-studies .analytics img {
+      border-bottom: 8px solid #E7335D; }
+    .services .case-studies .business img {
+      border-bottom: 8px solid #B4BD00; }
+    .services .case-studies .box {
+      margin-bottom: 80px; }
+      .services .case-studies .box img {
+        width: 100%;
+        margin-bottom: 70px; }
+      .services .case-studies .box h2 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: #323E48; }
+      .services .case-studies .box p {
+        font-size: 24px;
+        font-weight: 200;
+        margin-bottom: 30px;
+        color: #323E48; }
+      .services .case-studies .box a {
+        font-size: 18px;
+        font-weight: 700;
+        color: #00998A; }
+        .services .case-studies .box a:hover {
+          text-decoration: none; }
+    .services .case-studies .btn-custom {
+      background-color: transparent;
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+      text-align: center;
+      margin: auto;
+      width: 160px;
+      padding: 13px 0px 12px;
+      color: #00998A;
+      border: 1px solid #00998A;
+      border-radius: 25px; }
+
+/*-----------------------------
+-------------------------------
+------case-studies-detail------
+-------------------------------
+-----------------------------*/
+.case-studies-detail .hero {
+  height: 360px;
+  background-image: url(../images/case-study-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+.case-studies-detail .content-box {
+  margin-bottom: 100px; }
+  .case-studies-detail .content-box h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #323E48; }
+  .case-studies-detail .content-box h2 {
+    font-size: 34px;
+    font-weight: 200;
+    color: #323E48;
+    margin-bottom: 60px; }
+  .case-studies-detail .content-box h3 {
+    font-size: 24px;
+    font-weight: 700; }
+  .case-studies-detail .content-box p {
+    font-size: 21px;
+    font-weight: 300;
+    margin: 40px 0px 0px;
+    color: #323E48; }
+  .case-studies-detail .content-box .our-impact {
+    padding: 80px 0px; }
+    .case-studies-detail .content-box .our-impact .content {
+      margin: 0px auto; }
+      .case-studies-detail .content-box .our-impact .content h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: white; }
+      .case-studies-detail .content-box .our-impact .content p {
+        font-size: 21px;
+        font-weight: 300;
+        margin: 40px 0px 0px;
+        color: white; }
+.case-studies-detail .our-impact-mob {
+  display: none; }
+.case-studies-detail .strategy-development h3 {
+  color: #752157; }
+.case-studies-detail .strategy-development .our-impact {
+  background-color: #752157; }
+.case-studies-detail .advisory h3 {
+  color: #FFA16C; }
+.case-studies-detail .advisory .our-impact {
+  background-color: #FFA16C; }
+.case-studies-detail .transaction-services h3 {
+  color: #9EACAA; }
+.case-studies-detail .transaction-services .our-impact {
+  background-color: #9EACAA; }
+.case-studies-detail .valuations h3 {
+  color: #004876; }
+.case-studies-detail .valuations .our-impact {
+  background-color: #004876; }
+.case-studies-detail .telecoms h3 {
+  color: #016870; }
+.case-studies-detail .telecoms .our-impact {
+  background-color: #016870; }
+.case-studies-detail .analytics h3 {
+  color: #E7335D; }
+.case-studies-detail .analytics .our-impact {
+  background-color: #E7335D; }
+.case-studies-detail .btn-custom {
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 160px;
+  padding: 13px 0px 12px;
+  color: #00998A;
+  border: 1px solid #00998A;
+  border-radius: 25px; }
+.case-studies-detail .btn-custom-mob {
+  display: none; }
+.case-studies-detail .custom-margin {
+  margin-bottom: 100px; }
+
+/*-----------------------------
+-------------------------------
+----------our-people-----------
+-------------------------------
+-----------------------------*/
+.our-people .hero img {
+  width: 100%;
+  height: 460px; }
+.our-people .secondary-menu {
+  background-color: #323E48;
+  line-height: 100px; }
+  .our-people .secondary-menu ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center; }
+    .our-people .secondary-menu ul li {
+      display: inline-block;
+      list-style: none;
+      padding-right: 30px; }
+      .our-people .secondary-menu ul li a {
+        font-size: 16px;
+        font-weight: 300;
+        color: white; }
+        .our-people .secondary-menu ul li a:hover {
+          text-decoration: none; }
+        .our-people .secondary-menu ul li a.active {
+          color: #00998A;
+          font-weight: 700; }
+      .our-people .secondary-menu ul li:nth-last-of-type(1) {
+        padding: 0px; }
+  .our-people .secondary-menu ul li {
+    padding-right: 100px; }
+.our-people .content {
+  margin: 100px auto; }
+  .our-people .content .container {
+    max-width: 1230px; }
+    .our-people .content .container .row {
+      margin: 0px; }
+  .our-people .content h1 {
+    font-size: 36px;
+    font-weight: 200;
+    color: #00998A;
+    margin-bottom: 40px; }
+  .our-people .content h2 {
+    font-size: 28px;
+    font-weight: 200;
+    color: #323E48;
+    margin-bottom: 60px; }
+  .our-people .content p {
+    font-size: 21px;
+    font-weight: 200;
+    color: #323E48; }
+.our-people .managing-partner {
+  margin: 100px 0px; }
+  .our-people .managing-partner .detail .container {
+    max-width: 1230px; }
+    .our-people .managing-partner .detail .container .row {
+      margin: 0px; }
+  .our-people .managing-partner .detail h1 {
+    font-size: 36px;
+    font-weight: 200;
+    color: #00998A;
+    margin-bottom: 30px; }
+  .our-people .managing-partner .detail p {
+    font-size: 28px;
+    font-weight: 200;
+    line-height: normal;
+    color: #323E48;
+    margin-bottom: 0px; }
+  .our-people .managing-partner .partner {
+    margin-top: 100px; }
+    .our-people .managing-partner .partner img {
+      width: 100%; }
+    .our-people .managing-partner .partner h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #323E48;
+      margin-bottom: 5px; }
+    .our-people .managing-partner .partner h3 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #00998A;
+      margin-bottom: 30px; }
+    .our-people .managing-partner .partner .social {
+      text-align: right; }
+      .our-people .managing-partner .partner .social a img {
+        width: 42.5px;
+        margin-left: 15px; }
+      .our-people .managing-partner .partner .social a:hover {
+        text-decoration: none; }
+    .our-people .managing-partner .partner p {
+      font-size: 18px;
+      font-weight: 300;
+      color: #323E48;
+      margin-bottom: 30px; }
+    .our-people .managing-partner .partner .moretext {
+      display: none; }
+    .our-people .managing-partner .partner a {
+      font-size: 18px;
+      font-weight: 700;
+      color: #00998A;
+      margin-bottom: 30px;
+      cursor: pointer; }
+.our-people .contact-content {
+  margin: 40px auto;
+  font-size: 0px;
+  max-width: 1360px; }
+  .our-people .contact-content .left {
+    display: inline-block;
+    width: 50%;
+    margin: auto;
+    padding: 55px 0px;
+    vertical-align: top; }
+    .our-people .contact-content .left h1 {
+      font-size: 36px;
+      font-weight: 200;
+      color: #00998A; }
+    .our-people .contact-content .left .box {
+      width: 360px;
+      margin: auto; }
+      .our-people .contact-content .left .box h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #323E48;
+        margin: 60px 0px 10px; }
+      .our-people .contact-content .left .box h3 {
+        font-size: 20px;
+        font-weight: 300;
+        color: #00998A; }
+      .our-people .contact-content .left .box p {
+        font-size: 20px;
+        font-weight: 300;
+        color: #323E48;
+        margin-bottom: 5px; }
+        .our-people .contact-content .left .box p span {
+          font-weight: 700;
+          color: #00998A; }
+  .our-people .contact-content .right {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    background-color: #f6f8f7;
+    padding: 150px 0px 60px; }
+    .our-people .contact-content .right .box {
+      width: 400px;
+      margin: auto; }
+      .our-people .contact-content .right .box h1 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #323E48;
+        margin-bottom: 30px; }
+      .our-people .contact-content .right .box form .form-control {
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        color: black;
+        margin-bottom: 25px;
+        padding: 10px;
+        border: none;
+        border-radius: 0px; }
+        .our-people .contact-content .right .box form .form-control::placeholder {
+          font-size: 14px !important;
+          font-weight: 300 !important;
+          color: black; }
+      .our-people .contact-content .right .box form .btn-custom {
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 160px;
+        padding: 13px 0px 12px;
+        color: #00998A;
+        border: 1px solid #00998A;
+        border-radius: 25px; }
+.our-people .secondary-menu-mob {
+  display: none; }
+
+/*-----------------------------
+-------------------------------
+------------academy------------
+-------------------------------
+-----------------------------*/
+.academy {
+  /*-----------------------------
+  -------------hero--------------
+  -----------------------------*/
+  /*-----------------------------
+  -------------hero--------------
+  -----------------------------*/
+  /*-----------------------------
+  ------------content------------
+  -----------------------------*/
+  /*-----------------------------
+  --------------box--------------
+  -----------------------------*/
+  /*-----------------------------
+  ---------academy-login---------
+  -----------------------------*/
+  /*-----------------------------
+  --------request-trainer--------
+  -----------------------------*/
+  /*-----------------------------
+  ----------course-info----------
+  -----------------------------*/
+  /*-----------------------------
+  ----------course-tab-----------
+  -----------------------------*/
+  /*-----------------------------
+  -------lessons-overview--------
+  -----------------------------*/
+  /*-----------------------------
+  --------course-contents--------
+  -----------------------------*/ }
+  .academy .hero {
+    position: relative; }
+    .academy .hero img {
+      width: 100%; }
+    .academy .hero .image-block {
+      position: absolute;
+      top: 50%;
+      right: 4.5%;
+      transform: translate(0%, -50%); }
+      .academy .hero .image-block img {
+        width: 475px; }
+    .academy .hero .text-block {
+      position: absolute;
+      top: 50%;
+      left: 7%;
+      transform: translate(0%, -50%); }
+      .academy .hero .text-block h1 {
+        font-size: 48px;
+        font-weight: 300;
+        color: #323E48;
+        margin-bottom: 30px; }
+      .academy .hero .text-block p {
+        font-size: 28px;
+        font-weight: 300;
+        color: #323E48;
+        margin-bottom: 0px; }
+  .academy .secondary-menu {
+    background-color: #E7335D;
+    margin-bottom: 0px;
+    padding: 21.25px 0px; }
+    .academy .secondary-menu .content {
+      margin: 0px auto; }
+      .academy .secondary-menu .content .logo {
+        margin: 0px;
+        display: inline-block; }
+        .academy .secondary-menu .content .logo img {
+          width: 78.5px;
+          vertical-align: middle; }
+        .academy .secondary-menu .content .logo p {
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 400;
+          color: white;
+          margin: 0px 0px 0px 20px; }
+      .academy .secondary-menu .content .login {
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block;
+        color: white;
+        float: right;
+        margin: 15px 0px 0px; }
+  .academy .content {
+    margin: 100px auto auto; }
+    .academy .content .container {
+      max-width: 1230px; }
+      .academy .content .container .row {
+        margin: 0px; }
+    .academy .content .text-block {
+      display: none; }
+    .academy .content h2 {
+      font-size: 36px;
+      font-weight: 200;
+      color: #00998A;
+      margin-bottom: 30px; }
+    .academy .content h3 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #323E48;
+      margin-bottom: 30px; }
+    .academy .content p {
+      font-size: 27px;
+      font-weight: 200;
+      color: #323E48;
+      line-height: normal;
+      margin-bottom: 40px; }
+    .academy .content .detail {
+      font-size: 22px;
+      line-height: 30px; }
+    .academy .content h4 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #00998A;
+      margin-bottom: 40px; }
+    .academy .content .text {
+      display: none; }
+    .academy .content a {
+      font-size: 18px;
+      font-weight: 700;
+      display: block;
+      color: #00998A;
+      margin-bottom: 80px;
+      cursor: pointer; }
+      .academy .content a:hover {
+        text-decoration: none;
+        color: #00998A; }
+  .academy .box {
+    margin-bottom: 20px; }
+    .academy .box .cards {
+      margin: 0px 0px 80px; }
+      .academy .box .cards .inner-card {
+        position: relative;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(158, 172, 170, 0.5);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(158, 172, 170, 0.5);
+        box-shadow: 0px 0px 10px 0px rgba(158, 172, 170, 0.5);
+        height: 390px; }
+      .academy .box .cards .one {
+        border-top: 6px solid #752157; }
+      .academy .box .cards .two {
+        border-top: 6px solid #E7335D; }
+      .academy .box .cards .three {
+        border-top: 6px solid #FFA16C; }
+      .academy .box .cards .four {
+        border-top: 6px solid #9EACAA; }
+      .academy .box .cards .five {
+        border-top: 6px solid #004876; }
+      .academy .box .cards .six {
+        border-top: 6px solid #B4BD00; }
+      .academy .box .cards .seven {
+        border-top: 6px solid #016870; }
+      .academy .box .cards .eight {
+        border-top: 6px solid #4A9462; }
+      .academy .box .cards .course img {
+        width: 72%;
+        display: block;
+        margin-left: auto;
+        -webkit-box-shadow: 0px -5px 10px 0px rgba(158, 172, 170, 0.5);
+        -moz-box-shadow: 0px -5px 10px 0px rgba(158, 172, 170, 0.5);
+        box-shadow: 0px -5px 10px 0px rgba(158, 172, 170, 0.5); }
+      .academy .box .cards h4 {
+        font-size: 22px;
+        font-weight: 700;
+        padding: 25px 0px 0px 30px; }
+      .academy .box .cards p {
+        font-size: 19px;
+        font-weight: 200;
+        padding: 35px 0px 0px 30px; }
+      .academy .box .cards .inner-box {
+        position: absolute;
+        width: 350px;
+        bottom: 0px;
+        font-size: 0px; }
+        .academy .box .cards .inner-box a {
+          font-size: 16px;
+          font-weight: 400;
+          color: #0099a8;
+          display: inline-block;
+          margin-bottom: 20px; }
+          .academy .box .cards .inner-box a:hover {
+            text-decoration: none; }
+        .academy .box .cards .inner-box .info {
+          font-weight: 700;
+          margin: 0px 10px 0px 30px; }
+        .academy .box .cards .inner-box .left {
+          display: inline-block;
+          width: 30%; }
+          .academy .box .cards .inner-box .left h5 {
+            font-size: 16px;
+            font-weight: 700;
+            padding: 0px 0px 0px 30px;
+            color: #323E48; }
+        .academy .box .cards .inner-box .right {
+          display: inline-block;
+          width: 70%; }
+          .academy .box .cards .inner-box .right a {
+            font-weight: 700;
+            background-color: #0099a8;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 0px;
+            margin: 0px; }
+  .academy .academy-login {
+    font-size: 0px;
+    width: 1360px;
+    margin: 40px auto; }
+    .academy .academy-login .login {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      padding: 80px 0px; }
+      .academy .academy-login .login .content {
+        width: 400px;
+        margin: auto; }
+        .academy .academy-login .login .content h1 {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 30px; }
+        .academy .academy-login .login .content p {
+          font-size: 21px;
+          font-weight: 300;
+          line-height: 30px; }
+        .academy .academy-login .login .content form .form-control {
+          font-size: 14px !important;
+          font-weight: 300 !important;
+          color: black;
+          margin-bottom: 25px;
+          padding: 10px;
+          border: none;
+          border-radius: 0px;
+          background-color: #f6f8f7; }
+          .academy .academy-login .login .content form .form-control::placeholder {
+            font-size: 14px !important;
+            font-weight: 300 !important;
+            color: black; }
+        .academy .academy-login .login .content form .btn-custom {
+          background-color: transparent;
+          font-size: 14px;
+          font-weight: 700;
+          display: block;
+          text-align: center;
+          margin: auto;
+          width: 160px;
+          padding: 13px 0px 12px;
+          color: #00998A;
+          border: 1px solid #00998A;
+          border-radius: 25px; }
+        .academy .academy-login .login .content form .forgot-password {
+          color: black;
+          font-size: 16px;
+          font-weight: 400;
+          text-align: right;
+          vertical-align: middle;
+          margin: 10px 0px 0px; }
+    .academy .academy-login .register {
+      display: inline-block;
+      width: 50%;
+      height: 777px;
+      vertical-align: top;
+      background-color: #f6f8f7;
+      padding: 80px 0px; }
+      .academy .academy-login .register .content {
+        width: 400px;
+        margin: auto; }
+        .academy .academy-login .register .content h1 {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 30px; }
+        .academy .academy-login .register .content p {
+          font-size: 21px;
+          font-weight: 300;
+          line-height: 30px; }
+        .academy .academy-login .register .content form .form-control {
+          font-size: 14px !important;
+          font-weight: 300 !important;
+          color: black;
+          margin-bottom: 25px;
+          padding: 10px;
+          border: none;
+          border-radius: 0px; }
+          .academy .academy-login .register .content form .form-control::placeholder {
+            font-size: 14px !important;
+            font-weight: 300 !important;
+            color: black; }
+        .academy .academy-login .register .content form .custom-control-label::before {
+          width: 40px;
+          height: 40px;
+          background-color: white; }
+        .academy .academy-login .register .content form .custom-control-label::after {
+          width: 40px;
+          height: 40px; }
+        .academy .academy-login .register .content form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+          background-color: #00998A; }
+        .academy .academy-login .register .content form label {
+          font-size: 14px;
+          margin-left: 50px; }
+          .academy .academy-login .register .content form label a {
+            display: inline-block;
+            font-size: 14px;
+            margin: 14px 0px 30px 0px; }
+        .academy .academy-login .register .content .btn-custom {
+          background-color: transparent;
+          font-size: 14px;
+          font-weight: 700;
+          display: block;
+          text-align: center;
+          margin: auto;
+          width: 160px;
+          padding: 13px 0px 12px;
+          color: #00998A;
+          border: 1px solid #00998A;
+          border-radius: 25px; }
+        .academy .academy-login .register .content .btn-custom-2 {
+          background-color: #00998A;
+          color: #ffffff; }
+  .academy .request-trainer {
+    width: 770px;
+    margin: 100px auto; }
+    .academy .request-trainer h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #323E48;
+      margin-bottom: 40px; }
+    .academy .request-trainer form .form-control {
+      font-size: 14px !important;
+      font-weight: 300 !important;
+      color: black;
+      margin-bottom: 25px;
+      padding: 10px;
+      border: none;
+      border-radius: 0px;
+      background-color: #f6f8f7; }
+      .academy .request-trainer form .form-control::placeholder {
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        color: black; }
+    .academy .request-trainer form select {
+      font-weight: 700;
+      background-color: #daeff2;
+      border: none;
+      border-radius: 0px; }
+    .academy .request-trainer form .btn-custom {
+      background-color: transparent;
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+      text-align: center;
+      margin: auto;
+      width: 160px;
+      padding: 13px 0px 12px;
+      color: #00998A;
+      border: 1px solid #00998A;
+      border-radius: 25px;
+      width: 200px; }
+  .academy .course-info {
+    font-size: 0px;
+    margin: 100px auto; }
+    .academy .course-info .container {
+      max-width: 1230px; }
+      .academy .course-info .container .row {
+        margin: 0px; }
+    .academy .course-info .left {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top; }
+      .academy .course-info .left h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px;
+        color: #323E48; }
+    .academy .course-info .right {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      text-align: right; }
+      .academy .course-info .right h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px;
+        color: #323E48; }
+    .academy .course-info p {
+      font-size: 21px;
+      font-weight: 300;
+      margin: 30px 0px 0px;
+      color: #323E48; }
+      .academy .course-info p a {
+        font-weight: 700;
+        color: #00998A; }
+        .academy .course-info p a:hover {
+          text-decoration: none; }
+  .academy .course-tab {
+    width: 1000px;
+    margin: 0px auto 100px;
+    font-size: 0px; }
+    .academy .course-tab .tab {
+      background-color: #9EACAA;
+      display: inline-block;
+      width: 75%;
+      vertical-align: top; }
+      .academy .course-tab .tab ul {
+        margin: 0px;
+        padding: 0px;
+        text-align: center; }
+        .academy .course-tab .tab ul li {
+          display: inline-block;
+          list-style: none;
+          padding: 32px 0px 30px; }
+          .academy .course-tab .tab ul li a {
+            font-size: 16px;
+            color: white;
+            margin: 0px 50px; }
+            .academy .course-tab .tab ul li a:hover {
+              text-decoration: none; }
+            .academy .course-tab .tab ul li a.active {
+              font-weight: 700; }
+    .academy .course-tab .buy {
+      background-color: #0099a8;
+      display: inline-block;
+      width: 25%;
+      vertical-align: top;
+      text-align: center;
+      padding: 32px 0px 30px; }
+      .academy .course-tab .buy a {
+        font-size: 16px;
+        font-weight: 700;
+        color: white; }
+        .academy .course-tab .buy a:hover {
+          text-decoration: none; }
+    .academy .course-tab .buy-mobile {
+      display: none; }
+  .academy .lessons-overview {
+    margin: 0px auto 100px; }
+    .academy .lessons-overview .container {
+      max-width: 1230px; }
+      .academy .lessons-overview .container .row {
+        margin: 0px; }
+    .academy .lessons-overview h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #9EACAA; }
+    .academy .lessons-overview .lesson-content {
+      background-color: #f6f8f7;
+      border-left: 5px solid #0099a8;
+      padding: 30px;
+      margin-top: 40px; }
+      .academy .lessons-overview .lesson-content p {
+        font-size: 21px;
+        line-height: normal;
+        font-weight: 300;
+        color: #323E48;
+        margin: 0px; }
+  .academy .course-contents {
+    margin: 0px auto 100px; }
+    .academy .course-contents .container {
+      max-width: 1230px; }
+      .academy .course-contents .container .row {
+        margin: 0px; }
+    .academy .course-contents h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #9EACAA;
+      margin: 0px; }
+    .academy .course-contents h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #323E48;
+      margin-top: 40px; }
+    .academy .course-contents p {
+      font-size: 17px;
+      font-weight: 300;
+      color: #323E48;
+      margin: 40px 0px 0px; }
+    .academy .course-contents ul {
+      padding: 5px 0px 0px 20px;
+      margin: 0px; }
+      .academy .course-contents ul li {
+        font-size: 17px;
+        font-weight: 300;
+        color: #323E48;
+        margin-bottom: 5px; }
+
+/*-----------------------------
+-------------------------------
+-----------education-----------
+-------------------------------
+-----------------------------*/
+.education {
+  /*-----------------------------
+  -------------hero--------------
+  -----------------------------*/
+  /*-----------------------------
+  ------------content------------
+  -----------------------------*/ }
+  .education .hero {
+    position: relative;
+    margin-bottom: 100px; }
+    .education .hero img {
+      width: 100%; }
+  .education .content {
+    margin: 0px auto 60px; }
+    .education .content .container {
+      max-width: 1230px; }
+      .education .content .container .row {
+        margin: 0px; }
+    .education .content h1 {
+      font-weight: 200;
+      font-size: 36px;
+      color: #00998A;
+      margin: 0px; }
+    .education .content h2 {
+      font-weight: 200;
+      font-size: 28px;
+      color: #323E48;
+      margin: 40px 0px 0px; }
+    .education .content p {
+      font-weight: 200;
+      font-size: 21px;
+      color: #323E48;
+      margin: 40px 0px 0px; }
+  .education .baes {
+    width: 1000px;
+    margin: auto auto 100px;
+    font-size: 0px; }
+    .education .baes .left {
+      width: 75%;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid #00998A; }
+      .education .baes .left img {
+        width: 272.5px;
+        display: block;
+        margin: 15.25px 0px 15.25px 110px; }
+    .education .baes .right {
+      width: 25%;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid #00998A; }
+      .education .baes .right a {
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+        padding: 30px 0px;
+        text-align: center;
+        color: white;
+        background-color: #00998A; }
+        .education .baes .right a:hover {
+          text-decoration: none; }
+
+/*-----------------------------
+-------------------------------
+------------contact------------
+-------------------------------
+-----------------------------*/
+.contact {
+  overflow-x: hidden; }
+  .contact .hero {
+    position: relative; }
+    .contact .hero img {
+      width: 100%; }
+  .contact .contact-content {
+    margin: 40px auto;
+    font-size: 0px;
+    max-width: 1360px; }
+    .contact .contact-content .left {
+      display: inline-block;
+      width: 50%;
+      margin: auto;
+      padding: 55px 0px;
+      vertical-align: top; }
+      .contact .contact-content .left h1 {
+        font-size: 36px;
+        font-weight: 200;
+        color: #00998A; }
+      .contact .contact-content .left .box {
+        width: 360px;
+        margin: auto; }
+        .contact .contact-content .left .box h2 {
+          font-size: 20px;
+          font-weight: 700;
+          color: #323E48;
+          margin: 60px 0px 10px; }
+        .contact .contact-content .left .box h3 {
+          font-size: 20px;
+          font-weight: 300;
+          color: #00998A; }
+        .contact .contact-content .left .box p {
+          font-size: 20px;
+          font-weight: 300;
+          color: #323E48;
+          margin-bottom: 5px; }
+          .contact .contact-content .left .box p span {
+            font-weight: 700;
+            color: #00998A; }
+    .contact .contact-content .right {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      background-color: #f6f8f7;
+      padding: 150px 0px 60px; }
+      .contact .contact-content .right .box {
+        width: 400px;
+        margin: auto; }
+        .contact .contact-content .right .box h1 {
+          font-size: 20px;
+          font-weight: 700;
+          color: #323E48;
+          margin-bottom: 30px; }
+        .contact .contact-content .right .box form .form-control {
+          font-size: 14px !important;
+          font-weight: 300 !important;
+          color: black;
+          margin-bottom: 25px;
+          padding: 10px;
+          border: none;
+          border-radius: 0px; }
+          .contact .contact-content .right .box form .form-control::placeholder {
+            font-size: 14px !important;
+            font-weight: 300 !important;
+            color: black; }
+        .contact .contact-content .right .box form .btn-custom {
+          background-color: transparent;
+          font-size: 14px;
+          font-weight: 700;
+          display: block;
+          text-align: center;
+          margin: auto;
+          width: 160px;
+          padding: 13px 0px 12px;
+          color: #00998A;
+          border: 1px solid #00998A;
+          border-radius: 25px; }
+  .contact footer {
+    position: absolute;
+    width: 100%;
+    bottom: -160px; }
+
+/*-----------------------------
+------------footer-------------
+-----------------------------*/
+footer {
+  height: 120px;
+  line-height: 120px;
+  background-color: #f6f8f7; }
+  footer .footer-content {
+    max-width: 1360px;
+    margin: auto; }
+    footer .footer-content ul {
+      padding: 0px;
+      margin: 0px; }
+      footer .footer-content ul li {
+        display: inline-block; }
+        footer .footer-content ul li a {
+          font-size: 14px;
+          font-weight: 600;
+          color: #9EACAA;
+          margin-right: 30px; }
+          footer .footer-content ul li a:hover {
+            text-decoration: none;
+            color: #9EACAA; }
+    footer .footer-content p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #9EACAA;
+      text-align: right;
+      margin: 0px; }
+
+@media only screen and (max-width: 1439px) {
+  .container {
+    padding: 0px; }
+    .container .row {
+      margin: 0px; }
+      .container .row .col-xl-8 {
+        padding: 0px; }
+
+  body .line {
+    top: 500px;
+    right: -20px; }
+  body .line-our-people {
+    right: -20px; }
+  body .kepsfield-academy {
+    top: 300px; }
+  body .line-academy {
+    top: 262px;
+    right: -20px; }
+  body .line-education {
+    right: -20px; }
+
+  .custom-container {
+    max-width: 1160px;
+    margin: 0px auto; }
+
+  /*-----------------------------
+  ------------header-------------
+  -----------------------------*/
+  header .burger-menu #drawer .level_a {
+    padding: 150px 0 0 80px;
+    font-size: 16px; }
+    header .burger-menu #drawer .level_a #drawer_toggle_off {
+      top: -125px;
+      left: 0px; }
+    header .burger-menu #drawer .level_a .level_b .white-line {
+      bottom: 100px; }
+    header .burger-menu #drawer .level_a .level_b .level_b_tab h3 {
+      font-size: 30px;
+      margin-bottom: 40px; }
+    header .burger-menu #drawer .level_a .level_b .level_b_tab p {
+      font-size: 20px;
+      margin-bottom: 40px; }
+    header .burger-menu #drawer .level_a .level_b .level_b_tab a {
+      font-size: 16px; }
+    header .burger-menu #drawer .level_a li {
+      margin-bottom: 30px; }
+      header .burger-menu #drawer .level_a li .logo-white img {
+        margin: 30px 15px 80px auto; }
+      header .burger-menu #drawer .level_a li.terms {
+        bottom: 50px; }
+        header .burger-menu #drawer .level_a li.terms a {
+          font-size: 12px; }
+          header .burger-menu #drawer .level_a li.terms a:nth-of-type(2) {
+            margin-left: 25px; }
+        header .burger-menu #drawer .level_a li.terms p {
+          font-size: 12px; }
+  header .menu ul li a {
+    font-size: 16px; }
+
+  .overview {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    -------overview-content--------
+    -----------------------------*/ }
+    .overview .hero {
+      position: relative;
+      margin-bottom: 100px; }
+      .overview .hero img {
+        width: 100%; }
+      .overview .hero .text-block h1 {
+        font-size: 36px; }
+      .overview .hero .text-block p {
+        font-size: 20px;
+        line-height: 30px; }
+    .overview .overview-content h1 {
+      font-size: 30px; }
+    .overview .overview-content p {
+      font-size: 22px;
+      line-height: 32px; }
+
+  .our-services {
+    /*-----------------------------
+    -----------content-------------
+    -----------------------------*/ }
+    .our-services .content {
+      font-size: 0px;
+      margin-bottom: 60px; }
+      .our-services .content .box {
+        padding: 130px 40px 35px;
+        height: 410px; }
+        .our-services .content .box h1 {
+          font-size: 26px; }
+        .our-services .content .box p {
+          font-size: 18px;
+          margin-bottom: 90px; }
+
+  .services {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    --------secondary-menu---------
+    -----------------------------*/
+    /*-----------------------------
+    ------------content------------
+    -----------------------------*/ }
+    .services .hero {
+      position: relative; }
+      .services .hero img {
+        width: 100%;
+        height: 360px; }
+      .services .hero .text-block h1 {
+        font-size: 30px; }
+      .services .hero .text-block p {
+        font-size: 24px; }
+    .services .secondary-menu {
+      background-color: #323E48; }
+      .services .secondary-menu ul li {
+        padding-right: 25px; }
+        .services .secondary-menu ul li a {
+          font-size: 14px; }
+    .services .content h1 {
+      font-size: 22px; }
+    .services .content p {
+      font-size: 19px; }
+    .services .content ul li {
+      font-size: 19px; }
+
+  .academy {
+    /*-----------------------------
+    ---------academy-login---------
+    -----------------------------*/ }
+    .academy .academy-login {
+      width: 1160px; }
+
+  .contact .contact-content {
+    max-width: 1160px; }
+
+  /*-----------------------------
+  ------------footer-------------
+  -----------------------------*/
+  footer .footer-content {
+    max-width: 1160px; } }
+@media only screen and (max-width: 1199px) {
+  body .line {
+    top: 395px;
+    right: -40px; }
+  body .line-education {
+    top: 205px;
+    right: -40px; }
+  body .line-our-people {
+    top: 245px;
+    right: -40px; }
+  body .line-academy {
+    top: 196px;
+    right: -40px; }
+  body .kepsfield-academy {
+    top: 250px; }
+
+  .custom-container {
+    max-width: 912px;
+    margin: 0px auto; }
+
+  /*-----------------------------
+  ------------header-------------
+  -----------------------------*/
+  header {
+    height: 120px;
+    line-height: 120px;
+    background-color: white; }
+    header .burger-menu {
+      display: inline-block; }
+      header .burger-menu #drawer {
+        position: relative;
+        line-height: normal;
+        display: initial; }
+        header .burger-menu #drawer .level_a {
+          padding: 170px 0 0 50px;
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: -100%;
+          z-index: 10;
+          transition: 0.4s linear left;
+          list-style: none;
+          background-color: #0099a7;
+          color: white;
+          font-size: 16px;
+          text-transform: uppercase;
+          overflow: auto; }
+          header .burger-menu #drawer .level_a #drawer_toggle_off {
+            left: 0px; }
+          header .burger-menu #drawer .level_a.reveal {
+            left: 0; }
+          header .burger-menu #drawer .level_a .selected {
+            font-weight: 400; }
+          header .burger-menu #drawer .level_a .level_b {
+            position: static;
+            width: 100%;
+            height: auto;
+            background-color: #0099a7; }
+            header .burger-menu #drawer .level_a .level_b .level_b_tab {
+              display: none !important; }
+              header .burger-menu #drawer .level_a .level_b .level_b_tab h3 {
+                font-size: 34px;
+                font-weight: 300;
+                margin-bottom: 50px; }
+              header .burger-menu #drawer .level_a .level_b .level_b_tab p {
+                font-size: 24px;
+                font-weight: 300;
+                margin-bottom: 50px; }
+              header .burger-menu #drawer .level_a .level_b .level_b_tab a {
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase; }
+            header .burger-menu #drawer .level_a .level_b ul {
+              padding: 40px 0px 10px 15px; }
+            header .burger-menu #drawer .level_a .level_b li {
+              list-style: none; }
+            header .burger-menu #drawer .level_a .level_b .white-line {
+              display: none; }
+          header .burger-menu #drawer .level_a li {
+            margin-bottom: 30px; }
+            header .burger-menu #drawer .level_a li a {
+              color: white; }
+              header .burger-menu #drawer .level_a li a:hover {
+                text-decoration: none; }
+              header .burger-menu #drawer .level_a li a.selected {
+                font-weight: 700; }
+              header .burger-menu #drawer .level_a li a.tab_toggle {
+                font-weight: 400; }
+              header .burger-menu #drawer .level_a li a.level_b_toggle .fa-angle-down {
+                display: inline-block; }
+            header .burger-menu #drawer .level_a li .logo-white {
+              display: none; }
+              header .burger-menu #drawer .level_a li .logo-white img {
+                width: 182.5px;
+                display: block;
+                margin: 30px 15px 100px auto; }
+            header .burger-menu #drawer .level_a li.terms {
+              position: absolute;
+              bottom: 0px;
+              margin: 0px; }
+              header .burger-menu #drawer .level_a li.terms a {
+                font-size: 12px; }
+                header .burger-menu #drawer .level_a li.terms a:nth-of-type(2) {
+                  margin-left: 20px; }
+              header .burger-menu #drawer .level_a li.terms p {
+                font-size: 12px; }
+            header .burger-menu #drawer .level_a li:nth-last-of-type(1) {
+              margin: 0px; }
+    header .menu {
+      display: none; }
+
+  .our-services {
+    /*-----------------------------
+    -----------content-------------
+    -----------------------------*/ }
+    .our-services .content {
+      font-size: 0px;
+      margin-bottom: 60px; }
+      .our-services .content .box {
+        padding: 110px 40px 35px;
+        height: 410px; }
+        .our-services .content .box h1 {
+          font-size: 20px; }
+        .our-services .content .box p {
+          font-size: 16px;
+          margin-bottom: 90px; }
+
+  .services {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    --------secondary-menu---------
+    -----------------------------*/ }
+    .services .hero {
+      height: 300px; }
+      .services .hero .text-block {
+        width: 600px; }
+        .services .hero .text-block h1 {
+          font-size: 26px; }
+        .services .hero .text-block p {
+          font-size: 22px; }
+    .services .secondary-menu {
+      line-height: 99px; }
+      .services .secondary-menu ul li {
+        padding-right: 15px; }
+        .services .secondary-menu ul li a {
+          font-size: 12px; }
+
+  .case-studies-detail .hero {
+    height: 300px; }
+  .case-studies-detail .content-box h1 {
+    font-size: 16px; }
+  .case-studies-detail .content-box h2 {
+    font-size: 34px; }
+  .case-studies-detail .content-box h3 {
+    font-size: 22px; }
+  .case-studies-detail .content-box p {
+    font-size: 19px; }
+  .case-studies-detail .content-box .our-impact {
+    padding: 80px 30px; }
+    .case-studies-detail .content-box .our-impact .content h3 {
+      font-size: 22px; }
+    .case-studies-detail .content-box .our-impact .content p {
+      font-size: 19px; }
+
+  /*-----------------------------
+  -------------------------------
+  ----------our-people-----------
+  -------------------------------
+  -----------------------------*/
+  .our-people .hero img {
+    width: 100%;
+    height: 360px; }
+  .our-people .secondary-menu {
+    line-height: 99px; }
+    .our-people .secondary-menu ul li {
+      padding-right: 15px; }
+      .our-people .secondary-menu ul li a {
+        font-size: 12px; }
+    .our-people .secondary-menu ul li {
+      padding-right: 75px; }
+  .our-people .content h1 {
+    font-size: 30px; }
+  .our-people .content h2 {
+    font-size: 24px; }
+  .our-people .content p {
+    font-size: 19px; }
+  .our-people .managing-partner {
+    margin: 100px 0px; }
+    .our-people .managing-partner .detail {
+      margin: auto; }
+      .our-people .managing-partner .detail h1 {
+        font-size: 30px; }
+      .our-people .managing-partner .detail p {
+        font-size: 24px; }
+    .our-people .managing-partner .partner {
+      margin-top: 100px; }
+      .our-people .managing-partner .partner img {
+        width: 100%; }
+      .our-people .managing-partner .partner h2 {
+        font-size: 24px; }
+      .our-people .managing-partner .partner h3 {
+        font-size: 16px; }
+      .our-people .managing-partner .partner .social {
+        text-align: right; }
+        .our-people .managing-partner .partner .social a img {
+          width: 40px; }
+        .our-people .managing-partner .partner .social a:hover {
+          text-decoration: none; }
+      .our-people .managing-partner .partner p {
+        font-size: 16px; }
+      .our-people .managing-partner .partner .moretext {
+        display: none; }
+      .our-people .managing-partner .partner a {
+        font-size: 16px; }
+  .our-people .contact-content {
+    max-width: 912px; }
+    .our-people .contact-content .left h1 {
+      font-size: 30px; }
+    .our-people .contact-content .left .box {
+      width: 300px; }
+      .our-people .contact-content .left .box h2 {
+        font-size: 17px; }
+      .our-people .contact-content .left .box h3 {
+        font-size: 17px; }
+      .our-people .contact-content .left .box p {
+        font-size: 17px; }
+    .our-people .contact-content .right {
+      width: 50%;
+      padding: 110px 0px 40px; }
+      .our-people .contact-content .right .box {
+        width: 300px; }
+        .our-people .contact-content .right .box h1 {
+          font-size: 17px; }
+  .our-people .secondary-menu-mob {
+    display: none; }
+
+  /*-----------------------------
+  -------------------------------
+  ------------academy------------
+  -------------------------------
+  -----------------------------*/
+  .academy {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    ------------content------------
+    -----------------------------*/
+    /*-----------------------------
+    --------------box--------------
+    -----------------------------*/
+    /*-----------------------------
+    ---------academy-login---------
+    -----------------------------*/
+    /*-----------------------------
+    --------request-trainer--------
+    -----------------------------*/
+    /*-----------------------------
+    ----------course-info----------
+    -----------------------------*/
+    /*-----------------------------
+    ----------course-tab-----------
+    -----------------------------*/
+    /*-----------------------------
+    -------lessons-overview--------
+    -----------------------------*/
+    /*-----------------------------
+    --------course-contents--------
+    -----------------------------*/ }
+    .academy .hero .image-block {
+      position: absolute;
+      top: 50%;
+      right: 4%;
+      transform: translate(0%, -52.5%); }
+      .academy .hero .image-block img {
+        width: 350px; }
+    .academy .hero .text-block h1 {
+      font-size: 40px;
+      margin-bottom: 25px; }
+    .academy .hero .text-block p {
+      font-size: 22px; }
+    .academy .content {
+      width: 770px; }
+      .academy .content h2 {
+        font-size: 30px; }
+      .academy .content h3 {
+        font-size: 24px; }
+      .academy .content p {
+        font-size: 24px; }
+      .academy .content .detail {
+        font-size: 20px;
+        line-height: 26px; }
+      .academy .content a {
+        font-size: 16px; }
+    .academy .box {
+      margin-bottom: 20px; }
+      .academy .box .cards {
+        margin: 0px auto 80px; }
+    .academy .academy-login {
+      width: 912px; }
+      .academy .academy-login .login .content {
+        width: 350px; }
+        .academy .academy-login .login .content h1 {
+          font-size: 22px; }
+        .academy .academy-login .login .content p {
+          font-size: 19px; }
+        .academy .academy-login .login .content form .form-control {
+          font-size: 14px !important;
+          font-weight: 300 !important;
+          color: black;
+          margin-bottom: 25px;
+          padding: 10px;
+          border: none;
+          border-radius: 0px; }
+          .academy .academy-login .login .content form .form-control::placeholder {
+            font-size: 14px !important;
+            font-weight: 300 !important;
+            color: black; }
+        .academy .academy-login .login .content form .btn-custom {
+          background-color: transparent;
+          font-size: 14px;
+          font-weight: 700;
+          display: block;
+          text-align: center;
+          margin: auto;
+          width: 160px;
+          padding: 13px 0px 12px;
+          color: #00998A;
+          border: 1px solid #00998A;
+          border-radius: 25px; }
+        .academy .academy-login .login .content form .forgot-password {
+          font-size: 14px;
+          margin: 15px 0px 0px; }
+      .academy .academy-login .register .content {
+        width: 350px; }
+        .academy .academy-login .register .content h1 {
+          font-size: 22px; }
+        .academy .academy-login .register .content p {
+          font-size: 19px; }
+    .academy .request-trainer h1 {
+      font-size: 26px; }
+    .academy .course-info .left h1 {
+      font-size: 22px; }
+    .academy .course-info .right h1 {
+      font-size: 22px; }
+    .academy .course-info p {
+      font-size: 19px; }
+    .academy .course-tab {
+      width: 912px; }
+      .academy .course-tab .tab ul li a {
+        font-size: 15px; }
+      .academy .course-tab .buy a {
+        font-size: 15px; }
+    .academy .lessons-overview h1 {
+      font-size: 22px; }
+    .academy .lessons-overview .lesson-content p {
+      font-size: 19px; }
+    .academy .course-contents h1 {
+      font-size: 22px; }
+    .academy .course-contents h2 {
+      font-size: 19px; }
+    .academy .course-contents p {
+      font-size: 19px; }
+    .academy .course-contents ul li {
+      font-size: 19px; }
+
+  .education .baes {
+    width: 900px; }
+    .education .baes .left img {
+      margin: 15.25px 0px 15.25px 65px; }
+
+  .contact .contact-content {
+    max-width: 912px; }
+    .contact .contact-content .left h1 {
+      font-size: 30px; }
+    .contact .contact-content .left .box {
+      width: 300px; }
+      .contact .contact-content .left .box h2 {
+        font-size: 17px; }
+      .contact .contact-content .left .box h3 {
+        font-size: 17px; }
+      .contact .contact-content .left .box p {
+        font-size: 17px; }
+    .contact .contact-content .right {
+      width: 50%;
+      padding: 110px 0px 40px; }
+      .contact .contact-content .right .box {
+        width: 300px; }
+        .contact .contact-content .right .box h1 {
+          font-size: 17px; }
+
+  /*-----------------------------
+  ------------footer-------------
+  -----------------------------*/
+  footer .footer-content {
+    max-width: 912px; } }
+@media only screen and (max-width: 991px) {
+  body .line {
+    top: 295px;
+    right: -45px; }
+  body .line-education {
+    top: 150px;
+    right: -45px; }
+  body .line-our-people {
+    top: 215px;
+    right: -45px; }
+  body .line-academy {
+    top: 176px;
+    right: -45px;
+    height: auto !important; }
+  body .kepsfield-academy {
+    display: none; }
+
+  .custom-container {
+    max-width: 678px;
+    margin: 0px auto; }
+
+  header .burger-menu #drawer_toggle_on .fa-bars {
+    margin-right: 20px; }
+  header .burger-menu #search-drawer input {
+    padding: 0px 15px;
+    font-size: 16px; }
+  header .burger-menu #search-drawer #search-toggle-off {
+    right: 15px; }
+
+  .overview .hero {
+    margin-bottom: 60px; }
+    .overview .hero img {
+      margin-bottom: 60px; }
+    .overview .hero .text-block {
+      position: static;
+      margin-bottom: 60px; }
+      .overview .hero .text-block h1 {
+        font-size: 26px;
+        margin-bottom: 40px; }
+      .overview .hero .text-block p {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0px; }
+        .overview .hero .text-block p br {
+          display: none; }
+    .overview .hero .kepsfield-academy-mob {
+      display: block;
+      position: static;
+      width: 354px;
+      margin: auto;
+      background-color: #E7335D;
+      padding: 25px 0px 30px; }
+      .overview .hero .kepsfield-academy-mob .left {
+        width: 35%;
+        display: inline-block;
+        vertical-align: top; }
+        .overview .hero .kepsfield-academy-mob .left img {
+          width: 76.5px;
+          display: block;
+          margin: auto; }
+      .overview .hero .kepsfield-academy-mob .right {
+        width: 63%;
+        display: inline-block;
+        vertical-align: top; }
+        .overview .hero .kepsfield-academy-mob .right p {
+          font-size: 18px;
+          font-weight: 300;
+          margin: 20px 0px;
+          color: white; }
+        .overview .hero .kepsfield-academy-mob .right a {
+          font-size: 14px;
+          font-weight: 700;
+          color: white;
+          display: inline-block; }
+          .overview .hero .kepsfield-academy-mob .right a.buy {
+            padding: 8px 45px 7px;
+            margin-right: 20px;
+            border: 1px solid white; }
+          .overview .hero .kepsfield-academy-mob .right a:hover {
+            text-decoration: none; }
+
+  .our-services {
+    /*-----------------------------
+    -----------content-------------
+    -----------------------------*/ }
+    .our-services .content {
+      font-size: 0px;
+      margin-bottom: 60px; }
+      .our-services .content .box {
+        padding: 130px 40px 35px;
+        width: calc(100%/2);
+        height: 410px; }
+        .our-services .content .box h1 {
+          font-size: 20px; }
+        .our-services .content .box p {
+          font-size: 16px;
+          margin-bottom: 90px; }
+    .our-services .case-studies {
+      margin: 60px 0px; }
+      .our-services .case-studies .container {
+        padding: 0px; }
+      .our-services .case-studies h1 {
+        display: block; }
+      .our-services .case-studies h2 {
+        display: block; }
+      .our-services .case-studies .box {
+        margin-bottom: 60px; }
+        .our-services .case-studies .box img {
+          margin-bottom: 50px; }
+        .our-services .case-studies .box p {
+          font-size: 20px; }
+
+  .services {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    --------secondary-menu---------
+    -----------------------------*/
+    /*-----------------------------
+    ------secondary-menu-mob-------
+    -----------------------------*/
+    /*-----------------------------
+    ------------content------------
+    -----------------------------*/
+    /*-----------------------------
+    ---------case-studies----------
+    -----------------------------*/ }
+    .services .hero {
+      height: 250px; }
+      .services .hero .line-services {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0px; }
+      .services .hero .text-block {
+        display: none; }
+    .services .secondary-menu {
+      display: none; }
+    .services .secondary-menu-mob {
+      width: 570px;
+      display: block;
+      margin: 0px auto; }
+      .services .secondary-menu-mob ul {
+        padding: 0px;
+        margin-bottom: 60px; }
+        .services .secondary-menu-mob ul li {
+          list-style: none;
+          padding: 10px 0px; }
+          .services .secondary-menu-mob ul li a {
+            font-size: 20px;
+            font-weight: 400;
+            color: #323E48; }
+            .services .secondary-menu-mob ul li a.active {
+              color: #00998A;
+              font-weight: 700; }
+            .services .secondary-menu-mob ul li a:hover {
+              text-decoration: none; }
+    .services .content {
+      width: 570px;
+      margin: 60px auto; }
+      .services .content h1 {
+        font-size: 20px; }
+      .services .content p {
+        font-size: 17px; }
+      .services .content ul {
+        margin: 0px 0px 40px; }
+        .services .content ul li {
+          font-size: 17px;
+          font-weight: 200; }
+    .services .case-studies {
+      margin: 60px 0px; }
+      .services .case-studies .container {
+        padding: 0px; }
+      .services .case-studies h1 {
+        display: block; }
+      .services .case-studies h2 {
+        display: block; }
+      .services .case-studies .box {
+        margin-bottom: 60px; }
+        .services .case-studies .box img {
+          margin-bottom: 50px; }
+        .services .case-studies .box p {
+          font-size: 20px; }
+
+  .case-studies-detail .hero {
+    height: 250px; }
+  .case-studies-detail .content-box {
+    margin: 80px 0px; }
+    .case-studies-detail .content-box h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #323E48; }
+    .case-studies-detail .content-box h2 {
+      font-size: 26px; }
+    .case-studies-detail .content-box .our-impact {
+      padding: 80px 0px; }
+      .case-studies-detail .content-box .our-impact .content {
+        margin: 0px auto; }
+  .case-studies-detail .btn-custom {
+    margin: auto auto 80px; }
+  .case-studies-detail .custom-margin {
+    margin-bottom: 80px; }
+
+  /*-----------------------------
+  -------------------------------
+  ----------our-people-----------
+  -------------------------------
+  -----------------------------*/
+  .our-people .hero img {
+    width: 100%;
+    height: 310px; }
+  .our-people .secondary-menu {
+    display: none; }
+  .our-people .content {
+    width: 570px;
+    margin: 60px auto; }
+    .our-people .content h1 {
+      font-size: 28px; }
+    .our-people .content h2 {
+      font-size: 20px; }
+    .our-people .content p {
+      font-size: 17px; }
+  .our-people .managing-partner {
+    margin: 60px 0px; }
+    .our-people .managing-partner .detail {
+      margin: auto; }
+      .our-people .managing-partner .detail h1 {
+        font-size: 28px; }
+      .our-people .managing-partner .detail p {
+        font-size: 22px; }
+    .our-people .managing-partner .partner {
+      width: 600px;
+      margin: 60px auto auto; }
+      .our-people .managing-partner .partner img {
+        width: 300px;
+        display: block;
+        margin: auto auto 60px; }
+      .our-people .managing-partner .partner h2 {
+        font-size: 24px; }
+      .our-people .managing-partner .partner h3 {
+        font-size: 16px; }
+      .our-people .managing-partner .partner .social a img {
+        display: inline-block;
+        margin: auto auto auto 15px; }
+      .our-people .managing-partner .partner .social a:hover {
+        text-decoration: none; }
+      .our-people .managing-partner .partner p {
+        font-size: 16px; }
+      .our-people .managing-partner .partner .moretext {
+        display: none; }
+      .our-people .managing-partner .partner a {
+        font-size: 16px; }
+  .our-people .contact-content {
+    max-width: 678px; }
+    .our-people .contact-content .left h1 {
+      font-size: 26px; }
+    .our-people .contact-content .left .box {
+      width: 250px; }
+      .our-people .contact-content .left .box h2 {
+        font-size: 14px; }
+      .our-people .contact-content .left .box h3 {
+        font-size: 14px; }
+      .our-people .contact-content .left .box p {
+        font-size: 14px; }
+    .our-people .contact-content .right {
+      width: 50%;
+      padding: 90px 0px 40px; }
+      .our-people .contact-content .right .box {
+        width: 250px; }
+        .our-people .contact-content .right .box h1 {
+          font-size: 14px; }
+        .our-people .contact-content .right .box form .form-control {
+          font-size: 12px !important; }
+          .our-people .contact-content .right .box form .form-control::placeholder {
+            font-size: 12px !important; }
+        .our-people .contact-content .right .box form .btn-custom {
+          font-size: 12px; }
+  .our-people .secondary-menu-mob {
+    width: 570px;
+    display: block;
+    margin: 0px auto; }
+    .our-people .secondary-menu-mob ul {
+      padding: 0px;
+      margin-bottom: 60px; }
+      .our-people .secondary-menu-mob ul li {
+        list-style: none;
+        padding: 10px 0px; }
+        .our-people .secondary-menu-mob ul li a {
+          font-size: 20px;
+          font-weight: 400;
+          color: #323E48; }
+          .our-people .secondary-menu-mob ul li a.active {
+            color: #00998A;
+            font-weight: 700; }
+          .our-people .secondary-menu-mob ul li a:hover {
+            text-decoration: none; }
+
+  /*-----------------------------
+  -------------------------------
+  ------------academy------------
+  -------------------------------
+  -----------------------------*/
+  .academy {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    ------------content------------
+    -----------------------------*/
+    /*-----------------------------
+    --------------box--------------
+    -----------------------------*/
+    /*-----------------------------
+    ---------academy-login---------
+    -----------------------------*/
+    /*-----------------------------
+    --------request-trainer--------
+    -----------------------------*/
+    /*-----------------------------
+    ----------course-info----------
+    -----------------------------*/
+    /*-----------------------------
+    ----------course-tab-----------
+    -----------------------------*/
+    /*-----------------------------
+    -------lessons-overview--------
+    -----------------------------*/
+    /*-----------------------------
+    --------course-contents--------
+    -----------------------------*/ }
+    .academy .hero {
+      position: relative; }
+      .academy .hero img {
+        width: 100%;
+        height: 275px; }
+      .academy .hero .image-block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .academy .hero .image-block img {
+          width: 275px;
+          height: auto;
+          display: block;
+          margin: auto; }
+      .academy .hero .text-block {
+        display: none; }
+    .academy .secondary-menu .content {
+      margin: 0px auto;
+      width: 90%; }
+    .academy .content {
+      width: 100%;
+      margin: 80px auto auto; }
+      .academy .content .text {
+        display: block; }
+        .academy .content .text h1 {
+          font-size: 28px;
+          margin-bottom: 25px; }
+        .academy .content .text p {
+          font-size: 20px;
+          line-height: 30px; }
+      .academy .content p {
+        font-size: 22px; }
+        .academy .content p br {
+          display: none; }
+      .academy .content .detail {
+        font-size: 18px;
+        line-height: 25px; }
+    .academy .box {
+      margin-bottom: 0px; }
+      .academy .box .cards {
+        margin: 0px 0px 80px; }
+        .academy .box .cards h4 {
+          font-size: 20px; }
+        .academy .box .cards p {
+          font-size: 17px; }
+        .academy .box .cards .inner-box {
+          width: 309.5px; }
+          .academy .box .cards .inner-box .left h5 {
+            padding: 0px 0px 0px 25px; }
+    .academy .academy-login {
+      width: 678px; }
+      .academy .academy-login .login .content {
+        width: 250px; }
+        .academy .academy-login .login .content h1 {
+          font-size: 20px; }
+        .academy .academy-login .login .content p {
+          font-size: 17px; }
+          .academy .academy-login .login .content p br {
+            display: none; }
+        .academy .academy-login .login .content form .forgot-password {
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 30px; }
+      .academy .academy-login .register .content {
+        width: 250px; }
+        .academy .academy-login .register .content h1 {
+          font-size: 20px; }
+        .academy .academy-login .register .content p {
+          font-size: 17px; }
+          .academy .academy-login .register .content p br {
+            display: none; }
+        .academy .academy-login .register .content form .form-control {
+          font-size: 14px !important;
+          font-weight: 300 !important;
+          color: black;
+          margin-bottom: 25px;
+          padding: 10px;
+          border: none;
+          border-radius: 0px; }
+          .academy .academy-login .register .content form .form-control::placeholder {
+            font-size: 14px !important;
+            font-weight: 300 !important;
+            color: black; }
+        .academy .academy-login .register .content form .custom-control-label::before {
+          width: 30px;
+          height: 30px;
+          background-color: white; }
+        .academy .academy-login .register .content form .custom-control-label::after {
+          width: 30px;
+          height: 30px; }
+        .academy .academy-login .register .content form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+          background-color: #00998A; }
+        .academy .academy-login .register .content form label {
+          font-size: 12px;
+          margin-left: 30px; }
+          .academy .academy-login .register .content form label a {
+            display: inline-block;
+            font-size: 12px;
+            margin: 10px 0px 30px 0px; }
+        .academy .academy-login .register .content .btn-custom {
+          background-color: transparent;
+          font-size: 14px;
+          font-weight: 700;
+          display: block;
+          text-align: center;
+          margin: auto;
+          width: 160px;
+          padding: 13px 0px 12px;
+          color: #00998A;
+          border: 1px solid #00998A;
+          border-radius: 25px; }
+        .academy .academy-login .register .content .btn-custom-2 {
+          background-color: #00998A;
+          color: #ffffff; }
+    .academy .request-trainer {
+      width: 100%;
+      margin: 80px auto; }
+      .academy .request-trainer h1 {
+        font-size: 24px; }
+    .academy .course-info {
+      width: 100%;
+      margin: 80px auto; }
+      .academy .course-info .left h1 {
+        font-size: 22px; }
+      .academy .course-info .right h1 {
+        font-size: 22px; }
+      .academy .course-info p {
+        font-size: 17px; }
+    .academy .course-tab {
+      width: 100%;
+      margin: 0px auto 80px; }
+      .academy .course-tab .tab ul li a {
+        font-size: 14px; }
+      .academy .course-tab .buy a {
+        font-size: 14px; }
+    .academy .lessons-overview {
+      width: 100%;
+      margin: 0px auto 80px; }
+      .academy .lessons-overview h1 {
+        font-size: 22px; }
+      .academy .lessons-overview .lesson-content p {
+        font-size: 17px; }
+    .academy .course-contents {
+      width: 100%;
+      margin: 0px auto 80px; }
+      .academy .course-contents h1 {
+        font-size: 22px; }
+      .academy .course-contents h2 {
+        font-size: 18px; }
+      .academy .course-contents p {
+        font-size: 17px; }
+      .academy .course-contents ul li {
+        font-size: 18px; }
+
+  .education {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    ------------content------------
+    -----------------------------*/ }
+    .education .hero {
+      margin-bottom: 80px; }
+    .education .content {
+      margin: 0px auto 60px; }
+      .education .content h1 {
+        font-size: 30px; }
+      .education .content h2 {
+        font-size: 24px;
+        margin: 30px 0px 0px; }
+      .education .content p {
+        font-size: 19px;
+        margin: 30px 0px 0px; }
+    .education .baes {
+      width: 678px;
+      margin: auto auto 80px; }
+      .education .baes .left {
+        width: 75%; }
+        .education .baes .left img {
+          width: 225px;
+          margin: 15.25px auto 15.25px; }
+      .education .baes .right a {
+        font-size: 14px;
+        padding: 26px 0px; }
+
+  .contact .contact-content {
+    max-width: 678px; }
+    .contact .contact-content .left h1 {
+      font-size: 26px; }
+    .contact .contact-content .left .box {
+      width: 250px; }
+      .contact .contact-content .left .box h2 {
+        font-size: 14px; }
+      .contact .contact-content .left .box h3 {
+        font-size: 14px; }
+      .contact .contact-content .left .box p {
+        font-size: 14px; }
+    .contact .contact-content .right {
+      width: 50%;
+      padding: 90px 0px 40px; }
+      .contact .contact-content .right .box {
+        width: 250px; }
+        .contact .contact-content .right .box h1 {
+          font-size: 14px; }
+        .contact .contact-content .right .box form .form-control {
+          font-size: 12px !important; }
+          .contact .contact-content .right .box form .form-control::placeholder {
+            font-size: 12px !important; }
+        .contact .contact-content .right .box form .btn-custom {
+          font-size: 12px; }
+
+  /*-----------------------------
+  ----------contact-us-----------
+  -----------------------------*/
+  .contact-us {
+    padding: 100px 0px 60px; }
+
+  /*-----------------------------
+  ------------footer-------------
+  -----------------------------*/
+  footer .footer-content {
+    max-width: 678px; } }
+@media only screen and (max-width: 767px) {
+  body .line {
+    position: absolute;
+    top: 310px;
+    right: -30px; }
+  body .line-our-people {
+    top: 150px;
+    right: -30px; }
+  body .line-academy {
+    top: 181px;
+    right: -30px; }
+  body .line-education {
+    top: 130px;
+    right: -30px;
+    height: auto !important; }
+
+  .custom-container {
+    max-width: none;
+    width: 354px; }
+
+  header {
+    width: 354px;
+    padding: 0px;
+    margin: auto;
+    position: relative; }
+    header .burger-menu #search-drawer {
+      width: calc(100% - 90px); }
+
+  .overview {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    -------overview-content--------
+    -----------------------------*/ }
+    .overview .hero {
+      position: relative;
+      margin-bottom: 60px; }
+      .overview .hero .image-block {
+        height: 360px;
+        margin-bottom: 60px; }
+        .overview .hero .image-block img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .overview .hero .text-block {
+        position: static;
+        margin-bottom: 60px; }
+        .overview .hero .text-block h1 {
+          font-size: 26px;
+          margin-bottom: 40px; }
+        .overview .hero .text-block p {
+          font-size: 20px;
+          line-height: 30px;
+          margin: 0px; }
+    .overview .overview-content {
+      max-width: none;
+      margin: 0px auto 60px; }
+      .overview .overview-content h1 {
+        font-size: 24px;
+        line-height: 34px; }
+        .overview .overview-content h1 br {
+          display: none; }
+      .overview .overview-content p {
+        font-size: 17px;
+        line-height: 26px;
+        margin: 50px 0px 0px; }
+
+  .our-services {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    -----------content-------------
+    -----------------------------*/
+    /*-----------------------------
+    ---------case-studies----------
+    -----------------------------*/ }
+    .our-services .hero {
+      height: 270px; }
+      .our-services .hero img {
+        width: 100%;
+        display: none; }
+      .our-services .hero .line-our-services {
+        top: 240px;
+        right: -30px; }
+    .our-services .content {
+      font-size: 0px;
+      margin-bottom: 60px; }
+      .our-services .content .container {
+        padding: 0px; }
+      .our-services .content .box {
+        width: 100%;
+        padding: 130px 40px 35px;
+        height: 390px; }
+        .our-services .content .box h1 {
+          font-size: 24px; }
+        .our-services .content .box p {
+          font-size: 17px;
+          margin-bottom: 90px; }
+    .our-services .case-studies {
+      margin: 60px 0px; }
+      .our-services .case-studies .container {
+        padding: 0px; }
+      .our-services .case-studies .box {
+        margin-bottom: 60px; }
+        .our-services .case-studies .box img {
+          margin-bottom: 50px; }
+        .our-services .case-studies .box p {
+          font-size: 22px; }
+      .our-services .case-studies .btn-custom {
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 160px;
+        padding: 13px 0px 12px;
+        color: #00998A;
+        border: 1px solid #00998A;
+        border-radius: 25px;
+        display: block !important; }
+      .our-services .case-studies .custom-display {
+        display: none; }
+
+  .services {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    ------secondary-menu-mob-------
+    -----------------------------*/
+    /*-----------------------------
+    ------------content------------
+    -----------------------------*/
+    /*-----------------------------
+    ---------case-studies----------
+    -----------------------------*/ }
+    .services .hero {
+      position: relative;
+      height: 200px; }
+    .services .secondary-menu-mob {
+      margin: 0px; }
+    .services .content {
+      width: 100%; }
+      .services .content h1 {
+        margin-bottom: 30px; }
+      .services .content p {
+        margin: 0px 0px 30px; }
+    .services .case-studies {
+      margin: 60px 0px; }
+      .services .case-studies .container {
+        padding: 0px; }
+      .services .case-studies .box {
+        margin-bottom: 60px; }
+        .services .case-studies .box img {
+          margin-bottom: 50px; }
+        .services .case-studies .box p {
+          font-size: 22px; }
+      .services .case-studies .btn-custom {
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 160px;
+        padding: 13px 0px 12px;
+        color: #00998A;
+        border: 1px solid #00998A;
+        border-radius: 25px;
+        display: block !important; }
+      .services .case-studies .custom-display {
+        display: none; }
+
+  .case-studies-detail .hero {
+    height: 360px;
+    background-image: url(../images/case-study-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .case-studies-detail .content-box {
+    margin-bottom: 60px; }
+    .case-studies-detail .content-box h1 {
+      font-size: 16px; }
+    .case-studies-detail .content-box h2 {
+      color: #752157; }
+    .case-studies-detail .content-box h3 {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    .case-studies-detail .content-box p {
+      font-size: 17px; }
+    .case-studies-detail .content-box .our-impact {
+      display: none; }
+  .case-studies-detail .our-impact-mob {
+    display: block;
+    padding: 50px 30px;
+    margin-bottom: 60px;
+    background-color: #752157; }
+    .case-studies-detail .our-impact-mob .content {
+      margin: auto; }
+      .case-studies-detail .our-impact-mob .content h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: white; }
+      .case-studies-detail .our-impact-mob .content p {
+        color: white;
+        margin: 30px 0px 0px; }
+  .case-studies-detail .btn-custom {
+    display: none; }
+  .case-studies-detail .btn-custom-mob {
+    display: block;
+    margin-bottom: 60px; }
+  .case-studies-detail .custom-margin {
+    margin-bottom: 60px; }
+
+  /*-----------------------------
+  -------------------------------
+  ----------our-people-----------
+  -------------------------------
+  -----------------------------*/
+  .our-people .hero img {
+    width: 100%;
+    height: 210px; }
+  .our-people .secondary-menu {
+    display: none; }
+  .our-people .content {
+    width: 354px;
+    margin: 60px auto; }
+    .our-people .content h1 {
+      font-size: 28px;
+      margin-bottom: 30px; }
+    .our-people .content h2 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 40px; }
+    .our-people .content p {
+      font-size: 18px;
+      margin-bottom: 0px; }
+  .our-people .managing-partner {
+    margin: 60px 0px; }
+    .our-people .managing-partner .pad-none {
+      padding: 0px; }
+    .our-people .managing-partner .detail {
+      margin: auto; }
+      .our-people .managing-partner .detail h1 {
+        font-size: 26px; }
+      .our-people .managing-partner .detail p {
+        font-size: 22px; }
+    .our-people .managing-partner .partner {
+      width: 354px; }
+      .our-people .managing-partner .partner img {
+        width: 200px; }
+      .our-people .managing-partner .partner h2 {
+        font-size: 20px;
+        margin-bottom: 10px; }
+      .our-people .managing-partner .partner h3 {
+        font-size: 15px; }
+      .our-people .managing-partner .partner .social a img {
+        width: 35px;
+        display: inline-block;
+        margin: auto auto auto 10px; }
+      .our-people .managing-partner .partner .social a:hover {
+        text-decoration: none; }
+      .our-people .managing-partner .partner p {
+        font-size: 18px; }
+      .our-people .managing-partner .partner .moretext {
+        display: none; }
+      .our-people .managing-partner .partner a {
+        font-size: 16px; }
+  .our-people .contact-content {
+    max-width: none;
+    width: 100%;
+    margin: 0px auto 40px; }
+    .our-people .contact-content .left {
+      width: 100%; }
+      .our-people .contact-content .left h1 {
+        font-size: 30px; }
+      .our-people .contact-content .left .box {
+        width: 354px; }
+        .our-people .contact-content .left .box h2 {
+          font-size: 18px; }
+        .our-people .contact-content .left .box h3 {
+          font-size: 18px; }
+        .our-people .contact-content .left .box p {
+          font-size: 18px; }
+    .our-people .contact-content .right {
+      width: 100%;
+      padding: 60px 0px 60px; }
+      .our-people .contact-content .right .box {
+        width: 354px; }
+        .our-people .contact-content .right .box h1 {
+          font-size: 18px; }
+        .our-people .contact-content .right .box form .form-control {
+          font-size: 14px !important; }
+          .our-people .contact-content .right .box form .form-control::placeholder {
+            font-size: 14px !important; }
+        .our-people .contact-content .right .box form .btn-custom {
+          font-size: 14px; }
+  .our-people .secondary-menu-mob {
+    width: 354px;
+    display: block;
+    margin: 0px auto; }
+
+  /*-----------------------------
+  -------------------------------
+  ------------academy------------
+  -------------------------------
+  -----------------------------*/
+  .academy {
+    overflow-x: hidden;
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    ------------content------------
+    -----------------------------*/
+    /*-----------------------------
+    --------------box--------------
+    -----------------------------*/
+    /*-----------------------------
+    ---------academy-login---------
+    -----------------------------*/
+    /*-----------------------------
+    --------request-trainer--------
+    -----------------------------*/
+    /*-----------------------------
+    ----------course-info----------
+    -----------------------------*/
+    /*-----------------------------
+    ----------course-tab-----------
+    -----------------------------*/
+    /*-----------------------------
+    -------lessons-overview--------
+    -----------------------------*/
+    /*-----------------------------
+    --------course-contents--------
+    -----------------------------*/ }
+    .academy .hero img {
+      width: 100%; }
+    .academy .hero .image-block {
+      right: auto; }
+      .academy .hero .image-block img {
+        width: 250px; }
+    .academy .secondary-menu {
+      padding: 15.25px 0px; }
+      .academy .secondary-menu .content {
+        width: 95%; }
+        .academy .secondary-menu .content .logo img {
+          width: 48.5px; }
+        .academy .secondary-menu .content .logo p {
+          font-size: 13px;
+          margin: 0px 0px 0px 10px; }
+        .academy .secondary-menu .content .login {
+          font-size: 14px;
+          margin: 7px 0px 0px; }
+    .academy .content {
+      margin: 60px auto auto; }
+    .academy .box .cards {
+      margin: 0px 0px 60px; }
+      .academy .box .cards .course img {
+        width: 70%; }
+      .academy .box .cards .inner-box {
+        width: 324px; }
+    .academy .academy-login {
+      width: 100%; }
+      .academy .academy-login .login {
+        width: 100%;
+        padding: 20px 0px 50px; }
+        .academy .academy-login .login .content {
+          width: 354px; }
+          .academy .academy-login .login .content p {
+            font-size: 19px; }
+      .academy .academy-login .register {
+        width: 100%;
+        overflow-x: hidden;
+        padding: 60px 0px;
+        height: auto; }
+        .academy .academy-login .register .content {
+          width: 354px; }
+          .academy .academy-login .register .content p {
+            font-size: 17px; }
+            .academy .academy-login .register .content p br {
+              display: block; }
+          .academy .academy-login .register .content form .form-control {
+            font-size: 14px !important;
+            font-weight: 300 !important;
+            color: black;
+            margin-bottom: 25px;
+            padding: 10px;
+            border: none;
+            border-radius: 0px; }
+            .academy .academy-login .register .content form .form-control::placeholder {
+              font-size: 14px !important;
+              font-weight: 300 !important;
+              color: black; }
+          .academy .academy-login .register .content .btn-custom {
+            background-color: transparent;
+            font-size: 14px;
+            font-weight: 700;
+            display: block;
+            text-align: center;
+            margin: auto;
+            width: 160px;
+            padding: 13px 0px 12px;
+            color: #00998A;
+            border: 1px solid #00998A;
+            border-radius: 25px; }
+          .academy .academy-login .register .content .btn-custom-2 {
+            background-color: #00998A;
+            color: #ffffff; }
+    .academy .request-trainer {
+      width: 100%;
+      margin: 60px auto; }
+      .academy .request-trainer form select {
+        margin-bottom: 25px !important; }
+    .academy .course-info {
+      font-size: 0px;
+      width: 354px;
+      margin: 60px auto; }
+      .academy .course-info .left {
+        width: 100%; }
+      .academy .course-info .right {
+        width: 100%;
+        text-align: left; }
+      .academy .course-info p {
+        font-size: 18px; }
+    .academy .course-tab {
+      width: 354px;
+      margin: 0px auto 60px; }
+      .academy .course-tab .tab {
+        width: 100%; }
+        .academy .course-tab .tab ul li {
+          display: inline-block;
+          list-style: none; }
+          .academy .course-tab .tab ul li a {
+            margin: 0px 10px; }
+      .academy .course-tab .buy {
+        width: 100%; }
+      .academy .course-tab .buy-mobile {
+        display: block; }
+      .academy .course-tab .buy-desktop {
+        display: none; }
+    .academy .lessons-overview {
+      width: 354px;
+      margin: 0px auto 60px; }
+      .academy .lessons-overview .lesson-content {
+        padding: 25px 15px; }
+        .academy .lessons-overview .lesson-content p {
+          font-size: 14px;
+          line-height: 20px; }
+    .academy .course-contents {
+      width: 354px;
+      margin: 0px auto 60px; }
+
+  .education {
+    /*-----------------------------
+    -------------hero--------------
+    -----------------------------*/
+    /*-----------------------------
+    ------------content------------
+    -----------------------------*/ }
+    .education .hero {
+      margin-bottom: 50px; }
+      .education .hero img {
+        height: 192px; }
+    .education .content {
+      margin: 0px auto 60px; }
+      .education .content h1 {
+        font-size: 26px; }
+      .education .content h2 {
+        font-size: 24px; }
+      .education .content p {
+        font-size: 18px; }
+    .education .baes {
+      width: 354px;
+      margin: auto auto 60px; }
+      .education .baes .left {
+        width: 70%; }
+        .education .baes .left img {
+          width: 170px;
+          margin: 15.25px auto 15.25px; }
+      .education .baes .right {
+        width: 30%; }
+        .education .baes .right a {
+          font-size: 14px;
+          padding: 20.5px 0px; }
+
+  .contact .hero img {
+    height: 192px; }
+  .contact .contact-content {
+    max-width: none;
+    width: 100%;
+    margin: 0px auto 40px; }
+    .contact .contact-content .left {
+      width: 100%; }
+      .contact .contact-content .left h1 {
+        font-size: 30px; }
+      .contact .contact-content .left .box {
+        width: 354px; }
+        .contact .contact-content .left .box h2 {
+          font-size: 18px; }
+        .contact .contact-content .left .box h3 {
+          font-size: 18px; }
+        .contact .contact-content .left .box p {
+          font-size: 18px; }
+    .contact .contact-content .right {
+      width: 100%;
+      padding: 60px 0px 60px; }
+      .contact .contact-content .right .box {
+        width: 354px; }
+        .contact .contact-content .right .box h1 {
+          font-size: 18px; }
+        .contact .contact-content .right .box form .form-control {
+          font-size: 14px !important; }
+          .contact .contact-content .right .box form .form-control::placeholder {
+            font-size: 14px !important; }
+        .contact .contact-content .right .box form .btn-custom {
+          font-size: 14px; }
+
+  /*-----------------------------
+  ------------footer-------------
+  -----------------------------*/
+  footer {
+    line-height: normal;
+    padding: 35px 0px 0px; }
+    footer .footer-content {
+      max-width: 100%; }
+      footer .footer-content ul {
+        padding: 0px;
+        margin: 0px;
+        text-align: center; }
+        footer .footer-content ul li {
+          display: inline-block; }
+          footer .footer-content ul li a {
+            font-size: 12px;
+            margin-right: 20px; }
+          footer .footer-content ul li:nth-of-type(4) a {
+            margin-right: 0px; }
+      footer .footer-content p {
+        text-align: center;
+        margin: 20px 0px; } }
+@media only screen and (max-width: 575px) {
+  header {
+    width: 100%;
+    padding: 0px 30px; }
+    header .burger-menu #search-drawer {
+      width: calc(100% - 120px); }
+
+  .custom-container {
+    width: 100%;
+    padding: 0px 30px; }
+
+  .overview .hero .kepsfield-academy-mob {
+    width: 100%; }
+
+  .our-services .content .box {
+    padding: 90px 40px 35px; }
+
+  .case-studies-detail .our-impact-mob {
+    padding: 50px 30px;
+    margin: 0px -30px 60px; }
+    .case-studies-detail .our-impact-mob .content {
+      width: 100%; }
+
+  .our-people {
+    overflow-x: hidden; }
+    .our-people .content {
+      width: 100%; }
+    .our-people .managing-partner .partner {
+      width: 100%; }
+      .our-people .managing-partner .partner h2 {
+        font-size: 17px; }
+    .our-people .contact-content .left {
+      padding: 55px 30px; }
+      .our-people .contact-content .left .box {
+        width: 100%; }
+        .our-people .contact-content .left .box p {
+          font-size: 17px; }
+    .our-people .contact-content .right {
+      padding: 55px 30px; }
+      .our-people .contact-content .right .box {
+        width: 100%; }
+    .our-people .secondary-menu-mob {
+      width: 100%;
+      padding: 0px 30px; }
+    .our-people .custom-container .secondary-menu-mob {
+      padding: 0px; }
+
+  .academy .content h1 {
+    font-size: 34px; }
+  .academy .box {
+    width: 300px;
+    margin: auto; }
+    .academy .box .cards .inner-box .right {
+      width: 53.5%; }
+    .academy .box .cards p br {
+      display: none; }
+  .academy .academy-login .login .content {
+    width: 100%;
+    padding: 0px 30px; }
+    .academy .academy-login .login .content form .btn-custom {
+      width: 100%; }
+    .academy .academy-login .login .content form .forgot-password {
+      font-size: 12px; }
+  .academy .academy-login .register .content {
+    width: 100%;
+    padding: 0px 30px; }
+  .academy .course-info {
+    font-size: 0px;
+    width: 100%;
+    margin: 60px auto; }
+  .academy .course-tab {
+    width: 100%; }
+    .academy .course-tab .tab ul li a {
+      font-size: 12px; }
+    .academy .course-tab .buy a {
+      font-size: 12px; }
+  .academy .lessons-overview {
+    width: 100%; }
+    .academy .lessons-overview .lesson-content p br {
+      display: none; }
+  .academy .course-contents {
+    width: 100%; }
+    .academy .course-contents .lesson-content p br {
+      display: none; }
+
+  .education .baes {
+    width: 100%; }
+
+  .contact .contact-content .left .box {
+    width: 100%;
+    padding: 0px 30px; }
+    .contact .contact-content .left .box p {
+      font-size: 17px; }
+  .contact .contact-content .right .box {
+    width: 100%;
+    padding: 0px 30px; } }
+
+/*# sourceMappingURL=style.css.map */
