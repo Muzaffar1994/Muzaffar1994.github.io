@@ -1,0 +1,1251 @@
+/* Reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+@font-face
+{
+    font-family: harbara;
+    src: url(../fonts/Harabara.ttf);
+}
+
+@font-face
+{
+    font-family: roboto-bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: roboto-black;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face
+{
+    font-family: roboto-medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.container-fluid
+{
+    padding: 0px;
+}
+
+.sky-background
+{
+    background-color: #d0ebf0;
+}
+
+.white-background
+{
+    background-color: #ffffff;
+}
+
+.grey-background
+{
+    background-color: #f7f7f7;
+}
+
+/*-------------------------------
+-------------top-menu------------
+-------------------------------*/
+
+.top-menu h2 
+{
+    font-family: roboto-regular;
+    font-size: 16px;
+    color: #585858;
+    margin: 20px 0px;
+}
+
+.top-menu a 
+{
+    color: #585858;
+    text-decoration: none;
+}
+
+.top-menu img 
+{
+    width: 10px;
+    vertical-align: top;
+    margin: 2px 10px 0px;
+}
+
+/*-------------------------------
+--------multiple-location--------
+-------------------------------*/
+
+.multiple-location
+{
+    padding: 30px 0px 50px;
+}
+
+.multiple-location h1
+{
+    color: #cd0767;
+    font-family: harbara;
+    font-size: 60px;
+}
+
+.multiple-location p
+{
+    color: #454545;
+    font-family: roboto-bold;
+    font-size: 18px;
+    line-height: 36px;
+    padding-top: 22px;
+}
+
+.multiple-location img
+{
+    width: 100%;
+}
+
+/*-------------------------------
+-----------higher-rank-----------
+-------------------------------*/
+
+.higher-rank
+{
+    padding: 60px 0px 80px;
+}
+
+.higher-rank img
+{
+    width: 100%;
+}
+
+.higher-rank h1
+{
+    color: #cd0767;
+    font-family: harbara;
+    font-size: 34px;
+    line-height: 55px;
+}
+
+.higher-rank p
+{
+    color: #454545;
+    font-family: roboto-regular;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 20px;
+}
+
+.higher-rank .higher-rank-mob
+{
+    display: none;
+}
+
+/*-------------------------------
+-------------reseller------------
+-------------------------------*/
+
+.reseller
+{
+    padding: 80px 0px 60px;
+    text-align: center;
+}
+
+.reseller h1
+{
+    padding: 25px 0px;
+    font-family: roboto-bold;
+    background-color: #cd0767;
+    color: white;
+    font-size: 26px;
+}
+
+.reseller ul
+{
+    background-color: white;
+}
+
+.reseller li
+{
+    padding: 17px 0px;
+    font-family: roboto-bold;
+    border-bottom: 1px solid #ececec;
+    font-size: 16px;
+}
+
+.reseller a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.reseller .hidden
+{
+    opacity: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.reseller h2
+{
+    padding: 25px 0px 0px;
+    font-family: harbara;
+    background-color: white;
+    color: #cd0767;
+    font-size: 48px;
+}
+
+.reseller h3
+{
+    font-family: roboto-bold;
+    background-color: white;
+    color: #000000;
+    font-size: 16px;
+    padding: 3px 0px 0px;
+}
+
+.reseller button
+{
+    margin: 30px 0px 40px;
+    padding: 18px 65px 15px;
+    font-family: roboto-black;
+    background-color: #cd0767;
+    border: 1px solid #cd0767;
+    border-bottom: 3px solid #940249;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*-------------------------------
+----------mob-reseller-----------
+-------------------------------*/
+
+.mob-reseller
+{
+    display: none;
+}
+
+/*-------------------------------
+-----------ip-manager------------
+-------------------------------*/
+
+.ip-manager
+{
+    padding: 60px 0px;
+}
+
+.ip-manager h1
+{
+    font-family: harbara;
+    font-size: 56px;
+    color: #2c69a7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ip-manager p
+{
+    font-family: roboto-regular;
+    font-size: 17px;
+    color: #454545;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ip-manager .geolocation
+{
+    border: 2px solid #cd0767;
+}
+
+.ip-manager .geolocation h2
+{
+    font-family: roboto-regular;
+    font-size: 16px;
+    color: #585858;
+    margin: 30px 0px;
+}
+
+.ip-manager .geolocation img
+{
+    width: 10px;
+    vertical-align: top;
+    margin: 2px 10px 0px;
+}
+
+.ip-manager .geolocation h3
+{
+    font-family: harbara;
+    font-size: 40px;
+    color: #cd0767;
+    margin-bottom: 30px;
+}
+
+.ip-manager .geolocation h4
+{
+    font-family: roboto-regular;
+    font-size: 16px;
+    padding: 4px 0px;
+    display: inline-block;
+}
+
+.ip-manager .geolocation .target
+{
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.ip-manager .geolocation h5
+{
+    font-family: roboto-bold;
+    font-size: 22px;
+    color: #2c69a7;
+    margin-top: 5px;
+}
+
+.ip-manager .geolocation h6
+{
+    font-family: roboto-black;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #2d2c2c;
+}
+
+.ip-manager .geolocation .domain h6 .down-arrow, .ip-manager .geolocation .domain-select h6 .down-arrow
+{
+    width: 12px;
+    height: 7px;
+    vertical-align: middle;
+    margin-top: -2px;
+    position: absolute;
+    right: 15px;
+    top: 11px;
+}
+
+.ip-manager .geolocation .ip
+{
+    margin-left: 70px;
+    display: inline-block;
+}
+
+.ip-manager .geolocation .domain
+{
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.ip-manager .geolocation .domain img
+{
+    width: 35px; 
+    height: 22px;
+    vertical-align: middle;
+}
+
+.ip-manager .geolocation .domain-select
+{
+    background-color: #cd0767;
+    border: 1px solid #cd0767;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.ip-manager .geolocation .domain-select img
+{
+    width: 35px; 
+    height: 22px;
+    vertical-align: middle;
+}
+
+.ip-manager .geolocation .domain-select h5
+{
+    color: #ffffff;
+}
+
+.ip-manager .geolocation .domain-select h6
+{
+    color: #ffffff;
+}
+
+.ip-manager .geolocation button
+{
+    font-family: roboto-black;
+    font-size: 20px;
+    background-color: #cd0767;
+    color: white;
+    border: 1px solid #cd0767;
+    border-bottom: 2px solid #940249;
+    border-radius: 3px;
+    padding: 16px 25px 14px;
+    margin: 20px 0px 25px;
+}
+
+.ip-manager .geolocation .mar-top
+{
+    margin-top: 20px;
+}
+
+.ip-manager .geolocation .general-info
+{
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.ip-manager .geolocation .general-info .pad-right
+{
+    padding-right: 0px;
+}
+
+.ip-manager .geolocation .general-info .pad-right p
+{
+    border: 1px solid #e8e8e8; 
+    border-right: 0px solid transparent;
+    height: 12px;
+    background-color: #1a237b;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.ip-manager .geolocation .general-info .pad-left
+{
+    padding-left: 0px;
+}
+
+.ip-manager .geolocation .general-info .pad-left p
+{
+    border: 1px solid #e8e8e8;
+    border-left: 0px solid transparent;
+    height: 12px; 
+    background-color: white;
+    margin-bottom: 0px; 
+    margin-top: 10px;
+}
+
+.ip-manager .geolocation .general-info h1
+{
+    font-family: roboto-black;
+    font-size: 19px;
+    border: 1px solid #1a237b;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 18px 20px;
+    background-color: #1a237b;
+    color: white;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.ip-manager .geolocation .general-info ul
+{
+    background-color: #f7f7f7;
+}
+
+.ip-manager .geolocation .general-info ul li
+{
+    border-bottom: 1px solid #e8e8e8;
+    padding: 19px 20px;
+}
+
+.ip-manager .geolocation .general-info ul li h2
+{
+    margin: 0px;
+    font-family: roboto-black;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.ip-manager .geolocation .general-info ul li h3
+{
+    margin: 0px;
+    font-family: roboto-regular;
+    font-size: 13px;
+    color: black;
+}
+
+.ip-manager .geolocation .general-info ul li h4
+{
+    margin: 0px;
+    font-family: roboto-regular;
+    font-size: 13px;
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.ip-manager .geolocation .general-info ul li h4 img
+{
+    position: absolute; 
+    right: 10px;
+}
+
+.ip-manager .geolocation .general-info ul li a
+{
+    margin: 0px;
+    font-family: roboto-medium;
+    font-size: 16px;
+    color: #cd0767;
+    text-decoration: none;
+}
+
+/*-------------------------------
+---------------faq---------------
+-------------------------------*/
+
+.faq
+{
+    padding: 60px 0px 70px;
+}
+
+.faq h1
+{
+    font-family: harbara;
+    font-size: 54px;
+    color: #cd0767;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.faq .accordion-container 
+{
+    position: relative;
+    width: 100%;
+    outline: 0;
+}
+
+.faq .accordion-container .article-title 
+{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 18px 10px 16px;
+    border-bottom: 4px solid #23588e;
+    background-color: #2c69a7;
+    font-family: harbara;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.faq .accordion-container .article-title img
+{
+    width: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.faq .accordion-container .article-title p
+{
+    padding-left: 35px;
+    margin-top: -21px;
+}
+
+.faq .accordion-container .article-title:active,
+.faq .accordion-container .content-entry.open .article-title {
+    background-color: #4c4c4c;
+    border-bottom: 4px solid #2b2b2b;
+}
+
+.faq .accordion-content 
+{
+    display: none;
+    padding: 10px;
+    font-family: roboto-medium;
+    font-size: 12px;
+    line-height: 22px;
+    color: #5f5f5f;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.faq .accordion-content a
+{
+    font-family: roboto-medium;
+    font-size: 12px;
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+/*-------------------------------
+------------countries------------
+-------------------------------*/
+
+.countries
+{
+    text-align: center;
+    padding: 65px 0px 60px;
+}
+
+.countries img
+{
+    padding: 15px 19px;
+    width: 143px;
+}
+
+.countries h1
+{
+    padding: 0px 0px 45px;
+    font-family: harbara;
+    font-size: 48px;
+    color: #2c69a7;
+}
+
+@media screen and (max-width:1199px)
+{
+    /*-------------------------------
+    -------------top-menu------------
+    -------------------------------*/
+    
+    .top-menu
+    {
+        display: none;
+    }
+    
+    /*-------------------------------
+    --------multiple-location--------
+    -------------------------------*/
+    
+    .multiple-location h1
+    {
+        font-size: 55px;
+    }
+    
+    /*-------------------------------
+    -----------higher-rank-----------
+    -------------------------------*/
+    
+    .higher-rank h1 
+    {
+        font-size: 30px;
+        line-height: 48px;
+    }
+    
+    .higher-rank p 
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    /*-------------------------------
+    -------------reseller------------
+    -------------------------------*/
+    .reseller h1
+    {
+        font-size: 23px;
+    }
+
+    .reseller ul
+    {
+        background-color: white;
+    }
+
+    .reseller li
+    {
+        font-size: 14px;
+    }
+
+    .reseller h2
+    {
+        font-size: 46px;
+    }
+
+    .reseller h3
+    {
+        font-size: 14px;
+    }
+
+    .reseller button
+    {
+        padding: 18px 55px 15px;
+        font-size: 20px;
+    }
+    
+    /*-------------------------------
+    -----------ip-manager------------
+    -------------------------------*/
+
+    .ip-manager h1
+    {
+        font-size: 54px;
+    }
+
+    .ip-manager p
+    {
+        font-size: 15px;
+    }
+
+    .ip-manager .geolocation h2
+    {
+        font-size: 13px;
+    }
+
+    .ip-manager .geolocation h3
+    {
+        font-size: 38px;
+    }
+
+    .ip-manager .geolocation h5
+    {
+        font-size: 20px;
+        margin-top: 4px;
+    }
+
+    .ip-manager .geolocation h6
+    {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .ip-manager .geolocation .ip
+    {
+        margin-left: 55px;
+    }
+
+    .ip-manager .geolocation button
+    {
+        font-size: 18px;
+    }
+    
+    .ip-manager .geolocation .general-info
+    {
+        margin-bottom: 20px;
+    }
+
+    .ip-manager .geolocation .general-info h1
+    {
+        font-size: 17px;
+    }
+
+    .ip-manager .geolocation .general-info ul li h2
+    {
+        font-size: 14px;
+    }
+
+    .ip-manager .geolocation .general-info ul li h3
+    {
+        font-size: 12px;
+    }
+
+    .ip-manager .geolocation .general-info ul li a
+    {
+        font-size: 16px;
+    }
+    
+    /*-------------------------------
+    ---------------faq---------------
+    -------------------------------*/
+
+    .faq h1
+    {
+        font-size: 50px;
+    }
+
+    .faq .accordion-container .article-title 
+    {
+        padding: 18px 0px 16px 10px;
+        font-size: 15px;
+    }
+
+    .faq .accordion-container .article-title img
+    {
+        width: 20px;
+    }
+    
+    .faq .accordion-container .article-title p
+    {
+        padding-left: 35px;
+        margin-top: -18px;
+    }
+
+    /*-------------------------------
+    ------------countries------------
+    -------------------------------*/
+
+    .countries h1
+    {
+        font-size: 46px;
+    }
+}
+
+@media screen and (max-width:991px)
+{
+    /*-------------------------------
+    --------multiple-location--------
+    -------------------------------*/
+
+    .multiple-location
+    {
+        text-align: center;
+    }
+    
+    .multiple-location img
+    {
+        margin-top: 30px;
+        width: 60%;
+    }
+
+    /*-------------------------------
+    -----------higher-rank-----------
+    -------------------------------*/
+
+    .higher-rank 
+    {
+        text-align: center;
+    }
+    
+    .higher-rank img
+    {
+        display: none;
+    }
+
+    .higher-rank .higher-rank-mob
+    {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+    
+    /*-------------------------------
+    -------------reseller------------
+    -------------------------------*/
+
+    .reseller
+    {
+        display: none;
+    }
+    
+    /*-------------------------------
+    ----------mob-reseller-----------
+    -------------------------------*/
+    
+    .mob-reseller
+    {
+        display: block;
+    }
+    
+    .mob-reseller .mob-accordion-container 
+    {
+        position: relative;
+        width: 100%;
+        outline: 0;
+    }
+    
+    .mob-reseller .mob-content-entry
+    {
+        margin-bottom: 10px;
+    }
+
+    .mob-reseller .mob-accordion-container .mob-article-title 
+    {
+        display: block;
+        position: relative;
+        padding: 28px 10px 26px;
+        background-color: #cd0767;
+        font-family: roboto-bold;
+        font-size: 22px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .mob-reseller .mob-accordion-content 
+    {
+        display: none;
+        font-family: roboto-medium;
+        font-size: 12px;
+        line-height: 22px;
+        color: #5f5f5f;
+        border: 1px solid #ececec;
+        margin-bottom: 10px;
+    }
+
+    .mob-reseller .mob-accordion-content a
+    {
+        font-family: roboto-bold;
+        font-size: 16px;
+        color: #5f5f5f;
+        text-decoration: none;
+    }
+    
+    .mob-reseller
+    {
+        padding: 40px 0px 30px;
+        text-align: center;
+    }
+
+    .mob-reseller h1
+    {
+        padding: 25px 0px;
+        font-family: roboto-bold;
+        background-color: #cd0767;
+        color: white;
+        font-size: 26px;
+    }
+
+    .mob-reseller ul
+    {
+        background-color: white;
+    }
+
+    .mob-reseller li
+    {
+        padding: 17px 0px;
+        font-family: roboto-bold;
+        border-bottom: 1px solid #ececec;
+        font-size: 16px;
+    }
+
+    .mob-reseller .hidden
+    {
+        opacity: 0;
+        border-bottom: 1px solid transparent;
+    }
+
+    .mob-reseller h2
+    {
+        padding: 25px 0px 0px;
+        font-family: harbara;
+        background-color: white;
+        color: #cd0767;
+        font-size: 48px;
+    }
+
+    .mob-reseller h3
+    {
+        font-family: roboto-bold;
+        background-color: white;
+        color: #000000;
+        font-size: 16px;
+        padding: 3px 0px 0px;
+    }
+
+    .mob-reseller button
+    {
+        margin: 30px 0px 40px;
+        padding: 18px 65px 15px;
+        font-family: roboto-black;
+        background-color: #cd0767;
+        border: 1px solid #cd0767;
+        border-bottom: 3px solid #940249;
+        color: #ffffff;
+        font-size: 22px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    /*-------------------------------
+    ------------countries------------
+    -------------------------------*/
+
+    .countries img
+    {
+        width: 179px;
+    }
+}
+
+@media screen and (max-width:767px)
+{
+    br
+    {
+        display: none;
+    }
+
+    /*-------------------------------
+    -----------ip-manager------------
+    -------------------------------*/
+    
+    .ip-manager p
+    {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    
+    .ip-manager .geolocation .domain .flag, .ip-manager .geolocation .domain-select .flag
+    {
+        vertical-align: top;
+    }
+
+    .ip-manager .geolocation h5
+    {
+        font-size: 15px;
+        margin-top: 4px;
+    }
+
+    .ip-manager .geolocation .ip
+    {
+        margin-left: 28px;
+    }
+
+    /*-------------------------------
+    ------------countries------------
+    -------------------------------*/
+    
+    .countries h1 
+    {
+        font-size: 40px;
+    }
+    
+    .countries img
+    {
+        width: 143px;
+    }
+}
+
+@media screen and (max-width:575px)
+{
+    .row
+    {
+        margin: 0px;
+        display: flex !important;
+    }
+    
+    /*-------------------------------
+    --------multiple-location--------
+    -------------------------------*/
+
+    .multiple-location h1
+    {
+        font-size: 44px;
+    }
+
+    .multiple-location p
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .multiple-location img
+    {
+        width: 90%;
+    }
+
+    /*-------------------------------
+    -----------higher-rank-----------
+    -------------------------------*/
+
+    .higher-rank h1
+    {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .higher-rank p
+    {
+        font-size: 18px;
+        line-height: 34px;
+    }
+    
+    .higher-rank .higher-rank-mob 
+    {
+        width: 90%;
+    }
+    
+    /*-------------------------------
+    -----------ip-manager------------
+    -------------------------------*/
+    
+    .ip-manager
+    {
+        padding: 60px 15px;
+    }
+    
+    .ip-manager .geolocation
+    {
+        padding: 0px;
+    }
+    
+    .ip-manager .custom-pad
+    {
+        padding: 0px 5px;
+    }
+    
+    .ip-manager .padding-none
+    {
+        padding: 0px;
+    }
+    
+    .ip-manager .geolocation h3
+    {
+        font-size: 27px;
+    }
+
+    .ip-manager .geolocation .target
+    {
+        width: 15px !important;
+        height: 15px !important;
+        margin-right: 3px;
+        vertical-align: middle;
+        margin-top: -3px;
+    }
+    
+    .ip-manager .geolocation h4
+    {
+        padding: 0px 15px;
+    }
+    
+    .ip-manager .geolocation h5
+    {
+        font-size: 11px;
+    }
+
+    .ip-manager .geolocation .domain h6 .down-arrow, .ip-manager .geolocation .domain-select h6 .down-arrow
+    {
+        margin-top: -1px;
+        right: 0px;
+        top: 11px;
+        width: 9px;
+        height: 5px;
+    }
+
+    .ip-manager .geolocation .ip
+    {
+        margin-left: -4px;
+        display: inline-block;
+    }
+
+    .ip-manager .geolocation .domain
+    {
+        padding: 15px 0px;
+        margin-bottom: 10px;
+    }
+
+    .ip-manager .geolocation .domain img
+    {
+        width: 25px; 
+        height: 17px;
+        vertical-align: middle;
+    }
+
+    .ip-manager .geolocation .domain-select
+    {
+        padding: 15px 0px;
+        margin-bottom: 10px;
+    }
+
+    .ip-manager .geolocation .domain-select img
+    {
+        width: 25px; 
+        height: 17px;
+        vertical-align: middle;
+    }
+    
+    .ip-manager .geolocation .select .ip
+    {
+        font-size: 12px;
+    }
+    
+    .ip-manager .geolocation .select h6, .ip-manager .geolocation h6
+    {
+        font-size: 11px !important;
+    }
+    
+    /*-------------------------------
+    ---------------faq---------------
+    -------------------------------*/
+
+    .faq h1
+    {
+        font-size: 45px;
+    }
+
+    .faq .accordion-container .article-title 
+    {
+        font-size: 16px;
+    }
+
+    /*-------------------------------
+    ------------countries------------
+    -------------------------------*/
+
+    .countries img
+    {
+        padding: 15px 19px;
+        width: 30%;
+    }
+
+    .countries h1
+    {
+        font-size: 45px;
+    }
+}
+
+/*-------------------------------
+------------Popup Blue Modal------------
+-------------------------------*/
+
+.modal-dialog 
+{
+	top: 0 !important;
+	-webkit-transform: unset !important;
+	transform: unset !important;
+}
+
+@media screen and (max-width: 768px){
+	.pcIndia {display: none;}
+}
+
+@media screen and (min-width: 769px){
+	.mobileIndia {display: none;}
+}

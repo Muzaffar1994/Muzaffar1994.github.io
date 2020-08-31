@@ -87,10 +87,6 @@ body
 {
     font-family: avenir-heavy;
     color: #3A3966;
-}
-
-body
-{
     overflow-x: hidden;
 }
 
@@ -1625,6 +1621,10 @@ footer p
 
 @media screen and (max-width:991px)
 {
+    body{
+        position: static !important;
+    }
+    
     header
     {
         display: none;
