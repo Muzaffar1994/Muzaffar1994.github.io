@@ -541,6 +541,10 @@ header ul li a:hover{
     #portfolio h2{
         margin-bottom: 50px;
     }
+    
+    #contact-me p{
+        font-size: 16px;
+    }
 
     #contact-me h2{
         margin-bottom: 50px;
