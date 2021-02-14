@@ -159,6 +159,7 @@ header ul li a.active span{
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
     z-index: 4;
+    animation: repaint 10s infinite linear;
 }
 
 @keyframes building{
@@ -185,6 +186,11 @@ header ul li a.active span{
     94%   {background-image: url(../images/animation-3.png);}
     98%   {background-image: url(../images/animation-2.png);}
     100%  {background-image: url(../images/animation-1.png);}
+}
+
+@keyframes repaint {
+    from { opacity: 1; }
+    to { opacity: 0.99999; }
 }
 
 .home .hero .circle-2{
