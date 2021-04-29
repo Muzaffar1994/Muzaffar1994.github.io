@@ -1,0 +1,973 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---My-styles----*/
+
+@font-face{
+    font-family: apercupromono;
+    src: url(../font/Apercu-Pro-Mono.otf);
+}
+
+@font-face{
+    font-family: apercuprolight;
+    src: url(../font/Apercu-Pro-Light.otf);
+}
+
+@font-face{
+    font-family: apercupromedium;
+    src: url(../font/Apercu-Pro-Medium.otf);
+}
+
+@font-face{
+    font-family: whytemedium;
+    src: url(../font/Whyte-Medium.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+::selection{
+    color: white;
+    background: #6542d3;
+}
+
+.main{
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+.cybersecurity{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/*----------------------------------
+----------------hero----------------
+----------------------------------*/
+
+.hero{
+    padding: 100px 0px 77px;
+}
+
+.hero p.label{
+    font-family: apercupromono;
+    background-color: #e7ac4c;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 8px 4px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero h1{
+    font-family: whytemedium;
+    font-size: 75px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero h1 br{
+    display: none;
+}
+
+.hero p.details{
+    font-family: apercuprolight;
+    font-size: 21px;
+    line-height: 25px;
+    color: white;
+}
+
+/*----------------------------------
+----------------learn---------------
+----------------------------------*/
+
+.learn{
+    padding: 85px 0px;
+    background-color: white;
+}
+
+.learn p{
+    font-family: whytemedium;
+    font-size: 26px;
+    line-height: 40px;
+    color: #232224;
+}
+
+/*----------------------------------
+---------------result---------------
+----------------------------------*/
+
+.result{
+    padding: 85px 0px 40px;
+}
+
+.result h2{
+    font-family: whytemedium;
+    font-size: 75px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.result p{
+    font-family: apercuprolight;
+    font-size: 20.5px;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.result h4{
+    font-family: apercuprolight;
+    font-size: 25.5px;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.result select{
+    font-family: apercuprolight;
+    font-size: 17px;
+    color: #232224;
+    padding: 11px 18px;
+    margin-bottom: 85px;
+    border: 2px solid #6542d3;
+    border-radius: 0px;
+    height: 51.5px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../images/down-arrow-purple.png);
+    background-repeat: no-repeat;
+    background-position: 96.5% 55%;
+    background-size: 26px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.result select:focus{
+    outline: none;
+    border: 2px solid #6542d3;
+    box-shadow: none;
+}
+
+.result select::placeholder{
+    color: #232224;
+}
+
+.result .checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 41px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-family: apercuprolight;
+    font-size: 19px;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.result .checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.result .checkmark{
+    position: absolute;
+    top: -6.5px;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    background-color: white;
+    border: 2px solid #6542d3;
+}
+
+.result .checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.result .wrapper{
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+}
+
+.result .wrapper .label-tooltip{
+    background: white;
+    color: #232224;
+    bottom: 100%;
+    display: block;
+    left: 170px;
+    margin-bottom: 35px;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: none;
+    position: absolute;
+    width: 340px;
+    border-radius: 10px;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+.result .wrapper .label-tooltip p.heading{
+    font-family: apercupromedium;
+    font-size: 13px;
+    margin: 0px;
+    color: #232224;
+    line-height: 14px;
+}
+
+.result .wrapper .label-tooltip p{
+    color: #232224;
+    margin: 0px;
+    font-family: apercuprolight;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.result .wrapper .label-tooltip:before{
+    bottom: -20px;
+    content: " ";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.result .wrapper .label-tooltip:after{
+    border-left: solid transparent 18px;
+    border-right: solid transparent 18px;
+    border-top: solid white 30px;
+    bottom: -30px;
+    content: " ";
+    height: 0;
+    left: 40px;
+    margin-left: -13px;
+    position: absolute;
+    width: 0;
+}
+
+.result .wrapper:hover .label-tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.result .lte8 .wrapper .label-tooltip{
+    display: none;
+}
+
+.result .lte8 .wrapper:hover .label-tooltip{
+    display: block;
+}
+
+.result .checkbox-container input:checked ~ .checkmark:after{
+    display: block;
+}
+
+.result .checkbox-container .checkmark:after{
+    left: 4px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    border: solid #6542d3;
+    border-width: 10px;
+}
+
+.result h5:nth-of-type(1){
+    margin-top: 65px;
+}
+
+.result h5{
+    font-family: apercupromedium;
+    font-size: 25.5px;
+    text-align: center;
+    color: white;
+    margin: 40px 0px;
+}
+
+.result span{
+    font-family: whytemedium;
+    font-size: 106.5px;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.result span sup{
+    font-size: 60px;
+    top: -36px;
+}
+
+.result span.manual-cost{
+    color: #eb8169;
+}
+
+.result span.automated-cost{
+    color: #69ebc8;
+    margin-bottom: 20px;
+}
+
+.result p.estimates{
+    color: rgba(255,255,255,0.5);
+    font-size: 8.5px;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.result a{
+    display: inline-block;
+    text-align: center;
+}
+
+/*----------------------------------
+---------------report---------------
+----------------------------------*/
+
+.report{
+    padding: 85px 0px 60px;
+    background-color: white;
+}
+
+.report h3{
+    font-family: whytemedium;
+    font-size: 75px;
+    margin-bottom: 40px;
+}
+
+.report p{
+    font-family: apercuprolight;
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 40px;
+}
+
+.report input{
+    font-family: apercuprolight;
+    font-size: 17px;
+    color: #232224;
+    padding: 11px 18px;
+    margin-bottom: 20px;
+    border: 2px solid #6542d3;
+    border-radius: 0px;
+}
+
+.report input:focus{
+    outline: none;
+    border: 2px solid #6542d3;
+    box-shadow: none;
+}
+
+.report input::placeholder{
+    color: #232224;
+}
+
+.report button{
+    font-family: apercupromono;
+    font-size: 21px;
+    padding: 17.5px 25px;
+    background-color: #e7ac4c;
+    margin: 10px 0px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.report button:hover{
+    background-color: #ea9b1b;
+    transition: 0.4s;
+}
+
+.report button:focus{
+    outline: none;
+}
+
+.report p.agreement{
+    font-family: apercuprolight;
+    font-size: 9px;
+    color: #999999;
+    margin: 0px;
+}
+
+.report p.agreement a{
+    color: #6542d3;
+    text-decoration: underline;
+}
+
+/*----------------------------------
+----------------empty---------------
+----------------------------------*/
+
+.empty .container{
+    position: relative;
+    padding: 177.5px;
+}
+
+.empty .closing-graphics{
+    position: absolute;
+    bottom: 45px;
+    right: 15px;
+}
+
+/*----------------------------------
+---------------footer---------------
+----------------------------------*/
+
+.footer{
+    background-color: #232224;
+    padding: 25px 0px;
+    text-align: right;
+    color: white;
+}
+
+.footer a{
+    font-family: apercuprolight;
+    font-size: 14px;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+.footer span{
+    margin: 0px 2px;
+}
+
+/*----------------------------------
+-----------media-queries------------
+----------------------------------*/
+
+@media only screen and (max-width: 1279px){
+    .cybersecurity{
+        width: 52%;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .cybersecurity{
+        width: 45%;
+    }
+    
+    .hero p.label{
+        font-size: 18px;
+    }
+    
+    .hero h1{
+        font-size: 70px;
+    }
+    
+    .hero p.details{
+        font-size: 17px;
+        line-height: 22px;
+    }
+    
+    .learn{
+        padding: 75px 0px;
+    }
+    
+    .learn p{
+        font-size: 24px;
+        line-height: 35px;
+    }
+    
+    .result{
+        padding: 75px 0px 40px;
+    }
+    
+    .result h2{
+        font-size: 70px;
+    }
+    
+    .result p{
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 60px;
+    }
+    
+    .result h4{
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+    
+    .result select{
+        margin-bottom: 60px;
+    }
+    
+    .result .checkbox-container{
+        font-size: 16px;
+    }
+    
+    .result .checkmark{
+        top: -8.5px;
+    }
+
+    .result .wrapper:hover .label-tooltip{
+        display: none;
+    }
+    
+    .result h5:nth-of-type(1){
+        margin-top: 50px;
+    }
+    
+    .result h5{
+        font-size: 24px;
+        margin: 30px 0px;
+    }
+    
+    .result span{
+        font-size: 90px;
+    }
+
+    .result span sup{
+        font-size: 50px;
+    }
+    
+    .result .down-arrow{
+        width: 120px;
+    }
+    
+    .report h3{
+        font-size: 70px;
+    }
+    
+    .report p{
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .cybersecurity{
+        display: none;
+    }
+    
+    .hero {
+        padding: 60px 0px;
+    }
+
+    .hero h1{
+        font-size: 60px;
+    }
+    
+    .hero h1 br{
+        display: inline-block;
+    }
+
+    .learn{
+        padding: 60px 0px;
+    }
+    
+    .learn p{
+        font-size: 21px;
+        line-height: 31px;
+    }
+
+    .result{
+        padding: 60px 0px 40px;
+    }
+
+    .result h2{
+        font-size: 60px;
+    }
+
+    .result p{
+        margin-bottom: 50px;
+    }
+
+    .result h4{
+        margin-bottom: 20px;
+    }
+    
+    .result h4.use-cases{
+        margin-bottom: 35px;
+    }
+
+    .result select{
+        margin-bottom: 45px;
+    }
+
+    .result .checkbox-container{
+        font-size: 19px;
+    }
+
+    .result .checkmark{
+        top: -6.5px;
+    }
+
+    .result h5:nth-of-type(1){
+        margin-top: 40px;
+    }
+
+    .result h5{
+        font-size: 22px;
+        margin: 25px 0px;
+    }
+
+    .result span{
+        font-size: 70px;
+    }
+
+    .result span sup{
+        font-size: 45px;
+        top: -30px;
+    }
+
+    .result .down-arrow{
+        width: 110px;
+    }
+    
+    .report{
+        padding: 60px 0px;
+    }
+    
+    .report h3{
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .report p{
+        margin: 0px 0px 30px;
+    }
+    
+    .empty .container{
+        padding: 120px;
+    }
+    
+    .empty .closing-graphics{
+        width: 350px;
+    }
+    
+    .footer{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .hero {
+        padding: 50px 0px;
+    }
+    
+    .hero p.label{
+        font-size: 16px;
+    }
+
+    .hero h1{
+        font-size: 50px;
+    }
+
+    .learn{
+        padding: 50px 0px;
+    }
+
+    .learn p{
+        font-size: 19.5px;
+        line-height: 30px;
+    }
+
+    .result{
+        padding: 50px 0px 40px;
+    }
+
+    .result h2{
+        font-size: 50px;
+    }
+
+    .result h4{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .result h4.use-cases{
+        margin-bottom: 30px;
+    }
+
+    .result select{
+        margin-bottom: 35px;
+        height: 46.5px !important;
+        font-size: 15px;
+        padding: 10px 18px;
+        background-size: 23px;
+    }
+
+    .result .checkbox-container{
+        font-size: 18px;
+    }
+
+    .result .checkmark{
+        top: -7.5px;
+    }
+
+    .result h5:nth-of-type(1){
+        margin-top: 30px;
+    }
+
+    .result h5{
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+
+    .result span{
+        font-size: 60px;
+    }
+
+    .result span sup{
+        font-size: 40px;
+        top: -25px;
+    }
+
+    .result .down-arrow{
+        width: 95px;
+    }
+    
+    .report{
+        padding: 50px 0px;
+    }
+    
+    .report h3{
+        font-size: 50px;
+    }
+    
+    .report input{
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+    
+    .report button{
+        font-size: 18px;
+    }
+    
+    .empty{
+        padding: 50px 0px;
+    }
+    
+    .empty .container{
+        padding: 0px 15px;
+    }
+
+    .empty .closing-graphics{
+        position: static;
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+    
+    .footer a{
+        display: block;
+        margin-bottom: 12px;
+    }
+    
+    .footer a:nth-of-type(3){
+        margin-bottom: 0px;
+    }
+    
+    .footer span{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .hero {
+        padding: 25px 0px;
+    }
+
+    .hero p.label{
+        font-size: 14px;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+    
+    .hero p.details{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .learn{
+        padding: 25px 0px;
+    }
+
+    .learn p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .result{
+        padding: 25px 0px;
+    }
+
+    .result h2{
+        font-size: 40px;
+    }
+    
+    .result p{
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 35px;
+    }
+
+    .result h4{
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .result h4.use-cases{
+        margin-bottom: 20px;
+    }
+
+    .result select{
+        margin-bottom: 25px;
+        background-size: 20px;
+        background-position: 95% 55%;
+    }
+
+    .result .checkbox-container{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .result .checkmark{
+        top: -8.5px;
+    }
+
+    .result h5{
+        font-size: 18px;
+        margin: 20px 0px;
+    }
+
+    .result span{
+        font-size: 40px;
+    }
+
+    .result span sup{
+        font-size: 30px;
+        top: -18px;
+    }
+    
+    .result p.estimates{
+        margin-bottom: 35px;
+    }
+    
+    .result p.estimates br{
+        display: none;
+    }
+
+    .result .down-arrow{
+        width: 80px;
+    }
+    
+    .report{
+        padding: 25px 0px;
+    }
+
+    .report h3{
+        font-size: 40px;
+    }
+    
+    .report p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .report button{
+        font-size: 16px;
+        padding: 16px 25px;
+    }
+    
+    .report p.agreement{
+        font-size: 8px;
+    }
+    
+    .empty{
+        padding: 25px 0px;
+    }
+
+    .empty .closing-graphics{
+        width: 250px;
+    }
+    
+    .footer a{
+        font-size: 12px;
+    }
+}

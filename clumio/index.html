@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Landing Page
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <a style="position: fixed; z-index: 100; bottom: 20px; right: 20px; background-color: black; padding: 16px 14px 15px; border-radius: 50%;" href="../index.html">
+        <img width="20px;" src="../images/back.png" alt="">
+    </a>
+
+    <section class="hero">
+        <img class="shape-2" src="images/shape-2.svg" alt="">
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-2 order-1 order-lg-1 m-auto">
+                        <a class="d-inline-block" href="javascrip:void(0)">
+                            <img class="logo" src="images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8 order-3 order-lg-2 m-auto">
+                        <ul>
+                            <li>
+                                <a href="javascrip:void(0)">Products &amp; Solutions</a>
+                            </li>
+
+                            <li>
+                                <a href="javascrip:void(0)">Services</a>
+                            </li>
+
+                            <li>
+                                <a href="javascrip:void(0)">Support</a>
+                            </li>
+
+                            <li>
+                                <a href="javascrip:void(0)">Company</a>
+                            </li>
+
+                            <li>
+                                <a href="javascrip:void(0)">Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2 order-2 order-lg-3 m-auto text-right">
+                        <button class="btn-login">
+                            Get Pricing
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 left m-auto">
+                    <h1>
+                        Cloud Block Store <br>
+                        on AWS TCO Calculator
+                    </h1>
+
+                    <p>
+                        See how customers can save when they use AWS along with 
+                        Cloud Block Store to provide storage efficiencies as well as 
+                        enterprise grade resiliency and redundancy.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 order-1 order-lg-2 right">
+                    <img class="hero-img" src="images/hero.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="estimate">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="">
+                        <h2>
+                            Estimate Your
+                            five-year backup 
+                            and recovery
+                            savings.
+                        </h2>
+
+                        <h3>
+                            Provisioned Capacity
+    
+                            <a class="alert-circle" href="javascrip:void(0)" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus, suspendisse iaculis a id ornare urna, commodo etiam">
+                                <img src="images/alert.svg" alt="">
+                            </a>
+                        </h3>
+    
+                        <div class="slidecontainer">
+                            <input type="range" min="100" max="5000" value="1000" class="slider" id="myRange">
+                            <p> <span id="demo"></span> TB</p>
+                        </div>
+
+                        <h3>
+                            Annual Storage Growth Rate
+    
+                            <a class="alert-circle" href="javascrip:void(0)" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus, suspendisse iaculis a id ornare urna, commodo etiam">
+                                <img src="images/alert.svg" alt="">
+                            </a>
+                        </h3>
+    
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider2" id="myRange2">
+                            <p> <span id="demo2"></span> %</p>
+                        </div>
+    
+                        <h3>
+                            Replace tape with Cohesity CloudArchive
+                        </h3>
+                        
+                        <label class="radio-container">Yes
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-container">No
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <p class="cost-estimates">
+                            *Cost estimates include capital expenses such as hardware, software licenses, and vendor maintenance. Your total savings
+                            may be greater when you factor in operating cost reductions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-0 col-xl-1">
+
+                </div>
+
+                <div class="col-lg-7 col-xl-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="detail">
+                                    <p class="count">
+                                        540
+                                    </p>
+
+                                    <p>
+                                        EBS(TB)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="detail">
+                                    <p class="count">
+                                        828
+                                    </p>
+
+                                    <p>
+                                        RDS(TB)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="detail">
+                                    <p class="count">
+                                        16
+                                    </p>
+
+                                    <p>
+                                        Retain Backup(Days)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="detail">
+                                    <p class="count">
+                                        828
+                                    </p>
+
+                                    <p>
+                                        Retain Backup <br>
+                                        (Months)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="detail mb-0">
+                                    <p class="count">
+                                        $14,186,462
+                                    </p>
+
+                                    <p>
+                                        Manual Cost of Controlled Validation
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bor">
+
+                        </div>
+
+                        <p>
+                            Compared to native Amazon Elastic Block Storage (EBS)
+                            Estimated calculations available only in USD.
+                        </p>
+
+                        <h4>
+                            First Year Total Cost
+                        </h4>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p class="amazon-storage">
+                                    <span></span> Amazon Storage
+                                </p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <p class="pure-storage">
+                                    <span></span> Pure Storage
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 purestorage">
+                                <div class="row">
+                                    <div class="col-5 left">
+                                        <h5 class="mb-2">
+                                            $480,000
+                                        </h5>
+                                        
+                                        <h5>
+                                            $480,000
+                                        </h5>
+                                    </div>
+                                    
+                                    <div class="col-7 right">
+                                        <h4>
+                                            1,207,443
+                                        </h4>
+
+                                        <p>
+                                            Pure Storage
+                                            Cloud Block Store
+                                        </p>
+
+                                        <div class="progressbar">
+                                            <div class="progressfill">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 amazonstorage">
+                                <div class="row">
+                                    <div class="col-5 left">
+                                        <h5 class="mb-2">
+                                            $480,000
+                                        </h5>
+                                        
+                                        <h5>
+                                            $727,443
+                                        </h5>
+                                    </div>
+                                    
+                                    <div class="col-7 right">
+                                        <h4>
+                                            $3,564,00
+                                        </h4>
+
+                                        <p>
+                                            Amazon Elastic
+                                            Block Storage (io1)
+                                        </p>
+
+                                        <div class="progressbar">
+                                            <div class="progressfill">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ownership">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-xl-8 m-auto">
+                    <h2>
+                        Cumulative 5-Year Total Cost of Ownership
+                    </h2>
+
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                    <p>
+                        This tool was developed by our experts and is based on publicly available pricing as well as primary and secondary research by Pure Storage. Actual savings may vary from the calculated estimates and will depend on circumstances not captured by this tool. Pure Storage makes no guarantee or warranty, express or implied, that actual savings will be comparable to calculated estimates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cost-breakdown">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 col-xl-8 m-auto">
+                    <h2>
+                        Get a detailed cost breakdown
+                    </h2>
+
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="">First Name</label>
+                                    <input type="text" class="form-control" placeholder="Add first name">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Add last name">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Add email address">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="">Phone No.</label>
+                                    <input type="text" class="form-control" placeholder="Add phone no.">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="">Job Title</label>
+                                    <input type="text" class="form-control" placeholder="Add job title">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="">Company</label>
+                                    <input type="text" class="form-control" placeholder="Add company name">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="">Select Country</label>
+                                    <select class="form-control">
+                                        <option>Select Country</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="">How we can help you?</label>
+                                    <input type="text" class="form-control" placeholder="Add note">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <p>
+                                    By submitting this form, I confirm that I have read and agree to the <a class="privacy" href="javascript:void(0)">Privacy Statement.</a>
+                                </p>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn-login">
+                                    SUBMIT
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 order-lg-1">
+
+                </div>
+
+                <div class="col-lg-5 m-auto order-lg-2 order-2">
+                    <h2>
+                        Start Saving Today
+                    </h2>
+
+                    <p>
+                        Lower costs. Simplify operations. Get better <br>
+                        backup and recovery today.
+                    </p>
+
+                    <button class="contact-btn">CONTACT US</button>
+                </div>
+
+                <div class="col-lg-5 order-lg-3 order-1">
+                    <img src="images/saving.svg" alt="">
+                </div>
+
+                <div class="col-lg-1 order-lg-4">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+
+                </div>
+
+                <div class="col-lg-5 order-2 order-lg-1 left">
+                    <a href="javascript:void(0)">
+                        <img class="footer-logo" src="images/logo-footer.svg" alt="">
+                    </a>
+
+                    <p>
+                        © 2021 Cohesity, Inc. All Rights Reserved.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 order-1 order-lg-2 text-right right">
+                    <div class="footer-mob-logo">
+                        <a href="javascript:void(0)">
+                            <img src="images/logo-footer.svg" alt="">
+                        </a>
+                    </div>
+                   
+                    <a href="javascript:void(0)">
+                        Privacy Policy
+                    </a>
+
+                    <span> | </span>
+
+                    <a href="javascript:void(0)">
+                        Legal
+                    </a>
+
+                    <span> | </span>
+
+                    <a href="javascript:void(0)">
+                        1-855-9TCO
+                    </a>
+                </div>
+
+                <div class="col-lg-1 order-lg-3">
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
+
+<script>
+    var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("demo2");
+    output2.innerHTML = slider2.value;
+
+    slider2.oninput = function() {
+        output2.innerHTML = this.value;
+    }
+</script>
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
+
+<script>
+    const labels = [
+        '2021',
+        '2022',
+        '2023',
+        '2024',
+        '2025',
+        '2026'
+        ];
+        const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Pure Storage Cloud Block Store',
+            backgroundColor: 'rgba(0, 167, 254, 1)',
+            borderColor: 'rgba(0, 167, 254, 1)',
+            data: [9500000, 14000000, 9500000, 14000000, 19500000, 14000000],
+        },
+        {
+            label: 'AWS EBS Performance (io1)',
+            backgroundColor: 'rgba(0, 223, 182, 1)',
+            borderColor: 'rgba(0, 223, 182, 1)',
+            data: [7500000, 30000000, 7500000, 12000000, 17500000, 30000000],
+        },
+        {
+            label: 'AWS EBS Capacity (gp2)',
+            backgroundColor: 'rgba(0, 199, 230, 1)',
+            borderColor: 'rgba(0, 199, 230, 1)',
+            data: [5500000, 10000000, 5500000, 10000000, 5500000, 30000000],
+        }
+    ],
+        
+    };
+
+    const config = {
+        type: 'line',
+        data,
+        options: {}
+    };
+    
+    var myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+</script>
+</html>
